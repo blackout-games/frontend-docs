@@ -40,6 +40,30 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/Rugby/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Rugby/toc.html",
+          "hash": "i606yGhT+dl6CMmYXw8evw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Rugby/visiting-mode.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Rugby/visiting-mode.html",
+          "hash": "xowqv/+WXnewN48fRDS5LQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/git.md",
       "output": {
@@ -69,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "pfrxfBldFJT8bKvweelHjQ=="
+          "hash": "LuDp2nkgTYR0w//AUy2jMQ=="
         }
       },
       "is_incremental": false,
@@ -109,7 +133,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 4,
+          "total_file_count": 5,
           "skipped_file_count": 0
         }
       }
