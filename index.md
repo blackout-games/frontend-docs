@@ -1,9 +1,6 @@
 # Blackout Documentation
 
-## Website
-http://blackout-unity-docs.s3-website-us-east-1.amazonaws.com/
-
-# Improving The Documentation
+## Improving The Documentation
 Steps to get set up are:
 - Download [docfx](https://github.com/dotnet/docfx/releases)
 - Extra folder to somewhere. I just put the folder in `C:\docfx`
