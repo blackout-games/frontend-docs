@@ -90,6 +90,8 @@
 </ul>
 <h2>How to set up a Scene for visiting mode</h2>
  
+ Screens that allow Visiting mode should use ClubModel.Active instead of ClubModel.Current
+ 
  BlackoutScene.cs has two lists:
 <ul>
 <li>DisabledWhileVisiting</li>
@@ -110,6 +112,11 @@ Within Scenes inheriting BlackoutSene.cs that are supporting visiting mode you w
 </code></pre>
 <p>You will need to pass the Scenes screenswipe into the ReloadScreenSwipe method, this will reload the screen swipe pages and also refresh the Topbar Pagination so that screens that don't allow visiting cannot be accessed.</p>
 <p>Scenes where visiting mode isn't allowed but are still wanting to access the SceneChangedMessage can just override the method but not call <code>base.OnSceneChange(msg)</code></p>
+<h2>How Visiting Mode Works</h2>
+<p><code>BlackoutScene.ActiveClubId</code> is changed to the club id that is being visited</p>
+<p><code>_appUrlWhenVisitingStarted</code> is set to the navigaton url for the scene/screen where visiting mode was started from, this is later used to return to that scene/screen when visiting mode is exited</p>
+<p>Once <code>ActiveClubId</code> is set, anywhere accessing <code>ClubModel.Active</code> or <code>BlackoutScene.ActiveClubId</code> will get the visited clubs ClubModel/Id. This is then used to load that clubs data instead of the currently logged in club.</p>
+<p><code>LocalSettings.currentClubId</code> stores your currently logged in club Id, this is accessed through <code>ClubModel.Current</code> and used in Scenes and Screens that do not allow visiting.</p>
 </article>
           </div>
           
