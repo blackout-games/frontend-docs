@@ -97,9 +97,9 @@
 <li>DisabledWhileVisiting</li>
 <li>UninteractableWhileVisiting</li>
 </ul>
-<p>Within the Scene drag gameobjects that are to be disabled into DisabledWhileVisiting (including Screens), and drag Selectable components that should not be interactable in Visiting mode into UninteractableWhileVisiting.</p>
-<p>BlackoutScene.cs has a listener for the SceneChangedMessage that runs a virtual method called OnSceneChange.
-Within Scenes inheriting BlackoutSene.cs that are supporting visiting mode you will need to override this method and call the base, like the following:</p>
+<p>Within the Scene drag gameobjects that are to be disabled into <code>DisabledWhileVisiting</code> (including Screens), and drag Selectable components that should not be interactable in Visiting mode into UninteractableWhileVisiting.</p>
+<p><code>BlackoutScene.cs</code> has a listener for the <code>SceneChangedMessage</code> that runs a virtual method called <code>OnSceneChange</code>.
+Within Scenes inheriting <code>BlackoutSene.cs</code> that are supporting visiting mode you will need to override this method and call the base, like the following:</p>
 <pre><code>protected override void OnSceneChange(SceneChangedMessage msg)
 {
   base.OnSceneChange(msg);
@@ -110,8 +110,8 @@ Within Scenes inheriting BlackoutSene.cs that are supporting visiting mode you w
   }
 }
 </code></pre>
-<p>You will need to pass the Scenes screenswipe into the ReloadScreenSwipe method, this will reload the screen swipe pages and also refresh the Topbar Pagination so that screens that don't allow visiting cannot be accessed.</p>
-<p>Scenes where visiting mode isn't allowed but are still wanting to access the SceneChangedMessage can just override the method but not call <code>base.OnSceneChange(msg)</code></p>
+<p>You will need to pass the Scenes screenswipe into the <code>ReloadScreenSwipe</code> method, this will reload the screen swipe pages and also refresh the Topbar Pagination so that screens that don't allow visiting cannot be accessed.</p>
+<p>Scenes where visiting mode isn't allowed but are still wanting to access the <code>SceneChangedMessage</code> should override the method but <strong>NOT</strong> call <code>base.OnSceneChange(msg)</code></p>
 <h2>How Visiting Mode Works</h2>
 <p><code>BlackoutScene.ActiveClubId</code> is changed to the club id that is being visited</p>
 <p><code>_appUrlWhenVisitingStarted</code> is set to the navigaton url for the scene/screen where visiting mode was started from, this is later used to return to that scene/screen when visiting mode is exited</p>
