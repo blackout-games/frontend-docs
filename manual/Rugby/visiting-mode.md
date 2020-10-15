@@ -18,7 +18,7 @@
 - DisabledWhileVisiting
 - UninteractableWhileVisiting 
 
-Within the Scene drag gameobjects that are to be disabled into `DisabledWhileVisiting` (including Screens), and drag Selectable components that should not be interactable in Visiting mode into UninteractableWhileVisiting.
+Within the Scene drag gameobjects that are to be disabled into `DisabledWhileVisiting` (including Screens), and drag Selectable components that should not be interactable in Visiting mode into `UninteractableWhileVisiting`.
 
 `BlackoutScene.cs` has a listener for the `SceneChangedMessage` that runs a virtual method called `OnSceneChange`.
 Within Scenes inheriting `BlackoutSene.cs` that are supporting visiting mode you will need to override this method and call the base, like the following:
