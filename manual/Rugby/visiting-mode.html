@@ -69,6 +69,47 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="visiting-mode">Visiting Mode</h1>
 
+<h2>Scenes and screens that support visiting mode:</h2>
+<ul>
+<li>Competitions
+<ul>
+<li>leagues</li>
+</ul>
+</li>
+<li>Squad
+<ul>
+<li>player-info/table view</li>
+</ul>
+</li>
+<li>Grounds</li>
+<li>Club
+<ul>
+<li>club-info</li>
+</ul>
+</li>
+</ul>
+<h2>How to set up a Scene for visiting mode</h2>
+ 
+ BlackoutScene.cs has two lists:
+<ul>
+<li>DisabledWhileVisiting</li>
+<li>UninteractableWhileVisiting</li>
+</ul>
+<p>Within the Scene drag gameobjects that are to be disabled into DisabledWhileVisiting (including Screens), and drag Selectable components that should not be interactable in Visiting mode into UninteractableWhileVisiting.</p>
+<p>BlackoutScene.cs has a listener for the SceneChangedMessage that runs a virtual method called OnSceneChange.
+Within Scenes inheriting BlackoutSene.cs that are supporting visiting mode you will need to override this method and call the base, like the following:</p>
+<pre><code>protected override void OnSceneChange(SceneChangedMessage msg)
+{
+  base.OnSceneChange(msg);
+  if (IsVisiting)
+  {
+    ReloadScreenSwipe(screenSwipe);
+    return;
+  }
+}
+</code></pre>
+<p>You will need to pass the Scenes screenswipe into the ReloadScreenSwipe method, this will reload the screen swipe pages and also refresh the Topbar Pagination so that screens that don't allow visiting cannot be accessed.</p>
+<p>Scenes where visiting mode isn't allowed but are still wanting to access the SceneChangedMessage can just override the method but not call <code>base.OnSceneChange(msg)</code></p>
 </article>
           </div>
           
