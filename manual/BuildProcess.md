@@ -51,12 +51,12 @@ The processes for full release is not currently fully automated so the process i
 6. Wait 30 - 90 minutes for the build to finish (There will be a Slack message in the builds channel)
 7. Go to the [Content Delivery Buckets](https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-content-delivery)
 8. You should see the buckets relating to these builds(Win32, Win64, Linux, OSX) have "Unreleased Changes" so for each one:
-  + Click on the name of the release
-  + Press "Create Release"
-  + Press "Next"
-  + Check the "Release" badge option
-  + Press "Next"
-  + Press "Submit"
+  1. Click on the name of the release
+  2. Press "Create Release"
+  3. Press "Next"
+  4. Check the "Release" badge option
+  5. Press "Next"
+  6. Press "Submit"
 9. Log in to the Steam Partners portal and set the new release live as soon as possible(Needs to be documented elsewhere)
 
 ## Building for all other Steam releases(Nightly, RC, etc.)
