@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>Build Process </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="Build Process ">
     <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,8 +67,85 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="build-process">Build Process</h1>
 
-<p>test</p>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-build">Unity Cloud Build Configuration</a></li>
+<li><a href="https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-build/history">Unity Cloud Build History</a></li>
+<li><a href="https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-content-delivery">Content Delivery Buckets</a></li>
+</ul>
+<h2 id="build-targets">Build Targets</h2>
+<p>Our current builds target the following platforms:</p>
+<ul>
+<li>Desktop Platforms
+<ul>
+<li>Windows 32-bit</li>
+<li>Windows 64-bit</li>
+<li>Linux</li>
+<li>MacOS</li>
+</ul>
+</li>
+<li>Mobile Platforms
+<ul>
+<li>Android</li>
+<li>iOS</li>
+</ul>
+</li>
+</ul>
+<h2 id="build-steps">Build Steps</h2>
+<p>There are a number of steps involved with a new build:</p>
+<ol>
+<li>Unity Cloud Build(UCB)</li>
+<li>Uploading addressables content to the Unity's Cloud Content Delivery(CCD) buckets</li>
+<li>Creating a release for each bucket</li>
+<li>Setting the appropriate badges to the newly create release in the bucket</li>
+<li>Uploading to Steam, iTunes Connect, or Google Play</li>
+</ol>
+<p>These steps are all automated but there is potential for clashing during the CCD stage. This clash will only happen to builds of the same platform(e.g., Win32-Nightly, Win32-RC, etc.)</p>
+<p>Because of this potential risk it is advisable that you only run one &quot;Build Group&quot; at a time</p>
+<h2 id="build-groups">Build Groups</h2>
+<p>In this context 'build groups' will refer to a set of related builds(i.g., Nightly)
+Some of the automated processes know about these groups and must be built together to trigger the automated steps.</p>
+<p>These groups are defined in the Unity dashboard by the suffix attached to each build configureation.</p>
+<p>The following groups will trigger an automated build:</p>
+<ul>
+<li>Win32, Win64, Linux, OSX: this will result in a Release build being uploaded to steam(but not released)</li>
+<li>Win32-RC, Win64-RC, Linux-RC, OSX-RC: this will result in a Release-Candidate build being uploaded and set live on steam RC stream</li>
+<li>Win32-Nightly, Win64-Nightly, Linux-Nightly, OSX-Nightly: this will result in a Nightly/Test build being uploaded and set live on steam RC stream</li>
+<li>Android-Nightly: This will upload to the Google Play Console and will need to be manually processed from there</li>
+<li>iOS: this will automatically upload to itunes connect and be available on test flight after it has finished processesing</li>
+</ul>
+<h2 id="building-for-a-full-release-for-steam">Building for a full release for Steam</h2>
+<p>The processes for full release is not currently fully automated so the process is outlined here:</p>
+<ol>
+<li>Go to Build Histroy on the <a href="https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-build/history">Unity Dashboard</a></li>
+<li>Press the 'down arrow' on the &quot;Build: All Targets&quot;</li>
+<li>Deselect the &quot;All&quot; option</li>
+<li>Select: Win32, Win64, Linux, OSX</li>
+<li>Press 'Build' or 'Clean Build' at the bottom of the dropdown</li>
+<li>Wait 30 - 90 minutes for the build to finish (There will be a Slack message in the builds channel)</li>
+<li>Go to the <a href="https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-content-delivery">Content Delivery Buckets</a></li>
+<li>You should see the buckets relating to these builds(Win32, Win64, Linux, OSX) have &quot;Unreleased Changes&quot; so for each one:</li>
+<li>Click on the name of the release</li>
+<li>Press &quot;Create Release&quot;</li>
+<li>Press &quot;Next&quot;</li>
+<li>Check the &quot;Release&quot; badge option</li>
+<li>Press &quot;Next&quot;</li>
+<li>Press &quot;Submit&quot;</li>
+<li>Log in to the Steam Partners portal and set the new release live as soon as possible(Needs to be documented elsewhere)</li>
+</ol>
+<h2 id="building-for-all-other-steam-releasesnightly-rc-etc">Building for all other Steam releases(Nightly, RC, etc.)</h2>
+<ol>
+<li>Go to Build Histroy on the <a href="https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-build/history">Unity Dashboard</a></li>
+<li>Press the 'down arrow' on the &quot;Build: All Targets&quot;</li>
+<li>Deselect the &quot;All&quot; option</li>
+<li>Select: Win32-[target], Win64-[target], Linux-[target], OSX-[target]</li>
+<li>Press 'Build' or 'Clean Build' at the bottom of the dropdown</li>
+<li>Wait 30 - 90 minutes. You will be notified when this process is completed and the builld will be live on Steam</li>
+</ol>
+<h2 id="mobile-builds">Mobile builds</h2>
+<p>There is currently no formal build process in place for mobile so this will need to be fully documented later</p>
 </article>
           </div>
           
