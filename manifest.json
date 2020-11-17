@@ -40,6 +40,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "manual/BuildProcess.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/BuildProcess.html",
+          "hash": "b5Z/A+9koBB1xL8sjwRLhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "manual/Rugby/toc.yml",
       "output": {
@@ -126,7 +138,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 5,
+          "total_file_count": 6,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
