@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "eowWDMhpkpFZDK7FCCqa/g=="
+          "hash": "9SK99PPu2fpbxs4LVTg1CA=="
         }
       },
       "is_incremental": false,
@@ -46,6 +46,30 @@
         ".html": {
           "relative_path": "manual/BuildProcess.html",
           "hash": "neanDaSfPiNyEK9wNIqW9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Core/Orientation.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Core/Orientation.html",
+          "hash": "bSWrpzRnqCknqiTPDIS3gw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/Core/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Core/toc.html",
+          "hash": "pXRk/1npYwpUZTb8MOs6TA=="
         }
       },
       "is_incremental": false,
@@ -105,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "tlH6UbqStpvDkFLOiQbotw=="
+          "hash": "xDxyaupE7LdneyOiXttEjA=="
         }
       },
       "is_incremental": false,
@@ -135,17 +159,17 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 7,
+          "skipped_file_count": 0
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
-          "skipped_file_count": 0
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 6,
           "skipped_file_count": 0
         }
       }

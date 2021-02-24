@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Overview </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Overview ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="overview">Overview</h1>
+
+<p>Unity currently doesn't have any events to subscribe to for device orientation changes, so this is our solution.</p>
+<h1 id="orientation">Orientation</h1>
+<p>Basic run down:</p>
+<ul>
+<li>Any custom script you wish to be manipulated by orientation changes i.e TraningScreen, it should implement <code>IOrientationChangable</code> this only has an <code>OrienationChanged(bool isPortrait)</code> method. You don't <em>need</em> to, but it will life so much easier if we need to debug as we can just do a scene search for that interface.
+NOTE: You will still need to add these scripts to a parent <code>OrienationListener</code> as they are not self subscribing.</li>
+<li>If you want to create a self subscribing scrip like <code>MoveUI.cs</code> then you will need to implement the <code>IOrienationListener</code> interface. You can then use <code>Orienation.Sub()</code> in <code>OnEnabled()/OnDisabled()</code> methods to add/remove the listener. <code>Orientation.Sub()</code> can also be assed to a constructor which is good for subscripting a gameObject that insn't enabled in the inspector yet. This is used in <code>MoveUI.cs</code>
+NOTE: <code>Orientation.cs</code> will remove any redundant listeners but it is still good practice to manually use <code>Orientation.UnSub()</code>.</li>
+</ul>
+<h1 id="moveui">MoveUI</h1>
+<p><code>MoveUI.cs</code> implements the <code>IOrientationListener</code> interface and registers itself to orientation changes</p>
+<ul>
+<li>No need to add it to a parent OrienationListener :champagne:</li>
+<li>This will still work in PlayMode, EditorMode, and PrefabEditingMode</li>
+</ul>
+<h1 id="orientation-window">Orientation Window</h1>
+<p><code>OrientationWindow.cs</code> in <code>Blackout &gt; Window &gt; Orientation Window</code> shows you to view all the registered <code>IOrientationListener</code>'s in all currently loaded scenes. It will also scan the PrefabStage while in editing mode (there was an edge case I had to work around)</p>
+<p><img src="/img/orientation-window.gif" alt=""></p>
+<h1 id="orientation-listener">Orientation Listener</h1>
+<p><code>OrienationListener.cs</code> is a <code>MonoBehaviour</code> and is good for doing generic orientation tasks like enable/disable gameObjects or changing sprites or whatever a MoveUI doesn't do</p>
+<p>On the <code>OrienationListener</code> script there is a &quot;Scan&quot; button (pictured) which will help you find any children objects which implement the IOrienationChangable interface, which is just a OnOrientationChanged(bool) function. It will exclude any instances where its already been added to the inspector. Its just a helper so you don't miss any.</p>
+<p><img src="/img/orientation-script.png" alt=""></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
