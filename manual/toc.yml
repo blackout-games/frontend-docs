@@ -2,6 +2,8 @@
   href: intro.md
 - name: Git and Steam Release Strategy
   href: git.md
+- name: Core
+  href: Core/
 - name: Rugby
   href: Rugby/
 - name: Build Process
