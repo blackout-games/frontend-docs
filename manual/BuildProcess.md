@@ -67,5 +67,32 @@ The processes for full release is not currently fully automated so the process i
 5. Press 'Build' or 'Clean Build' at the bottom of the dropdown
 6. Wait 30 - 90 minutes. You will be notified when this process is completed and the builld will be live on Steam
 
+## Local Builds and Addressables
+When doing local builds, if you want the remote assets to load, there are two options:
+1. Change it so that addressable assets are included in the build.
+2. Host them using the editor.
+
+Option 1:
+1. Open the Addressables Groups window(Window->Asset Management->Addressables->Groups)
+2. Click on Buildings
+3. In the inspector change the build path to LocalBuildPath and Load Path to LocalLoadPath
+4. Ctrl+s to save the project(important step)
+5. Repeat for all other groups
+
+The down side of this is that if you revert these files then you have to go through the whole process again.
+
+Option 2:
+1. Open the Addressables Profiles window(Window->Asset Management->Addressables->Profiles)
+2. Set Editor_Hosting as the active profile(right click on the profile and choose Set Active)
+3. Open the Addressables Hosting window(Window->Asset Management->Addressables->Hosting)
+4. Reset the port
+5. Find your local IP address(eg. 192.168.1.123) and copy the Variable Name (right click and copy key)
+6. Go to the Addressables Profiles Window and set the path like http://[PrivateIpAddress]:[HostingServicePort] but ensure the variable names are correct(they're probably already set correctly but also maybe not :man-shrugging:)
+7. Open the Addressables Groups window(Window->Asset Management->Addressables->Groups)
+8. Change the Play Mode Script option to Use Existing Build
+
+The downside of this is that it's fiddly and I actually had a lot of trouble getting it to work. Sometimes it just stops working and I don't know why.
+If you're running a local build and assets aren't loading in then you may experience behavior that you're not going to see in the production version: low fps, game failing to load, lots of errors being thrown in the console about addressables.
+
 ## Mobile builds
 There is currently no formal build process in place for mobile so this will need to be fully documented later
