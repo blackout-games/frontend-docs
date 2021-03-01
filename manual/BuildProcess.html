@@ -144,6 +144,34 @@ Some of the automated processes know about these groups and must be built togeth
 <li>Press 'Build' or 'Clean Build' at the bottom of the dropdown</li>
 <li>Wait 30 - 90 minutes. You will be notified when this process is completed and the builld will be live on Steam</li>
 </ol>
+<h2 id="local-builds-and-addressables">Local Builds and Addressables</h2>
+<p>When doing local builds, if you want the remote assets to load, there are two options:</p>
+<ol>
+<li>Change it so that addressable assets are included in the build.</li>
+<li>Host them using the editor.</li>
+</ol>
+<p>Option 1:</p>
+<ol>
+<li>Open the Addressables Groups window(Window-&gt;Asset Management-&gt;Addressables-&gt;Groups)</li>
+<li>Click on Buildings</li>
+<li>In the inspector change the build path to LocalBuildPath and Load Path to LocalLoadPath</li>
+<li>Ctrl+s to save the project(important step)</li>
+<li>Repeat for all other groups</li>
+</ol>
+<p>The down side of this is that if you revert these files then you have to go through the whole process again.</p>
+<p>Option 2:</p>
+<ol>
+<li>Open the Addressables Profiles window(Window-&gt;Asset Management-&gt;Addressables-&gt;Profiles)</li>
+<li>Set Editor_Hosting as the active profile(right click on the profile and choose Set Active)</li>
+<li>Open the Addressables Hosting window(Window-&gt;Asset Management-&gt;Addressables-&gt;Hosting)</li>
+<li>Reset the port</li>
+<li>Find your local IP address(eg. 192.168.1.123) and copy the Variable Name (right click and copy key)</li>
+<li>Go to the Addressables Profiles Window and set the path like http://[PrivateIpAddress]:[HostingServicePort] but ensure the variable names are correct(they're probably already set correctly but also maybe not :man-shrugging:)</li>
+<li>Open the Addressables Groups window(Window-&gt;Asset Management-&gt;Addressables-&gt;Groups)</li>
+<li>Change the Play Mode Script option to Use Existing Build</li>
+</ol>
+<p>The downside of this is that it's fiddly and I actually had a lot of trouble getting it to work. Sometimes it just stops working and I don't know why.
+If you're running a local build and assets aren't loading in then you may experience behavior that you're not going to see in the production version: low fps, game failing to load, lots of errors being thrown in the console about addressables.</p>
 <h2 id="mobile-builds">Mobile builds</h2>
 <p>There is currently no formal build process in place for mobile so this will need to be fully documented later</p>
 </article>
