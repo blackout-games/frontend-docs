@@ -2,9 +2,24 @@
   href: intro.md
 - name: Git and Steam Release Strategy
   href: git.md
-- name: Core
-  href: Core/
-- name: Rugby
-  href: Rugby/
 - name: Build Process
   href: BuildProcess.md
+- name: Core
+  items:
+    - name: API
+      href: Core/API.md
+    - name: Cache
+      href: Core/Cache.md
+    - name: Event System - Publisher and Subscriber
+      href: Core/EventSystem.md
+    - name: Orientation
+      href: Core/Orientation.md
+- name: Rugby
+  items:
+    - name: Visiting Mode
+      href: Rugby/visiting-mode.md
+- name: Football
+  items: 
+      - name: Welcome
+        href: Football/welcome.md
+

@@ -8,3 +8,8 @@ Steps to get set up are:
 - [Clone repo](https://gitlab.com/blackout-sports/blackout-docs) to the same directory as `core-unity` and all other blackout projects. This is because the build paths rely on them being in the same directory.
 - You can now use `docfx` to build and `docfx --serve` to run the docs on a server `localhost:8080` usually.
 - Any extra information see [official website](https://dotnet.github.io/docfx/)
+
+
+## Including Images
+- Add image to Images folder
+- Use `![](/images/{image.png})` to embed image on that line

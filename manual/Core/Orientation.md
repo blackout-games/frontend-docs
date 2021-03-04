@@ -22,7 +22,7 @@ NOTE: `Orientation.cs` will remove any redundant listeners but it is still good 
 
 `OrientationWindow.cs` in `Blackout > Window > Orientation Window` shows you to view all the registered `IOrientationListener`'s in all currently loaded scenes. It will also scan the PrefabStage while in editing mode (there was an edge case I had to work around)
 
-![](../../img/orientation-window.gif)
+![](/images/orientation-window.gif)
 
 # Orientation Listener
 
@@ -30,5 +30,5 @@ NOTE: `Orientation.cs` will remove any redundant listeners but it is still good 
 
 On the `OrienationListener` script there is a "Scan" button (pictured) which will help you find any children objects which implement the IOrienationChangable interface, which is just a OnOrientationChanged(bool) function. It will exclude any instances where its already been added to the inspector. Its just a helper so you don't miss any.
 
-![](../../img/orientation-script.png)
+![](/images/orientation-script.png)
 
