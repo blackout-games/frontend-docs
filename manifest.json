@@ -198,7 +198,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "O+NR8Xk9ynqpbWrEZLk5Tw=="
+          "hash": "3s+ojyIgaZbZFQENUrDXkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/tutorial.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/tutorial.html",
+          "hash": "ubKCD6Qio6FS3tLjSnWYfA=="
         }
       },
       "is_incremental": false,
@@ -238,7 +250,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 12,
+          "total_file_count": 13,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
