@@ -4,6 +4,8 @@
   href: git.md
 - name: Build Process
   href: BuildProcess.md
+- name: Tutorial
+  href: tutorial.md
 - name: Core
   items:
     - name: API
