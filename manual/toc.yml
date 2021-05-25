@@ -10,6 +10,10 @@
   href: BuildProcess.md
 - name: Tutorial
   href: tutorial.md
+- name: UI
+  items:
+    - name: Modals
+      href: UI/modals.md
 - name: Core
   items:
     - name: API
