@@ -52,7 +52,7 @@ I found it useful for `User Report` panel in `SettingsModal` which was infinitel
 
 **Rich modal hierarchy structure**
 
-![](/images/modals/modal-content.png)
+![](/images/modal-content.png)
 
 The key thing to note with Modal Content Panel is there are some rules to follow:
 1. Never use `ModalContentPanel.gameObject.SetActive()` in code or from inspector. Use `ModalContentPanel.SetVisibility()` explicitly.
@@ -68,10 +68,10 @@ Child panels that will always be showing like `ToggleGroup` or `Modal Title Bar`
 **Unwanted expanding example**
 
 This is an example where the toggle group `Flexible Height` is NOT set to `0`
-![](/images/modals/layoutgroup-unwanted-expand.png)
+![](/images/layoutgroup-unwanted-expand.png)
 
 Here is the same modal but `Flexible Height` is set to `0`
-![](/images/modals/layoutgroup-height-0.png)
+![](/images/layoutgroup-height-0.png)
 
 
 
