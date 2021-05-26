@@ -1,22 +1,24 @@
 # Modals
 
-There are multiple types of modals which slightly differ in their core behaviour base all extend from a single base class called `ModalBase.cs`.
+There are multiple types of modals which slightly differ in their core behaviour but all extend from the `ModalBase.cs` class.
 
 **Stacking**
 
-All modal stacking logic is handled automatically in `ModalManger.cs` singleton. So the last modal that was opened will be the top modal in focus.
+Modal stacking logic is handled automatically by the `ModalManger` singleton. Last modal that was opened will be the top modal in focus.
 
 ### Generic Modals
 
-Generic modals are a child of the main ModalManager's scroll rect container. So the scrolling logic is handled automatically. The developer can define a default width or pivot points based on options provided in the inspector.
+In the scenes hierarchy generic modals are a child of the Modal Manager's scroll rect container. The scrolling logic is handled automatically. A developer can define a default width and pivot based on options provided in the inspector.
 
 **Prefabs**
 
-All generic modals needs to be a variant of `Modal` prefab. You can delete the `Modal.cs` script which is on it and extend the modal behaviour with a custom class. e.g `public class ConfirmationModal : Modal`
+All generic modals need to be a variant of `Modal` prefab. You can remove the `Modal` component on it to extend the modals behaviour with a custom class. e.g `public class ConfirmationModal : Modal`
+
+*Note: As of writing this not all modals are prefab variants of the Modal prefab as are using the legacy `ModalContent` behaviour. This will eventually be phased out.*
 
 **Pivot**
 
-Generic modals pivots will always be based on centre screen. The `y`pivot can be either top, or centre.
+Generic modal pivots will always be based on centre screen in the `x` axis. The `y` axis pivot can be either top (1), or centre (0.5).
 
 **Width**
 
@@ -31,7 +33,7 @@ The width is predefined by platform type. However, this can be overridden in cod
     - Height can be changed after showing. Maybe be because of tabs or dynamically added list items etc.
     - Anchored towards top of screen with pivot centre top. This allows the content to dynamically change height without the top bar of the modal changing position on screen. 
 
-### Overlay Modals
+#### **Overlay Modal Types**
 
 Overlay modals are NOT a child of the ModalManager's scroll rect container. Therefore they are considered rogue and their behaviour require specific case by case logic than generic behviours. These modals NEED their own scroll rects internally if scrolling is expected.
 
@@ -65,7 +67,7 @@ The above rules are because of some height issues/bugs that I've experienced:
 
 Child panels that will always be showing like `ToggleGroup` or `Modal Title Bar` seen in above image don't need anything done to them. However I found setting those layout rules to them does help with unwanted expanding
 
-**Unwanted expanding example**
+#### **Unwanted expanding example**
 
 This is an example where the toggle group `Flexible Height` is NOT set to `0`
 
