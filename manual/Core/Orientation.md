@@ -18,7 +18,7 @@ Any custom script you wish to be receive by orientation events it needs to imple
 
 Note: You need to press the `Refresh` button each time you want the list to up date. This is just to limit performance overhead.
 
-![](/images/orientation-window.png)
+![](../../images/orientation-window.png)
 
 # Orientation Listener
 
@@ -26,5 +26,5 @@ Note: You need to press the `Refresh` button each time you want the list to up d
 
 Note: `OnOrientationChange` serialised event will log and display a warning if a script is added to the event callback list that uses `IOrientationChangeable.OnOrientationChanged` and will set the execution state to `Off`. This is harmless but unnecessary as `IOrientationChangeable` will already be called but the `Orientation` system.
 
-![](/images/orientationlistener.png)
+![](../../images/orientationlistener.png)
 

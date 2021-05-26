@@ -12,4 +12,4 @@ Steps to get set up are:
 
 ## Including Images
 - Add image to Images folder
-- Use `![](/images/{image.png})` to embed image on that line
+- Use relative path `![](../images/{image.png})` to embed image on that line

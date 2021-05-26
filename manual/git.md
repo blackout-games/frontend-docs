@@ -66,4 +66,4 @@ Making MRs to Master is not required or forced but is an option if a developer f
 
 ### Git Branch Example Diagram (Very WIP)
 
-![](/images/git-graph.png)
+![](../images/git-graph.png)
