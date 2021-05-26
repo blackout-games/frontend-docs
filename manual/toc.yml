@@ -4,6 +4,8 @@
   items:
     - name: Maximum Path Length Limitation
       href: Workarounds/MaxPathLimit.md
+    - name: Git Surgery
+      href: Workarounds/GitSurgery.md
 - name: Git and Steam Release Strategy
   href: git.md
 - name: Build Process
