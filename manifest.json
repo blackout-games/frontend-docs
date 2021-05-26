@@ -52,10 +52,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/modals/layoutgroup-height-0.png",
+      "source_relative_path": "images/layoutgroup-height-0.png",
       "output": {
         "resource": {
-          "relative_path": "images/modals/layoutgroup-height-0.png"
+          "relative_path": "images/layoutgroup-height-0.png"
         }
       },
       "is_incremental": false,
@@ -63,10 +63,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/modals/layoutgroup-unwanted-expand.png",
+      "source_relative_path": "images/layoutgroup-unwanted-expand.png",
       "output": {
         "resource": {
-          "relative_path": "images/modals/layoutgroup-unwanted-expand.png"
+          "relative_path": "images/layoutgroup-unwanted-expand.png"
         }
       },
       "is_incremental": false,
@@ -74,10 +74,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/modals/modal-content.png",
+      "source_relative_path": "images/modal-content.png",
       "output": {
         "resource": {
-          "relative_path": "images/modals/modal-content.png"
+          "relative_path": "images/modal-content.png"
         }
       },
       "is_incremental": false,
@@ -207,7 +207,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/UI/modals.html",
-          "hash": "Ngnx7Yi22Uz4ic2od4FZ9A=="
+          "hash": "+nrhzKlgtnptyPmB2wzDdw=="
         }
       },
       "is_incremental": false,
@@ -297,17 +297,17 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 15,
-          "skipped_file_count": 0
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 15,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
