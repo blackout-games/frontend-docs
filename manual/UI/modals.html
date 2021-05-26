@@ -115,7 +115,7 @@
 <p><strong>Max Height</strong></p>
 <p>I found it useful for <code>User Report</code> panel in <code>SettingsModal</code> which was infinitely growing in height but it didn't have any layout groups as children so I couldn't really work out why it was infinitely growing in height. Probably due to the way Unity's UI updates in the hierarchy. This solved that issue anyway.</p>
 <p><strong>Rich modal hierarchy structure</strong></p>
-<p><img src="/images/modal-content.png" alt=""></p>
+<p><img src="../../images/modals/modal-content.png" alt=""></p>
 <p>The key thing to note with Modal Content Panel is there are some rules to follow:</p>
 <ol>
 <li>Never use <code>ModalContentPanel.gameObject.SetActive()</code> in code or from inspector. Use <code>ModalContentPanel.SetVisibility()</code> explicitly.</li>
@@ -129,10 +129,10 @@
 </ul>
 <p>Child panels that will always be showing like <code>ToggleGroup</code> or <code>Modal Title Bar</code> seen in above image don't need anything done to them. However I found setting those layout rules to them does help with unwanted expanding</p>
 <p><strong>Unwanted expanding example</strong></p>
-<p>This is an example where the toggle group <code>Flexible Height</code> is NOT set to <code>0</code>
-<img src="/images/layoutgroup-unwanted-expand.png" alt=""></p>
-<p>Here is the same modal but <code>Flexible Height</code> is set to <code>0</code>
-<img src="/images/layoutgroup-height-0.png" alt=""></p>
+<p>This is an example where the toggle group <code>Flexible Height</code> is NOT set to <code>0</code></p>
+<p><img src="../../images/modals/layoutgroup-unwanted-expand.png" alt=""></p>
+<p>Here is the same modal but <code>Flexible Height</code> is set to <code>0</code></p>
+<p><img src="../../images/modals/layoutgroup-height-0.png" alt=""></p>
 <h2 id="modal-manager">Modal Manager</h2>
 <p>// TODO</p>
 </article>

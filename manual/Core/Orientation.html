@@ -77,11 +77,11 @@
 <h1 id="orientation-window">Orientation Window</h1>
 <p><code>OrientationWindow</code> in <code>Blackout &gt; Window &gt; Orientation Window</code> shows all the components that implement <code>IOrientationChangeable</code> in all currently loaded scenes with the count of how many scripts are in each scene. It will also scan the PrefabStage while in prefab editing mode. You can also filter the list by toggling <code>Show</code> next to the scene.</p>
 <p>Note: You need to press the <code>Refresh</code> button each time you want the list to up date. This is just to limit performance overhead.</p>
-<p><img src="/images/orientation-window.png" alt=""></p>
+<p><img src="../../images/orientation-window.png" alt=""></p>
 <h1 id="orientation-listener">Orientation Listener</h1>
 <p><code>OrientationListener</code> is a <code>MonoBehaviour</code> that is good for doing generic orientation tasks like enable/disable gameObjects or changing sprites or whatever a <code>MoveUI</code> doesn't do. This just helps limit custom scripts for doing a one off or edge case orientation specific things.</p>
 <p>Note: <code>OnOrientationChange</code> serialised event will log and display a warning if a script is added to the event callback list that uses <code>IOrientationChangeable.OnOrientationChanged</code> and will set the execution state to <code>Off</code>. This is harmless but unnecessary as <code>IOrientationChangeable</code> will already be called but the <code>Orientation</code> system.</p>
-<p><img src="/images/orientationlistener.png" alt=""></p>
+<p><img src="../../images/orientationlistener.png" alt=""></p>
 </article>
           </div>
           
