@@ -69,32 +69,72 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="modals">Modals</h1>
 
-<p>There are 3 types of modals which we use and have defined as:</p>
+<p>There are multiple types of modals which slightly differ in their core behaviour base all extend from a single base class called <code>ModalBase.cs</code>.</p>
+<p><strong>Stacking</strong></p>
+<p>All modal stacking logic is handled automatically in <code>ModalManger.cs</code> singleton. So the last modal that was opened will be the top modal in focus.</p>
+<h3 id="generic-modals">Generic Modals</h3>
+<p>Generic modals are a child of the main ModalManager's scroll rect container. So the scrolling logic is handled automatically. The developer can define a default width or pivot points based on options provided in the inspector.</p>
+<p><strong>Prefabs</strong></p>
+<p>All generic modals needs to be a variant of <code>Modal</code> prefab. You can delete the <code>Modal.cs</code> script which is on it and extend the modal behaviour with a custom class. e.g <code>public class ConfirmationModal : Modal</code></p>
+<p><strong>Pivot</strong></p>
+<p>Generic modals pivots will always be based on centre screen. The <code>y</code>pivot can be either top, or centre.</p>
+<p><strong>Width</strong></p>
+<p>The width is predefined by platform type. However, this can be overridden in code or from the inspector.</p>
+<h4 id="generic-modal-types"><strong>Generic Modal Types</strong></h4>
 <ul>
-<li><strong>Prompt Modal</strong>: This is the simplest modal type.
+<li><strong>Prompt Modal</strong>
 <ul>
 <li>Its height can be predetermined and wont be changed after showing. i.e it doesn't have tabs which can alter its height.</li>
 <li>Will always be anchored centre screen with a centre pivot point.</li>
 </ul>
 </li>
-<li><strong>Rich modal:</strong>
+<li><strong>Rich modal</strong>
 <ul>
 <li>Height can be changed after showing. Maybe be because of tabs or dynamically added list items etc.</li>
 <li>Anchored towards top of screen with pivot centre top. This allows the content to dynamically change height without the top bar of the modal changing position on screen.</li>
 </ul>
 </li>
-<li><strong>Overlay Modal:</strong></li>
 </ul>
+<h3 id="overlay-modals">Overlay Modals</h3>
+<p>Overlay modals are NOT a child of the ModalManager's scroll rect container. Therefore they are considered rogue and their behaviour require specific case by case logic than generic behviours. These modals NEED their own scroll rects internally if scrolling is expected.</p>
+<ul>
+<li><strong>Overlay Modal</strong>
+<ul>
+<li>can pivot to left/right side of screens</li>
+</ul>
+</li>
+<li><strong>Full Screen Modal</strong>
+<ul>
+<li>Exclusively a full screen modal</li>
+</ul>
+</li>
+</ul>
+<h2 id="modal-content-panel">Modal Content Panel</h2>
+<p>A key aspect of maintain a smooth tween with modals when resizing is the use of <code>ModalContentPanel.cs</code>. It implements <code>ILayoutSelfController</code> which is what <code>ContentSizeFitter</code> uses. So the script can be considered a <code>ContentSizeFitter</code> that only works vertically and should only be used for Modals. However, this script could be used in other areas as well though its behaviour may vary and is not supported.</p>
+<p>Each panel that is dynamically toggled needs to use a <code>ModalContentPanel</code> script attached. These panels communicate directly with <code>Modal.cs</code> which figures out what size it needs to tween to. Rich modals MUST content this script however prompt modals don't really need it since content is static.</p>
+<p><strong>Max Height</strong></p>
+<p>I found it useful for <code>User Report</code> panel in <code>SettingsModal</code> which was infinitely growing in height but it didn't have any layout groups as children so I couldn't really work out why it was infinitely growing in height. Probably due to the way Unity's UI updates in the hierarchy. This solved that issue anyway.</p>
+<p><strong>Rich modal hierarchy structure</strong></p>
+<p><img src="/images/modals/modal-content.png" alt=""></p>
+<p>The key thing to note with Modal Content Panel is there are some rules to follow:</p>
+<ol>
+<li>Never use <code>ModalContentPanel.gameObject.SetActive()</code> in code or from inspector. Use <code>ModalContentPanel.SetVisibility()</code> explicitly.</li>
+<li><code>LayoutGroup</code>'s vertical and horizontal need to have <code>Child Force Expand Height</code> set to <code>false</code> (unchecked)</li>
+<li><code>LayoutElement</code>'s maybe need <code>Flexible Height</code> set to <code>0</code></li>
+</ol>
+<p>The above rules are because of some height issues/bugs that I've experienced:</p>
+<ul>
+<li>Panel height grows infinitely <em>(Child Force Expand false solves that)</em></li>
+<li>Children expand unwantedly <em>(Flexible Height 0 solves that)</em></li>
+</ul>
+<p>Child panels that will always be showing like <code>ToggleGroup</code> or <code>Modal Title Bar</code> seen in above image don't need anything done to them. However I found setting those layout rules to them does help with unwanted expanding</p>
+<p><strong>Unwanted expanding example</strong></p>
+<p>This is an example where the toggle group <code>Flexible Height</code> is NOT set to <code>0</code>
+<img src="/images/modals/layoutgroup-unwanted-expand.png" alt=""></p>
+<p>Here is the same modal but <code>Flexible Height</code> is set to <code>0</code>
+<img src="/images/modals/layoutgroup-height-0.png" alt=""></p>
 <h2 id="modal-manager">Modal Manager</h2>
-<p>So basically everything in a rich modal needs to be contained within the Modal prefab as pictured.
-Each panel that is dynamically toggled needs to use a ModalContentPanel script. Which You don't need to do anything after applying it. I could add extra features in future.
-These panels communicate directly with Modal.cs which figures out what size it needs to tween to.
-Each ModelContentPanel needs to follow one rule and that is LayoutGroup Child Force Expand Height needs to be false. It could be true, and it does work sometimes, but generally I've found having that off just eliminates a lot of height issues.
-There is one optional setting for Layout Element Flexible Height set to 0 helps eliminate height issues as well.
-The height issues I've run into are:
-panel height grows infinitely (Child Force Expand FALSE solves that)
-children expand unwantedly (Flexible Height 0 solves that)
-So far that's it. The rest takes care of its self. If you do work out why those fixes need to be that way it would be great otherwise I don't see it being too cumbersome to have them as strict rules.</p>
+<p>// TODO</p>
 </article>
           </div>
           

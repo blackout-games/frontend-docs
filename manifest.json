@@ -52,6 +52,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/modals/layoutgroup-height-0.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/modals/layoutgroup-height-0.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/modals/layoutgroup-unwanted-expand.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/modals/layoutgroup-unwanted-expand.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/modals/modal-content.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/modals/modal-content.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/orientation-window.png",
       "output": {
         "resource": {
@@ -174,7 +207,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/UI/modals.html",
-          "hash": "Qhu0nL65b32n6nUSxVLUjQ=="
+          "hash": "Ngnx7Yi22Uz4ic2od4FZ9A=="
         }
       },
       "is_incremental": false,
@@ -264,13 +297,6 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
@@ -280,6 +306,13 @@
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
