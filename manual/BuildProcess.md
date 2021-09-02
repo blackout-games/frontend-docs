@@ -96,3 +96,20 @@ If you're running a local build and assets aren't loading in then you may experi
 
 ## Mobile builds
 There is currently no formal build process in place for mobile so this will need to be fully documented later
+
+### Local iOS build on a Mac
+This process is designed around building on the office iMac so some paths may be different if you are using a different device
+
+All build scripts are located in the repo `./ios_scripts/`. Each script does a specific task.
+
+TLDR: Run this command and go have a beer.
+```bash
+sh /Users/blackout/Unity/rugby-unity/ios_scripts/ios-build-process.sh
+```
+
+- `ios-build-process.sh`: does runs all the scripts below in order
+- `build-player.sh`: builds the Unity player. If the Unity version is updated you'll need to update the `UNITY_VERSION` variable in that file. TODO: dynamically get the unity version from the ProjectSettings.asset file.
+- `upload-addressables.sh`: builds and uploads the asset bundles to the respective bucket. TODO: create the version badge in this as well, right now relies on "Latest" badge.
+- `archive-xcode-proj.sh`: builds the xcode project, archives it. 
+- `altoolUpload.sh`: uploads the IPA file to TestFlight. TODO: will need to mod this to upload to Apple Store.
+
