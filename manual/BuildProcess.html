@@ -107,19 +107,19 @@
 <h2 id="build-groups">Build Groups</h2>
 <p>In this context 'build groups' will refer to a set of related builds(i.g., Nightly)
 Some of the automated processes know about these groups and must be built together to trigger the automated steps.</p>
-<p>These groups are defined in the Unity dashboard by the suffix attached to each build configureation.</p>
+<p>These groups are defined in the Unity dashboard by the suffix attached to each build configuration.</p>
 <p>The following groups will trigger an automated build:</p>
 <ul>
 <li>Win32, Win64, Linux, OSX: this will result in a Release build being uploaded to steam(but not released)</li>
 <li>Win32-RC, Win64-RC, Linux-RC, OSX-RC: this will result in a Release-Candidate build being uploaded and set live on steam RC stream</li>
 <li>Win32-Nightly, Win64-Nightly, Linux-Nightly, OSX-Nightly: this will result in a Nightly/Test build being uploaded and set live on steam RC stream</li>
 <li>Android-Nightly: This will upload to the Google Play Console and will need to be manually processed from there</li>
-<li>iOS: this will automatically upload to itunes connect and be available on test flight after it has finished processesing</li>
+<li>iOS: this will automatically upload to itunes connect and be available on test flight after it has finished processing</li>
 </ul>
 <h2 id="building-for-a-full-release-for-steam">Building for a full release for Steam</h2>
 <p>The processes for full release is not currently fully automated so the process is outlined here:</p>
 <ol>
-<li>Go to Build Histroy on the <a href="https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-build/history">Unity Dashboard</a></li>
+<li>Go to Build History on the <a href="https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-build/history">Unity Dashboard</a></li>
 <li>Press the 'down arrow' on the &quot;Build: All Targets&quot;</li>
 <li>Deselect the &quot;All&quot; option</li>
 <li>Select: Win32, Win64, Linux, OSX</li>
@@ -137,12 +137,12 @@ Some of the automated processes know about these groups and must be built togeth
 </ol>
 <h2 id="building-for-all-other-steam-releasesnightly-rc-etc">Building for all other Steam releases(Nightly, RC, etc.)</h2>
 <ol>
-<li>Go to Build Histroy on the <a href="https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-build/history">Unity Dashboard</a></li>
+<li>Go to Build History on the <a href="https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-build/history">Unity Dashboard</a></li>
 <li>Press the 'down arrow' on the &quot;Build: All Targets&quot;</li>
 <li>Deselect the &quot;All&quot; option</li>
 <li>Select: Win32-[target], Win64-[target], Linux-[target], OSX-[target]</li>
 <li>Press 'Build' or 'Clean Build' at the bottom of the dropdown</li>
-<li>Wait 30 - 90 minutes. You will be notified when this process is completed and the builld will be live on Steam</li>
+<li>Wait 30 - 90 minutes. You will be notified when this process is completed and the build will be live on Steam</li>
 </ol>
 <h2 id="local-builds-and-addressables">Local Builds and Addressables</h2>
 <p>When doing local builds, if you want the remote assets to load, there are two options:</p>
