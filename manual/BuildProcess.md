@@ -32,18 +32,18 @@ Because of this potential risk it is advisable that you only run one "Build Grou
 In this context 'build groups' will refer to a set of related builds(i.g., Nightly)
 Some of the automated processes know about these groups and must be built together to trigger the automated steps.
 
-These groups are defined in the Unity dashboard by the suffix attached to each build configureation. 
+These groups are defined in the Unity dashboard by the suffix attached to each build configuration. 
 
 The following groups will trigger an automated build:
 - Win32, Win64, Linux, OSX: this will result in a Release build being uploaded to steam(but not released)
 - Win32-RC, Win64-RC, Linux-RC, OSX-RC: this will result in a Release-Candidate build being uploaded and set live on steam RC stream
 - Win32-Nightly, Win64-Nightly, Linux-Nightly, OSX-Nightly: this will result in a Nightly/Test build being uploaded and set live on steam RC stream
 - Android-Nightly: This will upload to the Google Play Console and will need to be manually processed from there
-- iOS: this will automatically upload to itunes connect and be available on test flight after it has finished processesing
+- iOS: this will automatically upload to itunes connect and be available on test flight after it has finished processing
 
 ## Building for a full release for Steam
 The processes for full release is not currently fully automated so the process is outlined here:
-1. Go to Build Histroy on the [Unity Dashboard](https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-build/history)
+1. Go to Build History on the [Unity Dashboard](https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-build/history)
 2. Press the 'down arrow' on the "Build: All Targets"
 3. Deselect the "All" option
 4. Select: Win32, Win64, Linux, OSX
@@ -60,12 +60,12 @@ The processes for full release is not currently fully automated so the process i
 9. Log in to the Steam Partners portal and set the new release live as soon as possible(Needs to be documented elsewhere)
 
 ## Building for all other Steam releases(Nightly, RC, etc.)
-1. Go to Build Histroy on the [Unity Dashboard](https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-build/history)
+1. Go to Build History on the [Unity Dashboard](https://dashboard.unity3d.com/organizations/17867078423645/projects/9e85a63f-3908-4e07-a8e2-861b5bb89a8b/cloud-build/history)
 2. Press the 'down arrow' on the "Build: All Targets"
 3. Deselect the "All" option
 4. Select: Win32-[target], Win64-[target], Linux-[target], OSX-[target]
 5. Press 'Build' or 'Clean Build' at the bottom of the dropdown
-6. Wait 30 - 90 minutes. You will be notified when this process is completed and the builld will be live on Steam
+6. Wait 30 - 90 minutes. You will be notified when this process is completed and the build will be live on Steam
 
 ## Local Builds and Addressables
 When doing local builds, if you want the remote assets to load, there are two options:
