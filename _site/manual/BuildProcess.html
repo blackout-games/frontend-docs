@@ -172,9 +172,10 @@ Some of the automated processes know about these groups and must be built togeth
 </ol>
 <p>The downside of this is that it's fiddly and I actually had a lot of trouble getting it to work. Sometimes it just stops working and I don't know why.
 If you're running a local build and assets aren't loading in then you may experience behavior that you're not going to see in the production version: low fps, game failing to load, lots of errors being thrown in the console about addressables.</p>
-<h2 id="mobile-builds">Mobile builds</h2>
+<hr>
+<h1 id="mobile-builds">Mobile builds</h1>
 <p>There is currently no formal build process in place for mobile so this will need to be fully documented later</p>
-<h3 id="android-environment-set-up-for-unity">Android Environment set up for Unity</h3>
+<h2 id="local-android-environment-set-up-for-unity">Local Android Environment set up for Unity</h2>
 <p>Steps to take to get android builds working locally on your computer.</p>
 <h4 id="unity">Unity</h4>
 <ul>
@@ -205,7 +206,7 @@ If you're running a local build and assets aren't loading in then you may experi
 <li>Build APK in Unity using <code>Blackout &gt; Build &gt; Local Developer or Local Release</code></li>
 </ul>
 <hr>
-<h3 id="local-ios-build-on-a-mac">Local iOS build on a Mac</h3>
+<h2 id="local-ios-build-on-a-mac">Local iOS build on a Mac</h2>
 <p>This process is designed around building on the office iMac so some paths may be different if you are using a different device</p>
 <p>All build scripts are located in the repo <code>./ios_scripts/</code>. Each script does a specific task.</p>
 <p>TLDR: Run this command and go have a beer.</p>
@@ -218,6 +219,31 @@ If you're running a local build and assets aren't loading in then you may experi
 <li><code>archive-xcode-proj.sh</code>: builds the xcode project, archives it.</li>
 <li><code>altoolUpload.sh</code>: uploads the IPA file to TestFlight. TODO: will need to mod this to upload to Apple Store.</li>
 </ul>
+<h2 id="ios-uploading-ipa-files-to-apple-store">iOS Uploading .ipa files to Apple Store</h2>
+<h4 id="upload-script">Upload Script</h4>
+<p>There is a bash script <code>altoolUpload.sh</code> which handles the uploading of the file.
+src: <a href="https://developer.apple.com/forums/thread/128971">https://developer.apple.com/forums/thread/128971</a>
+Nothing needs to be changed here it only references the environment variables.</p>
+<p><em>Note: this script can only be run on a mac, it uses xcode.</em></p>
+<h4 id="apple-app-specific-password">Apple App-Specific Password</h4>
+<p>An &quot;App-Specific Password&quot; is needed for the upload. Which can be created at <a href="https://appleid.apple.com/account/manage">https://appleid.apple.com/account/manage</a>. This may be reset if the account password is reset.</p>
+<p>#Unity Cloud Build Environment Variables
+In the UCB Config, ensure the following variables are set in order for the upload script to work</p>
+<pre><code class="lang-bash">BUILD_PATH: $WORKSPACE/.build/last/ios/build.ipa
+ITUNES_USERNAME: dev@blackout.games 
+ITUNES_PASSWORD: jegr-rkwe-qfim-ioai
+</code></pre>
+<p><img src="../images/ios-env-vars.png" alt=""></p>
+<h2 id="debugging-on-ios">Debugging on iOS</h2>
+<p><img src="../images/ios-debugger.png" alt=""></p>
+<h3 id="auto-connect-profiler">Auto-connect profiler</h3>
+<p>Just launch a development build while connected (preferably via cable) to a Mac with unity open.</p>
+<p>However, sometimes this doesn't work.</p>
+<h3 id="xcode-console">xcode console</h3>
+<p>Open the xcode console and select the appropriate connected device on the left.</p>
+<p>Wait for an error to show in the console, and then you can filter to messages just from the <code>rugby</code> process.</p>
+<p>Or just type 'rugby' in the search, then enter. Then you can select 'Process' as the search type.</p>
+<p>See attached image</p>
 </article>
           </div>
           

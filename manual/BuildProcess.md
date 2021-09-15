@@ -96,10 +96,10 @@ If you're running a local build and assets aren't loading in then you may experi
 
 ---
 
-## Mobile builds
+# Mobile builds
 There is currently no formal build process in place for mobile so this will need to be fully documented later
 
-### Android Environment set up for Unity
+## Local Android Environment set up for Unity
 
 Steps to take to get android builds working locally on your computer. 
 
@@ -129,7 +129,7 @@ Steps to take to get android builds working locally on your computer.
 
 ---
 
-### Local iOS build on a Mac
+## Local iOS build on a Mac
 This process is designed around building on the office iMac so some paths may be different if you are using a different device
 
 All build scripts are located in the repo `./ios_scripts/`. Each script does a specific task.
@@ -145,3 +145,48 @@ sh /Users/blackout/Unity/rugby-unity/ios_scripts/ios-build-process.sh
 - `archive-xcode-proj.sh`: builds the xcode project, archives it. 
 - `altoolUpload.sh`: uploads the IPA file to TestFlight. TODO: will need to mod this to upload to Apple Store.
 
+## iOS Uploading .ipa files to Apple Store
+
+#### Upload Script
+
+There is a bash script `altoolUpload.sh` which handles the uploading of the file.
+src: https://developer.apple.com/forums/thread/128971
+Nothing needs to be changed here it only references the environment variables.
+
+*Note: this script can only be run on a mac, it uses xcode.*
+
+#### Apple App-Specific Password
+
+An "App-Specific Password" is needed for the upload. Which can be created at https://appleid.apple.com/account/manage. This may be reset if the account password is reset.
+
+#Unity Cloud Build Environment Variables
+In the UCB Config, ensure the following variables are set in order for the upload script to work 
+
+```bash
+BUILD_PATH: $WORKSPACE/.build/last/ios/build.ipa
+ITUNES_USERNAME: dev@blackout.games 
+ITUNES_PASSWORD: jegr-rkwe-qfim-ioai
+```
+
+![](../images/ios-env-vars.png)
+
+
+## Debugging on iOS
+
+![](../images/ios-debugger.png)
+
+### Auto-connect profiler
+
+Just launch a development build while connected (preferably via cable) to a Mac with unity open.
+
+However, sometimes this doesn't work.
+
+### xcode console
+
+Open the xcode console and select the appropriate connected device on the left.
+
+Wait for an error to show in the console, and then you can filter to messages just from the `rugby` process.
+
+Or just type 'rugby' in the search, then enter. Then you can select 'Process' as the search type.
+
+See attached image
