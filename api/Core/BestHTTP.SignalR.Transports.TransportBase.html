@@ -1,0 +1,575 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TransportBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TransportBase
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SignalR.Transports.TransportBase">
+  
+  
+  <h1 id="BestHTTP_SignalR_Transports_TransportBase" data-uid="BestHTTP.SignalR.Transports.TransportBase" class="text-break">Class TransportBase
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TransportBase</span></div>
+      <div class="level2"><a class="xref" href="BestHTTP.SignalR.Transports.PostSendTransportBase.html">PostSendTransportBase</a></div>
+      <div class="level2"><a class="xref" href="BestHTTP.SignalR.Transports.WebSocketTransport.html">WebSocketTransport</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.SignalR.Transports.html">BestHTTP.SignalR.Transports</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SignalR_Transports_TransportBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class TransportBase</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase__ctor_" data-uid="BestHTTP.SignalR.Transports.TransportBase.#ctor*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase__ctor_System_String_BestHTTP_SignalR_Connection_" data-uid="BestHTTP.SignalR.Transports.TransportBase.#ctor(System.String,BestHTTP.SignalR.Connection)">TransportBase(String, Connection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransportBase(string name, Connection connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SignalR.Connection.html">Connection</a></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase__state" data-uid="BestHTTP.SignalR.Transports.TransportBase._state">_state</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransportStates _state</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SignalR.TransportStates.html">TransportStates</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_Connection_" data-uid="BestHTTP.SignalR.Transports.TransportBase.Connection*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_Connection" data-uid="BestHTTP.SignalR.Transports.TransportBase.Connection">Connection</h4>
+  <div class="markdown level1 summary"><p>Reference to the manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IConnection Connection { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SignalR.IConnection.html">IConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_Name_" data-uid="BestHTTP.SignalR.Transports.TransportBase.Name*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_Name" data-uid="BestHTTP.SignalR.Transports.TransportBase.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Name of the transport.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_State_" data-uid="BestHTTP.SignalR.Transports.TransportBase.State*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_State" data-uid="BestHTTP.SignalR.Transports.TransportBase.State">State</h4>
+  <div class="markdown level1 summary"><p>The current state of the transport.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransportStates State { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SignalR.TransportStates.html">TransportStates</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_SupportsKeepAlive_" data-uid="BestHTTP.SignalR.Transports.TransportBase.SupportsKeepAlive*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_SupportsKeepAlive" data-uid="BestHTTP.SignalR.Transports.TransportBase.SupportsKeepAlive">SupportsKeepAlive</h4>
+  <div class="markdown level1 summary"><p>True if the manager has to check the last message received time and reconnect if too much time passes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool SupportsKeepAlive { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_Type_" data-uid="BestHTTP.SignalR.Transports.TransportBase.Type*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_Type" data-uid="BestHTTP.SignalR.Transports.TransportBase.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Type of the transport. Used mainly by the manager in its BuildUri function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract TransportTypes Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SignalR.TransportTypes.html">TransportTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_Abort_" data-uid="BestHTTP.SignalR.Transports.TransportBase.Abort*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_Abort" data-uid="BestHTTP.SignalR.Transports.TransportBase.Abort">Abort()</h4>
+  <div class="markdown level1 summary"><p>Will abort the transport. In SignalR 'Abort'ing is a graceful process, while 'Close'ing is a hard-abortion...</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Abort()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_Aborted_" data-uid="BestHTTP.SignalR.Transports.TransportBase.Aborted*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_Aborted" data-uid="BestHTTP.SignalR.Transports.TransportBase.Aborted">Aborted()</h4>
+  <div class="markdown level1 summary"><p>Called when the abort request finished successfully.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void Aborted()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_AbortFinished_" data-uid="BestHTTP.SignalR.Transports.TransportBase.AbortFinished*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_AbortFinished" data-uid="BestHTTP.SignalR.Transports.TransportBase.AbortFinished">AbortFinished()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AbortFinished()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_Connect_" data-uid="BestHTTP.SignalR.Transports.TransportBase.Connect*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_Connect" data-uid="BestHTTP.SignalR.Transports.TransportBase.Connect">Connect()</h4>
+  <div class="markdown level1 summary"><p>Start to connect to the server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Connect()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_OnConnected_" data-uid="BestHTTP.SignalR.Transports.TransportBase.OnConnected*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_OnConnected" data-uid="BestHTTP.SignalR.Transports.TransportBase.OnConnected">OnConnected()</h4>
+  <div class="markdown level1 summary"><p>Called after a succesful connect/reconnect. The transport implementations have to call this function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnConnected()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_Parse_" data-uid="BestHTTP.SignalR.Transports.TransportBase.Parse*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_Parse_IJsonEncoder_System_String_" data-uid="BestHTTP.SignalR.Transports.TransportBase.Parse(IJsonEncoder,System.String)">Parse(IJsonEncoder, String)</h4>
+  <div class="markdown level1 summary"><p>When the json string is successfully parsed will return with an IServerMessage implementation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IServerMessage Parse(IJsonEncoder encoder, string json)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IJsonEncoder</span></td>
+        <td><span class="parametername">encoder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">json</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IServerMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_Reconnect_" data-uid="BestHTTP.SignalR.Transports.TransportBase.Reconnect*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_Reconnect" data-uid="BestHTTP.SignalR.Transports.TransportBase.Reconnect">Reconnect()</h4>
+  <div class="markdown level1 summary"><p>Start the reconnect process</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reconnect()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_Send_" data-uid="BestHTTP.SignalR.Transports.TransportBase.Send*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_Send_System_String_" data-uid="BestHTTP.SignalR.Transports.TransportBase.Send(System.String)">Send(String)</h4>
+  <div class="markdown level1 summary"><p>Sends the given json string to the wire.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(string jsonStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jsonStr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_SendImpl_" data-uid="BestHTTP.SignalR.Transports.TransportBase.SendImpl*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_SendImpl_System_String_" data-uid="BestHTTP.SignalR.Transports.TransportBase.SendImpl(System.String)">SendImpl(String)</h4>
+  <div class="markdown level1 summary"><p>The transport specific implementation to send the given json string to the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void SendImpl(string json)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">json</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_Start_" data-uid="BestHTTP.SignalR.Transports.TransportBase.Start*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_Start" data-uid="BestHTTP.SignalR.Transports.TransportBase.Start">Start()</h4>
+  <div class="markdown level1 summary"><p>Sends out the /start request to the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Start()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_Started_" data-uid="BestHTTP.SignalR.Transports.TransportBase.Started*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_Started" data-uid="BestHTTP.SignalR.Transports.TransportBase.Started">Started()</h4>
+  <div class="markdown level1 summary"><p>Called when the Start request finished successfully, or after a reconnect.
+Manager.TransportOpened(); called from the TransportBase after this call</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void Started()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_SignalR_Transports_TransportBase_Stop_" data-uid="BestHTTP.SignalR.Transports.TransportBase.Stop*"></a>
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_Stop" data-uid="BestHTTP.SignalR.Transports.TransportBase.Stop">Stop()</h4>
+  <div class="markdown level1 summary"><p>Stop the connection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Stop()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="BestHTTP_SignalR_Transports_TransportBase_OnStateChanged" data-uid="BestHTTP.SignalR.Transports.TransportBase.OnStateChanged">OnStateChanged</h4>
+  <div class="markdown level1 summary"><p>Thi event called when the transport's State set to a new value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event OnTransportStateChangedDelegate OnStateChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SignalR.Transports.OnTransportStateChangedDelegate.html">OnTransportStateChangedDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

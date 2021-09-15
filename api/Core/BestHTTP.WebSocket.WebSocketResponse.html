@@ -1,0 +1,832 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WebSocketResponse
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WebSocketResponse
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.WebSocket.WebSocketResponse">
+  
+  
+  <h1 id="BestHTTP_WebSocket_WebSocketResponse" data-uid="BestHTTP.WebSocket.WebSocketResponse" class="text-break">Class WebSocketResponse
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="BestHTTP.HTTPResponse.html">HTTPResponse</a></div>
+    <div class="level2"><span class="xref">WebSocketResponse</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IHeartbeat</span></div>
+    <div><span class="xref">IProtocol</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_MinReadBufferSize">HTTPResponse.MinReadBufferSize</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_VersionMajor">HTTPResponse.VersionMajor</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_VersionMinor">HTTPResponse.VersionMinor</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_StatusCode">HTTPResponse.StatusCode</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_IsSuccess">HTTPResponse.IsSuccess</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_Message">HTTPResponse.Message</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_IsStreamed">HTTPResponse.IsStreamed</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_IsFromCache">HTTPResponse.IsFromCache</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_CacheFileInfo">HTTPResponse.CacheFileInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_IsCacheOnly">HTTPResponse.IsCacheOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_IsProxyResponse">HTTPResponse.IsProxyResponse</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_Headers">HTTPResponse.Headers</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_Data">HTTPResponse.Data</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_IsUpgraded">HTTPResponse.IsUpgraded</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_Cookies">HTTPResponse.Cookies</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_dataAsText">HTTPResponse.dataAsText</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_DataAsText">HTTPResponse.DataAsText</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_texture">HTTPResponse.texture</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_DataAsTexture2D">HTTPResponse.DataAsTexture2D</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_IsClosedManually">HTTPResponse.IsClosedManually</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_Context">HTTPResponse.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_Stream">HTTPResponse.Stream</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_fragmentBuffer">HTTPResponse.fragmentBuffer</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_fragmentBufferDataLength">HTTPResponse.fragmentBufferDataLength</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_cacheStream">HTTPResponse.cacheStream</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_allFragmentSize">HTTPResponse.allFragmentSize</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_Receive_System_Int32_System_Boolean_System_Boolean_">HTTPResponse.Receive(Int32, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_ReadPayload_System_Int32_">HTTPResponse.ReadPayload(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_ReadHeaders_Stream_">HTTPResponse.ReadHeaders(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_AddHeader_System_String_System_String_">HTTPResponse.AddHeader(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_GetHeaderValues_System_String_">HTTPResponse.GetHeaderValues(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_GetFirstHeaderValue_System_String_">HTTPResponse.GetFirstHeaderValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_HasHeaderWithValue_System_String_System_String_">HTTPResponse.HasHeaderWithValue(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_HasHeader_System_String_">HTTPResponse.HasHeader(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_GetRange">HTTPResponse.GetRange()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_ReadChunkLength_Stream_">HTTPResponse.ReadChunkLength(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_ReadChunked_Stream_">HTTPResponse.ReadChunked(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_ReadUnknownSize_Stream_">HTTPResponse.ReadUnknownSize(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_DecodeStream_BestHTTP_Extensions_BufferPoolMemoryStream_">HTTPResponse.DecodeStream(BufferPoolMemoryStream)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_BeginReceiveStreamFragments">HTTPResponse.BeginReceiveStreamFragments()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_FeedStreamFragment_System_Byte___System_Int32_System_Int32_">HTTPResponse.FeedStreamFragment(Byte[], Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_FlushRemainingFragmentBuffer">HTTPResponse.FlushRemainingFragmentBuffer()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_AddStreamedFragment_System_Byte___System_Int32_">HTTPResponse.AddStreamedFragment(Byte[], Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_Dispose">HTTPResponse.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.HTTPResponse.html#BestHTTP_HTTPResponse_Dispose_System_Boolean_">HTTPResponse.Dispose(Boolean)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.WebSocket.html">BestHTTP.WebSocket</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_WebSocket_WebSocketResponse_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class WebSocketResponse : HTTPResponse, IHeartbeat, IProtocol</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_lastMessage" data-uid="BestHTTP.WebSocket.WebSocketResponse.lastMessage">lastMessage</h4>
+  <div class="markdown level1 summary"><p>When we received the last frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime lastMessage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_OnBinary" data-uid="BestHTTP.WebSocket.WebSocketResponse.OnBinary">OnBinary</h4>
+  <div class="markdown level1 summary"><p>Called when a Binary message received</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;WebSocketResponse, byte[]&gt; OnBinary</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="BestHTTP.WebSocket.WebSocketResponse.html">WebSocketResponse</a>, <span class="xref">System.Byte</span>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_OnClosed" data-uid="BestHTTP.WebSocket.WebSocketResponse.OnClosed">OnClosed</h4>
+  <div class="markdown level1 summary"><p>Called when the connection closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;WebSocketResponse, UInt16, string&gt; OnClosed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="BestHTTP.WebSocket.WebSocketResponse.html">WebSocketResponse</a>, <span class="xref">UInt16</span>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_OnIncompleteFrame" data-uid="BestHTTP.WebSocket.WebSocketResponse.OnIncompleteFrame">OnIncompleteFrame</h4>
+  <div class="markdown level1 summary"><p>Called when an incomplete frame received. No attempt will be made to reassemble these fragments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;WebSocketResponse, WebSocketFrameReader&gt; OnIncompleteFrame</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="BestHTTP.WebSocket.WebSocketResponse.html">WebSocketResponse</a>, <span class="xref">WebSocketFrameReader</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_OnText" data-uid="BestHTTP.WebSocket.WebSocketResponse.OnText">OnText</h4>
+  <div class="markdown level1 summary"><p>Called when a Text message received</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;WebSocketResponse, string&gt; OnText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="BestHTTP.WebSocket.WebSocketResponse.html">WebSocketResponse</a>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_RTTBufferCapacity" data-uid="BestHTTP.WebSocket.WebSocketResponse.RTTBufferCapacity">RTTBufferCapacity</h4>
+  <div class="markdown level1 summary"><p>Capacity of the RTT buffer where the latencies are kept.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RTTBufferCapacity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_BufferedAmount_" data-uid="BestHTTP.WebSocket.WebSocketResponse.BufferedAmount*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_BufferedAmount" data-uid="BestHTTP.WebSocket.WebSocketResponse.BufferedAmount">BufferedAmount</h4>
+  <div class="markdown level1 summary"><p>Length of unsent, buffered up data in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BufferedAmount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_ConnectionKey_" data-uid="BestHTTP.WebSocket.WebSocketResponse.ConnectionKey*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_ConnectionKey" data-uid="BestHTTP.WebSocket.WebSocketResponse.ConnectionKey">ConnectionKey</h4>
+  <div class="markdown level1 summary"><p>IProtocol's ConnectionKey property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HostConnectionKey ConnectionKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HostConnectionKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_IsClosed_" data-uid="BestHTTP.WebSocket.WebSocketResponse.IsClosed*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_IsClosed" data-uid="BestHTTP.WebSocket.WebSocketResponse.IsClosed">IsClosed</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the connection to the server is closed or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsClosed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_Latency_" data-uid="BestHTTP.WebSocket.WebSocketResponse.Latency*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_Latency" data-uid="BestHTTP.WebSocket.WebSocketResponse.Latency">Latency</h4>
+  <div class="markdown level1 summary"><p>Calculated latency from the Round-Trip Times we store in the rtts field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Latency { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_MaxFragmentSize_" data-uid="BestHTTP.WebSocket.WebSocketResponse.MaxFragmentSize*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_MaxFragmentSize" data-uid="BestHTTP.WebSocket.WebSocketResponse.MaxFragmentSize">MaxFragmentSize</h4>
+  <div class="markdown level1 summary"><p>Maximum size of a fragment's payload data. Its default value is 32767.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint MaxFragmentSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_PingFrequnecy_" data-uid="BestHTTP.WebSocket.WebSocketResponse.PingFrequnecy*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_PingFrequnecy" data-uid="BestHTTP.WebSocket.WebSocketResponse.PingFrequnecy">PingFrequnecy</h4>
+  <div class="markdown level1 summary"><p>On what frequency we have to send a ping to the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan PingFrequnecy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_WebSocket_" data-uid="BestHTTP.WebSocket.WebSocketResponse.WebSocket*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_WebSocket" data-uid="BestHTTP.WebSocket.WebSocketResponse.WebSocket">WebSocket</h4>
+  <div class="markdown level1 summary"><p>A reference to the original WebSocket instance. Used for accessing extensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebSocket WebSocket { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.WebSocket.WebSocket.html">WebSocket</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_Close_" data-uid="BestHTTP.WebSocket.WebSocketResponse.Close*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_Close" data-uid="BestHTTP.WebSocket.WebSocketResponse.Close">Close()</h4>
+  <div class="markdown level1 summary"><p>It will initiate the closing of the connection to the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_Close_" data-uid="BestHTTP.WebSocket.WebSocketResponse.Close*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_Close_UInt16_System_String_" data-uid="BestHTTP.WebSocket.WebSocketResponse.Close(UInt16,System.String)">Close(UInt16, String)</h4>
+  <div class="markdown level1 summary"><p>It will initiate the closing of the connection to the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close(UInt16 code, string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UInt16</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_Send_" data-uid="BestHTTP.WebSocket.WebSocketResponse.Send*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_Send_System_Byte___" data-uid="BestHTTP.WebSocket.WebSocketResponse.Send(System.Byte[])">Send(Byte[])</h4>
+  <div class="markdown level1 summary"><p>It will send the given data to the server in one frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_Send_" data-uid="BestHTTP.WebSocket.WebSocketResponse.Send*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_Send_System_Byte___System_UInt64_System_UInt64_" data-uid="BestHTTP.WebSocket.WebSocketResponse.Send(System.Byte[],System.UInt64,System.UInt64)">Send(Byte[], UInt64, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Will send count bytes from a byte array, starting from offset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(byte[] data, ulong offset, ulong count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_Send_" data-uid="BestHTTP.WebSocket.WebSocketResponse.Send*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_Send_System_String_" data-uid="BestHTTP.WebSocket.WebSocketResponse.Send(System.String)">Send(String)</h4>
+  <div class="markdown level1 summary"><p>It will send the given message to the server in one frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_Send_" data-uid="BestHTTP.WebSocket.WebSocketResponse.Send*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_Send_WebSocketFrame_" data-uid="BestHTTP.WebSocket.WebSocketResponse.Send(WebSocketFrame)">Send(WebSocketFrame)</h4>
+  <div class="markdown level1 summary"><p>It will send the given frame to the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(WebSocketFrame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WebSocketFrame</span></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_StartPinging_" data-uid="BestHTTP.WebSocket.WebSocketResponse.StartPinging*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_StartPinging_System_Int32_" data-uid="BestHTTP.WebSocket.WebSocketResponse.StartPinging(System.Int32)">StartPinging(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartPinging(int frequency)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">frequency</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocketResponse_ToString_" data-uid="BestHTTP.WebSocket.WebSocketResponse.ToString*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocketResponse_ToString" data-uid="BestHTTP.WebSocket.WebSocketResponse.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IHeartbeat</span>
+  </div>
+  <div>
+      <span class="xref">IProtocol</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

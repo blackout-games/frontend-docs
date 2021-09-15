@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MarketSearch
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MarketSearch
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Blackout.UI.MarketSearch">
+  
+  
+  <h1 id="Blackout_UI_MarketSearch" data-uid="Blackout.UI.MarketSearch" class="text-break">Class MarketSearch
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Blackout.UI.ModalBase.html">ModalBase</a></div>
+    <div class="level2"><a class="xref" href="Blackout.UI.Modal.html">Modal</a></div>
+    <div class="level3"><a class="xref" href="Blackout.UI.FilterBase.html">FilterBase</a></div>
+    <div class="level4"><span class="xref">MarketSearch</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IOrientationChangeable</span></div>
+    <div><span class="xref">ILayoutSelfController</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_propToggle">FilterBase.propToggle</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_propGraphic">FilterBase.propGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_hookerToggle">FilterBase.hookerToggle</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_hookerGraphic">FilterBase.hookerGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_lockToggle">FilterBase.lockToggle</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_lockGraphic">FilterBase.lockGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_flankerToggle">FilterBase.flankerToggle</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_flankerGraphic">FilterBase.flankerGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_no8Toggle">FilterBase.no8Toggle</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_no8Graphic">FilterBase.no8Graphic</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_scrumHalfToggle">FilterBase.scrumHalfToggle</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_scrumHalfGraphic">FilterBase.scrumHalfGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_flyHalfToggle">FilterBase.flyHalfToggle</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_flyHalfGraphic">FilterBase.flyHalfGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_centerToggle">FilterBase.centerToggle</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_centerGraphic">FilterBase.centerGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_wingToggle">FilterBase.wingToggle</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_wingGraphic">FilterBase.wingGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_fullbackToggle">FilterBase.fullbackToggle</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_fullbackGraphic">FilterBase.fullbackGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_nationalityDropdown">FilterBase.nationalityDropdown</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_starAllToggle">FilterBase.starAllToggle</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_starToggle">FilterBase.starToggle</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_noStarToggle">FilterBase.noStarToggle</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_priceSlider">FilterBase.priceSlider</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_levelSlider">FilterBase.levelSlider</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_ageSlider">FilterBase.ageSlider</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_weightSlider">FilterBase.weightSlider</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_heightSlider">FilterBase.heightSlider</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_timeRemainingSlider">FilterBase.timeRemainingSlider</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_attSkillItemPrefabBlue">FilterBase.attSkillItemPrefabBlue</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_attSkillItemPrefabGreen">FilterBase.attSkillItemPrefabGreen</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_attributesContainer">FilterBase.attributesContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_attributeAddButton">FilterBase.attributeAddButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_skillsContainer">FilterBase.skillsContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_skillAddButton">FilterBase.skillAddButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_clearButton">FilterBase.clearButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_applyButton">FilterBase.applyButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase__AttsI18n">FilterBase._AttsI18n</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_AttsI18n">FilterBase.AttsI18n</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase__SkillI18n">FilterBase._SkillI18n</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_SkillI18n">FilterBase.SkillI18n</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_onClearClicked">FilterBase.onClearClicked</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_criteria">FilterBase.criteria</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_HideButtonLoadingIcons">FilterBase.HideButtonLoadingIcons()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_StartWhenI18nDataIsAvailable_Blackout_SquadList_">FilterBase.StartWhenI18nDataIsAvailable(SquadList)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_SaveCriteria">FilterBase.SaveCriteria()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_SetValues_Blackout_UI_SearchCriteria_System_Action_">FilterBase.SetValues(SearchCriteria, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_AddAttOrSkillItem_System_String_MinMaxValues_Transform_">FilterBase.AddAttOrSkillItem(String, MinMaxValues, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_RemoveAttOrSkillItem_System_String_">FilterBase.RemoveAttOrSkillItem(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_OnDropdownValueChanged">FilterBase.OnDropdownValueChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_SetButtonsInteractable">FilterBase.SetButtonsInteractable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_GetAvailableOptions_System_Collections_Generic_IDictionary_System_String_System_Boolean__">FilterBase.GetAvailableOptions(IDictionary&lt;String, Boolean&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_IsAttribute_System_String_">FilterBase.IsAttribute(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_IsSkill_System_String_">FilterBase.IsSkill(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_ShowExitButton">Modal.ShowExitButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_HelpId">Modal.HelpId</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_TitleText">Modal.TitleText</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_ContentContainer">Modal.ContentContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_TitleBar">Modal.TitleBar</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_ContentLayoutGroup">Modal.ContentLayoutGroup</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_Awake">Modal.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_OnEnable">Modal.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_Show">Modal.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_SetTitle_System_String_i18nArg___">Modal.SetTitle(String, i18nArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_SetHelpButton">Modal.SetHelpButton()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_SetSortOrder_System_Int32_">Modal.SetSortOrder(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_ChangeCanvasLayer_CanvasExtensions_Layers_">Modal.ChangeCanvasLayer(CanvasExtensions.Layers)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_SetLayoutHorizontal">Modal.SetLayoutHorizontal()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_SetLayoutVertical">Modal.SetLayoutVertical()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_TWEEN_TIME">ModalBase.TWEEN_TIME</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_TWEEN_EASE">ModalBase.TWEEN_EASE</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_IsOverlay">ModalBase.IsOverlay</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_DisableOnClose">ModalBase.DisableOnClose</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_ShowWhenStacked">ModalBase.ShowWhenStacked</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_ShowBlocker">ModalBase.ShowBlocker</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_UseDefaultWidth">ModalBase.UseDefaultWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_defaultWidth">ModalBase.defaultWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_rectTransform">ModalBase.rectTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_IsModal">ModalBase.IsModal</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_IsClosing">ModalBase.IsClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_IsShowing">ModalBase.IsShowing</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_ClickingBlockerClosesModal">ModalBase.ClickingBlockerClosesModal</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_canvas">ModalBase.canvas</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_RootCanvasRect">ModalBase.RootCanvasRect</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_OnModalClosed">ModalBase.OnModalClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_OnModalOpen">ModalBase.OnModalOpen</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_SetWidth_Percent_System_Single_">ModalBase.SetWidth_Percent(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_CloseImmediate">ModalBase.CloseImmediate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_Close">ModalBase.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_OnOrientationChanged_System_Boolean_">ModalBase.OnOrientationChanged(Boolean)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Blackout.UI.html">Blackout.UI</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Blackout_UI_MarketSearch_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MarketSearch : FilterBase, IOrientationChangeable, ILayoutSelfController</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Blackout_UI_MarketSearch_onApplyClicked" data-uid="Blackout.UI.MarketSearch.onApplyClicked">onApplyClicked</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action onApplyClicked</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Blackout_UI_MarketSearch_ClearFilterListener_" data-uid="Blackout.UI.MarketSearch.ClearFilterListener*"></a>
+  <h4 id="Blackout_UI_MarketSearch_ClearFilterListener" data-uid="Blackout.UI.MarketSearch.ClearFilterListener">ClearFilterListener()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ClearFilterListener()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_ClearFilterListener">FilterBase.ClearFilterListener()</a></div>
+  
+  
+  <a id="Blackout_UI_MarketSearch_Start_" data-uid="Blackout.UI.MarketSearch.Start*"></a>
+  <h4 id="Blackout_UI_MarketSearch_Start" data-uid="Blackout.UI.MarketSearch.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Blackout.UI.FilterBase.html#Blackout_UI_FilterBase_Start">FilterBase.Start()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IOrientationChangeable</span>
+  </div>
+  <div>
+      <span class="xref">ILayoutSelfController</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

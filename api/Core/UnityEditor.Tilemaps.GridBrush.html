@@ -1,0 +1,1157 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GridBrush
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GridBrush
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEditor.Tilemaps.GridBrush">
+  
+  
+  <h1 id="UnityEditor_Tilemaps_GridBrush" data-uid="UnityEditor.Tilemaps.GridBrush" class="text-break">Class GridBrush
+  </h1>
+  <div class="markdown level0 summary"><p>Default built-in brush for painting or erasing tiles and/or gameobjects on a grid.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">GridBrush</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEditor.Tilemaps.html">UnityEditor.Tilemaps</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEditor_Tilemaps_GridBrush_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GridBrush : GridBrushBase</code></pre>
+  </div>
+  <h5 id="UnityEditor_Tilemaps_GridBrush_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Default brush is meant for two things: Authoring GameObjects on a grid and authoring tiles on a grid. It can be used for both at the same time if necessary. Basically the default brush allows you to pick and paste tiles and GameObjects from one area to another.</p>
+<p>Tiles in a tilemap are considered to be active for brush editing if a GameObject with Tilemap is currently selected.
+GameObjects are considered to be active for brush editing if their parent GameObject is currently selected.</p>
+<p>For example: A new default brush with size of 2x3 is generated as a result of Scene view picking operation. The new instance contains six cells (GridBrush.BrushCell) and the cells are fed with tiles &amp; GameObjects from the picking area.</p>
+<p>Later when this brush is used in a painting operation, all the tiles and GameObjects contained in the cells are set/cloned into a new Scene position.</p>
+<p>When creating custom brushes, it is recommended to inherit GridBrushBase by default. Inheriting GridBrush is possible when similar functionality is required, but extending it has its limits compared to base class.</p>
+<p>It is also possible to replace the default GridBrush from the Tile Palette brush list completely by using the GridDefaultBrush attribute on one of your custom brushes and promote it to become a new default brush of the project. This is useful when higher level brush can operate as a default and protect designers from accidentally using the built-in one.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush__ctor_" data-uid="UnityEditor.Tilemaps.GridBrush.#ctor*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush__ctor" data-uid="UnityEditor.Tilemaps.GridBrush.#ctor">GridBrush()</h4>
+  <div class="markdown level1 summary"><p>Default built-in brush for painting or erasing tiles and/or gameobjects on a grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GridBrush()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_canChangeZPosition_" data-uid="UnityEditor.Tilemaps.GridBrush.canChangeZPosition*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_canChangeZPosition" data-uid="UnityEditor.Tilemaps.GridBrush.canChangeZPosition">canChangeZPosition</h4>
+  <div class="markdown level1 summary"><p>Whether the brush can change Z Position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canChangeZPosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_cellCount_" data-uid="UnityEditor.Tilemaps.GridBrush.cellCount*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_cellCount" data-uid="UnityEditor.Tilemaps.GridBrush.cellCount">cellCount</h4>
+  <div class="markdown level1 summary"><p>Number of brush cells in the brush.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int cellCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_cells_" data-uid="UnityEditor.Tilemaps.GridBrush.cells*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_cells" data-uid="UnityEditor.Tilemaps.GridBrush.cells">cells</h4>
+  <div class="markdown level1 summary"><p>All the brush cells the brush holds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GridBrush.BrushCell[] cells { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Tilemaps.GridBrush.BrushCell.html">GridBrush.BrushCell</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_pivot_" data-uid="UnityEditor.Tilemaps.GridBrush.pivot*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_pivot" data-uid="UnityEditor.Tilemaps.GridBrush.pivot">pivot</h4>
+  <div class="markdown level1 summary"><p>Pivot of the brush.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3Int pivot { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_size_" data-uid="UnityEditor.Tilemaps.GridBrush.size*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_size" data-uid="UnityEditor.Tilemaps.GridBrush.size">size</h4>
+  <div class="markdown level1 summary"><p>Size of the brush in cells.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3Int size { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_BoxErase_" data-uid="UnityEditor.Tilemaps.GridBrush.BoxErase*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_BoxErase_GridLayout_GameObject_BoundsInt_" data-uid="UnityEditor.Tilemaps.GridBrush.BoxErase(GridLayout,GameObject,BoundsInt)">BoxErase(GridLayout, GameObject, BoundsInt)</h4>
+  <div class="markdown level1 summary"><p>Erases tiles and GameObjects from given bounds within the selected layers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BoxErase(GridLayout gridLayout, GameObject brushTarget, BoundsInt position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GridLayout</span></td>
+        <td><span class="parametername">gridLayout</span></td>
+        <td><p>Grid to erase data from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brushTarget</span></td>
+        <td><p>Target of the erase operation. By default the currently selected GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">BoundsInt</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The bounds to erase data from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_BoxFill_" data-uid="UnityEditor.Tilemaps.GridBrush.BoxFill*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_BoxFill_GridLayout_GameObject_BoundsInt_" data-uid="UnityEditor.Tilemaps.GridBrush.BoxFill(GridLayout,GameObject,BoundsInt)">BoxFill(GridLayout, GameObject, BoundsInt)</h4>
+  <div class="markdown level1 summary"><p>Box fills tiles and GameObjects into given bounds within the selected layers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BoxFill(GridLayout gridLayout, GameObject brushTarget, BoundsInt position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GridLayout</span></td>
+        <td><span class="parametername">gridLayout</span></td>
+        <td><p>Grid to box fill data to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brushTarget</span></td>
+        <td><p>Target of the box fill operation. By default the currently selected GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">BoundsInt</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The bounds to box fill data into.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_Erase_" data-uid="UnityEditor.Tilemaps.GridBrush.Erase*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_Erase_GridLayout_GameObject_Vector3Int_" data-uid="UnityEditor.Tilemaps.GridBrush.Erase(GridLayout,GameObject,Vector3Int)">Erase(GridLayout, GameObject, Vector3Int)</h4>
+  <div class="markdown level1 summary"><p>Erases tiles and GameObjects in a given position within the selected layers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Erase(GridLayout gridLayout, GameObject brushTarget, Vector3Int position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GridLayout</span></td>
+        <td><span class="parametername">gridLayout</span></td>
+        <td><p>Grid used for layout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brushTarget</span></td>
+        <td><p>Target of the erase operation. By default the currently selected GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The coordinates of the cell to erase data from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_Flip_" data-uid="UnityEditor.Tilemaps.GridBrush.Flip*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_Flip_FlipAxis_Grid_CellLayout_" data-uid="UnityEditor.Tilemaps.GridBrush.Flip(FlipAxis,Grid.CellLayout)">Flip(FlipAxis, Grid.CellLayout)</h4>
+  <div class="markdown level1 summary"><p>Flips the brush in the given axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Flip(FlipAxis flip, Grid.CellLayout layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlipAxis</span></td>
+        <td><span class="parametername">flip</span></td>
+        <td><p>Axis to flip by.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grid.CellLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td><p>Cell Layout for flipping.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_FloodFill_" data-uid="UnityEditor.Tilemaps.GridBrush.FloodFill*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_FloodFill_GridLayout_GameObject_Vector3Int_" data-uid="UnityEditor.Tilemaps.GridBrush.FloodFill(GridLayout,GameObject,Vector3Int)">FloodFill(GridLayout, GameObject, Vector3Int)</h4>
+  <div class="markdown level1 summary"><p>Flood fills tiles and GameObjects starting from a given position within the selected layers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void FloodFill(GridLayout gridLayout, GameObject brushTarget, Vector3Int position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GridLayout</span></td>
+        <td><span class="parametername">gridLayout</span></td>
+        <td><p>Grid used for layout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brushTarget</span></td>
+        <td><p>Target of the flood fill operation. By default the currently selected GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Starting position of the flood fill.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_GetCellIndex_" data-uid="UnityEditor.Tilemaps.GridBrush.GetCellIndex*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_GetCellIndex_System_Int32_System_Int32_System_Int32_" data-uid="UnityEditor.Tilemaps.GridBrush.GetCellIndex(System.Int32,System.Int32,System.Int32)">GetCellIndex(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the index to the GridBrush::ref::BrushCell based on the position of the BrushCell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCellIndex(int x, int y, int z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X Position of the BrushCell.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y Position of the BrushCell.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z Position of the BrushCell.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_GetCellIndex_" data-uid="UnityEditor.Tilemaps.GridBrush.GetCellIndex*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_GetCellIndex_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="UnityEditor.Tilemaps.GridBrush.GetCellIndex(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">GetCellIndex(Int32, Int32, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the index to the GridBrush::ref::BrushCell based on the position of the BrushCell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCellIndex(int x, int y, int z, int sizex, int sizey, int sizez)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X Position of the BrushCell.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y Position of the BrushCell.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z Position of the BrushCell.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sizex</span></td>
+        <td><p>X Size of Brush.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sizey</span></td>
+        <td><p>Y Size of Brush.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sizez</span></td>
+        <td><p>Z Size of Brush.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_GetCellIndex_" data-uid="UnityEditor.Tilemaps.GridBrush.GetCellIndex*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_GetCellIndex_Vector3Int_" data-uid="UnityEditor.Tilemaps.GridBrush.GetCellIndex(Vector3Int)">GetCellIndex(Vector3Int)</h4>
+  <div class="markdown level1 summary"><p>Gets the index to the GridBrush::ref::BrushCell based on the position of the BrushCell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCellIndex(Vector3Int brushPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">brushPosition</span></td>
+        <td><p>Position of the BrushCell.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_GetCellIndexWrapAround_" data-uid="UnityEditor.Tilemaps.GridBrush.GetCellIndexWrapAround*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_GetCellIndexWrapAround_System_Int32_System_Int32_System_Int32_" data-uid="UnityEditor.Tilemaps.GridBrush.GetCellIndexWrapAround(System.Int32,System.Int32,System.Int32)">GetCellIndexWrapAround(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the index to the GridBrush::ref::BrushCell based on the position of the BrushCell. Wraps each coordinate if it is larger than the size of the GridBrush.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCellIndexWrapAround(int x, int y, int z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X Position of the BrushCell.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y Position of the BrushCell.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z Position of the BrushCell.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Index to the BrushCell.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_GetHashCode_" data-uid="UnityEditor.Tilemaps.GridBrush.GetHashCode*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_GetHashCode" data-uid="UnityEditor.Tilemaps.GridBrush.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_Init_" data-uid="UnityEditor.Tilemaps.GridBrush.Init*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_Init_Vector3Int_" data-uid="UnityEditor.Tilemaps.GridBrush.Init(Vector3Int)">Init(Vector3Int)</h4>
+  <div class="markdown level1 summary"><p>Initializes the content of the GridBrush.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init(Vector3Int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Size of the GridBrush.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_Init_" data-uid="UnityEditor.Tilemaps.GridBrush.Init*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_Init_Vector3Int_Vector3Int_" data-uid="UnityEditor.Tilemaps.GridBrush.Init(Vector3Int,Vector3Int)">Init(Vector3Int, Vector3Int)</h4>
+  <div class="markdown level1 summary"><p>Initializes the content of the GridBrush.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init(Vector3Int size, Vector3Int pivot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Size of the GridBrush.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>Pivot point of the GridBrush.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_MoveEnd_" data-uid="UnityEditor.Tilemaps.GridBrush.MoveEnd*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_MoveEnd_GridLayout_GameObject_BoundsInt_" data-uid="UnityEditor.Tilemaps.GridBrush.MoveEnd(GridLayout,GameObject,BoundsInt)">MoveEnd(GridLayout, GameObject, BoundsInt)</h4>
+  <div class="markdown level1 summary"><p>MoveEnd is called when user has ended the move of the area previously selected with the selection marquee.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void MoveEnd(GridLayout gridLayout, GameObject brushTarget, BoundsInt position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GridLayout</span></td>
+        <td><span class="parametername">gridLayout</span></td>
+        <td><p>Grid used for layout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brushTarget</span></td>
+        <td><p>Target of the move operation. By default the currently selected GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">BoundsInt</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position where the move operation has ended.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_MoveStart_" data-uid="UnityEditor.Tilemaps.GridBrush.MoveStart*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_MoveStart_GridLayout_GameObject_BoundsInt_" data-uid="UnityEditor.Tilemaps.GridBrush.MoveStart(GridLayout,GameObject,BoundsInt)">MoveStart(GridLayout, GameObject, BoundsInt)</h4>
+  <div class="markdown level1 summary"><p>MoveStart is called when user starts moving the area previously selected with the selection marquee.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void MoveStart(GridLayout gridLayout, GameObject brushTarget, BoundsInt position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GridLayout</span></td>
+        <td><span class="parametername">gridLayout</span></td>
+        <td><p>Grid used for layout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brushTarget</span></td>
+        <td><p>Target of the move operation. By default the currently selected GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">BoundsInt</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position where the move operation has started.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_Paint_" data-uid="UnityEditor.Tilemaps.GridBrush.Paint*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_Paint_GridLayout_GameObject_Vector3Int_" data-uid="UnityEditor.Tilemaps.GridBrush.Paint(GridLayout,GameObject,Vector3Int)">Paint(GridLayout, GameObject, Vector3Int)</h4>
+  <div class="markdown level1 summary"><p>Paints tiles and GameObjects into a given position within the selected layers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Paint(GridLayout gridLayout, GameObject brushTarget, Vector3Int position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GridLayout</span></td>
+        <td><span class="parametername">gridLayout</span></td>
+        <td><p>Grid used for layout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brushTarget</span></td>
+        <td><p>Target of the paint operation. By default the currently selected GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The coordinates of the cell to paint data to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_Pick_" data-uid="UnityEditor.Tilemaps.GridBrush.Pick*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_Pick_GridLayout_GameObject_BoundsInt_Vector3Int_" data-uid="UnityEditor.Tilemaps.GridBrush.Pick(GridLayout,GameObject,BoundsInt,Vector3Int)">Pick(GridLayout, GameObject, BoundsInt, Vector3Int)</h4>
+  <div class="markdown level1 summary"><p>Picks tiles from selected Tilemaps and child GameObjects, given the coordinates of the cells.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Pick(GridLayout gridLayout, GameObject brushTarget, BoundsInt position, Vector3Int pickStart)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GridLayout</span></td>
+        <td><span class="parametername">gridLayout</span></td>
+        <td><p>Grid to pick data from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brushTarget</span></td>
+        <td><p>Target of the picking operation. By default the currently selected GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">BoundsInt</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The coordinates of the cells to paint data from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">pickStart</span></td>
+        <td><p>Pivot of the picking brush.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_Reset_" data-uid="UnityEditor.Tilemaps.GridBrush.Reset*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_Reset" data-uid="UnityEditor.Tilemaps.GridBrush.Reset">Reset()</h4>
+  <div class="markdown level1 summary"><p>Clears all data of the brush.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_Rotate_" data-uid="UnityEditor.Tilemaps.GridBrush.Rotate*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_Rotate_RotationDirection_GridLayout_CellLayout_" data-uid="UnityEditor.Tilemaps.GridBrush.Rotate(RotationDirection,GridLayout.CellLayout)">Rotate(RotationDirection, GridLayout.CellLayout)</h4>
+  <div class="markdown level1 summary"><p>Rotates the brush by 90 degrees in the given direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Rotate(RotationDirection direction, GridLayout.CellLayout layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RotationDirection</span></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>Direction to rotate by.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GridLayout.CellLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td><p>Cell Layout for rotating.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_SetColor_" data-uid="UnityEditor.Tilemaps.GridBrush.SetColor*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_SetColor_Vector3Int_Color_" data-uid="UnityEditor.Tilemaps.GridBrush.SetColor(Vector3Int,Color)">SetColor(Vector3Int, Color)</h4>
+  <div class="markdown level1 summary"><p>Sets a tint color at the position in the brush.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(Vector3Int position, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position to set the color in the brush.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Tint color to set in the brush.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_SetMatrix_" data-uid="UnityEditor.Tilemaps.GridBrush.SetMatrix*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_SetMatrix_Vector3Int_Matrix4x4_" data-uid="UnityEditor.Tilemaps.GridBrush.SetMatrix(Vector3Int,Matrix4x4)">SetMatrix(Vector3Int, Matrix4x4)</h4>
+  <div class="markdown level1 summary"><p>Sets a transform matrix at the position in the brush. This matrix is used specifically for tiles on a Tilemap and not GameObjects of the brush cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMatrix(Vector3Int position, Matrix4x4 matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position to set the transform matrix in the brush.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Matrix4x4</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td><p>Transform matrix to set in the brush.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_SetTile_" data-uid="UnityEditor.Tilemaps.GridBrush.SetTile*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_SetTile_Vector3Int_TileBase_" data-uid="UnityEditor.Tilemaps.GridBrush.SetTile(Vector3Int,TileBase)">SetTile(Vector3Int, TileBase)</h4>
+  <div class="markdown level1 summary"><p>Sets a Tile at the position in the brush.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTile(Vector3Int position, TileBase tile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position to set the tile in the brush.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TileBase</span></td>
+        <td><span class="parametername">tile</span></td>
+        <td><p>Tile to set in the brush.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrush_UpdateSizeAndPivot_" data-uid="UnityEditor.Tilemaps.GridBrush.UpdateSizeAndPivot*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrush_UpdateSizeAndPivot_Vector3Int_Vector3Int_" data-uid="UnityEditor.Tilemaps.GridBrush.UpdateSizeAndPivot(Vector3Int,Vector3Int)">UpdateSizeAndPivot(Vector3Int, Vector3Int)</h4>
+  <div class="markdown level1 summary"><p>Updates the size, pivot and the number of layers of the brush.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateSizeAndPivot(Vector3Int size, Vector3Int pivot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>New size of the brush.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>New pivot of the brush.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

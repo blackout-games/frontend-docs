@@ -1,0 +1,636 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BuildParameters
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BuildParameters
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEditor.Build.Pipeline.BuildParameters">
+  
+  
+  <h1 id="UnityEditor_Build_Pipeline_BuildParameters" data-uid="UnityEditor.Build.Pipeline.BuildParameters" class="text-break">Class BuildParameters
+  </h1>
+  <div class="markdown level0 summary"><p>Basic implementation of IBuildParameters. Stores the set of parameters passed into the Scriptable Build Pipeline.
+<seealso cref="!:IBuildParameters"></seealso></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BuildParameters</span></div>
+      <div class="level2"><a class="xref" href="UnityEditor.Build.Pipeline.BundleBuildParameters.html">BundleBuildParameters</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEditor.Build.Pipeline.html">UnityEditor.Build.Pipeline</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEditor_Build_Pipeline_BuildParameters_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BuildParameters : IBuildParameters</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters__ctor_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.#ctor*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters__ctor_BuildTarget_BuildTargetGroup_System_String_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.#ctor(BuildTarget,BuildTargetGroup,System.String)">BuildParameters(BuildTarget, BuildTargetGroup, String)</h4>
+  <div class="markdown level1 summary"><p>Default constructor, requires the target, group and output parameters at minimum for a successful build.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BuildParameters(BuildTarget target, BuildTargetGroup group, string outputFolder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildTarget</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The target for building content.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">BuildTargetGroup</span></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>The group for building content.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">outputFolder</span></td>
+        <td><p>The final output location for built content.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_BundleCompression_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.BundleCompression*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_BundleCompression" data-uid="UnityEditor.Build.Pipeline.BuildParameters.BundleCompression">BundleCompression</h4>
+  <div class="markdown level1 summary"><p>Default compression option to use for all built content files</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Content.BuildCompression BundleCompression { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.Build.Content.BuildCompression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_CacheServerHost_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.CacheServerHost*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_CacheServerHost" data-uid="UnityEditor.Build.Pipeline.BuildParameters.CacheServerHost">CacheServerHost</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CacheServerHost { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_CacheServerPort_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.CacheServerPort*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_CacheServerPort" data-uid="UnityEditor.Build.Pipeline.BuildParameters.CacheServerPort">CacheServerPort</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CacheServerPort { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_ContentBuildFlags_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.ContentBuildFlags*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_ContentBuildFlags" data-uid="UnityEditor.Build.Pipeline.BuildParameters.ContentBuildFlags">ContentBuildFlags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentBuildFlags ContentBuildFlags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContentBuildFlags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_Group_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.Group*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_Group" data-uid="UnityEditor.Build.Pipeline.BuildParameters.Group">Group</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BuildTargetGroup Group { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildTargetGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_OutputFolder_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.OutputFolder*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_OutputFolder" data-uid="UnityEditor.Build.Pipeline.BuildParameters.OutputFolder">OutputFolder</h4>
+  <div class="markdown level1 summary"><p>Final output location where built content will be written.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OutputFolder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_ScriptInfo_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.ScriptInfo*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_ScriptInfo" data-uid="UnityEditor.Build.Pipeline.BuildParameters.ScriptInfo">ScriptInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeDB ScriptInfo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TypeDB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_ScriptOptions_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.ScriptOptions*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_ScriptOptions" data-uid="UnityEditor.Build.Pipeline.BuildParameters.ScriptOptions">ScriptOptions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptCompilationOptions ScriptOptions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ScriptCompilationOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_ScriptOutputFolder_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.ScriptOutputFolder*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_ScriptOutputFolder" data-uid="UnityEditor.Build.Pipeline.BuildParameters.ScriptOutputFolder">ScriptOutputFolder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ScriptOutputFolder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_Target_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.Target*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_Target" data-uid="UnityEditor.Build.Pipeline.BuildParameters.Target">Target</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BuildTarget Target { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildTarget</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_TempOutputFolder_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.TempOutputFolder*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_TempOutputFolder" data-uid="UnityEditor.Build.Pipeline.BuildParameters.TempOutputFolder">TempOutputFolder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TempOutputFolder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_UseCache_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.UseCache*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_UseCache" data-uid="UnityEditor.Build.Pipeline.BuildParameters.UseCache">UseCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseCache { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_WriteLinkXML_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.WriteLinkXML*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_WriteLinkXML" data-uid="UnityEditor.Build.Pipeline.BuildParameters.WriteLinkXML">WriteLinkXML</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WriteLinkXML { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_GetCompressionForIdentifier_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.GetCompressionForIdentifier*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_GetCompressionForIdentifier_System_String_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.GetCompressionForIdentifier(System.String)">GetCompressionForIdentifier(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Content.BuildCompression GetCompressionForIdentifier(string identifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.Build.Content.BuildCompression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_GetContentBuildSettings_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.GetContentBuildSettings*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_GetContentBuildSettings" data-uid="UnityEditor.Build.Pipeline.BuildParameters.GetContentBuildSettings">GetContentBuildSettings()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BuildSettings GetContentBuildSettings()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_GetOutputFilePathForIdentifier_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.GetOutputFilePathForIdentifier*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_GetOutputFilePathForIdentifier_System_String_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.GetOutputFilePathForIdentifier(System.String)">GetOutputFilePathForIdentifier(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetOutputFilePathForIdentifier(string identifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_BuildParameters_GetScriptCompilationSettings_" data-uid="UnityEditor.Build.Pipeline.BuildParameters.GetScriptCompilationSettings*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_BuildParameters_GetScriptCompilationSettings" data-uid="UnityEditor.Build.Pipeline.BuildParameters.GetScriptCompilationSettings">GetScriptCompilationSettings()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ScriptCompilationSettings GetScriptCompilationSettings()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ScriptCompilationSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IWriteOperation
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IWriteOperation
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation">
+  
+  
+  <h1 id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation" class="text-break">Interface IWriteOperation
+  </h1>
+  <div class="markdown level0 summary"><p>Base interface for wrapping the different low level WriteSerializeFile API around a common high level Write function</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEditor.Build.Pipeline.Interfaces.html">UnityEditor.Build.Pipeline.Interfaces</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IWriteOperation</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_Command_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation.Command*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_Command" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation.Command">Command</h4>
+  <div class="markdown level1 summary"><p>The specific write command containing the details about what to write to disk.
+<seealso cref="!:WriteCommand"></seealso></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">WriteCommand Command { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WriteCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_DependencyHash_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation.DependencyHash*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_DependencyHash" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation.DependencyHash">DependencyHash</h4>
+  <div class="markdown level1 summary"><p>The hash that represents the unique set of input dependencies for caching this write command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Hash128 DependencyHash { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Hash128</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_ReferenceMap_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation.ReferenceMap*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_ReferenceMap" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation.ReferenceMap">ReferenceMap</h4>
+  <div class="markdown level1 summary"><p>The specific reference data for objects in the write command.
+<seealso cref="!:BuildReferenceMap"></seealso></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">BuildReferenceMap ReferenceMap { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildReferenceMap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_UsageSet_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation.UsageSet*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_UsageSet" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation.UsageSet">UsageSet</h4>
+  <div class="markdown level1 summary"><p>The specific usage data for objects in the write command.
+<seealso cref="!:BuildUsageTagSet"></seealso></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">BuildUsageTagSet UsageSet { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildUsageTagSet</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_GetHash128_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation.GetHash128*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_GetHash128" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation.GetHash128">GetHash128()</h4>
+  <div class="markdown level1 summary"><p>Optimized hash function for use with the Build Cache system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Hash128 GetHash128()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Hash128</span></td>
+        <td><p>Unique hash for the contents of this write operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_GetHash128_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation.GetHash128*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_GetHash128_UnityEditor_Build_Pipeline_Interfaces_IBuildLogger_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation.GetHash128(UnityEditor.Build.Pipeline.Interfaces.IBuildLogger)">GetHash128(IBuildLogger)</h4>
+  <div class="markdown level1 summary"><p>Optimized hash function for use with the Build Cache system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Hash128 GetHash128(IBuildLogger log)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Build.Pipeline.Interfaces.IBuildLogger.html">IBuildLogger</a></td>
+        <td><span class="parametername">log</span></td>
+        <td><p>The build log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Hash128</span></td>
+        <td><p>Unique hash for the contents of this write operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_Write_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation.Write*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IWriteOperation_Write_System_String_BuildSettings_BuildUsageTagGlobal_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IWriteOperation.Write(System.String,BuildSettings,BuildUsageTagGlobal)">Write(String, BuildSettings, BuildUsageTagGlobal)</h4>
+  <div class="markdown level1 summary"><p>Write function that wraps the low level WriteSerializeFile APIs that takes the common minimum set of parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">WriteResult Write(string outputFolder, BuildSettings settings, BuildUsageTagGlobal globalUsage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">outputFolder</span></td>
+        <td><p>The location to write data to disk.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">BuildSettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>The build settings to use for writing data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">BuildUsageTagGlobal</span></td>
+        <td><span class="parametername">globalUsage</span></td>
+        <td><p>The global usage to use for writing data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WriteResult</span></td>
+        <td><p>The write results struct containing details about what was written to disk</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

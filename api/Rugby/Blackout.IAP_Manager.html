@@ -1,0 +1,526 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IAP_Manager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IAP_Manager
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Blackout.IAP_Manager">
+  
+  
+  <h1 id="Blackout_IAP_Manager" data-uid="Blackout.IAP_Manager" class="text-break">Class IAP_Manager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">IAP_Manager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Blackout.html">Blackout</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Blackout_IAP_Manager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class IAP_Manager : Singleton&lt;IAP_Manager&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Blackout_IAP_Manager_IsVisible_" data-uid="Blackout.IAP_Manager.IsVisible*"></a>
+  <h4 id="Blackout_IAP_Manager_IsVisible" data-uid="Blackout.IAP_Manager.IsVisible">IsVisible</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Blackout_IAP_Manager_BuyProductId_" data-uid="Blackout.IAP_Manager.BuyProductId*"></a>
+  <h4 id="Blackout_IAP_Manager_BuyProductId_System_String_System_String_System_Action_" data-uid="Blackout.IAP_Manager.BuyProductId(System.String,System.String,System.Action)">BuyProductId(String, String, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BuyProductId(string productId, string confirmationText = null, Action onComplete = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">productId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">confirmationText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">onComplete</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_IAP_Manager_BuyTokenProductId_" data-uid="Blackout.IAP_Manager.BuyTokenProductId*"></a>
+  <h4 id="Blackout_IAP_Manager_BuyTokenProductId_System_String_JObject_System_Action_" data-uid="Blackout.IAP_Manager.BuyTokenProductId(System.String,JObject,System.Action)">BuyTokenProductId(String, JObject, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BuyTokenProductId(string productId, JObject meta = null, Action onPurchaseComplete = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">productId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">JObject</span></td>
+        <td><span class="parametername">meta</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">onPurchaseComplete</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_IAP_Manager_CloseStoreModal_" data-uid="Blackout.IAP_Manager.CloseStoreModal*"></a>
+  <h4 id="Blackout_IAP_Manager_CloseStoreModal" data-uid="Blackout.IAP_Manager.CloseStoreModal">CloseStoreModal()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CloseStoreModal()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_IAP_Manager_GetPlatform_" data-uid="Blackout.IAP_Manager.GetPlatform*"></a>
+  <h4 id="Blackout_IAP_Manager_GetPlatform" data-uid="Blackout.IAP_Manager.GetPlatform">GetPlatform()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAP_Manager.IAP_Platform GetPlatform()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.IAP_Manager.IAP_Platform.html">IAP_Manager.IAP_Platform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_IAP_Manager_GetStoreItemPriceByID_" data-uid="Blackout.IAP_Manager.GetStoreItemPriceByID*"></a>
+  <h4 id="Blackout_IAP_Manager_GetStoreItemPriceByID_System_String_" data-uid="Blackout.IAP_Manager.GetStoreItemPriceByID(System.String)">GetStoreItemPriceByID(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float? GetStoreItemPriceByID(string itemID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">itemID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_IAP_Manager_GetStoreItemTokenPriceByID_" data-uid="Blackout.IAP_Manager.GetStoreItemTokenPriceByID*"></a>
+  <h4 id="Blackout_IAP_Manager_GetStoreItemTokenPriceByID_System_String_" data-uid="Blackout.IAP_Manager.GetStoreItemTokenPriceByID(System.String)">GetStoreItemTokenPriceByID(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int? GetStoreItemTokenPriceByID(string itemID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">itemID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_IAP_Manager_GetStoreItemTokenPriceByTitle_" data-uid="Blackout.IAP_Manager.GetStoreItemTokenPriceByTitle*"></a>
+  <h4 id="Blackout_IAP_Manager_GetStoreItemTokenPriceByTitle_System_String_" data-uid="Blackout.IAP_Manager.GetStoreItemTokenPriceByTitle(System.String)">GetStoreItemTokenPriceByTitle(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int? GetStoreItemTokenPriceByTitle(string title)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">title</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_IAP_Manager_HandleCards_" data-uid="Blackout.IAP_Manager.HandleCards*"></a>
+  <h4 id="Blackout_IAP_Manager_HandleCards" data-uid="Blackout.IAP_Manager.HandleCards">HandleCards()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void HandleCards()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_IAP_Manager_InitAsync_" data-uid="Blackout.IAP_Manager.InitAsync*"></a>
+  <h4 id="Blackout_IAP_Manager_InitAsync" data-uid="Blackout.IAP_Manager.InitAsync">InitAsync()</h4>
+  <div class="markdown level1 summary"><p>Initialisation function for IAP.
+Please ensure user is logged in as we require a clubId</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async UniTask InitAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_IAP_Manager_PurchaseSuccessModal_" data-uid="Blackout.IAP_Manager.PurchaseSuccessModal*"></a>
+  <h4 id="Blackout_IAP_Manager_PurchaseSuccessModal_System_Boolean_" data-uid="Blackout.IAP_Manager.PurchaseSuccessModal(System.Boolean)">PurchaseSuccessModal(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PurchaseSuccessModal(bool publish = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">publish</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_IAP_Manager_RefreshStore_" data-uid="Blackout.IAP_Manager.RefreshStore*"></a>
+  <h4 id="Blackout_IAP_Manager_RefreshStore" data-uid="Blackout.IAP_Manager.RefreshStore">RefreshStore()</h4>
+  <div class="markdown level1 summary"><p>Clears and retrieves store items</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async UniTask RefreshStore()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_IAP_Manager_ShowStoreModal_" data-uid="Blackout.IAP_Manager.ShowStoreModal*"></a>
+  <h4 id="Blackout_IAP_Manager_ShowStoreModal_Blackout_IAP_StoreFront_FilterType_System_Collections_Generic_List_CardCategory__System_Action_System_Nullable_System_Boolean__" data-uid="Blackout.IAP_Manager.ShowStoreModal(Blackout.IAP_StoreFront.FilterType,System.Collections.Generic.List{CardCategory},System.Action,System.Nullable{System.Boolean})">ShowStoreModal(IAP_StoreFront.FilterType, List&lt;CardCategory&gt;, Action, Nullable&lt;Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Opens the IAP Store Modal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowStoreModal(IAP_StoreFront.FilterType filterType = IAP_StoreFront.FilterType.Tokens, List&lt;CardCategory&gt; cardCategories = null, Action onStoreClosed = null, bool? openSubsManageScreen = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.IAP_StoreFront.FilterType.html">IAP_StoreFront.FilterType</a></td>
+        <td><span class="parametername">filterType</span></td>
+        <td><p>Which Purchase type to open the store modal on</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">CardCategory</span>&gt;</td>
+        <td><span class="parametername">cardCategories</span></td>
+        <td><p>Which card types to filter to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">onStoreClosed</span></td>
+        <td><p>Action to invoke on the IAP Store Modal closing</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">openSubsManageScreen</span></td>
+        <td><p>If True Opens the Premium Subscription Management screen</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

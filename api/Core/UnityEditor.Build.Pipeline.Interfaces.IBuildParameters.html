@@ -1,0 +1,556 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IBuildParameters
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IBuildParameters
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters">
+  
+  
+  <h1 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters" class="text-break">Interface IBuildParameters
+  </h1>
+  <div class="markdown level0 summary"><p>Base interface for the parameters container</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEditor.Build.Pipeline.Interfaces.html">UnityEditor.Build.Pipeline.Interfaces</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IBuildParameters : IContextObject</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_CacheServerHost_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.CacheServerHost*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_CacheServerHost" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.CacheServerHost">CacheServerHost</h4>
+  <div class="markdown level1 summary"><p>Enables and specifies the cache server to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string CacheServerHost { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_CacheServerPort_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.CacheServerPort*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_CacheServerPort" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.CacheServerPort">CacheServerPort</h4>
+  <div class="markdown level1 summary"><p>The port for the cache server to use</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int CacheServerPort { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_ContentBuildFlags_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.ContentBuildFlags*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_ContentBuildFlags" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.ContentBuildFlags">ContentBuildFlags</h4>
+  <div class="markdown level1 summary"><p>The set of build flags to use for building content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ContentBuildFlags ContentBuildFlags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContentBuildFlags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_Group_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.Group*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_Group" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.Group">Group</h4>
+  <div class="markdown level1 summary"><p>Target build platform group. <seealso cref="!:BuildTargetGroup"></seealso></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">BuildTargetGroup Group { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildTargetGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_ScriptInfo_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.ScriptInfo*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_ScriptInfo" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.ScriptInfo">ScriptInfo</h4>
+  <div class="markdown level1 summary"><p>Scripting type information to use when building content.
+Setting this to a previously cached value will prevent the default script compiling step.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TypeDB ScriptInfo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TypeDB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_ScriptOptions_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.ScriptOptions*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_ScriptOptions" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.ScriptOptions">ScriptOptions</h4>
+  <div class="markdown level1 summary"><p>Script compilation options to use for the script compiling step.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ScriptCompilationOptions ScriptOptions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ScriptCompilationOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_ScriptOutputFolder_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.ScriptOutputFolder*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_ScriptOutputFolder" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.ScriptOutputFolder">ScriptOutputFolder</h4>
+  <div class="markdown level1 summary"><p>Location to be used for compiled scripts generated during the build.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ScriptOutputFolder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_Target_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.Target*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_Target" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.Target">Target</h4>
+  <div class="markdown level1 summary"><p>Target build platform. <seealso cref="!:BuildTarget"></seealso></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">BuildTarget Target { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildTarget</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_TempOutputFolder_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.TempOutputFolder*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_TempOutputFolder" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.TempOutputFolder">TempOutputFolder</h4>
+  <div class="markdown level1 summary"><p>Temporary location to be used for artifacts generated during the build but are not part of the final output.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string TempOutputFolder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_UseCache_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.UseCache*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_UseCache" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.UseCache">UseCache</h4>
+  <div class="markdown level1 summary"><p>Enables the use of the build cache if set to true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UseCache { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_WriteLinkXML_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.WriteLinkXML*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_WriteLinkXML" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.WriteLinkXML">WriteLinkXML</h4>
+  <div class="markdown level1 summary"><p>Writes out a link.xml file to the output folder to use with Unity managed code stripping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool WriteLinkXML { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_GetCompressionForIdentifier_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.GetCompressionForIdentifier*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_GetCompressionForIdentifier_System_String_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.GetCompressionForIdentifier(System.String)">GetCompressionForIdentifier(String)</h4>
+  <div class="markdown level1 summary"><p>Constructs and returns the BuildCompression struct to use for the specified identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Content.BuildCompression GetCompressionForIdentifier(string identifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>Identifier used to construct the BuildCompression struct.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.Build.Content.BuildCompression</span></td>
+        <td><p>Returns the BuildCompression struct to use for a specific identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_GetContentBuildSettings_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.GetContentBuildSettings*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_GetContentBuildSettings" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.GetContentBuildSettings">GetContentBuildSettings()</h4>
+  <div class="markdown level1 summary"><p>Constructs and returns the BuildSettings struct to use for content building.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">BuildSettings GetContentBuildSettings()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildSettings</span></td>
+        <td><p>Returns the BuildSettings struct to use for content building.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_GetOutputFilePathForIdentifier_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.GetOutputFilePathForIdentifier*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_GetOutputFilePathForIdentifier_System_String_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.GetOutputFilePathForIdentifier(System.String)">GetOutputFilePathForIdentifier(String)</h4>
+  <div class="markdown level1 summary"><p>Returns the output folder to use for the specified identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetOutputFilePathForIdentifier(string identifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>Identifier used to identify which output folder to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Returns the output folder to use for the specified identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_GetScriptCompilationSettings_" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.GetScriptCompilationSettings*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Interfaces_IBuildParameters_GetScriptCompilationSettings" data-uid="UnityEditor.Build.Pipeline.Interfaces.IBuildParameters.GetScriptCompilationSettings">GetScriptCompilationSettings()</h4>
+  <div class="markdown level1 summary"><p>Constructs and returns the ScriptCompilationSettings struct to use for script compiling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ScriptCompilationSettings GetScriptCompilationSettings()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ScriptCompilationSettings</span></td>
+        <td><p>Returns the ScriptCompilationSettings struct to use for script compiling.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

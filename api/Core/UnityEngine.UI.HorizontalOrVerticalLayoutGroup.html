@@ -1,0 +1,741 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HorizontalOrVerticalLayoutGroup
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HorizontalOrVerticalLayoutGroup
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup">
+  
+  
+  <h1 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup" class="text-break">Class HorizontalOrVerticalLayoutGroup
+  </h1>
+  <div class="markdown level0 summary"><p>Abstract base class for HorizontalLayoutGroup and VerticalLayoutGroup to generalize common functionality.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UnityEngine.UI.LayoutGroup.html">LayoutGroup</a></div>
+    <div class="level2"><span class="xref">HorizontalOrVerticalLayoutGroup</span></div>
+      <div class="level3"><a class="xref" href="UnityEngine.UI.HorizontalLayoutGroup.html">HorizontalLayoutGroup</a></div>
+      <div class="level3"><a class="xref" href="UnityEngine.UI.VerticalLayoutGroup.html">VerticalLayoutGroup</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UnityEngine.UI.ILayoutElement.html">ILayoutElement</a></div>
+    <div><a class="xref" href="UnityEngine.UI.ILayoutGroup.html">ILayoutGroup</a></div>
+    <div><a class="xref" href="UnityEngine.UI.ILayoutController.html">ILayoutController</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_m_Padding">LayoutGroup.m_Padding</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_padding">LayoutGroup.padding</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_m_ChildAlignment">LayoutGroup.m_ChildAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_childAlignment">LayoutGroup.childAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_rectTransform">LayoutGroup.rectTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_m_Tracker">LayoutGroup.m_Tracker</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_rectChildren">LayoutGroup.rectChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_CalculateLayoutInputHorizontal">LayoutGroup.CalculateLayoutInputHorizontal()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_CalculateLayoutInputVertical">LayoutGroup.CalculateLayoutInputVertical()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_minWidth">LayoutGroup.minWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_preferredWidth">LayoutGroup.preferredWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_flexibleWidth">LayoutGroup.flexibleWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_minHeight">LayoutGroup.minHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_preferredHeight">LayoutGroup.preferredHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_flexibleHeight">LayoutGroup.flexibleHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_layoutPriority">LayoutGroup.layoutPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetLayoutHorizontal">LayoutGroup.SetLayoutHorizontal()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetLayoutVertical">LayoutGroup.SetLayoutVertical()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_OnEnable">LayoutGroup.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_OnDisable">LayoutGroup.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_OnDidApplyAnimationProperties">LayoutGroup.OnDidApplyAnimationProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_GetTotalMinSize_System_Int32_">LayoutGroup.GetTotalMinSize(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_GetTotalPreferredSize_System_Int32_">LayoutGroup.GetTotalPreferredSize(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_GetTotalFlexibleSize_System_Int32_">LayoutGroup.GetTotalFlexibleSize(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_GetStartOffset_System_Int32_System_Single_">LayoutGroup.GetStartOffset(Int32, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_GetAlignmentOnAxis_System_Int32_">LayoutGroup.GetAlignmentOnAxis(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetLayoutInputForAxis_System_Single_System_Single_System_Single_System_Int32_">LayoutGroup.SetLayoutInputForAxis(Single, Single, Single, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetChildAlongAxis_RectTransform_System_Int32_System_Single_">LayoutGroup.SetChildAlongAxis(RectTransform, Int32, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetChildAlongAxisWithScale_RectTransform_System_Int32_System_Single_System_Single_">LayoutGroup.SetChildAlongAxisWithScale(RectTransform, Int32, Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetChildAlongAxis_RectTransform_System_Int32_System_Single_System_Single_">LayoutGroup.SetChildAlongAxis(RectTransform, Int32, Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetChildAlongAxisWithScale_RectTransform_System_Int32_System_Single_System_Single_System_Single_">LayoutGroup.SetChildAlongAxisWithScale(RectTransform, Int32, Single, Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_OnRectTransformDimensionsChange">LayoutGroup.OnRectTransformDimensionsChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_OnTransformChildrenChanged">LayoutGroup.OnTransformChildrenChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetProperty__1___0____0_">LayoutGroup.SetProperty&lt;T&gt;(T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetDirty">LayoutGroup.SetDirty()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.UI.html">UnityEngine.UI</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class HorizontalOrVerticalLayoutGroup : LayoutGroup, ILayoutElement, ILayoutGroup, ILayoutController</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_ChildControlHeight" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.m_ChildControlHeight">m_ChildControlHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_ChildControlHeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_ChildControlWidth" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.m_ChildControlWidth">m_ChildControlWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_ChildControlWidth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_ChildForceExpandHeight" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.m_ChildForceExpandHeight">m_ChildForceExpandHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_ChildForceExpandHeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_ChildForceExpandWidth" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.m_ChildForceExpandWidth">m_ChildForceExpandWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_ChildForceExpandWidth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_ChildScaleHeight" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.m_ChildScaleHeight">m_ChildScaleHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_ChildScaleHeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_ChildScaleWidth" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.m_ChildScaleWidth">m_ChildScaleWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_ChildScaleWidth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_ReverseArrangement" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.m_ReverseArrangement">m_ReverseArrangement</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_ReverseArrangement</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_Spacing" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.m_Spacing">m_Spacing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float m_Spacing</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childControlHeight_" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.childControlHeight*"></a>
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childControlHeight" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.childControlHeight">childControlHeight</h4>
+  <div class="markdown level1 summary"><p>Returns true if the Layout Group controls the heights of its children. Returns false if children control their own heights.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool childControlHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childControlHeight_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If set to false, the layout group will only affect the positions of the children while leaving the heights untouched. The heights of the children can be set via the respective RectTransforms in this case.</p>
+<p>If set to true, the heights of the children are automatically driven by the layout group according to their respective minimum, preferred, and flexible heights. This is useful if the heights of the children should change depending on how much space is available.In this case the height of each child cannot be set manually in the RectTransform, but the minimum, preferred and flexible height for each child can be controlled by adding a LayoutElement component to it.</p>
+</div>
+  
+  
+  <a id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childControlWidth_" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.childControlWidth*"></a>
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childControlWidth" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.childControlWidth">childControlWidth</h4>
+  <div class="markdown level1 summary"><p>Returns true if the Layout Group controls the widths of its children. Returns false if children control their own widths.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool childControlWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childControlWidth_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If set to false, the layout group will only affect the positions of the children while leaving the widths untouched. The widths of the children can be set via the respective RectTransforms in this case.</p>
+<p>If set to true, the widths of the children are automatically driven by the layout group according to their respective minimum, preferred, and flexible widths. This is useful if the widths of the children should change depending on how much space is available.In this case the width of each child cannot be set manually in the RectTransform, but the minimum, preferred and flexible width for each child can be controlled by adding a LayoutElement component to it.</p>
+</div>
+  
+  
+  <a id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childForceExpandHeight_" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.childForceExpandHeight*"></a>
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childForceExpandHeight" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.childForceExpandHeight">childForceExpandHeight</h4>
+  <div class="markdown level1 summary"><p>Whether to force the children to expand to fill additional available vertical space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool childForceExpandHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childForceExpandWidth_" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.childForceExpandWidth*"></a>
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childForceExpandWidth" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.childForceExpandWidth">childForceExpandWidth</h4>
+  <div class="markdown level1 summary"><p>Whether to force the children to expand to fill additional available horizontal space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool childForceExpandWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childScaleHeight_" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.childScaleHeight*"></a>
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childScaleHeight" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.childScaleHeight">childScaleHeight</h4>
+  <div class="markdown level1 summary"><p>Whether to use the y scale of each child when calculating its height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool childScaleHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childScaleWidth_" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.childScaleWidth*"></a>
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childScaleWidth" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.childScaleWidth">childScaleWidth</h4>
+  <div class="markdown level1 summary"><p>Whether to use the x scale of each child when calculating its width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool childScaleWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_reverseArrangement_" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.reverseArrangement*"></a>
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_reverseArrangement" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.reverseArrangement">reverseArrangement</h4>
+  <div class="markdown level1 summary"><p>Whether the order of children objects should be sorted in reverse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool reverseArrangement { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_reverseArrangement_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If False the first child object will be positioned first.
+If True the last child object will be positioned first.</p>
+</div>
+  
+  
+  <a id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_spacing_" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.spacing*"></a>
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_spacing" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.spacing">spacing</h4>
+  <div class="markdown level1 summary"><p>The spacing to use between layout elements in the layout group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float spacing { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_CalcAlongAxis_" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.CalcAlongAxis*"></a>
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_CalcAlongAxis_System_Int32_System_Boolean_" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.CalcAlongAxis(System.Int32,System.Boolean)">CalcAlongAxis(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Calculate the layout element properties for this layout element along the given axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CalcAlongAxis(int axis, bool isVertical)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The axis to calculate for. 0 is horizontal and 1 is vertical.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isVertical</span></td>
+        <td><p>Is this group a vertical group?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_SetChildrenAlongAxis_" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.SetChildrenAlongAxis*"></a>
+  <h4 id="UnityEngine_UI_HorizontalOrVerticalLayoutGroup_SetChildrenAlongAxis_System_Int32_System_Boolean_" data-uid="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.SetChildrenAlongAxis(System.Int32,System.Boolean)">SetChildrenAlongAxis(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set the positions and sizes of the child layout elements for the given axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetChildrenAlongAxis(int axis, bool isVertical)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The axis to handle. 0 is horizontal and 1 is vertical.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isVertical</span></td>
+        <td><p>Is this group a vertical group?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UnityEngine.UI.ILayoutElement.html">ILayoutElement</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UI.ILayoutGroup.html">ILayoutGroup</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UI.ILayoutController.html">ILayoutController</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SpriteEditorModuleBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SpriteEditorModuleBase
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase">
+  
+  
+  <h1 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase" class="text-break">Class SpriteEditorModuleBase
+  </h1>
+  <div class="markdown level0 summary"><p>Base class the Sprite Editor Window custom module inherits from.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SpriteEditorModuleBase</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEditor.U2D.Sprites.html">UnityEditor.U2D.Sprites</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SpriteEditorModuleBase</code></pre>
+  </div>
+  <h5 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Sprite Editor Window functionality can be extended by providing custom module. By inheriting from SpriteEditorModuleBase, user will be able to activate the module's functionality from Sprite Editor Window.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_moduleName_" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.moduleName*"></a>
+  <h4 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_moduleName" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.moduleName">moduleName</h4>
+  <div class="markdown level1 summary"><p>The module name to display in Sprite Editor Window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string moduleName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>String to represent the name of the module</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_spriteEditor_" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.spriteEditor*"></a>
+  <h4 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_spriteEditor" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.spriteEditor">spriteEditor</h4>
+  <div class="markdown level1 summary"><p>The ISpriteEditor instance that instantiated the module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISpriteEditor spriteEditor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.U2D.Sprites.ISpriteEditor.html">ISpriteEditor</a></td>
+        <td><p>An instance of ISpriteEditor</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_ApplyRevert_" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.ApplyRevert*"></a>
+  <h4 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_ApplyRevert_System_Boolean_" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.ApplyRevert(System.Boolean)">ApplyRevert(Boolean)</h4>
+  <div class="markdown level1 summary"><p>This is called when user clicks on the Apply or Revert button in Sprite Editor Window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool ApplyRevert(bool apply)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">apply</span></td>
+        <td><p>True when user wants to apply the data, false when user wants to revert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Return true to trigger a reimport.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_CanBeActivated_" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.CanBeActivated*"></a>
+  <h4 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_CanBeActivated" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.CanBeActivated">CanBeActivated()</h4>
+  <div class="markdown level1 summary"><p>Indicates if the module can be activated with the current ISpriteEditor state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool CanBeActivated()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Return true if the module can be activated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_DoMainGUI_" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.DoMainGUI*"></a>
+  <h4 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_DoMainGUI" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.DoMainGUI">DoMainGUI()</h4>
+  <div class="markdown level1 summary"><p>Implement this to draw on the Sprite Editor Window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void DoMainGUI()</code></pre>
+  </div>
+  <h5 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_DoMainGUI_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Called after Sprite Editor Window draws texture preview of the Asset.Use this to draw gizmos for Sprite data.</p>
+</div>
+  
+  
+  <a id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_DoPostGUI_" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.DoPostGUI*"></a>
+  <h4 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_DoPostGUI" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.DoPostGUI">DoPostGUI()</h4>
+  <div class="markdown level1 summary"><p>Implement this to draw widgets in Sprite Editor Window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void DoPostGUI()</code></pre>
+  </div>
+  <h5 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_DoPostGUI_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is called last to allow drawing of widgets.</p>
+</div>
+  
+  
+  <a id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_DoToolbarGUI_" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.DoToolbarGUI*"></a>
+  <h4 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_DoToolbarGUI_Rect_" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.DoToolbarGUI(Rect)">DoToolbarGUI(Rect)</h4>
+  <div class="markdown level1 summary"><p>Implement this to create a custom toolbar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void DoToolbarGUI(Rect drawArea)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Rect</span></td>
+        <td><span class="parametername">drawArea</span></td>
+        <td><p>Area for drawing tool bar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_OnModuleActivate_" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.OnModuleActivate*"></a>
+  <h4 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_OnModuleActivate" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.OnModuleActivate">OnModuleActivate()</h4>
+  <div class="markdown level1 summary"><p>This is called when the user activates the module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void OnModuleActivate()</code></pre>
+  </div>
+  <h5 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_OnModuleActivate_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When user switches to the module via Sprite Editor Window, this method will be called for the module to setup.</p>
+</div>
+  
+  
+  <a id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_OnModuleDeactivate_" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.OnModuleDeactivate*"></a>
+  <h4 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_OnModuleDeactivate" data-uid="UnityEditor.U2D.Sprites.SpriteEditorModuleBase.OnModuleDeactivate">OnModuleDeactivate()</h4>
+  <div class="markdown level1 summary"><p>This is called when user switches to another module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void OnModuleDeactivate()</code></pre>
+  </div>
+  <h5 id="UnityEditor_U2D_Sprites_SpriteEditorModuleBase_OnModuleDeactivate_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When user switches to the another module in Sprite Editor Window, this method will be called for the module to clean up.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

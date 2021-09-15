@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PerMessageCompression
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PerMessageCompression
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression">
+  
+  
+  <h1 id="BestHTTP_WebSocket_Extensions_PerMessageCompression" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression" class="text-break">Class PerMessageCompression
+  </h1>
+  <div class="markdown level0 summary"><p>Compression Extensions for WebSocket implementation.
+<a href="http://tools.ietf.org/html/rfc7692">http://tools.ietf.org/html/rfc7692</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PerMessageCompression</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="BestHTTP.WebSocket.Extensions.IExtension.html">IExtension</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.WebSocket.Extensions.html">BestHTTP.WebSocket.Extensions</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_WebSocket_Extensions_PerMessageCompression_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class PerMessageCompression : IExtension</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BestHTTP_WebSocket_Extensions_PerMessageCompression__ctor_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.#ctor*"></a>
+  <h4 id="BestHTTP_WebSocket_Extensions_PerMessageCompression__ctor" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.#ctor">PerMessageCompression()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PerMessageCompression()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_WebSocket_Extensions_PerMessageCompression__ctor_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.#ctor*"></a>
+  <h4 id="BestHTTP_WebSocket_Extensions_PerMessageCompression__ctor_CompressionLevel_System_Boolean_System_Boolean_System_Int32_System_Int32_System_Int32_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.#ctor(CompressionLevel,System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32)">PerMessageCompression(CompressionLevel, Boolean, Boolean, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PerMessageCompression(CompressionLevel level, bool clientNoContextTakeover, bool serverNoContextTakeover, int desiredClientMaxWindowBits, int desiredServerMaxWindowBits, int minDatalengthToCompress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CompressionLevel</span></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">clientNoContextTakeover</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">serverNoContextTakeover</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">desiredClientMaxWindowBits</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">desiredServerMaxWindowBits</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minDatalengthToCompress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BestHTTP_WebSocket_Extensions_PerMessageCompression_MinDataLengthToCompressDefault" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.MinDataLengthToCompressDefault">MinDataLengthToCompressDefault</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MinDataLengthToCompressDefault = 256</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BestHTTP_WebSocket_Extensions_PerMessageCompression_ClientMaxWindowBits_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientMaxWindowBits*"></a>
+  <h4 id="BestHTTP_WebSocket_Extensions_PerMessageCompression_ClientMaxWindowBits" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientMaxWindowBits">ClientMaxWindowBits</h4>
+  <div class="markdown level1 summary"><p>This parameter indicates the base-2 logarithm of the LZ77 sliding window size of the client context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ClientMaxWindowBits { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_Extensions_PerMessageCompression_ClientNoContextTakeover_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientNoContextTakeover*"></a>
+  <h4 id="BestHTTP_WebSocket_Extensions_PerMessageCompression_ClientNoContextTakeover" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientNoContextTakeover">ClientNoContextTakeover</h4>
+  <div class="markdown level1 summary"><p>By including this extension parameter in an extension negotiation offer, a client informs the peer server
+of a hint that even if the server doesn't include the &quot;client_no_context_takeover&quot; extension parameter in
+the corresponding extension negotiation response to the offer, the client is not going to use context takeover.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ClientNoContextTakeover { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_Extensions_PerMessageCompression_Level_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.Level*"></a>
+  <h4 id="BestHTTP_WebSocket_Extensions_PerMessageCompression_Level" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.Level">Level</h4>
+  <div class="markdown level1 summary"><p>The compression level that the client will use to compress the frames.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompressionLevel Level { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CompressionLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_Extensions_PerMessageCompression_MinimumDataLegthToCompress_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.MinimumDataLegthToCompress*"></a>
+  <h4 id="BestHTTP_WebSocket_Extensions_PerMessageCompression_MinimumDataLegthToCompress" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.MinimumDataLegthToCompress">MinimumDataLegthToCompress</h4>
+  <div class="markdown level1 summary"><p>What minimum data length will trigger the compression.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MinimumDataLegthToCompress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_Extensions_PerMessageCompression_ServerMaxWindowBits_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerMaxWindowBits*"></a>
+  <h4 id="BestHTTP_WebSocket_Extensions_PerMessageCompression_ServerMaxWindowBits" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerMaxWindowBits">ServerMaxWindowBits</h4>
+  <div class="markdown level1 summary"><p>This parameter indicates the base-2 logarithm of the LZ77 sliding window size of the server context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ServerMaxWindowBits { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_Extensions_PerMessageCompression_ServerNoContextTakeover_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerNoContextTakeover*"></a>
+  <h4 id="BestHTTP_WebSocket_Extensions_PerMessageCompression_ServerNoContextTakeover" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerNoContextTakeover">ServerNoContextTakeover</h4>
+  <div class="markdown level1 summary"><p>By including this extension parameter in an extension negotiation offer, a client prevents the peer server from using context takeover.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ServerNoContextTakeover { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BestHTTP_WebSocket_Extensions_PerMessageCompression_AddNegotiation_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.AddNegotiation*"></a>
+  <h4 id="BestHTTP_WebSocket_Extensions_PerMessageCompression_AddNegotiation_BestHTTP_HTTPRequest_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.AddNegotiation(BestHTTP.HTTPRequest)">AddNegotiation(HTTPRequest)</h4>
+  <div class="markdown level1 summary"><p>This will start the permessage-deflate negotiation process.
+<a href="http://tools.ietf.org/html/rfc7692#section-5.1">http://tools.ietf.org/html/rfc7692#section-5.1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNegotiation(HTTPRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_Extensions_PerMessageCompression_Decode_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.Decode*"></a>
+  <h4 id="BestHTTP_WebSocket_Extensions_PerMessageCompression_Decode_System_Byte_System_Byte___System_Int32_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.Decode(System.Byte,System.Byte[],System.Int32)">Decode(Byte, Byte[], Int32)</h4>
+  <div class="markdown level1 summary"><p>IExtension implementation to possible decompress the data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] Decode(byte header, byte[] data, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">header</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_Extensions_PerMessageCompression_Encode_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.Encode*"></a>
+  <h4 id="BestHTTP_WebSocket_Extensions_PerMessageCompression_Encode_WebSocketFrame_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.Encode(WebSocketFrame)">Encode(WebSocketFrame)</h4>
+  <div class="markdown level1 summary"><p>IExtension implementation to be able to compress the data hold in the writer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] Encode(WebSocketFrame writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WebSocketFrame</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_Extensions_PerMessageCompression_GetFrameHeader_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.GetFrameHeader*"></a>
+  <h4 id="BestHTTP_WebSocket_Extensions_PerMessageCompression_GetFrameHeader_WebSocketFrame_System_Byte_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.GetFrameHeader(WebSocketFrame,System.Byte)">GetFrameHeader(WebSocketFrame, Byte)</h4>
+  <div class="markdown level1 summary"><p>IExtension implementation to set the Rsv1 flag in the header if we are we will want to compress the data
+in the writer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte GetFrameHeader(WebSocketFrame writer, byte inFlag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WebSocketFrame</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">inFlag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_Extensions_PerMessageCompression_ParseNegotiation_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.ParseNegotiation*"></a>
+  <h4 id="BestHTTP_WebSocket_Extensions_PerMessageCompression_ParseNegotiation_BestHTTP_WebSocket_WebSocketResponse_" data-uid="BestHTTP.WebSocket.Extensions.PerMessageCompression.ParseNegotiation(BestHTTP.WebSocket.WebSocketResponse)">ParseNegotiation(WebSocketResponse)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ParseNegotiation(WebSocketResponse resp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.WebSocket.WebSocketResponse.html">WebSocketResponse</a></td>
+        <td><span class="parametername">resp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="BestHTTP.WebSocket.Extensions.IExtension.html">IExtension</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

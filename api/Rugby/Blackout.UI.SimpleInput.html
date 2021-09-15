@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SimpleInput
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SimpleInput
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Blackout.UI.SimpleInput">
+  
+  
+  <h1 id="Blackout_UI_SimpleInput" data-uid="Blackout.UI.SimpleInput" class="text-break">Class SimpleInput
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Blackout.UI.ModalBase.html">ModalBase</a></div>
+    <div class="level2"><a class="xref" href="Blackout.UI.Modal.html">Modal</a></div>
+    <div class="level3"><span class="xref">SimpleInput</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IOrientationChangeable</span></div>
+    <div><span class="xref">ILayoutSelfController</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_ShowExitButton">Modal.ShowExitButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_HelpId">Modal.HelpId</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_TitleText">Modal.TitleText</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_ContentContainer">Modal.ContentContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_TitleBar">Modal.TitleBar</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_ContentLayoutGroup">Modal.ContentLayoutGroup</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_OnEnable">Modal.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_Show">Modal.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_SetTitle_System_String_i18nArg___">Modal.SetTitle(String, i18nArg[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_SetHelpButton">Modal.SetHelpButton()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_SetSortOrder_System_Int32_">Modal.SetSortOrder(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_ChangeCanvasLayer_CanvasExtensions_Layers_">Modal.ChangeCanvasLayer(CanvasExtensions.Layers)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_SetLayoutHorizontal">Modal.SetLayoutHorizontal()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_SetLayoutVertical">Modal.SetLayoutVertical()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_TWEEN_TIME">ModalBase.TWEEN_TIME</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_TWEEN_EASE">ModalBase.TWEEN_EASE</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_IsOverlay">ModalBase.IsOverlay</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_DisableOnClose">ModalBase.DisableOnClose</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_ShowWhenStacked">ModalBase.ShowWhenStacked</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_ShowBlocker">ModalBase.ShowBlocker</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_UseDefaultWidth">ModalBase.UseDefaultWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_defaultWidth">ModalBase.defaultWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_rectTransform">ModalBase.rectTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_IsModal">ModalBase.IsModal</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_IsClosing">ModalBase.IsClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_IsShowing">ModalBase.IsShowing</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_ClickingBlockerClosesModal">ModalBase.ClickingBlockerClosesModal</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_canvas">ModalBase.canvas</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_RootCanvasRect">ModalBase.RootCanvasRect</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_OnModalClosed">ModalBase.OnModalClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_OnModalOpen">ModalBase.OnModalOpen</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_SetWidth_Percent_System_Single_">ModalBase.SetWidth_Percent(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_CloseImmediate">ModalBase.CloseImmediate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_Close">ModalBase.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.UI.ModalBase.html#Blackout_UI_ModalBase_OnOrientationChanged_System_Boolean_">ModalBase.OnOrientationChanged(Boolean)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Blackout.UI.html">Blackout.UI</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Blackout_UI_SimpleInput_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SimpleInput : Modal, IOrientationChangeable, ILayoutSelfController</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Blackout_UI_SimpleInput_Awake_" data-uid="Blackout.UI.SimpleInput.Awake*"></a>
+  <h4 id="Blackout_UI_SimpleInput_Awake" data-uid="Blackout.UI.SimpleInput.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_Awake">Modal.Awake()</a></div>
+  
+  
+  <a id="Blackout_UI_SimpleInput_FocusInputField_" data-uid="Blackout.UI.SimpleInput.FocusInputField*"></a>
+  <h4 id="Blackout_UI_SimpleInput_FocusInputField" data-uid="Blackout.UI.SimpleInput.FocusInputField">FocusInputField()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FocusInputField()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_UI_SimpleInput_GetInputFieldText_" data-uid="Blackout.UI.SimpleInput.GetInputFieldText*"></a>
+  <h4 id="Blackout_UI_SimpleInput_GetInputFieldText" data-uid="Blackout.UI.SimpleInput.GetInputFieldText">GetInputFieldText()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetInputFieldText()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_SimpleInput_HideButtonLoader_" data-uid="Blackout.UI.SimpleInput.HideButtonLoader*"></a>
+  <h4 id="Blackout_UI_SimpleInput_HideButtonLoader" data-uid="Blackout.UI.SimpleInput.HideButtonLoader">HideButtonLoader()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideButtonLoader()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_UI_SimpleInput_HideErrorMessage_" data-uid="Blackout.UI.SimpleInput.HideErrorMessage*"></a>
+  <h4 id="Blackout_UI_SimpleInput_HideErrorMessage" data-uid="Blackout.UI.SimpleInput.HideErrorMessage">HideErrorMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideErrorMessage()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_UI_SimpleInput_OnFormSubmit_" data-uid="Blackout.UI.SimpleInput.OnFormSubmit*"></a>
+  <h4 id="Blackout_UI_SimpleInput_OnFormSubmit_System_Action_JObject__" data-uid="Blackout.UI.SimpleInput.OnFormSubmit(System.Action{JObject})">OnFormSubmit(Action&lt;JObject&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFormSubmit(Action&lt;JObject&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">JObject</span>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_SimpleInput_SetFormModel_" data-uid="Blackout.UI.SimpleInput.SetFormModel*"></a>
+  <h4 id="Blackout_UI_SimpleInput_SetFormModel_WebDataModel_" data-uid="Blackout.UI.SimpleInput.SetFormModel(WebDataModel)">SetFormModel(WebDataModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFormModel(WebDataModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WebDataModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_SimpleInput_SetInputFieldText_" data-uid="Blackout.UI.SimpleInput.SetInputFieldText*"></a>
+  <h4 id="Blackout_UI_SimpleInput_SetInputFieldText_System_String_" data-uid="Blackout.UI.SimpleInput.SetInputFieldText(System.String)">SetInputFieldText(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInputFieldText(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_SimpleInput_SetInputFiledHeight_" data-uid="Blackout.UI.SimpleInput.SetInputFiledHeight*"></a>
+  <h4 id="Blackout_UI_SimpleInput_SetInputFiledHeight_System_Single_" data-uid="Blackout.UI.SimpleInput.SetInputFiledHeight(System.Single)">SetInputFiledHeight(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInputFiledHeight(float height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_SimpleInput_SetMessageText_" data-uid="Blackout.UI.SimpleInput.SetMessageText*"></a>
+  <h4 id="Blackout_UI_SimpleInput_SetMessageText_System_String_" data-uid="Blackout.UI.SimpleInput.SetMessageText(System.String)">SetMessageText(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMessageText(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_SimpleInput_SetValidationKey_" data-uid="Blackout.UI.SimpleInput.SetValidationKey*"></a>
+  <h4 id="Blackout_UI_SimpleInput_SetValidationKey_System_String_" data-uid="Blackout.UI.SimpleInput.SetValidationKey(System.String)">SetValidationKey(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValidationKey(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_SimpleInput_ShowErrorMessage_" data-uid="Blackout.UI.SimpleInput.ShowErrorMessage*"></a>
+  <h4 id="Blackout_UI_SimpleInput_ShowErrorMessage_System_String_" data-uid="Blackout.UI.SimpleInput.ShowErrorMessage(System.String)">ShowErrorMessage(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowErrorMessage(string errorMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">errorMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_SimpleInput_Start_" data-uid="Blackout.UI.SimpleInput.Start*"></a>
+  <h4 id="Blackout_UI_SimpleInput_Start" data-uid="Blackout.UI.SimpleInput.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Blackout.UI.Modal.html#Blackout_UI_Modal_Start">Modal.Start()</a></div>
+  
+  
+  <a id="Blackout_UI_SimpleInput_Validation_" data-uid="Blackout.UI.SimpleInput.Validation*"></a>
+  <h4 id="Blackout_UI_SimpleInput_Validation_UnityAction_System_String__" data-uid="Blackout.UI.SimpleInput.Validation(UnityAction{System.String})">Validation(UnityAction&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Validation(UnityAction&lt;string&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityAction</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IOrientationChangeable</span>
+  </div>
+  <div>
+      <span class="xref">ILayoutSelfController</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

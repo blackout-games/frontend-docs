@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace UnityEditor.Timeline.Actions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace UnityEditor.Timeline.Actions
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEditor.Timeline.Actions">
+  
+  <h1 id="UnityEditor_Timeline_Actions" data-uid="UnityEditor.Timeline.Actions" class="text-break">Namespace UnityEditor.Timeline.Actions
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.ActiveInModeAttribute.html">ActiveInModeAttribute</a></h4>
+      <section><p>Define the activeness of an action depending on its timeline mode.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.ApplyDefaultUndoAttribute.html">ApplyDefaultUndoAttribute</a></h4>
+      <section><p>Use this attribute on action classes (<a class="xref" href="UnityEditor.Timeline.Actions.TimelineAction.html">TimelineAction</a>,
+<a class="xref" href="UnityEditor.Timeline.Actions.ClipAction.html">ClipAction</a>,
+<a class="xref" href="UnityEditor.Timeline.Actions.MarkerAction.html">MarkerAction</a> and
+<a class="xref" href="UnityEditor.Timeline.Actions.TrackAction.html">TrackAction</a>)
+to have the default undo behaviour applied.</p>
+<p>By default, applying this attribute will record all objects passed to the Execute method with the Undo system,
+using the name of Action it is applied to.</p>
+<example>
+Simple track Action example (with context menu and shortcut support).
+<pre><code source="../../DocCodeExamples/TimelineAttributesExamples.cs" region="declare-applyDefaultUndoAttr"></code></pre>
+</example>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.ClipAction.html">ClipAction</a></h4>
+      <section><p>Base class for a clip action.
+Inherit from this class to make an action that would react on selected clips after a menu click and/or a key shortcut.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.Invoker.html">Invoker</a></h4>
+      <section><p>Class containing methods to invoke actions.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.MarkerAction.html">MarkerAction</a></h4>
+      <section><p>Base class for a marker action.
+Inherit from this class to make an action that would react on selected markers after a menu click and/or a key shortcut.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.MenuEntryAttribute.html">MenuEntryAttribute</a></h4>
+      <section><p>Use this attribute to add a menu item to a context menu.
+Used to indicate path and priority that are auto added to the menu
+(examples can be found on <a href="https://docs.unity3d.com/ScriptReference/MenuItem.html">https://docs.unity3d.com/ScriptReference/MenuItem.html</a>).</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.MenuPriority.html">MenuPriority</a></h4>
+      <section><p>Priorities for menu item ordering. See <a class="xref" href="UnityEditor.Timeline.Actions.MenuEntryAttribute.html">MenuEntryAttribute</a>.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.MenuPriority.AddItem.html">MenuPriority.AddItem</a></h4>
+      <section><p>Priorities for menu entries to create Timeline items.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.MenuPriority.AddTrackMenu.html">MenuPriority.AddTrackMenu</a></h4>
+      <section><p>Priorities for Add Tracks menu items.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.MenuPriority.ClipActionSection.html">MenuPriority.ClipActionSection</a></h4>
+      <section><p>Priorities for Clip action menu items.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.MenuPriority.ClipEditActionSection.html">MenuPriority.ClipEditActionSection</a></h4>
+      <section><p>Priorities for Clip edition menu items.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.MenuPriority.CustomClipActionSection.html">MenuPriority.CustomClipActionSection</a></h4>
+      <section><p>Custom clip action menu item priority.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.MenuPriority.CustomTimelineActionSection.html">MenuPriority.CustomTimelineActionSection</a></h4>
+      <section><p>Priorities for custom Timeline action menu items.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.MenuPriority.CustomTrackActionSection.html">MenuPriority.CustomTrackActionSection</a></h4>
+      <section><p>Priorities for Custom Track action menu items.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.MenuPriority.MarkerActionSection.html">MenuPriority.MarkerActionSection</a></h4>
+      <section><p>Priorities for Marker action menu items.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.MenuPriority.TimelineActionSection.html">MenuPriority.TimelineActionSection</a></h4>
+      <section><p>Priorities for Timeline Action menu items.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.MenuPriority.TrackActionSection.html">MenuPriority.TrackActionSection</a></h4>
+      <section><p>Priorities for Track action menu items.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.TimelineAction.html">TimelineAction</a></h4>
+      <section><p>Base class for a timeline action.
+Inherit from this class to make an action on a timeline after a menu click and/or a key shortcut.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.TimelineShortcutAttribute.html">TimelineShortcutAttribute</a></h4>
+      <section><p>Use this attribute to make an action work with the shortcut system.</p>
+</section>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.TrackAction.html">TrackAction</a></h4>
+      <section><p>Base class for a track action.
+Inherit from this class to make an action that would react on selected tracks after a menu click and/or a key shortcut.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.ActionContext.html">ActionContext</a></h4>
+      <section><p>Action context to be used by actions.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="UnityEditor.Timeline.Actions.ActionValidity.html">ActionValidity</a></h4>
+      <section><p>Indicates the validity of an action for a given data set.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

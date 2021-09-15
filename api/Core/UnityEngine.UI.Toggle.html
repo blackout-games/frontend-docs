@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Toggle
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Toggle
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.UI.Toggle">
+  
+  
+  <h1 id="UnityEngine_UI_Toggle" data-uid="UnityEngine.UI.Toggle" class="text-break">Class Toggle
+  </h1>
+  <div class="markdown level0 summary"><p>A standard toggle that has an on / off state.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UnityEngine.UI.Selectable.html">Selectable</a></div>
+    <div class="level2"><span class="xref">Toggle</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IMoveHandler</span></div>
+    <div><span class="xref">IPointerDownHandler</span></div>
+    <div><span class="xref">IPointerUpHandler</span></div>
+    <div><span class="xref">IPointerEnterHandler</span></div>
+    <div><span class="xref">IPointerExitHandler</span></div>
+    <div><span class="xref">ISelectHandler</span></div>
+    <div><span class="xref">IDeselectHandler</span></div>
+    <div><span class="xref">IPointerClickHandler</span></div>
+    <div><span class="xref">ISubmitHandler</span></div>
+    <div><a class="xref" href="UnityEngine.UI.ICanvasElement.html">ICanvasElement</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_s_Selectables">Selectable.s_Selectables</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_s_SelectableCount">Selectable.s_SelectableCount</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectablesArray">Selectable.allSelectablesArray</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectableCount">Selectable.allSelectableCount</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectables">Selectable.allSelectables</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_AllSelectablesNoAlloc_UnityEngine_UI_Selectable___">Selectable.AllSelectablesNoAlloc(Selectable[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_m_CurrentIndex">Selectable.m_CurrentIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_navigation">Selectable.navigation</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_transition">Selectable.transition</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_colors">Selectable.colors</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_spriteState">Selectable.spriteState</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_animationTriggers">Selectable.animationTriggers</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_targetGraphic">Selectable.targetGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_interactable">Selectable.interactable</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_image">Selectable.image</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_Awake">Selectable.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnCanvasGroupChanged">Selectable.OnCanvasGroupChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsInteractable">Selectable.IsInteractable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnTransformParentChanged">Selectable.OnTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_currentSelectionState">Selectable.currentSelectionState</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_InstantClearState">Selectable.InstantClearState()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_DoStateTransition_UnityEngine_UI_Selectable_SelectionState_System_Boolean_">Selectable.DoStateTransition(Selectable.SelectionState, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectable_Vector3_">Selectable.FindSelectable(Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnLeft">Selectable.FindSelectableOnLeft()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnRight">Selectable.FindSelectableOnRight()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnUp">Selectable.FindSelectableOnUp()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnDown">Selectable.FindSelectableOnDown()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnMove_AxisEventData_">Selectable.OnMove(AxisEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsHighlighted">Selectable.IsHighlighted()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsPressed">Selectable.IsPressed()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerDown_PointerEventData_">Selectable.OnPointerDown(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerUp_PointerEventData_">Selectable.OnPointerUp(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerEnter_PointerEventData_">Selectable.OnPointerEnter(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerExit_PointerEventData_">Selectable.OnPointerExit(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnSelect_BaseEventData_">Selectable.OnSelect(BaseEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnDeselect_BaseEventData_">Selectable.OnDeselect(BaseEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_Select">Selectable.Select()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.UI.html">UnityEngine.UI</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_UI_Toggle_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Toggle : Selectable, IMoveHandler, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler, IPointerClickHandler, ISubmitHandler, ICanvasElement</code></pre>
+  </div>
+  <h5 id="UnityEngine_UI_Toggle_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The toggle component is a Selectable that controls a child graphic which displays the on / off state.
+When a toggle event occurs a callback is sent to any registered listeners of UI.Toggle._onValueChanged.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="UnityEngine_UI_Toggle__ctor_" data-uid="UnityEngine.UI.Toggle.#ctor*"></a>
+  <h4 id="UnityEngine_UI_Toggle__ctor" data-uid="UnityEngine.UI.Toggle.#ctor">Toggle()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Toggle()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UnityEngine_UI_Toggle_graphic" data-uid="UnityEngine.UI.Toggle.graphic">graphic</h4>
+  <div class="markdown level1 summary"><p>Graphic the toggle should be working with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graphic graphic</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UI.Graphic.html">Graphic</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_UI_Toggle_onValueChanged" data-uid="UnityEngine.UI.Toggle.onValueChanged">onValueChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Toggle.ToggleEvent onValueChanged</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UI.Toggle.ToggleEvent.html">Toggle.ToggleEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_UI_Toggle_toggleTransition" data-uid="UnityEngine.UI.Toggle.toggleTransition">toggleTransition</h4>
+  <div class="markdown level1 summary"><p>Transition mode for the toggle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Toggle.ToggleTransition toggleTransition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UI.Toggle.ToggleTransition.html">Toggle.ToggleTransition</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEngine_UI_Toggle_group_" data-uid="UnityEngine.UI.Toggle.group*"></a>
+  <h4 id="UnityEngine_UI_Toggle_group" data-uid="UnityEngine.UI.Toggle.group">group</h4>
+  <div class="markdown level1 summary"><p>Group the toggle belongs to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToggleGroup group { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UI.ToggleGroup.html">ToggleGroup</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_Toggle_isOn_" data-uid="UnityEngine.UI.Toggle.isOn*"></a>
+  <h4 id="UnityEngine_UI_Toggle_isOn" data-uid="UnityEngine.UI.Toggle.isOn">isOn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isOn { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_UI_Toggle_GraphicUpdateComplete_" data-uid="UnityEngine.UI.Toggle.GraphicUpdateComplete*"></a>
+  <h4 id="UnityEngine_UI_Toggle_GraphicUpdateComplete" data-uid="UnityEngine.UI.Toggle.GraphicUpdateComplete">GraphicUpdateComplete()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GraphicUpdateComplete()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_Toggle_LayoutComplete_" data-uid="UnityEngine.UI.Toggle.LayoutComplete*"></a>
+  <h4 id="UnityEngine_UI_Toggle_LayoutComplete" data-uid="UnityEngine.UI.Toggle.LayoutComplete">LayoutComplete()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LayoutComplete()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_Toggle_OnDestroy_" data-uid="UnityEngine.UI.Toggle.OnDestroy*"></a>
+  <h4 id="UnityEngine_UI_Toggle_OnDestroy" data-uid="UnityEngine.UI.Toggle.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_Toggle_OnDidApplyAnimationProperties_" data-uid="UnityEngine.UI.Toggle.OnDidApplyAnimationProperties*"></a>
+  <h4 id="UnityEngine_UI_Toggle_OnDidApplyAnimationProperties" data-uid="UnityEngine.UI.Toggle.OnDidApplyAnimationProperties">OnDidApplyAnimationProperties()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDidApplyAnimationProperties()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnDidApplyAnimationProperties">Selectable.OnDidApplyAnimationProperties()</a></div>
+  
+  
+  <a id="UnityEngine_UI_Toggle_OnDisable_" data-uid="UnityEngine.UI.Toggle.OnDisable*"></a>
+  <h4 id="UnityEngine_UI_Toggle_OnDisable" data-uid="UnityEngine.UI.Toggle.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnDisable">Selectable.OnDisable()</a></div>
+  
+  
+  <a id="UnityEngine_UI_Toggle_OnEnable_" data-uid="UnityEngine.UI.Toggle.OnEnable*"></a>
+  <h4 id="UnityEngine_UI_Toggle_OnEnable" data-uid="UnityEngine.UI.Toggle.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnEnable">Selectable.OnEnable()</a></div>
+  
+  
+  <a id="UnityEngine_UI_Toggle_OnPointerClick_" data-uid="UnityEngine.UI.Toggle.OnPointerClick*"></a>
+  <h4 id="UnityEngine_UI_Toggle_OnPointerClick_PointerEventData_" data-uid="UnityEngine.UI.Toggle.OnPointerClick(PointerEventData)">OnPointerClick(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>React to clicks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPointerClick(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PointerEventData</span></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_Toggle_OnSubmit_" data-uid="UnityEngine.UI.Toggle.OnSubmit*"></a>
+  <h4 id="UnityEngine_UI_Toggle_OnSubmit_BaseEventData_" data-uid="UnityEngine.UI.Toggle.OnSubmit(BaseEventData)">OnSubmit(BaseEventData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSubmit(BaseEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BaseEventData</span></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_Toggle_Rebuild_" data-uid="UnityEngine.UI.Toggle.Rebuild*"></a>
+  <h4 id="UnityEngine_UI_Toggle_Rebuild_UnityEngine_UI_CanvasUpdate_" data-uid="UnityEngine.UI.Toggle.Rebuild(UnityEngine.UI.CanvasUpdate)">Rebuild(CanvasUpdate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Rebuild(CanvasUpdate executing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UI.CanvasUpdate.html">CanvasUpdate</a></td>
+        <td><span class="parametername">executing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_Toggle_SetIsOnWithoutNotify_" data-uid="UnityEngine.UI.Toggle.SetIsOnWithoutNotify*"></a>
+  <h4 id="UnityEngine_UI_Toggle_SetIsOnWithoutNotify_System_Boolean_" data-uid="UnityEngine.UI.Toggle.SetIsOnWithoutNotify(System.Boolean)">SetIsOnWithoutNotify(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set isOn without invoking onValueChanged callback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsOnWithoutNotify(bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>New Value for isOn.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_Toggle_Start_" data-uid="UnityEngine.UI.Toggle.Start*"></a>
+  <h4 id="UnityEngine_UI_Toggle_Start" data-uid="UnityEngine.UI.Toggle.Start">Start()</h4>
+  <div class="markdown level1 summary"><p>Assume the correct visual state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IMoveHandler</span>
+  </div>
+  <div>
+      <span class="xref">IPointerDownHandler</span>
+  </div>
+  <div>
+      <span class="xref">IPointerUpHandler</span>
+  </div>
+  <div>
+      <span class="xref">IPointerEnterHandler</span>
+  </div>
+  <div>
+      <span class="xref">IPointerExitHandler</span>
+  </div>
+  <div>
+      <span class="xref">ISelectHandler</span>
+  </div>
+  <div>
+      <span class="xref">IDeselectHandler</span>
+  </div>
+  <div>
+      <span class="xref">IPointerClickHandler</span>
+  </div>
+  <div>
+      <span class="xref">ISubmitHandler</span>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UI.ICanvasElement.html">ICanvasElement</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

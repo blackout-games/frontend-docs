@@ -1,0 +1,923 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CoreUnsafeUtils
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CoreUnsafeUtils
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.Rendering.CoreUnsafeUtils">
+  
+  
+  <h1 id="UnityEngine_Rendering_CoreUnsafeUtils" data-uid="UnityEngine.Rendering.CoreUnsafeUtils" class="text-break">Class CoreUnsafeUtils
+  </h1>
+  <div class="markdown level0 summary"><p>Static class with unsafe utility functions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CoreUnsafeUtils</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.Rendering.html">UnityEngine.Rendering</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_Rendering_CoreUnsafeUtils_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CoreUnsafeUtils</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_Rendering_CoreUnsafeUtils_CombineHashes_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.CombineHashes*"></a>
+  <h4 id="UnityEngine_Rendering_CoreUnsafeUtils_CombineHashes_System_Int32_Hash128__Hash128__" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.CombineHashes(System.Int32,Hash128*,Hash128*)">CombineHashes(Int32, Hash128*, Hash128*)</h4>
+  <div class="markdown level1 summary"><p>Combine hashes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CombineHashes(int count, Hash128*hashes, Hash128*outHash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of hash to combine.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Hash128</span>*</td>
+        <td><span class="parametername">hashes</span></td>
+        <td><p>Hashes to combine.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Hash128</span>*</td>
+        <td><span class="parametername">outHash</span></td>
+        <td><p>Hash to update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Rendering_CoreUnsafeUtils_CombineHashes_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.CombineHashes*"></a>
+  <h4 id="UnityEngine_Rendering_CoreUnsafeUtils_CombineHashes__2_System_Int32_System_Void__Hash128__" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.CombineHashes``2(System.Int32,System.Void*,Hash128*)">CombineHashes&lt;TValue, TGetter&gt;(Int32, Void*, Hash128*)</h4>
+  <div class="markdown level1 summary"><p>Combine all of the hashes of a collection of hashes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CombineHashes&lt;TValue, TGetter&gt;(int count, void *hashes, Hash128*outHash)
+    where TValue : struct where TGetter : struct, CoreUnsafeUtils.IKeyGetter&lt;TValue, Hash128&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of hash to combine.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Void</span>*</td>
+        <td><span class="parametername">hashes</span></td>
+        <td><p>Hashes to combine.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Hash128</span>*</td>
+        <td><span class="parametername">outHash</span></td>
+        <td><p>Hash to update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td><p>Value type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TGetter</span></td>
+        <td><p>Getter type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Rendering_CoreUnsafeUtils_CompareHashes_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.CompareHashes*"></a>
+  <h4 id="UnityEngine_Rendering_CoreUnsafeUtils_CompareHashes_System_Int32_Hash128__System_Int32_Hash128__System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.CompareHashes(System.Int32,Hash128*,System.Int32,Hash128*,System.Int32*,System.Int32*,System.Int32@,System.Int32@)">CompareHashes(Int32, Hash128*, Int32, Hash128*, Int32*, Int32*, out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Compare hashes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CompareHashes(int oldHashCount, Hash128*oldHashes, int newHashCount, Hash128*newHashes, int *addIndices, int *removeIndices, out int addCount, out int remCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">oldHashCount</span></td>
+        <td><p>Number of hashes in <code data-dev-comment-type="paramref" class="paramref">oldHashes</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Hash128</span>*</td>
+        <td><span class="parametername">oldHashes</span></td>
+        <td><p>Previous hashes to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">newHashCount</span></td>
+        <td><p>Number of hashes in <code data-dev-comment-type="paramref" class="paramref">newHashes</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Hash128</span>*</td>
+        <td><span class="parametername">newHashes</span></td>
+        <td><p>New hashes to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>*</td>
+        <td><span class="parametername">addIndices</span></td>
+        <td><p>Indices of element to add in <code data-dev-comment-type="paramref" class="paramref">newHashes</code> will be written here.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>*</td>
+        <td><span class="parametername">removeIndices</span></td>
+        <td><p>Indices of element to remove in <code data-dev-comment-type="paramref" class="paramref">oldHashes</code> will be written here.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">addCount</span></td>
+        <td><p>Number of elements to add will be written here.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">remCount</span></td>
+        <td><p>Number of elements to remove will be written here.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of operation to perform (<pre><code><code data-dev-comment-type="paramref" class="paramref">addCount</code> + <code data-dev-comment-type="paramref" class="paramref">remCount</code></code></pre>)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Rendering_CoreUnsafeUtils_CompareHashes_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.CompareHashes*"></a>
+  <h4 id="UnityEngine_Rendering_CoreUnsafeUtils_CompareHashes__4_System_Int32_System_Void__System_Int32_System_Void__System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.CompareHashes``4(System.Int32,System.Void*,System.Int32,System.Void*,System.Int32*,System.Int32*,System.Int32@,System.Int32@)">CompareHashes&lt;TOldValue, TOldGetter, TNewValue, TNewGetter&gt;(Int32, Void*, Int32, Void*, Int32*, Int32*, out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Compare hashes of two collections and provide
+a list of indices <code data-dev-comment-type="paramref" class="paramref">removeIndices</code> to remove in <code data-dev-comment-type="paramref" class="paramref">oldHashes</code>
+and a list of indices <code data-dev-comment-type="paramref" class="paramref">addIndices</code> to add in <code data-dev-comment-type="paramref" class="paramref">newHashes</code>.</p>
+<p>Assumes that <code data-dev-comment-type="paramref" class="paramref">newHashes</code> and <code data-dev-comment-type="paramref" class="paramref">oldHashes</code> are sorted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CompareHashes&lt;TOldValue, TOldGetter, TNewValue, TNewGetter&gt;(int oldHashCount, void *oldHashes, int newHashCount, void *newHashes, int *addIndices, int *removeIndices, out int addCount, out int remCount)
+    where TOldValue : struct where TOldGetter : struct, CoreUnsafeUtils.IKeyGetter&lt;TOldValue, Hash128&gt; where TNewValue : struct where TNewGetter : struct, CoreUnsafeUtils.IKeyGetter&lt;TNewValue, Hash128&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">oldHashCount</span></td>
+        <td><p>Number of hashes in <code data-dev-comment-type="paramref" class="paramref">oldHashes</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Void</span>*</td>
+        <td><span class="parametername">oldHashes</span></td>
+        <td><p>Previous hashes to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">newHashCount</span></td>
+        <td><p>Number of hashes in <code data-dev-comment-type="paramref" class="paramref">newHashes</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Void</span>*</td>
+        <td><span class="parametername">newHashes</span></td>
+        <td><p>New hashes to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>*</td>
+        <td><span class="parametername">addIndices</span></td>
+        <td><p>Indices of element to add in <code data-dev-comment-type="paramref" class="paramref">newHashes</code> will be written here.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>*</td>
+        <td><span class="parametername">removeIndices</span></td>
+        <td><p>Indices of element to remove in <code data-dev-comment-type="paramref" class="paramref">oldHashes</code> will be written here.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">addCount</span></td>
+        <td><p>Number of elements to add will be written here.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">remCount</span></td>
+        <td><p>Number of elements to remove will be written here.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of operation to perform (<pre><code><code data-dev-comment-type="paramref" class="paramref">addCount</code> + <code data-dev-comment-type="paramref" class="paramref">remCount</code></code></pre>)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOldValue</span></td>
+        <td><p>Old value type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOldGetter</span></td>
+        <td><p>Old getter type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TNewValue</span></td>
+        <td><p>New value type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TNewGetter</span></td>
+        <td><p>New getter type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Rendering_CoreUnsafeUtils_CopyTo_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.CopyTo*"></a>
+  <h4 id="UnityEngine_Rendering_CoreUnsafeUtils_CopyTo__1___0___System_Void__System_Int32_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.CopyTo``1(``0[],System.Void*,System.Int32)">CopyTo&lt;T&gt;(T[], Void*, Int32)</h4>
+  <div class="markdown level1 summary"><p>Extension method to copy elements of an array into a buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyTo&lt;T&gt;(this T[] list, void *dest, int count)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>Input List.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Void</span>*</td>
+        <td><span class="parametername">dest</span></td>
+        <td><p>Destination buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of elements to copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the provided array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Rendering_CoreUnsafeUtils_CopyTo_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.CopyTo*"></a>
+  <h4 id="UnityEngine_Rendering_CoreUnsafeUtils_CopyTo__1_List___0__System_Void__System_Int32_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.CopyTo``1(List{``0},System.Void*,System.Int32)">CopyTo&lt;T&gt;(List&lt;T&gt;, Void*, Int32)</h4>
+  <div class="markdown level1 summary"><p>Extension method to copy elements of a list into a buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyTo&lt;T&gt;(this List&lt;T&gt; list, void *dest, int count)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>Input List.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Void</span>*</td>
+        <td><span class="parametername">dest</span></td>
+        <td><p>Destination buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of elements to copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the provided List.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Rendering_CoreUnsafeUtils_HaveDuplicates_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.HaveDuplicates*"></a>
+  <h4 id="UnityEngine_Rendering_CoreUnsafeUtils_HaveDuplicates_System_Int32___" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.HaveDuplicates(System.Int32[])">HaveDuplicates(Int32[])</h4>
+  <div class="markdown level1 summary"><p>Checks for duplicates in an array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HaveDuplicates(int[] arr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">arr</span></td>
+        <td><p>Input array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if there is any duplicate in the input array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Rendering_CoreUnsafeUtils_IndexOf_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.IndexOf*"></a>
+  <h4 id="UnityEngine_Rendering_CoreUnsafeUtils_IndexOf__1_System_Void__System_Int32___0_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.IndexOf``1(System.Void*,System.Int32,``0)">IndexOf&lt;T&gt;(Void*, Int32, T)</h4>
+  <div class="markdown level1 summary"><p>Index of an element in a buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IndexOf&lt;T&gt;(void *data, int count, T v)
+    where T : struct, IEquatable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Void</span>*</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Data buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of elements.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>Element to test against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The first index of the provided element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Data type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Rendering_CoreUnsafeUtils_QuickSort_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.QuickSort*"></a>
+  <h4 id="UnityEngine_Rendering_CoreUnsafeUtils_QuickSort_System_UInt32___System_Int32_System_Int32_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.QuickSort(System.UInt32[],System.Int32,System.Int32)">QuickSort(UInt32[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Quick Sort</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void QuickSort(uint[] arr, int left, int right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span>[]</td>
+        <td><span class="parametername">arr</span></td>
+        <td><p>uint array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>Left boundary.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>Left boundary.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Rendering_CoreUnsafeUtils_QuickSort_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.QuickSort*"></a>
+  <h4 id="UnityEngine_Rendering_CoreUnsafeUtils_QuickSort__1_System_Int32_System_Void__" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.QuickSort``1(System.Int32,System.Void*)">QuickSort&lt;T&gt;(Int32, Void*)</h4>
+  <div class="markdown level1 summary"><p>Quick sort.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void QuickSort&lt;T&gt;(int count, void *data)
+    where T : struct, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Void</span>*</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Buffer to sort.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Rendering_CoreUnsafeUtils_QuickSort_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.QuickSort*"></a>
+  <h4 id="UnityEngine_Rendering_CoreUnsafeUtils_QuickSort__3_System_Int32_System_Void__" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.QuickSort``3(System.Int32,System.Void*)">QuickSort&lt;TValue, TKey, TGetter&gt;(Int32, Void*)</h4>
+  <div class="markdown level1 summary"><p>Quick sort.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void QuickSort&lt;TValue, TKey, TGetter&gt;(int count, void *data)
+    where TValue : struct where TKey : struct, IComparable&lt;TKey&gt; where TGetter : struct, CoreUnsafeUtils.IKeyGetter&lt;TValue, TKey&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Void</span>*</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Data to sort.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td><p>Value type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td><p>Key Type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TGetter</span></td>
+        <td><p>Getter type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Rendering_CoreUnsafeUtils_QuickSort_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.QuickSort*"></a>
+  <h4 id="UnityEngine_Rendering_CoreUnsafeUtils_QuickSort__3_System_Void__System_Int32_System_Int32_" data-uid="UnityEngine.Rendering.CoreUnsafeUtils.QuickSort``3(System.Void*,System.Int32,System.Int32)">QuickSort&lt;TValue, TKey, TGetter&gt;(Void*, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Quick sort.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void QuickSort&lt;TValue, TKey, TGetter&gt;(void *data, int left, int right)
+    where TValue : struct where TKey : struct, IComparable&lt;TKey&gt; where TGetter : struct, CoreUnsafeUtils.IKeyGetter&lt;TValue, TKey&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Void</span>*</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Data to sort.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>Left boundary.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>Right boundary.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td><p>Value type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td><p>Key Type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TGetter</span></td>
+        <td><p>Getter type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

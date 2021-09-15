@@ -1,0 +1,784 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TechTreeNode
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TechTreeNode
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Blackout.TechTreeNode">
+  
+  
+  <h1 id="Blackout_TechTreeNode" data-uid="Blackout.TechTreeNode" class="text-break">Class TechTreeNode
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html">BlackoutBehaviourUI</a></div>
+    <div class="level2"><span class="xref">TechTreeNode</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IPointerEnterHandler</span></div>
+    <div><span class="xref">IPointerExitHandler</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_rectTransform">BlackoutBehaviourUI.rectTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_size">BlackoutBehaviourUI.size</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_Height">BlackoutBehaviourUI.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_Width">BlackoutBehaviourUI.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_sizeDelta">BlackoutBehaviourUI.sizeDelta</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_pivot">BlackoutBehaviourUI.pivot</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_anchoredPosition">BlackoutBehaviourUI.anchoredPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_RootCanvas">BlackoutBehaviourUI.RootCanvas</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_RootCanvasScaler">BlackoutBehaviourUI.RootCanvasScaler</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_ScreenSize">BlackoutBehaviourUI.ScreenSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_CanvasSize">BlackoutBehaviourUI.CanvasSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_IsOverlapping_RectTransform_System_Boolean_">BlackoutBehaviourUI.IsOverlapping(RectTransform, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_SetAnchorsAndPivot_Vector2_Vector2_Vector2_">BlackoutBehaviourUI.SetAnchorsAndPivot(Vector2, Vector2, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_SetAnchorsAndPivot_Vector2_">BlackoutBehaviourUI.SetAnchorsAndPivot(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_SetViewportPosition_Vector2_">BlackoutBehaviourUI.SetViewportPosition(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_SetViewpointPosition_Vector2_Vector2_">BlackoutBehaviourUI.SetViewpointPosition(Vector2, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_Show">BlackoutBehaviourUI.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_Hide">BlackoutBehaviourUI.Hide()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_CalculateCentrePivot_Vector3_">BlackoutBehaviourUI.CalculateCentrePivot(Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_ScaleAround_GameObject_Vector3_Vector3_">BlackoutBehaviourUI.ScaleAround(GameObject, Vector3, Vector3)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Blackout.html">Blackout</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Blackout_TechTreeNode_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TechTreeNode : BlackoutBehaviourUI, IPointerEnterHandler, IPointerExitHandler</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Blackout_TechTreeNode_background" data-uid="Blackout.TechTreeNode.background">background</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image background</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_TechTreeNode_categoryID" data-uid="Blackout.TechTreeNode.categoryID">categoryID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int categoryID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_TechTreeNode_description" data-uid="Blackout.TechTreeNode.description">description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string description</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_TechTreeNode_greyIconMaterial" data-uid="Blackout.TechTreeNode.greyIconMaterial">greyIconMaterial</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Material greyIconMaterial</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Material</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_TechTreeNode_message" data-uid="Blackout.TechTreeNode.message">message</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string message</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_TechTreeNode_nodeIconLoader" data-uid="Blackout.TechTreeNode.nodeIconLoader">nodeIconLoader</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageLoader nodeIconLoader</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ImageLoader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_TechTreeNode_provision" data-uid="Blackout.TechTreeNode.provision">provision</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string provision</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_TechTreeNode_request" data-uid="Blackout.TechTreeNode.request">request</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TechTreeModel.Request request</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TechTreeModel.Request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_TechTreeNode_state" data-uid="Blackout.TechTreeNode.state">state</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TechTreeNodeState state</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.TechTreeNodeState.html">TechTreeNodeState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_TechTreeNode_techIcon" data-uid="Blackout.TechTreeNode.techIcon">techIcon</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RawImage techIcon</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RawImage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_TechTreeNode_text" data-uid="Blackout.TechTreeNode.text">text</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlackoutText text</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BlackoutText</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_TechTreeNode_tier" data-uid="Blackout.TechTreeNode.tier">tier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int tier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_TechTreeNode_title" data-uid="Blackout.TechTreeNode.title">title</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string title</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Blackout_TechTreeNode_button_" data-uid="Blackout.TechTreeNode.button*"></a>
+  <h4 id="Blackout_TechTreeNode_button" data-uid="Blackout.TechTreeNode.button">button</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlackoutButton button { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BlackoutButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_TechTreeNode_CanPurchase_" data-uid="Blackout.TechTreeNode.CanPurchase*"></a>
+  <h4 id="Blackout_TechTreeNode_CanPurchase" data-uid="Blackout.TechTreeNode.CanPurchase">CanPurchase</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanPurchase { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_TechTreeNode_ParentBranch_" data-uid="Blackout.TechTreeNode.ParentBranch*"></a>
+  <h4 id="Blackout_TechTreeNode_ParentBranch" data-uid="Blackout.TechTreeNode.ParentBranch">ParentBranch</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TechTreeBranch ParentBranch { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.TechTreeBranch.html">TechTreeBranch</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_TechTreeNode_ShowUnlockPreviousTechMessage_" data-uid="Blackout.TechTreeNode.ShowUnlockPreviousTechMessage*"></a>
+  <h4 id="Blackout_TechTreeNode_ShowUnlockPreviousTechMessage" data-uid="Blackout.TechTreeNode.ShowUnlockPreviousTechMessage">ShowUnlockPreviousTechMessage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowUnlockPreviousTechMessage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Blackout_TechTreeNode_Init_" data-uid="Blackout.TechTreeNode.Init*"></a>
+  <h4 id="Blackout_TechTreeNode_Init_Blackout_TechTreeDescriptionContainer_" data-uid="Blackout.TechTreeNode.Init(Blackout.TechTreeDescriptionContainer)">Init(TechTreeDescriptionContainer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init(TechTreeDescriptionContainer descriptionWindow)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.TechTreeDescriptionContainer.html">TechTreeDescriptionContainer</a></td>
+        <td><span class="parametername">descriptionWindow</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_TechTreeNode_OnPointerEnter_" data-uid="Blackout.TechTreeNode.OnPointerEnter*"></a>
+  <h4 id="Blackout_TechTreeNode_OnPointerEnter_PointerEventData_" data-uid="Blackout.TechTreeNode.OnPointerEnter(PointerEventData)">OnPointerEnter(PointerEventData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPointerEnter(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PointerEventData</span></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_TechTreeNode_OnPointerExit_" data-uid="Blackout.TechTreeNode.OnPointerExit*"></a>
+  <h4 id="Blackout_TechTreeNode_OnPointerExit_PointerEventData_" data-uid="Blackout.TechTreeNode.OnPointerExit(PointerEventData)">OnPointerExit(PointerEventData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPointerExit(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PointerEventData</span></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_TechTreeNode_SetEmpty_" data-uid="Blackout.TechTreeNode.SetEmpty*"></a>
+  <h4 id="Blackout_TechTreeNode_SetEmpty" data-uid="Blackout.TechTreeNode.SetEmpty">SetEmpty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEmpty()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_TechTreeNode_SetState_" data-uid="Blackout.TechTreeNode.SetState*"></a>
+  <h4 id="Blackout_TechTreeNode_SetState_Blackout_TechTreeNodeState_" data-uid="Blackout.TechTreeNode.SetState(Blackout.TechTreeNodeState)">SetState(TechTreeNodeState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetState(TechTreeNodeState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.TechTreeNodeState.html">TechTreeNodeState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_TechTreeNode_SetTextInfo_" data-uid="Blackout.TechTreeNode.SetTextInfo*"></a>
+  <h4 id="Blackout_TechTreeNode_SetTextInfo_System_String_System_String_System_String_System_String_System_Int32_" data-uid="Blackout.TechTreeNode.SetTextInfo(System.String,System.String,System.String,System.String,System.Int32)">SetTextInfo(String, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTextInfo(string category, string message, string description, string provision, int tier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">provision</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IPointerEnterHandler</span>
+  </div>
+  <div>
+      <span class="xref">IPointerExitHandler</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,632 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HashingMethods
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HashingMethods
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods">
+  
+  
+  <h1 id="UnityEditor_Build_Pipeline_Utilities_HashingMethods" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods" class="text-break">Class HashingMethods
+  </h1>
+  <div class="markdown level0 summary"><p>Creates the <a class="xref" href="UnityEditor.Build.Pipeline.Utilities.RawHash.html">RawHash</a> for an object.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">HashingMethods</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEditor.Build.Pipeline.Utilities.html">UnityEditor.Build.Pipeline.Utilities</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class HashingMethods</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_Calculate_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.Calculate*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_Calculate_Hash128_Hash128_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.Calculate(Hash128,Hash128)">Calculate(Hash128, Hash128)</h4>
+  <div class="markdown level1 summary"><p>Creates the hash for a pair of Hash128 objects.  Optimized specialization of the generic Calculate() methods that has been shown to be ~3x faster
+The generic function uses reflection to obtain the four 32bit fields in the Hash128 which is slow, this function uses more direct byte access</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RawHash Calculate(Hash128 hash1, Hash128 hash2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Hash128</span></td>
+        <td><span class="parametername">hash1</span></td>
+        <td><p>The first hash to combine</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Hash128</span></td>
+        <td><span class="parametername">hash2</span></td>
+        <td><p>The second hash to combine</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Build.Pipeline.Utilities.RawHash.html">RawHash</a></td>
+        <td><p>Returns the combined hash of the two hashes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_Calculate_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.Calculate*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_Calculate_System_Object_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.Calculate(System.Object)">Calculate(Object)</h4>
+  <div class="markdown level1 summary"><p>Creates the hash for an object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RawHash Calculate(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Build.Pipeline.Utilities.RawHash.html">RawHash</a></td>
+        <td><p>Returns the hash of the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_Calculate_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.Calculate*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_Calculate_System_Object___" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.Calculate(System.Object[])">Calculate(Object[])</h4>
+  <div class="markdown level1 summary"><p>Creates the hash for a set of objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RawHash Calculate(params object[] objects)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">objects</span></td>
+        <td><p>The objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Build.Pipeline.Utilities.RawHash.html">RawHash</a></td>
+        <td><p>Returns the hash of the set of objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_Calculate_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.Calculate*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_Calculate__1_System_Object_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.Calculate``1(System.Object)">Calculate&lt;T&gt;(Object)</h4>
+  <div class="markdown level1 summary"><p>Creates the hash for an object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RawHash Calculate&lt;T&gt;(object obj)
+    where T : HashAlgorithm</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Build.Pipeline.Utilities.RawHash.html">RawHash</a></td>
+        <td><p>Returns the hash of the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The hash algorithm type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_Calculate_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.Calculate*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_Calculate__1_System_Object___" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.Calculate``1(System.Object[])">Calculate&lt;T&gt;(Object[])</h4>
+  <div class="markdown level1 summary"><p>Creates the hash for a set of objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RawHash Calculate&lt;T&gt;(params object[] objects)
+    where T : HashAlgorithm</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">objects</span></td>
+        <td><p>The objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Build.Pipeline.Utilities.RawHash.html">RawHash</a></td>
+        <td><p>Returns the hash of the set of objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The hash algorithm type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_CalculateFile_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.CalculateFile*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_CalculateFile_System_String_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.CalculateFile(System.String)">CalculateFile(String)</h4>
+  <div class="markdown level1 summary"><p>Creates the hash for a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RawHash CalculateFile(string filePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The file path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Build.Pipeline.Utilities.RawHash.html">RawHash</a></td>
+        <td><p>Returns the hash of the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_CalculateFile_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.CalculateFile*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_CalculateFile__1_System_String_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.CalculateFile``1(System.String)">CalculateFile&lt;T&gt;(String)</h4>
+  <div class="markdown level1 summary"><p>Creates the hash for a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RawHash CalculateFile&lt;T&gt;(string filePath)
+    where T : HashAlgorithm</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The file path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Build.Pipeline.Utilities.RawHash.html">RawHash</a></td>
+        <td><p>Returns the hash of the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The hash algorithm type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_CalculateStream_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.CalculateStream*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_CalculateStream_Stream_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.CalculateStream(Stream)">CalculateStream(Stream)</h4>
+  <div class="markdown level1 summary"><p>Creates the hash for a stream of data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RawHash CalculateStream(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream of data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Build.Pipeline.Utilities.RawHash.html">RawHash</a></td>
+        <td><p>Returns the hash of the stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_CalculateStream_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.CalculateStream*"></a>
+  <h4 id="UnityEditor_Build_Pipeline_Utilities_HashingMethods_CalculateStream__1_Stream_" data-uid="UnityEditor.Build.Pipeline.Utilities.HashingMethods.CalculateStream``1(Stream)">CalculateStream&lt;T&gt;(Stream)</h4>
+  <div class="markdown level1 summary"><p>Creates the hash for a stream of data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RawHash CalculateStream&lt;T&gt;(Stream stream)
+    where T : HashAlgorithm</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream of data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Build.Pipeline.Utilities.RawHash.html">RawHash</a></td>
+        <td><p>Returns the hash of the stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The hash algorithm type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,584 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SignalReceiver
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SignalReceiver
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.Timeline.SignalReceiver">
+  
+  
+  <h1 id="UnityEngine_Timeline_SignalReceiver" data-uid="UnityEngine.Timeline.SignalReceiver" class="text-break">Class SignalReceiver
+  </h1>
+  <div class="markdown level0 summary"><p>Listens for emitted signals and reacts depending on its defined reactions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SignalReceiver</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">INotificationReceiver</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.Timeline.html">UnityEngine.Timeline</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_Timeline_SignalReceiver_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SignalReceiver : MonoBehaviour, INotificationReceiver</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_Timeline_SignalReceiver_AddEmptyReaction_" data-uid="UnityEngine.Timeline.SignalReceiver.AddEmptyReaction*"></a>
+  <h4 id="UnityEngine_Timeline_SignalReceiver_AddEmptyReaction_UnityEvent_" data-uid="UnityEngine.Timeline.SignalReceiver.AddEmptyReaction(UnityEvent)">AddEmptyReaction(UnityEvent)</h4>
+  <div class="markdown level1 summary"><p>Appends a null SignalAsset with a reaction specified by the UnityEvent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddEmptyReaction(UnityEvent reaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEvent</span></td>
+        <td><span class="parametername">reaction</span></td>
+        <td><p>The new reaction to be appended.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The index of the appended reaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_SignalReceiver_AddEmptyReaction_UnityEvent__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Multiple null assets are valid.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_SignalReceiver_AddReaction_" data-uid="UnityEngine.Timeline.SignalReceiver.AddReaction*"></a>
+  <h4 id="UnityEngine_Timeline_SignalReceiver_AddReaction_UnityEngine_Timeline_SignalAsset_UnityEvent_" data-uid="UnityEngine.Timeline.SignalReceiver.AddReaction(UnityEngine.Timeline.SignalAsset,UnityEvent)">AddReaction(SignalAsset, UnityEvent)</h4>
+  <div class="markdown level1 summary"><p>Defines a new reaction for a SignalAsset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddReaction(SignalAsset asset, UnityEvent reaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.SignalAsset.html">SignalAsset</a></td>
+        <td><span class="parametername">asset</span></td>
+        <td><p>The SignalAsset for which the reaction is being defined.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEvent</span></td>
+        <td><span class="parametername">reaction</span></td>
+        <td><p>The UnityEvent that describes the reaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_SignalReceiver_ChangeReactionAtIndex_" data-uid="UnityEngine.Timeline.SignalReceiver.ChangeReactionAtIndex*"></a>
+  <h4 id="UnityEngine_Timeline_SignalReceiver_ChangeReactionAtIndex_System_Int32_UnityEvent_" data-uid="UnityEngine.Timeline.SignalReceiver.ChangeReactionAtIndex(System.Int32,UnityEvent)">ChangeReactionAtIndex(Int32, UnityEvent)</h4>
+  <div class="markdown level1 summary"><p>Replaces the reaction at a specific index with a new UnityEvent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeReactionAtIndex(int idx, UnityEvent reaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>The index of the reaction to be replaced.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEvent</span></td>
+        <td><span class="parametername">reaction</span></td>
+        <td><p>The replacement reaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_SignalReceiver_ChangeSignalAtIndex_" data-uid="UnityEngine.Timeline.SignalReceiver.ChangeSignalAtIndex*"></a>
+  <h4 id="UnityEngine_Timeline_SignalReceiver_ChangeSignalAtIndex_System_Int32_UnityEngine_Timeline_SignalAsset_" data-uid="UnityEngine.Timeline.SignalReceiver.ChangeSignalAtIndex(System.Int32,UnityEngine.Timeline.SignalAsset)">ChangeSignalAtIndex(Int32, SignalAsset)</h4>
+  <div class="markdown level1 summary"><p>Replaces the SignalAsset associated with a reaction at a specific index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeSignalAtIndex(int idx, SignalAsset newKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>The index of the reaction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.SignalAsset.html">SignalAsset</a></td>
+        <td><span class="parametername">newKey</span></td>
+        <td><p>The replacement SignalAsset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_SignalReceiver_ChangeSignalAtIndex_System_Int32_UnityEngine_Timeline_SignalAsset__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The new SignalAsset can be null.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_SignalReceiver_Count_" data-uid="UnityEngine.Timeline.SignalReceiver.Count*"></a>
+  <h4 id="UnityEngine_Timeline_SignalReceiver_Count" data-uid="UnityEngine.Timeline.SignalReceiver.Count">Count()</h4>
+  <div class="markdown level1 summary"><p>Returns the count of registered SignalAssets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_SignalReceiver_GetReaction_" data-uid="UnityEngine.Timeline.SignalReceiver.GetReaction*"></a>
+  <h4 id="UnityEngine_Timeline_SignalReceiver_GetReaction_UnityEngine_Timeline_SignalAsset_" data-uid="UnityEngine.Timeline.SignalReceiver.GetReaction(UnityEngine.Timeline.SignalAsset)">GetReaction(SignalAsset)</h4>
+  <div class="markdown level1 summary"><p>Gets the first UnityEvent associated with a SignalAsset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent GetReaction(SignalAsset key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.SignalAsset.html">SignalAsset</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>A SignalAsset defining the signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEvent</span></td>
+        <td><p>Returns the reaction associated with a SignalAsset. Returns null if the signal asset does not exist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_SignalReceiver_GetReactionAtIndex_" data-uid="UnityEngine.Timeline.SignalReceiver.GetReactionAtIndex*"></a>
+  <h4 id="UnityEngine_Timeline_SignalReceiver_GetReactionAtIndex_System_Int32_" data-uid="UnityEngine.Timeline.SignalReceiver.GetReactionAtIndex(System.Int32)">GetReactionAtIndex(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the reaction at a specific index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent GetReactionAtIndex(int idx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>The index of the reaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEvent</span></td>
+        <td><p>Returns a reaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_SignalReceiver_GetRegisteredSignals_" data-uid="UnityEngine.Timeline.SignalReceiver.GetRegisteredSignals*"></a>
+  <h4 id="UnityEngine_Timeline_SignalReceiver_GetRegisteredSignals" data-uid="UnityEngine.Timeline.SignalReceiver.GetRegisteredSignals">GetRegisteredSignals()</h4>
+  <div class="markdown level1 summary"><p>Gets a list of all registered SignalAssets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;SignalAsset&gt; GetRegisteredSignals()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="UnityEngine.Timeline.SignalAsset.html">SignalAsset</a>&gt;</td>
+        <td><p>Returns a list of SignalAssets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_SignalReceiver_GetSignalAssetAtIndex_" data-uid="UnityEngine.Timeline.SignalReceiver.GetSignalAssetAtIndex*"></a>
+  <h4 id="UnityEngine_Timeline_SignalReceiver_GetSignalAssetAtIndex_System_Int32_" data-uid="UnityEngine.Timeline.SignalReceiver.GetSignalAssetAtIndex(System.Int32)">GetSignalAssetAtIndex(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the SignalAsset at a specific index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SignalAsset GetSignalAssetAtIndex(int idx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>The index of the SignalAsset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.SignalAsset.html">SignalAsset</a></td>
+        <td><p>Returns a SignalAsset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_SignalReceiver_OnNotify_" data-uid="UnityEngine.Timeline.SignalReceiver.OnNotify*"></a>
+  <h4 id="UnityEngine_Timeline_SignalReceiver_OnNotify_Playable_INotification_System_Object_" data-uid="UnityEngine.Timeline.SignalReceiver.OnNotify(Playable,INotification,System.Object)">OnNotify(Playable, INotification, Object)</h4>
+  <div class="markdown level1 summary"><p>Called when a notification is sent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnNotify(Playable origin, INotification notification, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Playable</span></td>
+        <td><span class="parametername">origin</span></td>
+        <td><p>The playable that sent the notification.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">INotification</span></td>
+        <td><span class="parametername">notification</span></td>
+        <td><p>The received notification. Only notifications of type <a class="xref" href="UnityEngine.Timeline.SignalEmitter.html">SignalEmitter</a> will be processed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>User defined data that depends on the type of notification. Uses this to pass necessary information that can change with each invocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_SignalReceiver_Remove_" data-uid="UnityEngine.Timeline.SignalReceiver.Remove*"></a>
+  <h4 id="UnityEngine_Timeline_SignalReceiver_Remove_UnityEngine_Timeline_SignalAsset_" data-uid="UnityEngine.Timeline.SignalReceiver.Remove(UnityEngine.Timeline.SignalAsset)">Remove(SignalAsset)</h4>
+  <div class="markdown level1 summary"><p>Removes the first occurrence of a SignalAsset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(SignalAsset asset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.SignalAsset.html">SignalAsset</a></td>
+        <td><span class="parametername">asset</span></td>
+        <td><p>The SignalAsset to be removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_SignalReceiver_RemoveAtIndex_" data-uid="UnityEngine.Timeline.SignalReceiver.RemoveAtIndex*"></a>
+  <h4 id="UnityEngine_Timeline_SignalReceiver_RemoveAtIndex_System_Int32_" data-uid="UnityEngine.Timeline.SignalReceiver.RemoveAtIndex(System.Int32)">RemoveAtIndex(Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the SignalAsset and reaction at a specific index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAtIndex(int idx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>The index of the SignalAsset to be removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">INotificationReceiver</span>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="UnityEngine.Timeline.SignalEmitter.html">SignalEmitter</a></div>
+      <div><a class="xref" href="UnityEngine.Timeline.SignalAsset.html">SignalAsset</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

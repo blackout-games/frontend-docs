@@ -1,0 +1,1370 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GZipStream
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GZipStream
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.Decompression.Zlib.GZipStream">
+  
+  
+  <h1 id="BestHTTP_Decompression_Zlib_GZipStream" data-uid="BestHTTP.Decompression.Zlib.GZipStream" class="text-break">Class GZipStream
+  </h1>
+  <div class="markdown level0 summary"><p>A class for compressing and decompressing GZIP streams.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.MarshalByRefObject</span></div>
+    <div class="level2"><span class="xref">System.IO.Stream</span></div>
+    <div class="level3"><span class="xref">GZipStream</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IO.Stream.Null</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyToAsync(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyTo(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyTo(System.IO.Stream, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.Close()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.FlushAsync()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.FlushAsync(System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CreateWaitHandle()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.BeginRead(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.EndRead(System.IAsyncResult)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.BeginWrite(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.EndWrite(System.IAsyncResult)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.Seek(System.Int64, System.IO.SeekOrigin)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ReadByte()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.WriteByte(System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.Synchronized(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ObjectInvariant()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CanTimeout</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ReadTimeout</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.WriteTimeout</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.MemberwiseClone(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.GetLifetimeService()</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.InitializeLifetimeService()</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.CreateObjRef(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.Decompression.Zlib.html">BestHTTP.Decompression.Zlib</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GZipStream : Stream, IDisposable</code></pre>
+  </div>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+  The <code>GZipStream</code> is a <a href="http://en.wikipedia.org/wiki/Decorator_pattern">Decorator</a> on a
+<see cref="!:Stream"></see>. It adds GZIP compression or decompression to any
+stream.
+</p>
+<p>
+  Like the <code>System.IO.Compression.GZipStream</code> in the .NET Base Class Library, the
+<code>Ionic.Zlib.GZipStream</code> can compress while writing, or decompress while
+reading, but not vice versa.  The compression method used is GZIP, which is
+documented in <a href="http://www.ietf.org/rfc/rfc1952.txt">IETF RFC
+1952</a>, &quot;GZIP file format specification version 4.3&quot;.</p>
+<p>
+  A <code>GZipStream</code> can be used to decompress data (through <code>Read()</code>) or
+  to compress data (through <code>Write()</code>), but not both.
+</p>
+<p>
+  If you wish to use the <code>GZipStream</code> to compress data, you must wrap it
+  around a write-able stream. As you call <code>Write()</code> on the <code>GZipStream</code>, the
+  data will be compressed into the GZIP format.  If you want to decompress data,
+  you must wrap the <code>GZipStream</code> around a readable stream that contains an
+  IETF RFC 1952-compliant stream.  The data will be decompressed as you call
+<code>Read()</code> on the <code>GZipStream</code>.
+</p>
+<p>
+  Though the GZIP format allows data from multiple files to be concatenated
+  together, this stream handles only a single segment of GZIP format, typically
+  representing a single file.
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream__ctor_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.#ctor*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream__ctor_Stream_BestHTTP_Decompression_Zlib_CompressionMode_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.#ctor(Stream,BestHTTP.Decompression.Zlib.CompressionMode)">GZipStream(Stream, CompressionMode)</h4>
+  <div class="markdown level1 summary"><p>Create a <code>GZipStream</code> using the specified <code>CompressionMode</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GZipStream(Stream stream, CompressionMode mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream which will be read or written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Decompression.Zlib.CompressionMode.html">CompressionMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>Indicates whether the GZipStream will compress or decompress.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream__ctor_Stream_BestHTTP_Decompression_Zlib_CompressionMode__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  When mode is <code>CompressionMode.Compress</code>, the <code>GZipStream</code> will use the
+  default compression level.
+</p>
+<p>
+  As noted in the class documentation, the <code>CompressionMode</code> (Compress
+  or Decompress) also establishes the &quot;direction&quot; of the stream.  A
+<code>GZipStream</code> with <code>CompressionMode.Compress</code> works only through
+<code>Write()</code>.  A <code>GZipStream</code> with
+<code>CompressionMode.Decompress</code> works only through <code>Read()</code>.
+</p>
+</div>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream__ctor_Stream_BestHTTP_Decompression_Zlib_CompressionMode__examples">Examples</h5>
+  <p>This example shows how to use a GZipStream to compress data.</p>
+<pre><code>using (System.IO.Stream input = System.IO.File.OpenRead(fileToCompress))
+{
+    using (var raw = System.IO.File.Create(outputFile))
+    {
+        using (Stream compressor = new GZipStream(raw, CompressionMode.Compress))
+        {
+            byte[] buffer = new byte[WORKING_BUFFER_SIZE];
+            int n;
+            while ((n= input.Read(buffer, 0, buffer.Length)) != 0)
+            {
+                compressor.Write(buffer, 0, n);
+            }
+        }
+    }
+}</code></pre>
+<pre><code>Dim outputFile As String = (fileToCompress &amp; &quot;.compressed&quot;)
+Using input As Stream = File.OpenRead(fileToCompress)
+    Using raw As FileStream = File.Create(outputFile)
+    Using compressor As Stream = New GZipStream(raw, CompressionMode.Compress)
+        Dim buffer As Byte() = New Byte(4096) {}
+        Dim n As Integer = -1
+        Do While (n &lt;> 0)
+            If (n > 0) Then
+                compressor.Write(buffer, 0, n)
+            End If
+            n = input.Read(buffer, 0, buffer.Length)
+        Loop
+    End Using
+    End Using
+End Using</code></pre>
+
+  <p>This example shows how to use a GZipStream to uncompress a file.</p>
+<pre><code>private void GunZipFile(string filename)
+{
+    if (!filename.EndsWith(&quot;.gz))
+        throw new ArgumentException(&quot;filename&quot;);
+    var DecompressedFile = filename.Substring(0,filename.Length-3);
+    byte[] working = new byte[WORKING_BUFFER_SIZE];
+    int n= 1;
+    using (System.IO.Stream input = System.IO.File.OpenRead(filename))
+    {
+        using (Stream decompressor= new Ionic.Zlib.GZipStream(input, CompressionMode.Decompress, true))
+        {
+            using (var output = System.IO.File.Create(DecompressedFile))
+            {
+                while (n !=0)
+                {
+                    n= decompressor.Read(working, 0, working.Length);
+                    if (n > 0)
+                    {
+                        output.Write(working, 0, n);
+                    }
+                }
+            }
+        }
+    }
+}</code></pre>
+<pre><code>Private Sub GunZipFile(ByVal filename as String)
+    If Not (filename.EndsWith(&quot;.gz)) Then
+        Throw New ArgumentException(&quot;filename&quot;)
+    End If
+    Dim DecompressedFile as String = filename.Substring(0,filename.Length-3)
+    Dim working(WORKING_BUFFER_SIZE) as Byte
+    Dim n As Integer = 1
+    Using input As Stream = File.OpenRead(filename)
+        Using decompressor As Stream = new Ionic.Zlib.GZipStream(input, CompressionMode.Decompress, True)
+            Using output As Stream = File.Create(UncompressedFile)
+                Do
+                    n= decompressor.Read(working, 0, working.Length)
+                    If n > 0 Then
+                        output.Write(working, 0, n)
+                    End IF
+                Loop While (n  > 0)
+            End Using
+        End Using
+    End Using
+End Sub</code></pre>
+
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream__ctor_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.#ctor*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream__ctor_Stream_BestHTTP_Decompression_Zlib_CompressionMode_BestHTTP_Decompression_Zlib_CompressionLevel_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.#ctor(Stream,BestHTTP.Decompression.Zlib.CompressionMode,BestHTTP.Decompression.Zlib.CompressionLevel)">GZipStream(Stream, CompressionMode, CompressionLevel)</h4>
+  <div class="markdown level1 summary"><p>Create a <code>GZipStream</code> using the specified <code>CompressionMode</code> and
+the specified <code>CompressionLevel</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GZipStream(Stream stream, CompressionMode mode, CompressionLevel level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream to be read or written while deflating or inflating.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Decompression.Zlib.CompressionMode.html">CompressionMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>Indicates whether the <code>GZipStream</code> will compress or decompress.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Decompression.Zlib.CompressionLevel.html">CompressionLevel</a></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>A tuning knob to trade speed for effectiveness.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream__ctor_Stream_BestHTTP_Decompression_Zlib_CompressionMode_BestHTTP_Decompression_Zlib_CompressionLevel__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  The <code>CompressionMode</code> (Compress or Decompress) also establishes the
+  &quot;direction&quot; of the stream.  A <code>GZipStream</code> with
+<code>CompressionMode.Compress</code> works only through <code>Write()</code>.  A
+<code>GZipStream</code> with <code>CompressionMode.Decompress</code> works only
+through <code>Read()</code>.
+</p>
+</div>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream__ctor_Stream_BestHTTP_Decompression_Zlib_CompressionMode_BestHTTP_Decompression_Zlib_CompressionLevel__examples">Examples</h5>
+  <p>This example shows how to use a <code>GZipStream</code> to compress a file into a .gz file.</p>
+<pre><code>using (System.IO.Stream input = System.IO.File.OpenRead(fileToCompress))
+{
+    using (var raw = System.IO.File.Create(fileToCompress + &quot;.gz&quot;))
+    {
+        using (Stream compressor = new GZipStream(raw,
+                                                  CompressionMode.Compress,
+                                                  CompressionLevel.BestCompression))
+        {
+            byte[] buffer = new byte[WORKING_BUFFER_SIZE];
+            int n;
+            while ((n= input.Read(buffer, 0, buffer.Length)) != 0)
+            {
+                compressor.Write(buffer, 0, n);
+            }
+        }
+    }
+}</code></pre>
+<pre><code>Using input As Stream = File.OpenRead(fileToCompress)
+    Using raw As FileStream = File.Create(fileToCompress &amp; &quot;.gz&quot;)
+        Using compressor As Stream = New GZipStream(raw, CompressionMode.Compress, CompressionLevel.BestCompression)
+            Dim buffer As Byte() = New Byte(4096) {}
+            Dim n As Integer = -1
+            Do While (n &lt;> 0)
+                If (n > 0) Then
+                    compressor.Write(buffer, 0, n)
+                End If
+                n = input.Read(buffer, 0, buffer.Length)
+            Loop
+        End Using
+    End Using
+End Using</code></pre>
+
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream__ctor_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.#ctor*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream__ctor_Stream_BestHTTP_Decompression_Zlib_CompressionMode_BestHTTP_Decompression_Zlib_CompressionLevel_System_Boolean_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.#ctor(Stream,BestHTTP.Decompression.Zlib.CompressionMode,BestHTTP.Decompression.Zlib.CompressionLevel,System.Boolean)">GZipStream(Stream, CompressionMode, CompressionLevel, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Create a <code>GZipStream</code> using the specified <code>CompressionMode</code> and the
+specified <code>CompressionLevel</code>, and explicitly specify whether the
+stream should be left open after Deflation or Inflation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GZipStream(Stream stream, CompressionMode mode, CompressionLevel level, bool leaveOpen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream which will be read or written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Decompression.Zlib.CompressionMode.html">CompressionMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>Indicates whether the GZipStream will compress or decompress.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Decompression.Zlib.CompressionLevel.html">CompressionLevel</a></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>A tuning knob to trade speed for effectiveness.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p>true if the application would like the stream to remain open after inflation/deflation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream__ctor_Stream_BestHTTP_Decompression_Zlib_CompressionMode_BestHTTP_Decompression_Zlib_CompressionLevel_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  This constructor allows the application to request that the captive stream
+  remain open after the deflation or inflation occurs.  By default, after
+<code>Close()</code> is called on the stream, the captive stream is also
+closed. In some cases this is not desired, for example if the stream is a
+memory stream that will be re-read after compressed data has been written
+to it.  Specify true for the <code data-dev-comment-type="paramref" class="paramref">leaveOpen</code> parameter to
+leave the stream open.
+</p>
+<p>
+  As noted in the class documentation, the <code>CompressionMode</code> (Compress
+  or Decompress) also establishes the &quot;direction&quot; of the stream.  A
+<code>GZipStream</code> with <code>CompressionMode.Compress</code> works only through
+<code>Write()</code>.  A <code>GZipStream</code> with <code>CompressionMode.Decompress</code> works only
+through <code>Read()</code>.
+</p>
+</div>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream__ctor_Stream_BestHTTP_Decompression_Zlib_CompressionMode_BestHTTP_Decompression_Zlib_CompressionLevel_System_Boolean__examples">Examples</h5>
+  <p>This example shows how to use a <code>GZipStream</code> to compress data.</p>
+<pre><code>using (System.IO.Stream input = System.IO.File.OpenRead(fileToCompress))
+{
+    using (var raw = System.IO.File.Create(outputFile))
+    {
+        using (Stream compressor = new GZipStream(raw, CompressionMode.Compress, CompressionLevel.BestCompression, true))
+        {
+            byte[] buffer = new byte[WORKING_BUFFER_SIZE];
+            int n;
+            while ((n= input.Read(buffer, 0, buffer.Length)) != 0)
+            {
+                compressor.Write(buffer, 0, n);
+            }
+        }
+    }
+}</code></pre>
+<pre><code>Dim outputFile As String = (fileToCompress &amp; &quot;.compressed&quot;)
+Using input As Stream = File.OpenRead(fileToCompress)
+    Using raw As FileStream = File.Create(outputFile)
+    Using compressor As Stream = New GZipStream(raw, CompressionMode.Compress, CompressionLevel.BestCompression, True)
+        Dim buffer As Byte() = New Byte(4096) {}
+        Dim n As Integer = -1
+        Do While (n &lt;> 0)
+            If (n > 0) Then
+                compressor.Write(buffer, 0, n)
+            End If
+            n = input.Read(buffer, 0, buffer.Length)
+        Loop
+    End Using
+    End Using
+End Using</code></pre>
+
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream__ctor_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.#ctor*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream__ctor_Stream_BestHTTP_Decompression_Zlib_CompressionMode_System_Boolean_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.#ctor(Stream,BestHTTP.Decompression.Zlib.CompressionMode,System.Boolean)">GZipStream(Stream, CompressionMode, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Create a <code>GZipStream</code> using the specified <code>CompressionMode</code>, and
+explicitly specify whether the stream should be left open after Deflation
+or Inflation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GZipStream(Stream stream, CompressionMode mode, bool leaveOpen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream which will be read or written. This is called the &quot;captive&quot;
+stream in other places in this documentation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Decompression.Zlib.CompressionMode.html">CompressionMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>Indicates whether the GZipStream will compress or decompress.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">leaveOpen</span></td>
+        <td><p>true if the application would like the base stream to remain open after
+inflation/deflation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream__ctor_Stream_BestHTTP_Decompression_Zlib_CompressionMode_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  This constructor allows the application to request that the captive stream
+  remain open after the deflation or inflation occurs.  By default, after
+<code>Close()</code> is called on the stream, the captive stream is also
+closed. In some cases this is not desired, for example if the stream is a
+memory stream that will be re-read after compressed data has been written
+to it.  Specify true for the <code data-dev-comment-type="paramref" class="paramref">leaveOpen</code> parameter to leave
+the stream open.
+</p>
+<p>
+  The <a class="xref" href="BestHTTP.Decompression.Zlib.CompressionMode.html">CompressionMode</a> (Compress or Decompress) also
+  establishes the &quot;direction&quot; of the stream.  A <code>GZipStream</code> with
+<code>CompressionMode.Compress</code> works only through <code>Write()</code>.  A <code>GZipStream</code>
+with <code>CompressionMode.Decompress</code> works only through <code>Read()</code>.
+</p>
+<p>
+  The <code>GZipStream</code> will use the default compression level. If you want
+  to specify the compression level, see <a class="xref" href="BestHTTP.Decompression.Zlib.GZipStream.html#BestHTTP_Decompression_Zlib_GZipStream__ctor_Stream_BestHTTP_Decompression_Zlib_CompressionMode_BestHTTP_Decompression_Zlib_CompressionLevel_System_Boolean_">GZipStream(Stream, CompressionMode, CompressionLevel, Boolean)</a>.
+</p>
+<p>
+  See the other overloads of this constructor for example code.
+</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_LastModified" data-uid="BestHTTP.Decompression.Zlib.GZipStream.LastModified">LastModified</h4>
+  <div class="markdown level1 summary"><p>The last modified time for the GZIP stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? LastModified</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_LastModified_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>GZIP allows the storage of a last modified time with each GZIP entity.
+When compressing data, you can set this before the first call to
+<code>Write()</code>.  When decompressing, you can retrieve this value any time
+after the first call to <code>Read()</code>.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_BufferSize_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.BufferSize*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_BufferSize" data-uid="BestHTTP.Decompression.Zlib.GZipStream.BufferSize">BufferSize</h4>
+  <div class="markdown level1 summary"><p>The size of the working buffer for the compression codec.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BufferSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_BufferSize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  The working buffer is used for all stream operations.  The default size is
+  1024 bytes.  The minimum size is 128 bytes. You may get better performance
+  with a larger buffer.  Then again, you might not.  You would have to test
+  it.
+</p>
+<p>
+  Set this before the first call to <code>Read()</code> or <code>Write()</code> on the
+  stream. If you try to set it afterwards, it will throw.
+</p>
+</div>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_CanRead_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.CanRead*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_CanRead" data-uid="BestHTTP.Decompression.Zlib.GZipStream.CanRead">CanRead</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the stream can be read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanRead { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.CanRead</span></div>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_CanRead_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The return value depends on whether the captive stream supports reading.</p>
+</div>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_CanSeek_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.CanSeek*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_CanSeek" data-uid="BestHTTP.Decompression.Zlib.GZipStream.CanSeek">CanSeek</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the stream supports Seek operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanSeek { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.CanSeek</span></div>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_CanSeek_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Always returns false.</p>
+</div>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_CanWrite_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.CanWrite*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_CanWrite" data-uid="BestHTTP.Decompression.Zlib.GZipStream.CanWrite">CanWrite</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the stream can be written.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanWrite { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.CanWrite</span></div>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_CanWrite_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The return value depends on whether the captive stream supports writing.</p>
+</div>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_Comment_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Comment*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_Comment" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Comment">Comment</h4>
+  <div class="markdown level1 summary"><p>The comment on the GZIP stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String Comment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_Comment_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  The GZIP format allows for each file to optionally have an associated
+  comment stored with the file.  The comment is encoded with the ISO-8859-1
+  code page.  To include a comment in a GZIP stream you create, set this
+  property before calling <code>Write()</code> for the first time on the
+<code>GZipStream</code>.
+</p>
+<p>
+  When using <code>GZipStream</code> to decompress, you can retrieve this property
+  after the first call to <code>Read()</code>.  If no comment has been set in the
+  GZIP bytestream, the Comment property will return <code>null</code>
+  (<code>Nothing</code> in VB).
+</p>
+</div>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_Crc32_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Crc32*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_Crc32" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Crc32">Crc32</h4>
+  <div class="markdown level1 summary"><p>The CRC on the GZIP stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Crc32 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_Crc32_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is used for internal error checking. You probably don't need to look at this property.</p>
+</div>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_FileName_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.FileName*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_FileName" data-uid="BestHTTP.Decompression.Zlib.GZipStream.FileName">FileName</h4>
+  <div class="markdown level1 summary"><p>The FileName for the GZIP stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String FileName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_FileName_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  The GZIP format optionally allows each file to have an associated
+  filename.  When compressing data (through <code>Write()</code>), set this
+  FileName before calling <code>Write()</code> the first time on the <code>GZipStream</code>.
+  The actual filename is encoded into the GZIP bytestream with the
+  ISO-8859-1 code page, according to RFC 1952. It is the application&apos;s
+  responsibility to insure that the FileName can be encoded and decoded
+  correctly with this code page.
+</p>
+<p>
+  When decompressing (through <code>Read()</code>), you can retrieve this value
+  any time after the first <code>Read()</code>.  In the case where there was no filename
+  encoded into the GZIP bytestream, the property will return <code>null</code> (<code>Nothing</code>
+  in VB).
+</p>
+</div>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_FlushMode_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.FlushMode*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_FlushMode" data-uid="BestHTTP.Decompression.Zlib.GZipStream.FlushMode">FlushMode</h4>
+  <div class="markdown level1 summary"><p>This property sets the flush behavior on the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FlushType FlushMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Decompression.Zlib.FlushType.html">FlushType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_Length_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Length*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_Length" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Length">Length</h4>
+  <div class="markdown level1 summary"><p>Reading this property always throws a <see cref="!:NotImplementedException"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override long Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Length</span></div>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_Position_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Position*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_Position" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Position">Position</h4>
+  <div class="markdown level1 summary"><p>The position of the stream pointer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override long Position { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Position</span></div>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_Position_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Setting this property always throws a <see cref="!:NotImplementedException"></see>. Reading will return the total bytes
+written out, if used in writing, or the total bytes read in, if used in
+reading.  The count may refer to compressed bytes or uncompressed bytes,
+depending on how you've used the stream.</p>
+</div>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_TotalIn_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.TotalIn*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_TotalIn" data-uid="BestHTTP.Decompression.Zlib.GZipStream.TotalIn">TotalIn</h4>
+  <div class="markdown level1 summary"><p>Returns the total number of bytes input so far.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual long TotalIn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_TotalOut_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.TotalOut*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_TotalOut" data-uid="BestHTTP.Decompression.Zlib.GZipStream.TotalOut">TotalOut</h4>
+  <div class="markdown level1 summary"><p>Returns the total number of bytes output so far.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual long TotalOut { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_Dispose_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Dispose*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_Dispose_System_Boolean_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Dispose the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>indicates whether the Dispose method was invoked by user code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Dispose(System.Boolean)</span></div>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_Dispose_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  This may or may not result in a <code>Close()</code> call on the captive
+  stream.  See the constructors that have a <code>leaveOpen</code> parameter
+  for more information.
+</p>
+<p>
+  This method may be invoked in two distinct scenarios.  If disposing
+  == true, the method has been called directly or indirectly by a
+  user&apos;s code, for example via the public Dispose() method. In this
+  case, both managed and unmanaged resources can be referenced and
+  disposed.  If disposing == false, the method has been called by the
+  runtime from inside the object finalizer and this method should not
+  reference other objects; in that case only unmanaged resources must
+  be referenced or disposed.
+</p>
+</div>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_Flush_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Flush*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_Flush" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Flush">Flush()</h4>
+  <div class="markdown level1 summary"><p>Flush the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Flush()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Flush()</span></div>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_Read_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Read*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_Read_System_Byte___System_Int32_System_Int32_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Read(System.Byte[],System.Int32,System.Int32)">Read(Byte[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Read and decompress data from the source stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Read(byte[] buffer, int offset, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>The buffer into which the decompressed data should be placed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>the offset within that data array to put the first byte read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>the number of bytes to read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>the number of bytes actually read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Read(System.Byte[], System.Int32, System.Int32)</span></div>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_Read_System_Byte___System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>With a <code>GZipStream</code>, decompression is done through reading.</p>
+</div>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_Read_System_Byte___System_Int32_System_Int32__examples">Examples</h5>
+  <pre><code>byte[] working = new byte[WORKING_BUFFER_SIZE];
+using (System.IO.Stream input = System.IO.File.OpenRead(_CompressedFile))
+{
+    using (Stream decompressor= new Ionic.Zlib.GZipStream(input, CompressionMode.Decompress, true))
+    {
+        using (var output = System.IO.File.Create(_DecompressedFile))
+        {
+            int n;
+            while ((n= decompressor.Read(working, 0, working.Length)) !=0)
+            {
+                output.Write(working, 0, n);
+            }
+        }
+    }
+}</code></pre>
+
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_Seek_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Seek*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_Seek_System_Int64_SeekOrigin_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Seek(System.Int64,SeekOrigin)">Seek(Int64, SeekOrigin)</h4>
+  <div class="markdown level1 summary"><p>Calling this method always throws a <see cref="!:NotImplementedException"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override long Seek(long offset, SeekOrigin origin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>irrelevant; it will always throw!</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">SeekOrigin</span></td>
+        <td><span class="parametername">origin</span></td>
+        <td><p>irrelevant; it will always throw!</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>irrelevant!</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_SetLength_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.SetLength*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_SetLength_System_Int64_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.SetLength(System.Int64)">SetLength(Int64)</h4>
+  <div class="markdown level1 summary"><p>Calling this method always throws a <see cref="!:NotImplementedException"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetLength(long value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>irrelevant; this method will always throw!</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.SetLength(System.Int64)</span></div>
+  
+  
+  <a id="BestHTTP_Decompression_Zlib_GZipStream_Write_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Write*"></a>
+  <h4 id="BestHTTP_Decompression_Zlib_GZipStream_Write_System_Byte___System_Int32_System_Int32_" data-uid="BestHTTP.Decompression.Zlib.GZipStream.Write(System.Byte[],System.Int32,System.Int32)">Write(Byte[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Write data to the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Write(byte[] buffer, int offset, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>The buffer holding data to write to the stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>the offset within that data array to find the first byte to write.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>the number of bytes to write.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Write(System.Byte[], System.Int32, System.Int32)</span></div>
+  <h5 id="BestHTTP_Decompression_Zlib_GZipStream_Write_System_Byte___System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  If you wish to use the <code>GZipStream</code> to compress data while writing,
+  you can create a <code>GZipStream</code> with <code>CompressionMode.Compress</code>, and a
+  writable output stream.  Then call <code>Write()</code> on that <code>GZipStream</code>,
+  providing uncompressed data as input.  The data sent to the output stream
+  will be the compressed form of the data written.
+</p>
+<p>
+  A <code>GZipStream</code> can be used for <code>Read()</code> or <code>Write()</code>, but not
+  both. Writing implies compression.  Reading implies decompression.
+</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="BestHTTP.Decompression.Zlib.DeflateStream.html">DeflateStream</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

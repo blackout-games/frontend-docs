@@ -1,0 +1,1905 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ECCurve
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ECCurve
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve">
+  
+  
+  <h1 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve" class="text-break">Class ECCurve
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ECCurve</span></div>
+      <div class="level2"><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.AbstractF2mCurve.html">AbstractF2mCurve</a></div>
+      <div class="level2"><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.AbstractFpCurve.html">AbstractFpCurve</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.html">BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ECCurve</code></pre>
+  </div>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Base class for an elliptic curve.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve__ctor_IFiniteField_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.#ctor(IFiniteField)">ECCurve(IFiniteField)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ECCurve(IFiniteField field)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFiniteField</span></td>
+        <td><span class="parametername">field</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_COORD_AFFINE" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.COORD_AFFINE">COORD_AFFINE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_AFFINE = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_COORD_HOMOGENEOUS" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.COORD_HOMOGENEOUS">COORD_HOMOGENEOUS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_HOMOGENEOUS = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_COORD_JACOBIAN" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.COORD_JACOBIAN">COORD_JACOBIAN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_JACOBIAN = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_COORD_JACOBIAN_CHUDNOVSKY" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.COORD_JACOBIAN_CHUDNOVSKY">COORD_JACOBIAN_CHUDNOVSKY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_JACOBIAN_CHUDNOVSKY = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_COORD_JACOBIAN_MODIFIED" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.COORD_JACOBIAN_MODIFIED">COORD_JACOBIAN_MODIFIED</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_JACOBIAN_MODIFIED = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_COORD_LAMBDA_AFFINE" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.COORD_LAMBDA_AFFINE">COORD_LAMBDA_AFFINE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_LAMBDA_AFFINE = 5</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_COORD_LAMBDA_PROJECTIVE" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.COORD_LAMBDA_PROJECTIVE">COORD_LAMBDA_PROJECTIVE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_LAMBDA_PROJECTIVE = 6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_COORD_SKEWED" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.COORD_SKEWED">COORD_SKEWED</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int COORD_SKEWED = 7</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_m_a" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.m_a">m_a</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ECFieldElement m_a</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_m_b" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.m_b">m_b</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ECFieldElement m_b</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_m_cofactor" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.m_cofactor">m_cofactor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger m_cofactor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_m_coord" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.m_coord">m_coord</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int m_coord</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_m_endomorphism" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.m_endomorphism">m_endomorphism</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ECEndomorphism m_endomorphism</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ECEndomorphism</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_m_field" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.m_field">m_field</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly IFiniteField m_field</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFiniteField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_m_multiplier" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.m_multiplier">m_multiplier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ECMultiplier m_multiplier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ECMultiplier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_m_order" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.m_order">m_order</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BigInteger m_order</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_A_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.A*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_A" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.A">A</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECFieldElement A { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_B_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.B*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_B" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.B">B</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECFieldElement B { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Cofactor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Cofactor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Cofactor" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Cofactor">Cofactor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BigInteger Cofactor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CoordinateSystem_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CoordinateSystem*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CoordinateSystem" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CoordinateSystem">CoordinateSystem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CoordinateSystem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Field_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Field*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Field" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Field">Field</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IFiniteField Field { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFiniteField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_FieldSize_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.FieldSize*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_FieldSize" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.FieldSize">FieldSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int FieldSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Infinity_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Infinity*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Infinity" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Infinity">Infinity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ECPoint Infinity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Order_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Order*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Order" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Order">Order</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BigInteger Order { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CheckPoint_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CheckPoint*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CheckPoint_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECPoint_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CheckPoint(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint)">CheckPoint(ECPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CheckPoint(ECPoint point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CheckPoints_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CheckPoints*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CheckPoints_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECPoint___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CheckPoints(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint[])">CheckPoints(ECPoint[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CheckPoints(ECPoint[] points)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CheckPoints_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CheckPoints*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CheckPoints_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECPoint___System_Int32_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CheckPoints(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint[],System.Int32,System.Int32)">CheckPoints(ECPoint[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CheckPoints(ECPoint[] points, int off, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">off</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CloneCurve_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CloneCurve*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CloneCurve" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CloneCurve">CloneCurve()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract ECCurve CloneCurve()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.html">ECCurve</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Configure_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Configure*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Configure" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Configure">Configure()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECCurve.Config Configure()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Config.html">ECCurve.Config</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CreateCacheSafeLookupTable_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CreateCacheSafeLookupTable*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CreateCacheSafeLookupTable_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECPoint___System_Int32_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CreateCacheSafeLookupTable(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint[],System.Int32,System.Int32)">CreateCacheSafeLookupTable(ECPoint[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECLookupTable CreateCacheSafeLookupTable(ECPoint[] points, int off, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">off</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECLookupTable.html">ECLookupTable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CreateDefaultMultiplier_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CreateDefaultMultiplier*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CreateDefaultMultiplier" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CreateDefaultMultiplier">CreateDefaultMultiplier()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ECMultiplier CreateDefaultMultiplier()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ECMultiplier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CreatePoint_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CreatePoint*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CreatePoint_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_BigInteger_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_BigInteger_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CreatePoint(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger,BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger)">CreatePoint(BigInteger, BigInteger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECPoint CreatePoint(BigInteger x, BigInteger y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CreatePoint_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CreatePoint*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CreatePoint_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_BigInteger_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_BigInteger_System_Boolean_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CreatePoint(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger,BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger,System.Boolean)">CreatePoint(BigInteger, BigInteger, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECPoint CreatePoint(BigInteger x, BigInteger y, bool withCompression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withCompression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CreateRawPoint_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CreateRawPoint*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CreateRawPoint_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECFieldElement_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECFieldElement_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECFieldElement___System_Boolean_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CreateRawPoint(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement,BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement,BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement[],System.Boolean)">CreateRawPoint(ECFieldElement, ECFieldElement, ECFieldElement[], Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract ECPoint CreateRawPoint(ECFieldElement x, ECFieldElement y, ECFieldElement[] zs, bool withCompression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a>[]</td>
+        <td><span class="parametername">zs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withCompression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CreateRawPoint_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CreateRawPoint*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_CreateRawPoint_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECFieldElement_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECFieldElement_System_Boolean_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.CreateRawPoint(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement,BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement,System.Boolean)">CreateRawPoint(ECFieldElement, ECFieldElement, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract ECPoint CreateRawPoint(ECFieldElement x, ECFieldElement y, bool withCompression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withCompression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_DecodePoint_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.DecodePoint*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_DecodePoint_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.DecodePoint(System.Byte[])">DecodePoint(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECPoint DecodePoint(byte[] encoded)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">encoded</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_DecompressPoint_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.DecompressPoint*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_DecompressPoint_System_Int32_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_BigInteger_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.DecompressPoint(System.Int32,BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger)">DecompressPoint(Int32, BigInteger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract ECPoint DecompressPoint(int yTilde, BigInteger X1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">yTilde</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td><span class="parametername">X1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Equals_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Equals*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Equals_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Equals(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve)">Equals(ECCurve)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Equals(ECCurve other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.html">ECCurve</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Equals_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Equals*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Equals_System_Object_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_FromBigInteger_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.FromBigInteger*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_FromBigInteger_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_BigInteger_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.FromBigInteger(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger)">FromBigInteger(BigInteger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ECFieldElement FromBigInteger(BigInteger x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_GetAllCoordinateSystems_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.GetAllCoordinateSystems*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_GetAllCoordinateSystems" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.GetAllCoordinateSystems">GetAllCoordinateSystems()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int[] GetAllCoordinateSystems()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_GetEndomorphism_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.GetEndomorphism*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_GetEndomorphism" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.GetEndomorphism">GetEndomorphism()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECEndomorphism GetEndomorphism()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ECEndomorphism</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_GetHashCode_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.GetHashCode*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_GetHashCode" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_GetMultiplier_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.GetMultiplier*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_GetMultiplier" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.GetMultiplier">GetMultiplier()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECMultiplier GetMultiplier()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ECMultiplier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_GetPreCompInfo_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.GetPreCompInfo*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_GetPreCompInfo_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECPoint_System_String_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.GetPreCompInfo(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint,System.String)">GetPreCompInfo(ECPoint, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual PreCompInfo GetPreCompInfo(ECPoint point, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PreCompInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_ImportPoint_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.ImportPoint*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_ImportPoint_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECPoint_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.ImportPoint(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint)">ImportPoint(ECPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECPoint ImportPoint(ECPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_IsValidFieldElement_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.IsValidFieldElement*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_IsValidFieldElement_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_BigInteger_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.IsValidFieldElement(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger)">IsValidFieldElement(BigInteger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsValidFieldElement(BigInteger x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_NormalizeAll_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.NormalizeAll*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_NormalizeAll_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECPoint___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.NormalizeAll(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint[])">NormalizeAll(ECPoint[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void NormalizeAll(ECPoint[] points)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_NormalizeAll_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.NormalizeAll*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_NormalizeAll_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECPoint___System_Int32_System_Int32_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECFieldElement_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.NormalizeAll(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint[],System.Int32,System.Int32,BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement)">NormalizeAll(ECPoint[], Int32, Int32, ECFieldElement)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void NormalizeAll(ECPoint[] points, int off, int len, ECFieldElement iso)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">off</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECFieldElement.html">ECFieldElement</a></td>
+        <td><span class="parametername">iso</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Precompute_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Precompute*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_Precompute_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECPoint_System_String_IPreCompCallback_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.Precompute(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint,System.String,IPreCompCallback)">Precompute(ECPoint, String, IPreCompCallback)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual PreCompInfo Precompute(ECPoint point, string name, IPreCompCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IPreCompCallback</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PreCompInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_SupportsCoordinateSystem_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.SupportsCoordinateSystem*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_SupportsCoordinateSystem_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.SupportsCoordinateSystem(System.Int32)">SupportsCoordinateSystem(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SupportsCoordinateSystem(int coord)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">coord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_ValidatePoint_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.ValidatePoint*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_ValidatePoint_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_BigInteger_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_BigInteger_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.ValidatePoint(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger,BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger)">ValidatePoint(BigInteger, BigInteger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECPoint ValidatePoint(BigInteger x, BigInteger y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_ValidatePoint_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.ValidatePoint*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Math_EC_ECCurve_ValidatePoint_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_BigInteger_BestHTTP_SecureProtocol_Org_BouncyCastle_Math_BigInteger_System_Boolean_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECCurve.ValidatePoint(BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger,BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger,System.Boolean)">ValidatePoint(BigInteger, BigInteger, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ECPoint ValidatePoint(BigInteger x, BigInteger y, bool withCompression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.BigInteger.html">BigInteger</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withCompression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Math.EC.ECPoint.html">ECPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

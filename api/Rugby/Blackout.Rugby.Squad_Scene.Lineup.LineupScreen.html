@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LineupScreen
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LineupScreen
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen">
+  
+  
+  <h1 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen" class="text-break">Class LineupScreen
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html">BlackoutBehaviourUI</a></div>
+    <div class="level2"><a class="xref" href="Blackout.BlackoutScreen.html">BlackoutScreen</a></div>
+    <div class="level3"><span class="xref">LineupScreen</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_screenTag">BlackoutScreen.screenTag</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_isTopBarScreen">BlackoutScreen.isTopBarScreen</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_i18NKey">BlackoutScreen.i18NKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_IsActiveScreen">BlackoutScreen.IsActiveScreen</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_screenSwipe">BlackoutScreen.screenSwipe</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_OnEnable">BlackoutScreen.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_OnScreenChanged_System_Int32_">BlackoutScreen.OnScreenChanged(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_GetBlackoutScene__1">BlackoutScreen.GetBlackoutScene&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_rectTransform">BlackoutBehaviourUI.rectTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_size">BlackoutBehaviourUI.size</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_Height">BlackoutBehaviourUI.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_Width">BlackoutBehaviourUI.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_sizeDelta">BlackoutBehaviourUI.sizeDelta</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_pivot">BlackoutBehaviourUI.pivot</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_anchoredPosition">BlackoutBehaviourUI.anchoredPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_RootCanvas">BlackoutBehaviourUI.RootCanvas</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_RootCanvasScaler">BlackoutBehaviourUI.RootCanvasScaler</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_ScreenSize">BlackoutBehaviourUI.ScreenSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_CanvasSize">BlackoutBehaviourUI.CanvasSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_IsOverlapping_RectTransform_System_Boolean_">BlackoutBehaviourUI.IsOverlapping(RectTransform, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_SetAnchorsAndPivot_Vector2_Vector2_Vector2_">BlackoutBehaviourUI.SetAnchorsAndPivot(Vector2, Vector2, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_SetAnchorsAndPivot_Vector2_">BlackoutBehaviourUI.SetAnchorsAndPivot(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_SetViewportPosition_Vector2_">BlackoutBehaviourUI.SetViewportPosition(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_SetViewpointPosition_Vector2_Vector2_">BlackoutBehaviourUI.SetViewpointPosition(Vector2, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_Show">BlackoutBehaviourUI.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_Hide">BlackoutBehaviourUI.Hide()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_CalculateCentrePivot_Vector3_">BlackoutBehaviourUI.CalculateCentrePivot(Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_ScaleAround_GameObject_Vector3_Vector3_">BlackoutBehaviourUI.ScaleAround(GameObject, Vector3, Vector3)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.html">Blackout.Rugby.Squad_Scene.Lineup</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LineupScreen : BlackoutScreen</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_benchLineupContainer" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.benchLineupContainer">benchLineupContainer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform benchLineupContainer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_benchToggle" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.benchToggle">benchToggle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlackoutToggle benchToggle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BlackoutToggle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_HeadShotMap" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.HeadShotMap">HeadShotMap</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Dictionary&lt;string, Texture2D&gt; HeadShotMap</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Texture2D</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_lineupAPICallback" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.lineupAPICallback">lineupAPICallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Action&lt;OnApiCalled&gt; lineupAPICallback</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">OnApiCalled</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_selectButtons" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.selectButtons">selectButtons</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlackoutButton[] selectButtons</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BlackoutButton</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_startingLineupContainer" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.startingLineupContainer">startingLineupContainer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform startingLineupContainer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_startingToggle" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.startingToggle">startingToggle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlackoutToggle startingToggle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BlackoutToggle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_BenchShields_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.BenchShields*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_BenchShields" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.BenchShields">BenchShields</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Shield[] BenchShields { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Shield.html">Shield</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_IsInTransition_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.IsInTransition*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_IsInTransition" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.IsInTransition">IsInTransition</h4>
+  <div class="markdown level1 summary"><p>returns true if not currently transitioning between bench and starting lineup, false if the container transforms are moving.
+only do the check in this function, not every frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInTransition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_StartingShields_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.StartingShields*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_StartingShields" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.StartingShields">StartingShields</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Shield[] StartingShields { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Shield.html">Shield</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_Awake_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.Awake*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_Awake" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_Awake">BlackoutScreen.Awake()</a></div>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_ChangeSceneToPlayerInfo_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.ChangeSceneToPlayerInfo*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_ChangeSceneToPlayerInfo_PlayerModel_System_Boolean_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.ChangeSceneToPlayerInfo(PlayerModel,System.Boolean)">ChangeSceneToPlayerInfo(PlayerModel, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeSceneToPlayerInfo(PlayerModel modelToChange, bool enableSelectButtons = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayerModel</span></td>
+        <td><span class="parametername">modelToChange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enableSelectButtons</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_GoToLineup_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.GoToLineup*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_GoToLineup_System_Boolean_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.GoToLineup(System.Boolean)">GoToLineup(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GoToLineup(bool starting)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">starting</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_InLineupView_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.InLineupView*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_InLineupView" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.InLineupView">InLineupView()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InLineupView()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_OnDestroy_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.OnDestroy*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_OnDestroy" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_OnDestroy">BlackoutScreen.OnDestroy()</a></div>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_RefreshShields_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.RefreshShields*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_RefreshShields_LineupModel_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.RefreshShields(LineupModel)">RefreshShields(LineupModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshShields(LineupModel lineup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LineupModel</span></td>
+        <td><span class="parametername">lineup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_SetLineupsMenu_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.SetLineupsMenu*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_LineupScreen_SetLineupsMenu_System_Collections_Generic_IEnumerable_LineupModel__" data-uid="Blackout.Rugby.Squad_Scene.Lineup.LineupScreen.SetLineupsMenu(System.Collections.Generic.IEnumerable{LineupModel})">SetLineupsMenu(IEnumerable&lt;LineupModel&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLineupsMenu(IEnumerable&lt;LineupModel&gt; lineupModels)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">LineupModel</span>&gt;</td>
+        <td><span class="parametername">lineupModels</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

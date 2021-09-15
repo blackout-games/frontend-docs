@@ -1,0 +1,958 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MarketScreenBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MarketScreenBase
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Blackout.Rugby.Market.MarketScreenBase">
+  
+  
+  <h1 id="Blackout_Rugby_Market_MarketScreenBase" data-uid="Blackout.Rugby.Market.MarketScreenBase" class="text-break">Class MarketScreenBase
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html">BlackoutBehaviourUI</a></div>
+    <div class="level2"><a class="xref" href="Blackout.BlackoutScreen.html">BlackoutScreen</a></div>
+    <div class="level3"><span class="xref">MarketScreenBase</span></div>
+      <div class="level4"><a class="xref" href="Blackout.Rugby.Market.MarketScreen.html">MarketScreen</a></div>
+      <div class="level4"><a class="xref" href="Blackout.Rugby.Market.Watchlist_Screen.WatchlistScreen.html">WatchlistScreen</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IEnhancedScrollerDelegate</span></div>
+    <div><span class="xref">IOrientationChangeable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_screenTag">BlackoutScreen.screenTag</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_isTopBarScreen">BlackoutScreen.isTopBarScreen</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_i18NKey">BlackoutScreen.i18NKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_IsActiveScreen">BlackoutScreen.IsActiveScreen</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_screenSwipe">BlackoutScreen.screenSwipe</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_Awake">BlackoutScreen.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_OnEnable">BlackoutScreen.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_OnScreenChanged_System_Int32_">BlackoutScreen.OnScreenChanged(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_GetBlackoutScene__1">BlackoutScreen.GetBlackoutScene&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_rectTransform">BlackoutBehaviourUI.rectTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_size">BlackoutBehaviourUI.size</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_Height">BlackoutBehaviourUI.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_Width">BlackoutBehaviourUI.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_sizeDelta">BlackoutBehaviourUI.sizeDelta</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_pivot">BlackoutBehaviourUI.pivot</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_anchoredPosition">BlackoutBehaviourUI.anchoredPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_RootCanvas">BlackoutBehaviourUI.RootCanvas</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_RootCanvasScaler">BlackoutBehaviourUI.RootCanvasScaler</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_ScreenSize">BlackoutBehaviourUI.ScreenSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_CanvasSize">BlackoutBehaviourUI.CanvasSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_IsOverlapping_RectTransform_System_Boolean_">BlackoutBehaviourUI.IsOverlapping(RectTransform, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_SetAnchorsAndPivot_Vector2_Vector2_Vector2_">BlackoutBehaviourUI.SetAnchorsAndPivot(Vector2, Vector2, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_SetAnchorsAndPivot_Vector2_">BlackoutBehaviourUI.SetAnchorsAndPivot(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_SetViewportPosition_Vector2_">BlackoutBehaviourUI.SetViewportPosition(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_SetViewpointPosition_Vector2_Vector2_">BlackoutBehaviourUI.SetViewpointPosition(Vector2, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_Show">BlackoutBehaviourUI.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_Hide">BlackoutBehaviourUI.Hide()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_CalculateCentrePivot_Vector3_">BlackoutBehaviourUI.CalculateCentrePivot(Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html#Blackout_Core_Behaviours_BlackoutBehaviourUI_ScaleAround_GameObject_Vector3_Vector3_">BlackoutBehaviourUI.ScaleAround(GameObject, Vector3, Vector3)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Blackout.Rugby.Market.html">Blackout.Rugby.Market</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Blackout_Rugby_Market_MarketScreenBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class MarketScreenBase : BlackoutScreen, IEnhancedScrollerDelegate, IOrientationChangeable</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_biddingContent" data-uid="Blackout.Rugby.Market.MarketScreenBase.biddingContent">biddingContent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BiddingModal biddingContent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Rugby.Market.BiddingModal.html">BiddingModal</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_biddingModal" data-uid="Blackout.Rugby.Market.MarketScreenBase.biddingModal">biddingModal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BiddingModal biddingModal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Rugby.Market.BiddingModal.html">BiddingModal</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_currentItemActivations" data-uid="Blackout.Rugby.Market.MarketScreenBase.currentItemActivations">currentItemActivations</h4>
+  <div class="markdown level1 summary"><p>Current gameObject activation in the player list items</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PlayerListItemActivations currentItemActivations</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayerListItemActivations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_currentSortBy" data-uid="Blackout.Rugby.Market.MarketScreenBase.currentSortBy">currentSortBy</h4>
+  <div class="markdown level1 summary"><p>Current sortBy ID from SortToggleGroup</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string currentSortBy</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_currentSortDirection" data-uid="Blackout.Rugby.Market.MarketScreenBase.currentSortDirection">currentSortDirection</h4>
+  <div class="markdown level1 summary"><p>Current sort of sort toggle group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SortOrder currentSortDirection</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SortOrder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_DefaultActivation" data-uid="Blackout.Rugby.Market.MarketScreenBase.DefaultActivation">DefaultActivation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PlayerListItemActivations DefaultActivation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayerListItemActivations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_filterContainer" data-uid="Blackout.Rugby.Market.MarketScreenBase.filterContainer">filterContainer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GameObject filterContainer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_playerListItemPrefab" data-uid="Blackout.Rugby.Market.MarketScreenBase.playerListItemPrefab">playerListItemPrefab</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PlayerListItem playerListItemPrefab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.PlayerListItem.html">PlayerListItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_playerSorter" data-uid="Blackout.Rugby.Market.MarketScreenBase.playerSorter">playerSorter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerSorter playerSorter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Rugby.Market.PlayerSorter.html">PlayerSorter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_refreshButtons" data-uid="Blackout.Rugby.Market.MarketScreenBase.refreshButtons">refreshButtons</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BlackoutButton[] refreshButtons</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BlackoutButton</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_scroller" data-uid="Blackout.Rugby.Market.MarketScreenBase.scroller">scroller</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EnhancedScroller scroller</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EnhancedScroller</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_SkillActivation" data-uid="Blackout.Rugby.Market.MarketScreenBase.SkillActivation">SkillActivation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PlayerListItemActivations SkillActivation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayerListItemActivations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_sortModal" data-uid="Blackout.Rugby.Market.MarketScreenBase.sortModal">sortModal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PlayerAttributesSortModal sortModal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayerAttributesSortModal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_toggleGroup" data-uid="Blackout.Rugby.Market.MarketScreenBase.toggleGroup">toggleGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SortToggleGroup toggleGroup</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SortToggleGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_MarketScript_" data-uid="Blackout.Rugby.Market.MarketScreenBase.MarketScript*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_MarketScript" data-uid="Blackout.Rugby.Market.MarketScreenBase.MarketScript">MarketScript</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Market MarketScript { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Rugby.Market.Market.html">Market</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_ShowWatchlistButton_" data-uid="Blackout.Rugby.Market.MarketScreenBase.ShowWatchlistButton*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_ShowWatchlistButton" data-uid="Blackout.Rugby.Market.MarketScreenBase.ShowWatchlistButton">ShowWatchlistButton</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool ShowWatchlistButton { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_ClearItems_" data-uid="Blackout.Rugby.Market.MarketScreenBase.ClearItems*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_ClearItems" data-uid="Blackout.Rugby.Market.MarketScreenBase.ClearItems">ClearItems()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearItems()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_CloseBiddingContent_" data-uid="Blackout.Rugby.Market.MarketScreenBase.CloseBiddingContent*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_CloseBiddingContent" data-uid="Blackout.Rugby.Market.MarketScreenBase.CloseBiddingContent">CloseBiddingContent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CloseBiddingContent()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_GetCellView_" data-uid="Blackout.Rugby.Market.MarketScreenBase.GetCellView*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_GetCellView_EnhancedScroller_System_Int32_System_Int32_" data-uid="Blackout.Rugby.Market.MarketScreenBase.GetCellView(EnhancedScroller,System.Int32,System.Int32)">GetCellView(EnhancedScroller, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnhancedScrollerCellView GetCellView(EnhancedScroller scroller, int dataIndex, int cellIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EnhancedScroller</span></td>
+        <td><span class="parametername">scroller</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dataIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">cellIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EnhancedScrollerCellView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_GetCellViewSize_" data-uid="Blackout.Rugby.Market.MarketScreenBase.GetCellViewSize*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_GetCellViewSize_EnhancedScroller_System_Int32_" data-uid="Blackout.Rugby.Market.MarketScreenBase.GetCellViewSize(EnhancedScroller,System.Int32)">GetCellViewSize(EnhancedScroller, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetCellViewSize(EnhancedScroller scroller, int dataIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EnhancedScroller</span></td>
+        <td><span class="parametername">scroller</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dataIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_GetNumberOfCells_" data-uid="Blackout.Rugby.Market.MarketScreenBase.GetNumberOfCells*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_GetNumberOfCells_EnhancedScroller_" data-uid="Blackout.Rugby.Market.MarketScreenBase.GetNumberOfCells(EnhancedScroller)">GetNumberOfCells(EnhancedScroller)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumberOfCells(EnhancedScroller scroller)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EnhancedScroller</span></td>
+        <td><span class="parametername">scroller</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_OnDestroy_" data-uid="Blackout.Rugby.Market.MarketScreenBase.OnDestroy*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_OnDestroy" data-uid="Blackout.Rugby.Market.MarketScreenBase.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Blackout.BlackoutScreen.html#Blackout_BlackoutScreen_OnDestroy">BlackoutScreen.OnDestroy()</a></div>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_OnOrientationChanged_" data-uid="Blackout.Rugby.Market.MarketScreenBase.OnOrientationChanged*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_OnOrientationChanged_System_Boolean_" data-uid="Blackout.Rugby.Market.MarketScreenBase.OnOrientationChanged(System.Boolean)">OnOrientationChanged(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnOrientationChanged(bool isPortrait)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isPortrait</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_OnPlayerAttributeItemClicked_" data-uid="Blackout.Rugby.Market.MarketScreenBase.OnPlayerAttributeItemClicked*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_OnPlayerAttributeItemClicked_System_String_" data-uid="Blackout.Rugby.Market.MarketScreenBase.OnPlayerAttributeItemClicked(System.String)">OnPlayerAttributeItemClicked(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnPlayerAttributeItemClicked(string skillI18NKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">skillI18NKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_OnSortingChange_" data-uid="Blackout.Rugby.Market.MarketScreenBase.OnSortingChange*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_OnSortingChange_SortOrder_System_String_PlayerListItemActivations_" data-uid="Blackout.Rugby.Market.MarketScreenBase.OnSortingChange(SortOrder,System.String,PlayerListItemActivations)">OnSortingChange(SortOrder, String, PlayerListItemActivations)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnSortingChange(SortOrder direction, string sortBy, PlayerListItemActivations activations)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SortOrder</span></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sortBy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">PlayerListItemActivations</span></td>
+        <td><span class="parametername">activations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_RefreshButtonClicked_" data-uid="Blackout.Rugby.Market.MarketScreenBase.RefreshButtonClicked*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_RefreshButtonClicked" data-uid="Blackout.Rugby.Market.MarketScreenBase.RefreshButtonClicked">RefreshButtonClicked()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RefreshButtonClicked()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_ReloadScroller_" data-uid="Blackout.Rugby.Market.MarketScreenBase.ReloadScroller*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_ReloadScroller_System_Boolean_" data-uid="Blackout.Rugby.Market.MarketScreenBase.ReloadScroller(System.Boolean)">ReloadScroller(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReloadScroller(bool keepScrollPosition = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">keepScrollPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_ShowCorrectSortingToggles_" data-uid="Blackout.Rugby.Market.MarketScreenBase.ShowCorrectSortingToggles*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_ShowCorrectSortingToggles" data-uid="Blackout.Rugby.Market.MarketScreenBase.ShowCorrectSortingToggles">ShowCorrectSortingToggles()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ShowCorrectSortingToggles()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_Sort_" data-uid="Blackout.Rugby.Market.MarketScreenBase.Sort*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_Sort" data-uid="Blackout.Rugby.Market.MarketScreenBase.Sort">Sort()</h4>
+  <div class="markdown level1 summary"><p>Abstract function that gets called just before scroller reload</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void Sort()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_Rugby_Market_MarketScreenBase_Start_" data-uid="Blackout.Rugby.Market.MarketScreenBase.Start*"></a>
+  <h4 id="Blackout_Rugby_Market_MarketScreenBase_Start" data-uid="Blackout.Rugby.Market.MarketScreenBase.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Start()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IEnhancedScrollerDelegate</span>
+  </div>
+  <div>
+      <span class="xref">IOrientationChangeable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,923 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PointerEventData
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PointerEventData
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.EventSystems.PointerEventData">
+  
+  
+  <h1 id="UnityEngine_EventSystems_PointerEventData" data-uid="UnityEngine.EventSystems.PointerEventData" class="text-break">Class PointerEventData
+  </h1>
+  <div class="markdown level0 summary"><p>Each touch event creates one of these containing all the relevant information.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UnityEngine.EventSystems.AbstractEventData.html">AbstractEventData</a></div>
+    <div class="level2"><a class="xref" href="UnityEngine.EventSystems.BaseEventData.html">BaseEventData</a></div>
+    <div class="level3"><span class="xref">PointerEventData</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseEventData.html#UnityEngine_EventSystems_BaseEventData_currentInputModule">BaseEventData.currentInputModule</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseEventData.html#UnityEngine_EventSystems_BaseEventData_selectedObject">BaseEventData.selectedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.AbstractEventData.html#UnityEngine_EventSystems_AbstractEventData_m_Used">AbstractEventData.m_Used</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.AbstractEventData.html#UnityEngine_EventSystems_AbstractEventData_Reset">AbstractEventData.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.AbstractEventData.html#UnityEngine_EventSystems_AbstractEventData_Use">AbstractEventData.Use()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.AbstractEventData.html#UnityEngine_EventSystems_AbstractEventData_used">AbstractEventData.used</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.EventSystems.html">UnityEngine.EventSystems</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_EventSystems_PointerEventData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PointerEventData : BaseEventData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData__ctor_" data-uid="UnityEngine.EventSystems.PointerEventData.#ctor*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData__ctor_UnityEngine_EventSystems_EventSystem_" data-uid="UnityEngine.EventSystems.PointerEventData.#ctor(UnityEngine.EventSystems.EventSystem)">PointerEventData(EventSystem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointerEventData(EventSystem eventSystem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.EventSystem.html">EventSystem</a></td>
+        <td><span class="parametername">eventSystem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UnityEngine_EventSystems_PointerEventData_hovered" data-uid="UnityEngine.EventSystems.PointerEventData.hovered">hovered</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;GameObject&gt; hovered</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">GameObject</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_button_" data-uid="UnityEngine.EventSystems.PointerEventData.button*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_button" data-uid="UnityEngine.EventSystems.PointerEventData.button">button</h4>
+  <div class="markdown level1 summary"><p>The EventSystems.PointerEventData.InputButton for this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointerEventData.InputButton button { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.PointerEventData.InputButton.html">PointerEventData.InputButton</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_clickCount_" data-uid="UnityEngine.EventSystems.PointerEventData.clickCount*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_clickCount" data-uid="UnityEngine.EventSystems.PointerEventData.clickCount">clickCount</h4>
+  <div class="markdown level1 summary"><p>Number of clicks in a row.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int clickCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_EventSystems_PointerEventData_clickCount_examples">Examples</h5>
+  <pre><code>using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;// Required when using Event data.
+
+public class ExampleClass : MonoBehaviour, IPointerDownHandler
+{
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        //Grab the number of consecutive clicks and assign it to an integer varible.
+        int i = eventData.clickCount;
+        //Display the click count.
+        Debug.Log(i);
+    }
+}</code></pre>
+
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_clickTime_" data-uid="UnityEngine.EventSystems.PointerEventData.clickTime*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_clickTime" data-uid="UnityEngine.EventSystems.PointerEventData.clickTime">clickTime</h4>
+  <div class="markdown level1 summary"><p>The last time a click event was sent. Used for double click</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float clickTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_delta_" data-uid="UnityEngine.EventSystems.PointerEventData.delta*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_delta" data-uid="UnityEngine.EventSystems.PointerEventData.delta">delta</h4>
+  <div class="markdown level1 summary"><p>Pointer delta since last update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 delta { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_dragging_" data-uid="UnityEngine.EventSystems.PointerEventData.dragging*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_dragging" data-uid="UnityEngine.EventSystems.PointerEventData.dragging">dragging</h4>
+  <div class="markdown level1 summary"><p>Is a drag operation currently occuring.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool dragging { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_eligibleForClick_" data-uid="UnityEngine.EventSystems.PointerEventData.eligibleForClick*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_eligibleForClick" data-uid="UnityEngine.EventSystems.PointerEventData.eligibleForClick">eligibleForClick</h4>
+  <div class="markdown level1 summary"><p>Is it possible to click this frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool eligibleForClick { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_enterEventCamera_" data-uid="UnityEngine.EventSystems.PointerEventData.enterEventCamera*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_enterEventCamera" data-uid="UnityEngine.EventSystems.PointerEventData.enterEventCamera">enterEventCamera</h4>
+  <div class="markdown level1 summary"><p>The camera associated with the last OnPointerEnter event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera enterEventCamera { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_lastPress_" data-uid="UnityEngine.EventSystems.PointerEventData.lastPress*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_lastPress" data-uid="UnityEngine.EventSystems.PointerEventData.lastPress">lastPress</h4>
+  <div class="markdown level1 summary"><p>The raw GameObject for the last press event. This means that it is the 'pressed' GameObject even if it can not receive the press event itself.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject lastPress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_pointerClick_" data-uid="UnityEngine.EventSystems.PointerEventData.pointerClick*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_pointerClick" data-uid="UnityEngine.EventSystems.PointerEventData.pointerClick">pointerClick</h4>
+  <div class="markdown level1 summary"><p>The object that should receive the 'OnPointerClick' event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject pointerClick { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_pointerCurrentRaycast_" data-uid="UnityEngine.EventSystems.PointerEventData.pointerCurrentRaycast*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_pointerCurrentRaycast" data-uid="UnityEngine.EventSystems.PointerEventData.pointerCurrentRaycast">pointerCurrentRaycast</h4>
+  <div class="markdown level1 summary"><p>RaycastResult associated with the current event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RaycastResult pointerCurrentRaycast { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.RaycastResult.html">RaycastResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_pointerDrag_" data-uid="UnityEngine.EventSystems.PointerEventData.pointerDrag*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_pointerDrag" data-uid="UnityEngine.EventSystems.PointerEventData.pointerDrag">pointerDrag</h4>
+  <div class="markdown level1 summary"><p>The object that is receiving 'OnDrag'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject pointerDrag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_pointerEnter_" data-uid="UnityEngine.EventSystems.PointerEventData.pointerEnter*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_pointerEnter" data-uid="UnityEngine.EventSystems.PointerEventData.pointerEnter">pointerEnter</h4>
+  <div class="markdown level1 summary"><p>The object that received 'OnPointerEnter'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject pointerEnter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_pointerId_" data-uid="UnityEngine.EventSystems.PointerEventData.pointerId*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_pointerId" data-uid="UnityEngine.EventSystems.PointerEventData.pointerId">pointerId</h4>
+  <div class="markdown level1 summary"><p>Id of the pointer (touch id).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int pointerId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_pointerPress_" data-uid="UnityEngine.EventSystems.PointerEventData.pointerPress*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_pointerPress" data-uid="UnityEngine.EventSystems.PointerEventData.pointerPress">pointerPress</h4>
+  <div class="markdown level1 summary"><p>The GameObject that received the OnPointerDown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject pointerPress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_pointerPressRaycast_" data-uid="UnityEngine.EventSystems.PointerEventData.pointerPressRaycast*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_pointerPressRaycast" data-uid="UnityEngine.EventSystems.PointerEventData.pointerPressRaycast">pointerPressRaycast</h4>
+  <div class="markdown level1 summary"><p>RaycastResult associated with the pointer press.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RaycastResult pointerPressRaycast { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.RaycastResult.html">RaycastResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_position_" data-uid="UnityEngine.EventSystems.PointerEventData.position*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_position" data-uid="UnityEngine.EventSystems.PointerEventData.position">position</h4>
+  <div class="markdown level1 summary"><p>Current pointer position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 position { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_pressEventCamera_" data-uid="UnityEngine.EventSystems.PointerEventData.pressEventCamera*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_pressEventCamera" data-uid="UnityEngine.EventSystems.PointerEventData.pressEventCamera">pressEventCamera</h4>
+  <div class="markdown level1 summary"><p>The camera associated with the last OnPointerPress event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera pressEventCamera { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_pressPosition_" data-uid="UnityEngine.EventSystems.PointerEventData.pressPosition*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_pressPosition" data-uid="UnityEngine.EventSystems.PointerEventData.pressPosition">pressPosition</h4>
+  <div class="markdown level1 summary"><p>Position of the press.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 pressPosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_rawPointerPress_" data-uid="UnityEngine.EventSystems.PointerEventData.rawPointerPress*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_rawPointerPress" data-uid="UnityEngine.EventSystems.PointerEventData.rawPointerPress">rawPointerPress</h4>
+  <div class="markdown level1 summary"><p>The object that the press happened on even if it can not handle the press event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject rawPointerPress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_scrollDelta_" data-uid="UnityEngine.EventSystems.PointerEventData.scrollDelta*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_scrollDelta" data-uid="UnityEngine.EventSystems.PointerEventData.scrollDelta">scrollDelta</h4>
+  <div class="markdown level1 summary"><p>The amount of scroll since the last update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 scrollDelta { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_useDragThreshold_" data-uid="UnityEngine.EventSystems.PointerEventData.useDragThreshold*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_useDragThreshold" data-uid="UnityEngine.EventSystems.PointerEventData.useDragThreshold">useDragThreshold</h4>
+  <div class="markdown level1 summary"><p>Should a drag threshold be used?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool useDragThreshold { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_EventSystems_PointerEventData_useDragThreshold_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If you do not want a drag threshold set this to false in IInitializePotentialDragHandler.OnInitializePotentialDrag.</p>
+</div>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_worldNormal_" data-uid="UnityEngine.EventSystems.PointerEventData.worldNormal*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_worldNormal" data-uid="UnityEngine.EventSystems.PointerEventData.worldNormal">worldNormal</h4>
+  <div class="markdown level1 summary"><p>World-space normal where a ray cast into the screen hits something</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 worldNormal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_worldPosition_" data-uid="UnityEngine.EventSystems.PointerEventData.worldPosition*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_worldPosition" data-uid="UnityEngine.EventSystems.PointerEventData.worldPosition">worldPosition</h4>
+  <div class="markdown level1 summary"><p>World-space position where a ray cast into the screen hits something</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 worldPosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_IsPointerMoving_" data-uid="UnityEngine.EventSystems.PointerEventData.IsPointerMoving*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_IsPointerMoving" data-uid="UnityEngine.EventSystems.PointerEventData.IsPointerMoving">IsPointerMoving()</h4>
+  <div class="markdown level1 summary"><p>Is the pointer moving.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPointerMoving()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_IsScrolling_" data-uid="UnityEngine.EventSystems.PointerEventData.IsScrolling*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_IsScrolling" data-uid="UnityEngine.EventSystems.PointerEventData.IsScrolling">IsScrolling()</h4>
+  <div class="markdown level1 summary"><p>Is scroll being used on the input device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsScrolling()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_PointerEventData_ToString_" data-uid="UnityEngine.EventSystems.PointerEventData.ToString*"></a>
+  <h4 id="UnityEngine_EventSystems_PointerEventData_ToString" data-uid="UnityEngine.EventSystems.PointerEventData.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
