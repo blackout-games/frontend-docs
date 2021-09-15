@@ -7,10 +7,10 @@
             "**.cs"
           ],
           "exclude": [
-            "**/Runtime/Best HTTP (Pro)/**",
-            "**/Runtime/Plugins/**"
+            "**/Best HTTP/**",
+            "**/Plugins/**"
           ],
-          "src": "../../Unity/core-unity/"
+          "src": "../../Unity/core-unity/Packages/games.blackout.core"
         }
       ],
       "dest": "api/Core"

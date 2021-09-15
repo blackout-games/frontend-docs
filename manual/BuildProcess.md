@@ -94,8 +94,40 @@ Option 2:
 The downside of this is that it's fiddly and I actually had a lot of trouble getting it to work. Sometimes it just stops working and I don't know why.
 If you're running a local build and assets aren't loading in then you may experience behavior that you're not going to see in the production version: low fps, game failing to load, lots of errors being thrown in the console about addressables.
 
+---
+
 ## Mobile builds
 There is currently no formal build process in place for mobile so this will need to be fully documented later
+
+### Android Environment set up for Unity
+
+Steps to take to get android builds working locally on your computer. 
+
+#### Unity
+- Install Android modules from Unity Hub
+- Copy path from `Preferences > External Tools > Android > Android SDK Tools`, uncheck the box, paste in the path. ![](../images/android-sdk.png)
+
+#### Android Studio
+- Install android studio - https://developer.android.com/studio
+- Create an empty project, and build it. This will create a debug keystore in `%APPDATA%.android/` or `~/.android/` which is needed by Facebook SDK
+- If there is a build error due to build-tools lisence, remove it from the SDK manager and reinstall it and ensure to accept the lisence.
+
+#### OpenSSL (windows only)
+- Install OpenSSL - https://www.dropbox.com/s/jgrcd1tcl4a8f0x/Win64OpenSSL-1_1_1i.exe?dl=0
+- Add OpenSSL to PATH - `C:\Program Files\OpenSSL-Win64\bin`
+
+#### JAVA 
+- Install JDK - https://www.oracle.com/java/technologies/javase-downloads.html
+- [windows only] Add JDK to PATH - `C:\Program Files\Java\jdk-15.0.2\bin`
+- [linux] `sudo apt install openjdk-16-jdk` or whatever latest jdk is at the time
+- Log out of windows or restart PC (this is so the PATH variables get added properly)
+
+#### Back To Unity
+- Type in password for our Release Keystore (password is in repo `/Release Keys`) ![](../images/android-publish-settings.png)
+- Build APK in Unity using `Blackout > Build > Local Developer or Local Release`
+
+
+---
 
 ### Local iOS build on a Mac
 This process is designed around building on the office iMac so some paths may be different if you are using a different device
