@@ -1,0 +1,1103 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AnimationTrack
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AnimationTrack
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.Timeline.AnimationTrack">
+  
+  
+  <h1 id="UnityEngine_Timeline_AnimationTrack" data-uid="UnityEngine.Timeline.AnimationTrack" class="text-break">Class AnimationTrack
+  </h1>
+  <div class="markdown level0 summary"><p>A Timeline track used for playing back animations on an Animator.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UnityEngine.Timeline.TrackAsset.html">TrackAsset</a></div>
+    <div class="level2"><span class="xref">AnimationTrack</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UnityEngine.Timeline.IPropertyPreview.html">IPropertyPreview</a></div>
+    <div><span class="xref">PlayableAsset</span></div>
+    <div><a class="xref" href="UnityEngine.Timeline.ILayerable.html">ILayerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_m_Clips">TrackAsset.m_Clips</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_start">TrackAsset.start</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_end">TrackAsset.end</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_duration">TrackAsset.duration</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_muted">TrackAsset.muted</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_mutedInHierarchy">TrackAsset.mutedInHierarchy</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_timelineAsset">TrackAsset.timelineAsset</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_parent">TrackAsset.parent</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_GetClips">TrackAsset.GetClips()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_isEmpty">TrackAsset.isEmpty</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_hasClips">TrackAsset.hasClips</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_hasCurves">TrackAsset.hasCurves</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_isSubTrack">TrackAsset.isSubTrack</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_GetChildTracks">TrackAsset.GetChildTracks()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_curves">TrackAsset.curves</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_locked">TrackAsset.locked</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_lockedInHierarchy">TrackAsset.lockedInHierarchy</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_supportsNotifications">TrackAsset.supportsNotifications</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_CreateCurves_System_String_">TrackAsset.CreateCurves(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_CreateTrackMixer_PlayableGraph_GameObject_System_Int32_">TrackAsset.CreateTrackMixer(PlayableGraph, GameObject, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_CreatePlayable_PlayableGraph_GameObject_">TrackAsset.CreatePlayable(PlayableGraph, GameObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_CreateDefaultClip">TrackAsset.CreateDefaultClip()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_CreateClip__1">TrackAsset.CreateClip&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_DeleteClip_UnityEngine_Timeline_TimelineClip_">TrackAsset.DeleteClip(TimelineClip)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_CreateMarker_Type_System_Double_">TrackAsset.CreateMarker(Type, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_CreateMarker__1_System_Double_">TrackAsset.CreateMarker&lt;T&gt;(Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_DeleteMarker_UnityEngine_Timeline_IMarker_">TrackAsset.DeleteMarker(IMarker)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_GetMarkers">TrackAsset.GetMarkers()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_GetMarkerCount">TrackAsset.GetMarkerCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_GetMarker_System_Int32_">TrackAsset.GetMarker(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_CreatePlayable_PlayableGraph_GameObject_UnityEngine_Timeline_TimelineClip_">TrackAsset.CreatePlayable(PlayableGraph, GameObject, TimelineClip)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_GetAnimationClipHash_AnimationClip_">TrackAsset.GetAnimationClipHash(AnimationClip)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_OnBeforeTrackSerialize">TrackAsset.OnBeforeTrackSerialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_OnAfterTrackDeserialize">TrackAsset.OnAfterTrackDeserialize()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.Timeline.html">UnityEngine.Timeline</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_Timeline_AnimationTrack_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AnimationTrack : TrackAsset, IPropertyPreview, ICurvesOwner, PlayableAsset, ILayerable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_applyAvatarMask_" data-uid="UnityEngine.Timeline.AnimationTrack.applyAvatarMask*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_applyAvatarMask" data-uid="UnityEngine.Timeline.AnimationTrack.applyAvatarMask">applyAvatarMask</h4>
+  <div class="markdown level1 summary"><p>Specifies whether to apply the AvatarMask to the track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool applyAvatarMask { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_applyOffsets_" data-uid="UnityEngine.Timeline.AnimationTrack.applyOffsets*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_applyOffsets" data-uid="UnityEngine.Timeline.AnimationTrack.applyOffsets">applyOffsets</h4>
+  <div class="markdown level1 summary"><p>Specifies whether to apply track offsets to all clips on the track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool applyOffsets { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_AnimationTrack_applyOffsets_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can be used to offset all clips on a track, in addition to the clips individual offsets.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_avatarMask_" data-uid="UnityEngine.Timeline.AnimationTrack.avatarMask*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_avatarMask" data-uid="UnityEngine.Timeline.AnimationTrack.avatarMask">avatarMask</h4>
+  <div class="markdown level1 summary"><p>Specifies the AvatarMask to be applied to all clips on the track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AvatarMask avatarMask { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AvatarMask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_AnimationTrack_avatarMask_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Applying an AvatarMask to an animation track will allow discarding portions of the animation being applied on the track.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_eulerAngles_" data-uid="UnityEngine.Timeline.AnimationTrack.eulerAngles*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_eulerAngles" data-uid="UnityEngine.Timeline.AnimationTrack.eulerAngles">eulerAngles</h4>
+  <div class="markdown level1 summary"><p>The euler angle representation of the rotation offset of the entire track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 eulerAngles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_inClipMode_" data-uid="UnityEngine.Timeline.AnimationTrack.inClipMode*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_inClipMode" data-uid="UnityEngine.Timeline.AnimationTrack.inClipMode">inClipMode</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the Animation Track has clips, or is in infinite mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool inClipMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_infiniteClip_" data-uid="UnityEngine.Timeline.AnimationTrack.infiniteClip*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_infiniteClip" data-uid="UnityEngine.Timeline.AnimationTrack.infiniteClip">infiniteClip</h4>
+  <div class="markdown level1 summary"><p>An AnimationClip storing the data for an infinite track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationClip infiniteClip { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AnimationClip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_AnimationTrack_infiniteClip_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The value of this property is null when the AnimationTrack is in Clip Mode.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_infiniteClipOffsetEulerAngles_" data-uid="UnityEngine.Timeline.AnimationTrack.infiniteClipOffsetEulerAngles*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_infiniteClipOffsetEulerAngles" data-uid="UnityEngine.Timeline.AnimationTrack.infiniteClipOffsetEulerAngles">infiniteClipOffsetEulerAngles</h4>
+  <div class="markdown level1 summary"><p>The euler angle representation of the rotation offset of the track when in infinite mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 infiniteClipOffsetEulerAngles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_infiniteClipOffsetPosition_" data-uid="UnityEngine.Timeline.AnimationTrack.infiniteClipOffsetPosition*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_infiniteClipOffsetPosition" data-uid="UnityEngine.Timeline.AnimationTrack.infiniteClipOffsetPosition">infiniteClipOffsetPosition</h4>
+  <div class="markdown level1 summary"><p>The translation offset of a track in infinite mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 infiniteClipOffsetPosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_infiniteClipOffsetRotation_" data-uid="UnityEngine.Timeline.AnimationTrack.infiniteClipOffsetRotation*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_infiniteClipOffsetRotation" data-uid="UnityEngine.Timeline.AnimationTrack.infiniteClipOffsetRotation">infiniteClipOffsetRotation</h4>
+  <div class="markdown level1 summary"><p>The rotation offset of a track in infinite mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion infiniteClipOffsetRotation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_infiniteClipPostExtrapolation_" data-uid="UnityEngine.Timeline.AnimationTrack.infiniteClipPostExtrapolation*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_infiniteClipPostExtrapolation" data-uid="UnityEngine.Timeline.AnimationTrack.infiniteClipPostExtrapolation">infiniteClipPostExtrapolation</h4>
+  <div class="markdown level1 summary"><p>The saved state of post-extrapolation for clips when converted to infinite mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimelineClip.ClipExtrapolation infiniteClipPostExtrapolation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineClip.ClipExtrapolation.html">TimelineClip.ClipExtrapolation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_infiniteClipPreExtrapolation_" data-uid="UnityEngine.Timeline.AnimationTrack.infiniteClipPreExtrapolation*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_infiniteClipPreExtrapolation" data-uid="UnityEngine.Timeline.AnimationTrack.infiniteClipPreExtrapolation">infiniteClipPreExtrapolation</h4>
+  <div class="markdown level1 summary"><p>The saved state of pre-extrapolation for clips converted to infinite mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimelineClip.ClipExtrapolation infiniteClipPreExtrapolation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineClip.ClipExtrapolation.html">TimelineClip.ClipExtrapolation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_matchTargetFields_" data-uid="UnityEngine.Timeline.AnimationTrack.matchTargetFields*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_matchTargetFields" data-uid="UnityEngine.Timeline.AnimationTrack.matchTargetFields">matchTargetFields</h4>
+  <div class="markdown level1 summary"><p>Specifies which fields to match when aligning offsets of clips.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatchTargetFields matchTargetFields { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.MatchTargetFields.html">MatchTargetFields</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_openClipOffsetEulerAngles_" data-uid="UnityEngine.Timeline.AnimationTrack.openClipOffsetEulerAngles*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_openClipOffsetEulerAngles" data-uid="UnityEngine.Timeline.AnimationTrack.openClipOffsetEulerAngles">openClipOffsetEulerAngles</h4>
+  <div class="markdown level1 summary"><p>Euler angle representation of the rotation offset of the track when in infinite mode.
+This property is obsolete. Use <a class="xref" href="UnityEngine.Timeline.AnimationTrack.html#UnityEngine_Timeline_AnimationTrack_infiniteClipOffsetEulerAngles">infiniteClipOffsetEulerAngles</a> instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 openClipOffsetEulerAngles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_openClipOffsetPosition_" data-uid="UnityEngine.Timeline.AnimationTrack.openClipOffsetPosition*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_openClipOffsetPosition" data-uid="UnityEngine.Timeline.AnimationTrack.openClipOffsetPosition">openClipOffsetPosition</h4>
+  <div class="markdown level1 summary"><p>Translation offset of a track in infinite mode.
+This property is obsolete. Use <a class="xref" href="UnityEngine.Timeline.AnimationTrack.html#UnityEngine_Timeline_AnimationTrack_infiniteClipOffsetPosition">infiniteClipOffsetPosition</a> instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 openClipOffsetPosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_openClipOffsetRotation_" data-uid="UnityEngine.Timeline.AnimationTrack.openClipOffsetRotation*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_openClipOffsetRotation" data-uid="UnityEngine.Timeline.AnimationTrack.openClipOffsetRotation">openClipOffsetRotation</h4>
+  <div class="markdown level1 summary"><p>Rotation offset of a track in infinite mode.
+This property is obsolete. Use <a class="xref" href="UnityEngine.Timeline.AnimationTrack.html#UnityEngine_Timeline_AnimationTrack_infiniteClipOffsetRotation">infiniteClipOffsetRotation</a> instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion openClipOffsetRotation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_openClipPostExtrapolation_" data-uid="UnityEngine.Timeline.AnimationTrack.openClipPostExtrapolation*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_openClipPostExtrapolation" data-uid="UnityEngine.Timeline.AnimationTrack.openClipPostExtrapolation">openClipPostExtrapolation</h4>
+  <div class="markdown level1 summary"><p>Saved state of post-extrapolation for clips converted to infinite mode.
+This property is obsolete. Use <a class="xref" href="UnityEngine.Timeline.AnimationTrack.html#UnityEngine_Timeline_AnimationTrack_infiniteClipPostExtrapolation">infiniteClipPostExtrapolation</a> instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimelineClip.ClipExtrapolation openClipPostExtrapolation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineClip.ClipExtrapolation.html">TimelineClip.ClipExtrapolation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_openClipPreExtrapolation_" data-uid="UnityEngine.Timeline.AnimationTrack.openClipPreExtrapolation*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_openClipPreExtrapolation" data-uid="UnityEngine.Timeline.AnimationTrack.openClipPreExtrapolation">openClipPreExtrapolation</h4>
+  <div class="markdown level1 summary"><p>Saved state of pre-extrapolation for clips converted to infinite mode.
+This property is obsolete. Use <a class="xref" href="UnityEngine.Timeline.AnimationTrack.html#UnityEngine_Timeline_AnimationTrack_infiniteClipPreExtrapolation">infiniteClipPreExtrapolation</a> instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimelineClip.ClipExtrapolation openClipPreExtrapolation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineClip.ClipExtrapolation.html">TimelineClip.ClipExtrapolation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_outputs_" data-uid="UnityEngine.Timeline.AnimationTrack.outputs*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_outputs" data-uid="UnityEngine.Timeline.AnimationTrack.outputs">outputs</h4>
+  <div class="markdown level1 summary"><p>Returns a description of the PlayableOutputs that will be created by this track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;PlayableBinding&gt; outputs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">PlayableBinding</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_outputs">TrackAsset.outputs</a></div>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_position_" data-uid="UnityEngine.Timeline.AnimationTrack.position*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_position" data-uid="UnityEngine.Timeline.AnimationTrack.position">position</h4>
+  <div class="markdown level1 summary"><p>The translation offset of the entire track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 position { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_rotation_" data-uid="UnityEngine.Timeline.AnimationTrack.rotation*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_rotation" data-uid="UnityEngine.Timeline.AnimationTrack.rotation">rotation</h4>
+  <div class="markdown level1 summary"><p>The rotation offset of the entire track, expressed as a quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion rotation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_trackOffset_" data-uid="UnityEngine.Timeline.AnimationTrack.trackOffset*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_trackOffset" data-uid="UnityEngine.Timeline.AnimationTrack.trackOffset">trackOffset</h4>
+  <div class="markdown level1 summary"><p>Specifies what is used to set the starting position and orientation of an Animation Track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackOffset trackOffset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TrackOffset.html">TrackOffset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_AnimationTrack_trackOffset_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Track Offset is only applied when the Animation Track contains animation that modifies the root Transform.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_CalculateItemsHash_" data-uid="UnityEngine.Timeline.AnimationTrack.CalculateItemsHash*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_CalculateItemsHash" data-uid="UnityEngine.Timeline.AnimationTrack.CalculateItemsHash">CalculateItemsHash()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int CalculateItemsHash()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_CalculateItemsHash">TrackAsset.CalculateItemsHash()</a></div>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_CreateClip_" data-uid="UnityEngine.Timeline.AnimationTrack.CreateClip*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_CreateClip_AnimationClip_" data-uid="UnityEngine.Timeline.AnimationTrack.CreateClip(AnimationClip)">CreateClip(AnimationClip)</h4>
+  <div class="markdown level1 summary"><p>Creates a TimelineClip on this track that uses an AnimationClip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimelineClip CreateClip(AnimationClip clip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AnimationClip</span></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>Source animation clip of the resulting TimelineClip.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineClip.html">TimelineClip</a></td>
+        <td><p>A new TimelineClip which has an AnimationPlayableAsset asset attached.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_CreateInfiniteClip_" data-uid="UnityEngine.Timeline.AnimationTrack.CreateInfiniteClip*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_CreateInfiniteClip_System_String_" data-uid="UnityEngine.Timeline.AnimationTrack.CreateInfiniteClip(System.String)">CreateInfiniteClip(String)</h4>
+  <div class="markdown level1 summary"><p>Creates an AnimationClip that stores the data for an infinite track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateInfiniteClip(string infiniteClipName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">infiniteClipName</span></td>
+        <td><p>The name of the AnimationClip to create.
+This method does not ensure unique names. If you want a unique clip name, you must provide one.
+See ObjectNames.GetUniqueName for information on a method that creates unique names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_AnimationTrack_CreateInfiniteClip_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If an infiniteClip already exists, this method produces no result, even if you provide a different value
+for infiniteClipName.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_CreateRecordableClip_" data-uid="UnityEngine.Timeline.AnimationTrack.CreateRecordableClip*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_CreateRecordableClip_System_String_" data-uid="UnityEngine.Timeline.AnimationTrack.CreateRecordableClip(System.String)">CreateRecordableClip(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a TimelineClip, AnimationPlayableAsset and an AnimationClip. Use this clip to record in a timeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimelineClip CreateRecordableClip(string animClipName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">animClipName</span></td>
+        <td><p>The name of the AnimationClip to create.
+This method does not ensure unique names. If you want a unique clip name, you must provide one.
+See ObjectNames.GetUniqueName for information on a method that creates unique names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineClip.html">TimelineClip</a></td>
+        <td><p>Returns a new TimelineClip with an AnimationPlayableAsset asset attached.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_AnimationTrack_CreateRecordableClip_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When used from the editor, this method attempts to save the created recordable clip to the TimelineAsset.
+The TimelineAsset must already exist in the AssetDatabase to save the recordable clip. If the TimelineAsset
+does not exist, the recordable clip is still created but it is not saved.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_GatherProperties_" data-uid="UnityEngine.Timeline.AnimationTrack.GatherProperties*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_GatherProperties_PlayableDirector_UnityEngine_Timeline_IPropertyCollector_" data-uid="UnityEngine.Timeline.AnimationTrack.GatherProperties(PlayableDirector,UnityEngine.Timeline.IPropertyCollector)">GatherProperties(PlayableDirector, IPropertyCollector)</h4>
+  <div class="markdown level1 summary"><p>Called by the Timeline Editor to gather properties requiring preview.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GatherProperties(PlayableDirector director, IPropertyCollector driver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayableDirector</span></td>
+        <td><span class="parametername">director</span></td>
+        <td><p>The PlayableDirector invoking the preview</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.IPropertyCollector.html">IPropertyCollector</a></td>
+        <td><span class="parametername">driver</span></td>
+        <td><p>PropertyCollector used to gather previewable properties</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_GatherProperties_PlayableDirector_UnityEngine_Timeline_IPropertyCollector_">TrackAsset.GatherProperties(PlayableDirector, IPropertyCollector)</a></div>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_OnCreateClip_" data-uid="UnityEngine.Timeline.AnimationTrack.OnCreateClip*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_OnCreateClip_UnityEngine_Timeline_TimelineClip_" data-uid="UnityEngine.Timeline.AnimationTrack.OnCreateClip(UnityEngine.Timeline.TimelineClip)">OnCreateClip(TimelineClip)</h4>
+  <div class="markdown level1 summary"><p>Used to initialize default values on a newly created clip</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnCreateClip(TimelineClip clip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineClip.html">TimelineClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>The clip added to the track</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_OnCreateClip_UnityEngine_Timeline_TimelineClip_">TrackAsset.OnCreateClip(TimelineClip)</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="UnityEngine_Timeline_AnimationTrack_UnityEngine_Timeline_ILayerable_CreateLayerMixer_" data-uid="UnityEngine.Timeline.AnimationTrack.UnityEngine#Timeline#ILayerable#CreateLayerMixer*"></a>
+  <h4 id="UnityEngine_Timeline_AnimationTrack_UnityEngine_Timeline_ILayerable_CreateLayerMixer_PlayableGraph_GameObject_System_Int32_" data-uid="UnityEngine.Timeline.AnimationTrack.UnityEngine#Timeline#ILayerable#CreateLayerMixer(PlayableGraph,GameObject,System.Int32)">ILayerable.CreateLayerMixer(PlayableGraph, GameObject, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a mixer that blends track mixers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Playable ILayerable.CreateLayerMixer(PlayableGraph graph, GameObject go, int inputCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayableGraph</span></td>
+        <td><span class="parametername">graph</span></td>
+        <td><p>The graph where the mixer playable will be added.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">go</span></td>
+        <td><p>The GameObject that requested the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inputCount</span></td>
+        <td><p>The number of inputs on the mixer. There should be an input for each playable from each clip.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Playable</span></td>
+        <td><p>Returns <code>Playable.Null</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Timeline.IPropertyPreview.html">IPropertyPreview</a>
+  </div>
+  <div>
+      <span class="xref">PlayableAsset</span>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Timeline.ILayerable.html">ILayerable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

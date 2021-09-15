@@ -1,0 +1,521 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ControlPlayableAsset
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ControlPlayableAsset
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.Timeline.ControlPlayableAsset">
+  
+  
+  <h1 id="UnityEngine_Timeline_ControlPlayableAsset" data-uid="UnityEngine.Timeline.ControlPlayableAsset" class="text-break">Class ControlPlayableAsset
+  </h1>
+  <div class="markdown level0 summary"><p>Playable Asset that generates playables for controlling time-related elements on a GameObject.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ControlPlayableAsset</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UnityEngine.Timeline.IPropertyPreview.html">IPropertyPreview</a></div>
+    <div><a class="xref" href="UnityEngine.Timeline.ITimelineClipAsset.html">ITimelineClipAsset</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.Timeline.html">UnityEngine.Timeline</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_Timeline_ControlPlayableAsset_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ControlPlayableAsset : PlayableAsset, IPropertyPreview, ITimelineClipAsset</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UnityEngine_Timeline_ControlPlayableAsset_active" data-uid="UnityEngine.Timeline.ControlPlayableAsset.active">active</h4>
+  <div class="markdown level1 summary"><p>Indicate whether GameObject activation is controlled</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool active</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_Timeline_ControlPlayableAsset_particleRandomSeed" data-uid="UnityEngine.Timeline.ControlPlayableAsset.particleRandomSeed">particleRandomSeed</h4>
+  <div class="markdown level1 summary"><p>Random seed to supply particle systems that are set to use autoRandomSeed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint particleRandomSeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_ControlPlayableAsset_particleRandomSeed_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is used to maintain determinism when playing back in timeline. Sub emitters will be assigned incrementing random seeds to maintain determinism and distinction.</p>
+</div>
+  
+  
+  <h4 id="UnityEngine_Timeline_ControlPlayableAsset_postPlayback" data-uid="UnityEngine.Timeline.ControlPlayableAsset.postPlayback">postPlayback</h4>
+  <div class="markdown level1 summary"><p>Indicates the active state of the GameObject when Timeline is stopped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActivationControlPlayable.PostPlaybackState postPlayback</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.ActivationControlPlayable.PostPlaybackState.html">ActivationControlPlayable.PostPlaybackState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_Timeline_ControlPlayableAsset_prefabGameObject" data-uid="UnityEngine.Timeline.ControlPlayableAsset.prefabGameObject">prefabGameObject</h4>
+  <div class="markdown level1 summary"><p>Prefab object that will be instantiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject prefabGameObject</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_Timeline_ControlPlayableAsset_searchHierarchy" data-uid="UnityEngine.Timeline.ControlPlayableAsset.searchHierarchy">searchHierarchy</h4>
+  <div class="markdown level1 summary"><p>Indicates whether to search the entire hierarchy for controllable components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool searchHierarchy</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_Timeline_ControlPlayableAsset_sourceGameObject" data-uid="UnityEngine.Timeline.ControlPlayableAsset.sourceGameObject">sourceGameObject</h4>
+  <div class="markdown level1 summary"><p>GameObject in the scene to control, or the parent of the instantiated prefab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExposedReference&lt;GameObject&gt; sourceGameObject</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ExposedReference</span>&lt;<span class="xref">GameObject</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_Timeline_ControlPlayableAsset_updateDirector" data-uid="UnityEngine.Timeline.ControlPlayableAsset.updateDirector">updateDirector</h4>
+  <div class="markdown level1 summary"><p>Indicates whether playableDirectors are controlled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool updateDirector</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_Timeline_ControlPlayableAsset_updateITimeControl" data-uid="UnityEngine.Timeline.ControlPlayableAsset.updateITimeControl">updateITimeControl</h4>
+  <div class="markdown level1 summary"><p>Indicates whether Monobehaviours implementing ITimeControl will be controlled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool updateITimeControl</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_Timeline_ControlPlayableAsset_updateParticle" data-uid="UnityEngine.Timeline.ControlPlayableAsset.updateParticle">updateParticle</h4>
+  <div class="markdown level1 summary"><p>Indicates whether Particle Systems will be controlled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool updateParticle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEngine_Timeline_ControlPlayableAsset_clipCaps_" data-uid="UnityEngine.Timeline.ControlPlayableAsset.clipCaps*"></a>
+  <h4 id="UnityEngine_Timeline_ControlPlayableAsset_clipCaps" data-uid="UnityEngine.Timeline.ControlPlayableAsset.clipCaps">clipCaps</h4>
+  <div class="markdown level1 summary"><p>Returns the capabilities of TimelineClips that contain a ControlPlayableAsset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClipCaps clipCaps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.ClipCaps.html">ClipCaps</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_ControlPlayableAsset_duration_" data-uid="UnityEngine.Timeline.ControlPlayableAsset.duration*"></a>
+  <h4 id="UnityEngine_Timeline_ControlPlayableAsset_duration" data-uid="UnityEngine.Timeline.ControlPlayableAsset.duration">duration</h4>
+  <div class="markdown level1 summary"><p>Returns the duration in seconds needed to play the underlying director or particle system exactly once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override double duration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_Timeline_ControlPlayableAsset_CreatePlayable_" data-uid="UnityEngine.Timeline.ControlPlayableAsset.CreatePlayable*"></a>
+  <h4 id="UnityEngine_Timeline_ControlPlayableAsset_CreatePlayable_PlayableGraph_GameObject_" data-uid="UnityEngine.Timeline.ControlPlayableAsset.CreatePlayable(PlayableGraph,GameObject)">CreatePlayable(PlayableGraph, GameObject)</h4>
+  <div class="markdown level1 summary"><p>Creates the root of a Playable subgraph to control the contents of the game object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Playable CreatePlayable(PlayableGraph graph, GameObject go)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayableGraph</span></td>
+        <td><span class="parametername">graph</span></td>
+        <td><p>PlayableGraph that will own the playable</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">go</span></td>
+        <td><p>The GameObject that triggered the graph build</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Playable</span></td>
+        <td><p>The root playable of the subgraph</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_ControlPlayableAsset_GatherProperties_" data-uid="UnityEngine.Timeline.ControlPlayableAsset.GatherProperties*"></a>
+  <h4 id="UnityEngine_Timeline_ControlPlayableAsset_GatherProperties_PlayableDirector_UnityEngine_Timeline_IPropertyCollector_" data-uid="UnityEngine.Timeline.ControlPlayableAsset.GatherProperties(PlayableDirector,UnityEngine.Timeline.IPropertyCollector)">GatherProperties(PlayableDirector, IPropertyCollector)</h4>
+  <div class="markdown level1 summary"><p>Called by the Timeline Editor to gather properties requiring preview.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GatherProperties(PlayableDirector director, IPropertyCollector driver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayableDirector</span></td>
+        <td><span class="parametername">director</span></td>
+        <td><p>The PlayableDirector invoking the preview</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.IPropertyCollector.html">IPropertyCollector</a></td>
+        <td><span class="parametername">driver</span></td>
+        <td><p>PropertyCollector used to gather previewable properties</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_ControlPlayableAsset_OnEnable_" data-uid="UnityEngine.Timeline.ControlPlayableAsset.OnEnable*"></a>
+  <h4 id="UnityEngine_Timeline_ControlPlayableAsset_OnEnable" data-uid="UnityEngine.Timeline.ControlPlayableAsset.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"><p>This function is called when the object is loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnEnable()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Timeline.IPropertyPreview.html">IPropertyPreview</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Timeline.ITimelineClipAsset.html">ITimelineClipAsset</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

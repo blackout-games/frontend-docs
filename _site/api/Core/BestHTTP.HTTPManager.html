@@ -1,0 +1,1157 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HTTPManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HTTPManager
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.HTTPManager">
+  
+  
+  <h1 id="BestHTTP_HTTPManager" data-uid="BestHTTP.HTTPManager" class="text-break">Class HTTPManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">HTTPManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.html">BestHTTP</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_HTTPManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class HTTPManager</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BestHTTP_HTTPManager_HTTP2Settings" data-uid="BestHTTP.HTTPManager.HTTP2Settings">HTTP2Settings</h4>
+  <div class="markdown level1 summary"><p>HTTP/2 settings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HTTP2PluginSettings HTTP2Settings</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Connections.HTTP2.HTTP2PluginSettings.html">HTTP2PluginSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_HTTPManager_IOService" data-uid="BestHTTP.HTTPManager.IOService">IOService</h4>
+  <div class="markdown level1 summary"><p>An IIOService implementation to handle filesystem operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IIOService IOService</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.PlatformSupport.FileSystem.IIOService.html">IIOService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_HTTPManager_ReceiveBufferSize" data-uid="BestHTTP.HTTPManager.ReceiveBufferSize">ReceiveBufferSize</h4>
+  <div class="markdown level1 summary"><p>TCP Client's receive buffer size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ReceiveBufferSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_HTTPManager_SendBufferSize" data-uid="BestHTTP.HTTPManager.SendBufferSize">SendBufferSize</h4>
+  <div class="markdown level1 summary"><p>TCP Client's send buffer size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SendBufferSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_HTTPManager_TlsClientFactory" data-uid="BestHTTP.HTTPManager.TlsClientFactory">TlsClientFactory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TlsClientFactoryDelegate TlsClientFactory</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.TlsClientFactoryDelegate.html">TlsClientFactoryDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_HTTPManager_UserAgent" data-uid="BestHTTP.HTTPManager.UserAgent">UserAgent</h4>
+  <div class="markdown level1 summary"><p>User-agent string that will be sent with each requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string UserAgent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BestHTTP_HTTPManager_ConnectTimeout_" data-uid="BestHTTP.HTTPManager.ConnectTimeout*"></a>
+  <h4 id="BestHTTP_HTTPManager_ConnectTimeout" data-uid="BestHTTP.HTTPManager.ConnectTimeout">ConnectTimeout</h4>
+  <div class="markdown level1 summary"><p>Global, default value of the HTTPRequest's ConnectTimeout property. If set to TimeSpan.Zero or lower, no connect timeout logic is executed. Default value is 20 seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TimeSpan ConnectTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_CookieJarSize_" data-uid="BestHTTP.HTTPManager.CookieJarSize*"></a>
+  <h4 id="BestHTTP_HTTPManager_CookieJarSize" data-uid="BestHTTP.HTTPManager.CookieJarSize">CookieJarSize</h4>
+  <div class="markdown level1 summary"><p>Size of the Cookie Jar in bytes. It's default value is 10485760 (10 MB).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint CookieJarSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_DefaultCertificateVerifyer_" data-uid="BestHTTP.HTTPManager.DefaultCertificateVerifyer*"></a>
+  <h4 id="BestHTTP_HTTPManager_DefaultCertificateVerifyer" data-uid="BestHTTP.HTTPManager.DefaultCertificateVerifyer">DefaultCertificateVerifyer</h4>
+  <div class="markdown level1 summary"><p>The default ICertificateVerifyer implementation that the plugin will use when the request's UseAlternateSSL property is set to true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICertificateVerifyer DefaultCertificateVerifyer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.ICertificateVerifyer.html">ICertificateVerifyer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_DefaultCertificationValidator_" data-uid="BestHTTP.HTTPManager.DefaultCertificationValidator*"></a>
+  <h4 id="BestHTTP_HTTPManager_DefaultCertificationValidator" data-uid="BestHTTP.HTTPManager.DefaultCertificationValidator">DefaultCertificationValidator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;HTTPRequest, X509Certificate, X509Chain, bool&gt; DefaultCertificationValidator { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a>, <span class="xref">System.Security.Cryptography.X509Certificates.X509Certificate</span>, <span class="xref">System.Security.Cryptography.X509Certificates.X509Chain</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_DefaultClientCredentialsProvider_" data-uid="BestHTTP.HTTPManager.DefaultClientCredentialsProvider*"></a>
+  <h4 id="BestHTTP_HTTPManager_DefaultClientCredentialsProvider" data-uid="BestHTTP.HTTPManager.DefaultClientCredentialsProvider">DefaultClientCredentialsProvider</h4>
+  <div class="markdown level1 summary"><p>The default IClientCredentialsProvider implementation that the plugin will use when the request's UseAlternateSSL property is set to true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IClientCredentialsProvider DefaultClientCredentialsProvider { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.IClientCredentialsProvider.html">IClientCredentialsProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_EnablePrivateBrowsing_" data-uid="BestHTTP.HTTPManager.EnablePrivateBrowsing*"></a>
+  <h4 id="BestHTTP_HTTPManager_EnablePrivateBrowsing" data-uid="BestHTTP.HTTPManager.EnablePrivateBrowsing">EnablePrivateBrowsing</h4>
+  <div class="markdown level1 summary"><p>If this property is set to true, then new cookies treated as session cookies and these cookies are not saved to disk. Its default value is false;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EnablePrivateBrowsing { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_Heartbeats_" data-uid="BestHTTP.HTTPManager.Heartbeats*"></a>
+  <h4 id="BestHTTP_HTTPManager_Heartbeats" data-uid="BestHTTP.HTTPManager.Heartbeats">Heartbeats</h4>
+  <div class="markdown level1 summary"><p>Heartbeat manager to use less threads in the plugin. The heartbeat updates are called from the OnUpdate function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HeartbeatManager Heartbeats { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HeartbeatManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_IsCachingDisabled_" data-uid="BestHTTP.HTTPManager.IsCachingDisabled*"></a>
+  <h4 id="BestHTTP_HTTPManager_IsCachingDisabled" data-uid="BestHTTP.HTTPManager.IsCachingDisabled">IsCachingDisabled</h4>
+  <div class="markdown level1 summary"><p>Set to true, if caching is prohibited.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCachingDisabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_IsCookiesEnabled_" data-uid="BestHTTP.HTTPManager.IsCookiesEnabled*"></a>
+  <h4 id="BestHTTP_HTTPManager_IsCookiesEnabled" data-uid="BestHTTP.HTTPManager.IsCookiesEnabled">IsCookiesEnabled</h4>
+  <div class="markdown level1 summary"><p>Set to false to disable all Cookie. It's default value is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCookiesEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_IsQuitting_" data-uid="BestHTTP.HTTPManager.IsQuitting*"></a>
+  <h4 id="BestHTTP_HTTPManager_IsQuitting" data-uid="BestHTTP.HTTPManager.IsQuitting">IsQuitting</h4>
+  <div class="markdown level1 summary"><p>It's true if the application is quitting and the plugin is shutting down itself.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsQuitting { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_KeepAliveDefaultValue_" data-uid="BestHTTP.HTTPManager.KeepAliveDefaultValue*"></a>
+  <h4 id="BestHTTP_HTTPManager_KeepAliveDefaultValue" data-uid="BestHTTP.HTTPManager.KeepAliveDefaultValue">KeepAliveDefaultValue</h4>
+  <div class="markdown level1 summary"><p>Default value of a HTTP request's IsKeepAlive value. Default value is true. If you make rare request to the server it should be changed to false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool KeepAliveDefaultValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_Logger_" data-uid="BestHTTP.HTTPManager.Logger*"></a>
+  <h4 id="BestHTTP_HTTPManager_Logger" data-uid="BestHTTP.HTTPManager.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>A basic BestHTTP.Logger.ILogger implementation to be able to log intelligently additional informations about the plugin's internal mechanism.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ILogger Logger { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Logger.ILogger.html">ILogger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_MaxConnectionIdleTime_" data-uid="BestHTTP.HTTPManager.MaxConnectionIdleTime*"></a>
+  <h4 id="BestHTTP_HTTPManager_MaxConnectionIdleTime" data-uid="BestHTTP.HTTPManager.MaxConnectionIdleTime">MaxConnectionIdleTime</h4>
+  <div class="markdown level1 summary"><p>How many time must be passed to destroy that connection after a connection finished its last request. Its default value is 20 seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TimeSpan MaxConnectionIdleTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_MaxConnectionPerServer_" data-uid="BestHTTP.HTTPManager.MaxConnectionPerServer*"></a>
+  <h4 id="BestHTTP_HTTPManager_MaxConnectionPerServer" data-uid="BestHTTP.HTTPManager.MaxConnectionPerServer">MaxConnectionPerServer</h4>
+  <div class="markdown level1 summary"><p>The maximum active TCP connections that the client will maintain to a server. Default value is 4. Minimum value is 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte MaxConnectionPerServer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_Proxy_" data-uid="BestHTTP.HTTPManager.Proxy*"></a>
+  <h4 id="BestHTTP_HTTPManager_Proxy" data-uid="BestHTTP.HTTPManager.Proxy">Proxy</h4>
+  <div class="markdown level1 summary"><p>The global, default proxy for all HTTPRequests. The HTTPRequest's Proxy still can be changed per-request. Default value is null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Proxy Proxy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.Proxy.html">Proxy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_RequestTimeout_" data-uid="BestHTTP.HTTPManager.RequestTimeout*"></a>
+  <h4 id="BestHTTP_HTTPManager_RequestTimeout" data-uid="BestHTTP.HTTPManager.RequestTimeout">RequestTimeout</h4>
+  <div class="markdown level1 summary"><p>Global, default value of the HTTPRequest's Timeout property. Default value is 60 seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TimeSpan RequestTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_RootCacheFolderProvider_" data-uid="BestHTTP.HTTPManager.RootCacheFolderProvider*"></a>
+  <h4 id="BestHTTP_HTTPManager_RootCacheFolderProvider" data-uid="BestHTTP.HTTPManager.RootCacheFolderProvider">RootCacheFolderProvider</h4>
+  <div class="markdown level1 summary"><p>By default the plugin will save all cache and cookie data under the path returned by Application.persistentDataPath.
+You can assign a function to this delegate to return a custom root path to define a new path.
+<remarks>This delegate will be called on a non Unity thread!</remarks></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;string&gt; RootCacheFolderProvider { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_UseAlternateSSLDefaultValue_" data-uid="BestHTTP.HTTPManager.UseAlternateSSLDefaultValue*"></a>
+  <h4 id="BestHTTP_HTTPManager_UseAlternateSSLDefaultValue" data-uid="BestHTTP.HTTPManager.UseAlternateSSLDefaultValue">UseAlternateSSLDefaultValue</h4>
+  <div class="markdown level1 summary"><p>The default value for the HTTPRequest's UseAlternateSSL property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool UseAlternateSSLDefaultValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BestHTTP_HTTPManager_AbortAll_" data-uid="BestHTTP.HTTPManager.AbortAll*"></a>
+  <h4 id="BestHTTP_HTTPManager_AbortAll" data-uid="BestHTTP.HTTPManager.AbortAll">AbortAll()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AbortAll()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_HTTPManager_DefaultTlsClientFactory_" data-uid="BestHTTP.HTTPManager.DefaultTlsClientFactory*"></a>
+  <h4 id="BestHTTP_HTTPManager_DefaultTlsClientFactory_BestHTTP_HTTPRequest_List_System_String__" data-uid="BestHTTP.HTTPManager.DefaultTlsClientFactory(BestHTTP.HTTPRequest,List{System.String})">DefaultTlsClientFactory(HTTPRequest, List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AbstractTlsClient DefaultTlsClientFactory(HTTPRequest request, List&lt;string&gt; protocols)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">protocols</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.AbstractTlsClient.html">AbstractTlsClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_GetRootCacheFolder_" data-uid="BestHTTP.HTTPManager.GetRootCacheFolder*"></a>
+  <h4 id="BestHTTP_HTTPManager_GetRootCacheFolder" data-uid="BestHTTP.HTTPManager.GetRootCacheFolder">GetRootCacheFolder()</h4>
+  <div class="markdown level1 summary"><p>Will return where the various caches should be saved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetRootCacheFolder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_OnQuit_" data-uid="BestHTTP.HTTPManager.OnQuit*"></a>
+  <h4 id="BestHTTP_HTTPManager_OnQuit" data-uid="BestHTTP.HTTPManager.OnQuit">OnQuit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnQuit()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_HTTPManager_OnUpdate_" data-uid="BestHTTP.HTTPManager.OnUpdate*"></a>
+  <h4 id="BestHTTP_HTTPManager_OnUpdate" data-uid="BestHTTP.HTTPManager.OnUpdate">OnUpdate()</h4>
+  <div class="markdown level1 summary"><p>Update function that should be called regularly from a Unity event(Update, LateUpdate). Callbacks are dispatched from this function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnUpdate()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_HTTPManager_ResetSetup_" data-uid="BestHTTP.HTTPManager.ResetSetup*"></a>
+  <h4 id="BestHTTP_HTTPManager_ResetSetup" data-uid="BestHTTP.HTTPManager.ResetSetup">ResetSetup()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ResetSetup()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_HTTPManager_SendRequest_" data-uid="BestHTTP.HTTPManager.SendRequest*"></a>
+  <h4 id="BestHTTP_HTTPManager_SendRequest_BestHTTP_HTTPRequest_" data-uid="BestHTTP.HTTPManager.SendRequest(BestHTTP.HTTPRequest)">SendRequest(HTTPRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HTTPRequest SendRequest(HTTPRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_SendRequest_" data-uid="BestHTTP.HTTPManager.SendRequest*"></a>
+  <h4 id="BestHTTP_HTTPManager_SendRequest_System_String_BestHTTP_HTTPMethods_BestHTTP_OnRequestFinishedDelegate_" data-uid="BestHTTP.HTTPManager.SendRequest(System.String,BestHTTP.HTTPMethods,BestHTTP.OnRequestFinishedDelegate)">SendRequest(String, HTTPMethods, OnRequestFinishedDelegate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HTTPRequest SendRequest(string url, HTTPMethods methodType, OnRequestFinishedDelegate callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPMethods.html">HTTPMethods</a></td>
+        <td><span class="parametername">methodType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.OnRequestFinishedDelegate.html">OnRequestFinishedDelegate</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_SendRequest_" data-uid="BestHTTP.HTTPManager.SendRequest*"></a>
+  <h4 id="BestHTTP_HTTPManager_SendRequest_System_String_BestHTTP_HTTPMethods_System_Boolean_BestHTTP_OnRequestFinishedDelegate_" data-uid="BestHTTP.HTTPManager.SendRequest(System.String,BestHTTP.HTTPMethods,System.Boolean,BestHTTP.OnRequestFinishedDelegate)">SendRequest(String, HTTPMethods, Boolean, OnRequestFinishedDelegate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HTTPRequest SendRequest(string url, HTTPMethods methodType, bool isKeepAlive, OnRequestFinishedDelegate callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPMethods.html">HTTPMethods</a></td>
+        <td><span class="parametername">methodType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isKeepAlive</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.OnRequestFinishedDelegate.html">OnRequestFinishedDelegate</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_SendRequest_" data-uid="BestHTTP.HTTPManager.SendRequest*"></a>
+  <h4 id="BestHTTP_HTTPManager_SendRequest_System_String_BestHTTP_HTTPMethods_System_Boolean_System_Boolean_BestHTTP_OnRequestFinishedDelegate_" data-uid="BestHTTP.HTTPManager.SendRequest(System.String,BestHTTP.HTTPMethods,System.Boolean,System.Boolean,BestHTTP.OnRequestFinishedDelegate)">SendRequest(String, HTTPMethods, Boolean, Boolean, OnRequestFinishedDelegate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HTTPRequest SendRequest(string url, HTTPMethods methodType, bool isKeepAlive, bool disableCache, OnRequestFinishedDelegate callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPMethods.html">HTTPMethods</a></td>
+        <td><span class="parametername">methodType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isKeepAlive</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disableCache</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.OnRequestFinishedDelegate.html">OnRequestFinishedDelegate</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_SendRequest_" data-uid="BestHTTP.HTTPManager.SendRequest*"></a>
+  <h4 id="BestHTTP_HTTPManager_SendRequest_System_String_BestHTTP_OnRequestFinishedDelegate_" data-uid="BestHTTP.HTTPManager.SendRequest(System.String,BestHTTP.OnRequestFinishedDelegate)">SendRequest(String, OnRequestFinishedDelegate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HTTPRequest SendRequest(string url, OnRequestFinishedDelegate callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.OnRequestFinishedDelegate.html">OnRequestFinishedDelegate</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_HTTPManager_Setup_" data-uid="BestHTTP.HTTPManager.Setup*"></a>
+  <h4 id="BestHTTP_HTTPManager_Setup" data-uid="BestHTTP.HTTPManager.Setup">Setup()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Setup()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

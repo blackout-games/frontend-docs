@@ -1,0 +1,774 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DtlsClientProtocol
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DtlsClientProtocol
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol">
+  
+  
+  <h1 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol" class="text-break">Class DtlsClientProtocol
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsProtocol.html">DtlsProtocol</a></div>
+    <div class="level2"><span class="xref">DtlsClientProtocol</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsProtocol.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsProtocol_mSecureRandom">DtlsProtocol.mSecureRandom</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsProtocol.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsProtocol_ProcessFinished_System_Byte___System_Byte___">DtlsProtocol.ProcessFinished(Byte[], Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsProtocol.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsProtocol_EvaluateMaxFragmentLengthExtension_System_Boolean_IDictionary_IDictionary_System_Byte_">DtlsProtocol.EvaluateMaxFragmentLengthExtension(Boolean, IDictionary, IDictionary, Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsProtocol.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsProtocol_GenerateCertificate_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_Certificate_">DtlsProtocol.GenerateCertificate(Certificate)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsProtocol.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsProtocol_GenerateSupplementalData_IList_">DtlsProtocol.GenerateSupplementalData(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsProtocol.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsProtocol_ValidateSelectedCipherSuite_System_Int32_System_Byte_">DtlsProtocol.ValidateSelectedCipherSuite(Int32, Byte)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.html">BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DtlsClientProtocol : DtlsProtocol</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol__ctor_SecureRandom_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.#ctor(SecureRandom)">DtlsClientProtocol(SecureRandom)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DtlsClientProtocol(SecureRandom secureRandom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SecureRandom</span></td>
+        <td><span class="parametername">secureRandom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_Connect_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.Connect*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_Connect_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_TlsClient_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DatagramTransport_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.Connect(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.TlsClient,BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DatagramTransport)">Connect(TlsClient, DatagramTransport)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DtlsTransport Connect(TlsClient client, DatagramTransport transport)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.TlsClient.html">TlsClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DatagramTransport.html">DatagramTransport</a></td>
+        <td><span class="parametername">transport</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsTransport.html">DtlsTransport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_GenerateCertificateVerify_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.GenerateCertificateVerify*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_GenerateCertificateVerify_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ClientHandshakeState_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DigitallySigned_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.GenerateCertificateVerify(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState,BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DigitallySigned)">GenerateCertificateVerify(DtlsClientProtocol.ClientHandshakeState, DigitallySigned)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual byte[] GenerateCertificateVerify(DtlsClientProtocol.ClientHandshakeState state, DigitallySigned certificateVerify)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState.html">DtlsClientProtocol.ClientHandshakeState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DigitallySigned.html">DigitallySigned</a></td>
+        <td><span class="parametername">certificateVerify</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_GenerateClientHello_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.GenerateClientHello*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_GenerateClientHello_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ClientHandshakeState_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_TlsClient_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.GenerateClientHello(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState,BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.TlsClient)">GenerateClientHello(DtlsClientProtocol.ClientHandshakeState, TlsClient)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual byte[] GenerateClientHello(DtlsClientProtocol.ClientHandshakeState state, TlsClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState.html">DtlsClientProtocol.ClientHandshakeState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.TlsClient.html">TlsClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_GenerateClientKeyExchange_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.GenerateClientKeyExchange*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_GenerateClientKeyExchange_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ClientHandshakeState_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.GenerateClientKeyExchange(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState)">GenerateClientKeyExchange(DtlsClientProtocol.ClientHandshakeState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual byte[] GenerateClientKeyExchange(DtlsClientProtocol.ClientHandshakeState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState.html">DtlsClientProtocol.ClientHandshakeState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_InvalidateSession_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.InvalidateSession*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_InvalidateSession_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ClientHandshakeState_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.InvalidateSession(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState)">InvalidateSession(DtlsClientProtocol.ClientHandshakeState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InvalidateSession(DtlsClientProtocol.ClientHandshakeState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState.html">DtlsClientProtocol.ClientHandshakeState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_PatchClientHelloWithCookie_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.PatchClientHelloWithCookie*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_PatchClientHelloWithCookie_System_Byte___System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.PatchClientHelloWithCookie(System.Byte[],System.Byte[])">PatchClientHelloWithCookie(Byte[], Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static byte[] PatchClientHelloWithCookie(byte[] clientHelloBody, byte[] cookie)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">clientHelloBody</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">cookie</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessCertificateRequest_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessCertificateRequest*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessCertificateRequest_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessCertificateRequest(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">ProcessCertificateRequest(DtlsClientProtocol.ClientHandshakeState, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessCertificateRequest(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState.html">DtlsClientProtocol.ClientHandshakeState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessCertificateStatus_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessCertificateStatus*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessCertificateStatus_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessCertificateStatus(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">ProcessCertificateStatus(DtlsClientProtocol.ClientHandshakeState, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessCertificateStatus(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState.html">DtlsClientProtocol.ClientHandshakeState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessHelloVerifyRequest_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessHelloVerifyRequest*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessHelloVerifyRequest_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessHelloVerifyRequest(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">ProcessHelloVerifyRequest(DtlsClientProtocol.ClientHandshakeState, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual byte[] ProcessHelloVerifyRequest(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState.html">DtlsClientProtocol.ClientHandshakeState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessNewSessionTicket_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessNewSessionTicket*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessNewSessionTicket_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessNewSessionTicket(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">ProcessNewSessionTicket(DtlsClientProtocol.ClientHandshakeState, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessNewSessionTicket(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState.html">DtlsClientProtocol.ClientHandshakeState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessServerCertificate_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessServerCertificate*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessServerCertificate_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessServerCertificate(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">ProcessServerCertificate(DtlsClientProtocol.ClientHandshakeState, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Certificate ProcessServerCertificate(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState.html">DtlsClientProtocol.ClientHandshakeState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.Certificate.html">Certificate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessServerHello_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessServerHello*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessServerHello_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessServerHello(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">ProcessServerHello(DtlsClientProtocol.ClientHandshakeState, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessServerHello(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState.html">DtlsClientProtocol.ClientHandshakeState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessServerKeyExchange_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessServerKeyExchange*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessServerKeyExchange_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessServerKeyExchange(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">ProcessServerKeyExchange(DtlsClientProtocol.ClientHandshakeState, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessServerKeyExchange(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState.html">DtlsClientProtocol.ClientHandshakeState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessServerSupplementalData_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessServerSupplementalData*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ProcessServerSupplementalData_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ClientHandshakeState_System_Byte___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ProcessServerSupplementalData(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState,System.Byte[])">ProcessServerSupplementalData(DtlsClientProtocol.ClientHandshakeState, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessServerSupplementalData(DtlsClientProtocol.ClientHandshakeState state, byte[] body)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState.html">DtlsClientProtocol.ClientHandshakeState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ReportServerVersion_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ReportServerVersion*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ReportServerVersion_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_DtlsClientProtocol_ClientHandshakeState_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Tls_ProtocolVersion_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ReportServerVersion(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState,BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.ProtocolVersion)">ReportServerVersion(DtlsClientProtocol.ClientHandshakeState, ProtocolVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ReportServerVersion(DtlsClientProtocol.ClientHandshakeState state, ProtocolVersion server_version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.DtlsClientProtocol.ClientHandshakeState.html">DtlsClientProtocol.ClientHandshakeState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Tls.ProtocolVersion.html">ProtocolVersion</a></td>
+        <td><span class="parametername">server_version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

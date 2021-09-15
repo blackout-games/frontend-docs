@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace EnhancedUI.EnhancedScroller
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace EnhancedUI.EnhancedScroller
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="EnhancedUI.EnhancedScroller">
+  
+  <h1 id="EnhancedUI_EnhancedScroller" data-uid="EnhancedUI.EnhancedScroller" class="text-break">Namespace EnhancedUI.EnhancedScroller
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.EnhancedScroller.html">EnhancedScroller</a></h4>
+      <section><p>The EnhancedScroller allows you to easily set up a dynamic scroller that will recycle views for you. This means
+that using only a handful of views, you can display thousands of rows. This will save memory and processing
+power in your application.</p>
+</section>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.EnhancedScrollerCellView.html">EnhancedScrollerCellView</a></h4>
+      <section><p>This is the base class that all cell views should derive from</p>
+</section>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.Tween.html">Tween</a></h4>
+      <section></section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.IEnhancedScrollerDelegate.html">IEnhancedScrollerDelegate</a></h4>
+      <section><p>All scripts that handle the scroller's callbacks should inherit from this interface</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.EnhancedScroller.CellViewPositionEnum.html">EnhancedScroller.CellViewPositionEnum</a></h4>
+      <section><p>Which side of a cell to reference.
+For vertical scrollers, before means above, after means below.
+For horizontal scrollers, before means to left of, after means to the right of.</p>
+</section>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.EnhancedScroller.LoopJumpDirectionEnum.html">EnhancedScroller.LoopJumpDirectionEnum</a></h4>
+      <section></section>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.EnhancedScroller.ScrollbarVisibilityEnum.html">EnhancedScroller.ScrollbarVisibilityEnum</a></h4>
+      <section><p>This will set how the scroll bar should be shown based on the data. If no scrollbar
+is attached, then this is ignored. OnlyIfNeeded will hide the scrollbar based on whether
+the scroller is looping or there aren't enough items to scroll.</p>
+</section>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.EnhancedScroller.ScrollDirectionEnum.html">EnhancedScroller.ScrollDirectionEnum</a></h4>
+      <section><p>The direction this scroller is handling</p>
+</section>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.EnhancedScroller.TweenType.html">EnhancedScroller.TweenType</a></h4>
+      <section><p>The easing type</p>
+</section>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.Tween.TweenType.html">Tween.TweenType</a></h4>
+      <section><p>The easing type</p>
+</section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.CellViewInstantiated.html">CellViewInstantiated</a></h4>
+      <section><p>This delegate is called when a cell view is created for the first time (not reused)</p>
+</section>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.CellViewReused.html">CellViewReused</a></h4>
+      <section><p>This delegate is called when a cell view is reused from the recycled cell view list</p>
+</section>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.CellViewVisibilityChangedDelegate.html">CellViewVisibilityChangedDelegate</a></h4>
+      <section><p>This delegate handles the visibility changes of cell views</p>
+</section>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.CellViewWillRecycleDelegate.html">CellViewWillRecycleDelegate</a></h4>
+      <section><p>This delegate will be fired just before the cell view is recycled</p>
+</section>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.ScrollerScrolledDelegate.html">ScrollerScrolledDelegate</a></h4>
+      <section><p>This delegate handles the scrolling callback of the ScrollRect.</p>
+</section>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.ScrollerScrollingChangedDelegate.html">ScrollerScrollingChangedDelegate</a></h4>
+      <section><p>This delegate handles the change in state of the scroller (scrolling or not scrolling)</p>
+</section>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.ScrollerSnappedDelegate.html">ScrollerSnappedDelegate</a></h4>
+      <section><p>This delegate handles the snapping of the scroller.</p>
+</section>
+      <h4><a class="xref" href="EnhancedUI.EnhancedScroller.ScrollerTweeningChangedDelegate.html">ScrollerTweeningChangedDelegate</a></h4>
+      <section><p>This delegate handles the change in state of the scroller (jumping or not jumping)</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

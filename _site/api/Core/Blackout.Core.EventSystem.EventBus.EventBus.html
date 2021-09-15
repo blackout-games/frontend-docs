@@ -1,0 +1,2675 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EventBus
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EventBus
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Blackout.Core.EventSystem.EventBus.EventBus">
+  
+  
+  <h1 id="Blackout_Core_EventSystem_EventBus_EventBus" data-uid="Blackout.Core.EventSystem.EventBus.EventBus" class="text-break">Class EventBus
+  </h1>
+  <div class="markdown level0 summary"><p>Usage:
+<a href="https://bitbucket.org/blackoutgames/rugby-unity/wiki/EventBus.md">https://bitbucket.org/blackoutgames/rugby-unity/wiki/EventBus.md</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">EventBus</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Blackout.Core.EventSystem.EventBus.html">Blackout.Core.EventSystem.EventBus</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Blackout_Core_EventSystem_EventBus_EventBus_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class EventBus</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_BindTo_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.BindTo*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_BindTo_Blackout_Core_EventSystem_EventBus_BusUnit_Component_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.BindTo(Blackout.Core.EventSystem.EventBus.BusUnit,Component)">BindTo(BusUnit, Component)</h4>
+  <div class="markdown level1 summary"><p>Allows binding on component.
+Now, after provided component or its gameObject will be destroyed - event subscription will vanish as well.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit BindTo(this BusUnit busUnit, Component component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td><span class="parametername">busUnit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Component</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_FromProperty_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.FromProperty*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_FromProperty_Blackout_Core_EventSystem_EventBus_BusUnit_PropertyInfo_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.FromProperty(Blackout.Core.EventSystem.EventBus.BusUnit,PropertyInfo)">FromProperty(BusUnit, PropertyInfo)</h4>
+  <div class="markdown level1 summary"><p>WARNING: No inner check for property. Only extreme case usage.
+Use only in case property name must be set directly as a string and you know what you are doing.
+*This method may be removed in future due its unsafe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit FromProperty(this BusUnit unit, PropertyInfo property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td><span class="parametername">unit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">PropertyInfo</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_FromProperty_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.FromProperty*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_FromProperty__2_Blackout_Core_EventSystem_EventBus_BusCondition___0__Expression_Func___0___1___" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.FromProperty``2(Blackout.Core.EventSystem.EventBus.BusCondition{``0},Expression{Func{``0,``1}})">FromProperty&lt;T, TK&gt;(BusCondition&lt;T&gt;, Expression&lt;Func&lt;T, TK&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit&lt;T, TK&gt; FromProperty&lt;T, TK&gt;(this BusCondition&lt;T&gt; condition, Expression&lt;Func&lt;T, TK&gt;&gt; property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusCondition-1.html">BusCondition</a>&lt;T&gt;</td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;T, TK&gt;&gt;</td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit-2.html">BusUnit</a>&lt;T, TK&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TK</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_FromProperty_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.FromProperty*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_FromProperty__2_Expression_Func___0___1___" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.FromProperty``2(Expression{Func{``0,``1}})">FromProperty&lt;T, TK&gt;(Expression&lt;Func&lt;T, TK&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit&lt;T, TK&gt; FromProperty&lt;T, TK&gt;(Expression&lt;Func&lt;T, TK&gt;&gt; property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;T, TK&gt;&gt;</td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit-2.html">BusUnit</a>&lt;T, TK&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TK</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_InvokeOnce_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.InvokeOnce*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_InvokeOnce_Blackout_Core_EventSystem_EventBus_BusUnit_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.InvokeOnce(Blackout.Core.EventSystem.EventBus.BusUnit)">InvokeOnce(BusUnit)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit InvokeOnce(this BusUnit busUnit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td><span class="parametername">busUnit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_NewScope_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.NewScope*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_NewScope__1_System_String_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.NewScope``1(System.String)">NewScope&lt;T&gt;(String)</h4>
+  <div class="markdown level1 summary"><p>Defines strongly {T} defined scope to stream any data.
+This will create new scope to pass
+<em>IMPORTANT</em> - subscribing on this scope will replace created scope with existing in map, if there is one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusScope&lt;T&gt; NewScope&lt;T&gt;(string scope)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">scope</span></td>
+        <td><p>The scope id to stream data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope-1.html">BusScope</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Publish_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Publish*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Publish_Blackout_Core_EventSystem_EventBus_EventMessage___" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Publish(Blackout.Core.EventSystem.EventBus.EventMessage[])">Publish(EventMessage[])</h4>
+  <div class="markdown level1 summary"><p>Consequently rise evens based on items provided in parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Publish(params EventMessage[] items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.EventMessage.html">EventMessage</a>[]</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Publish_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Publish*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Publish__1" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Publish``1">Publish&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Publish empty message from type.
+Activator will handle class creation for you.
+<em><strong>Important</strong></em> - anonymous type wont be published!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Publish&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Publish_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Publish*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Publish__1___0_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Publish``1(``0)">Publish&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Publish item</p>
+<!----> 
+<p><em>Important</em> - all anonymous types will be considered as {System.Object} type,
+because they cannot be subscribed. <span class="xref">Blackout.Core.EventSystem.EventBus.EventBus.IsAnonymousType(Type)</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Publish&lt;T&gt;(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Publish_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Publish*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Publish__1_Blackout_Core_EventSystem_EventBus_BusScope___0_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Publish``1(Blackout.Core.EventSystem.EventBus.BusScope,``0)">Publish&lt;T&gt;(BusScope, T)</h4>
+  <div class="markdown level1 summary"><p>Same as <a class="xref" href="Blackout.Core.EventSystem.EventBus.EventBus.html#Blackout_Core_EventSystem_EventBus_EventBus_Stream__1_Blackout_Core_EventSystem_EventBus_BusScope___0____0_">Stream&lt;T&gt;(BusScope&lt;T&gt;, T)</a>
+Will stream (invoke callbacks) {T} item to the provided scope.
+Any scope subscribers (listeners) will receive provided item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Publish&lt;T&gt;(this BusScope scope, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope.html">BusScope</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td><p>Scope to stream</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Any item (most preferable to use with simple data)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Any type, including dynamic and anonymous</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Publish_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Publish*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Publish__1_Blackout_Core_EventSystem_EventBus_BusScope___0____0_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Publish``1(Blackout.Core.EventSystem.EventBus.BusScope{``0},``0)">Publish&lt;T&gt;(BusScope&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"><p>Same as <a class="xref" href="Blackout.Core.EventSystem.EventBus.EventBus.html#Blackout_Core_EventSystem_EventBus_EventBus_Stream__1_Blackout_Core_EventSystem_EventBus_BusScope___0____0_">Stream&lt;T&gt;(BusScope&lt;T&gt;, T)</a>
+Will stream (invoke callbacks) {T} item to the provided scope.
+Any scope subscribers (listeners) will receive provided item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Publish&lt;T&gt;(this BusScope&lt;T&gt; scope, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope-1.html">BusScope</a>&lt;T&gt;</td>
+        <td><span class="parametername">scope</span></td>
+        <td><p>Scope to stream</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Any item (most preferable to use with simple data)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Any type, including dynamic and anonymous</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Scope_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Scope*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Scope_System_String_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Scope(System.String)">Scope(String)</h4>
+  <div class="markdown level1 summary"><p>Defines any type scope to stream data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusScope Scope(string scope)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">scope</span></td>
+        <td><p>The scope id to stream data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope.html">BusScope</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Scope_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Scope*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Scope__1" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Scope``1">Scope&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Defines independent scope to stream data.
+This scope can be referenced locally or even pushed via <a class="xref" href="Blackout.Core.EventSystem.EventBus.EventBus.html">EventBus</a> to use in a callback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusScope&lt;T&gt; Scope&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope-1.html">BusScope</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Scope_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Scope*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Scope__1_System_String_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Scope``1(System.String)">Scope&lt;T&gt;(String)</h4>
+  <div class="markdown level1 summary"><p>Defines strongly {T} defined scope to stream any data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusScope Scope&lt;T&gt;(string scope)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">scope</span></td>
+        <td><p>The scope id to stream data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope.html">BusScope</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Stream_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Stream*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Stream__1_Blackout_Core_EventSystem_EventBus_BusScope___0_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Stream``1(Blackout.Core.EventSystem.EventBus.BusScope,``0)">Stream&lt;T&gt;(BusScope, T)</h4>
+  <div class="markdown level1 summary"><p>Will stream (invoke callbacks) {T} item to the provided scope.
+Any scope subscribers (listeners) will receive provided item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Stream&lt;T&gt;(this BusScope scope, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope.html">BusScope</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td><p>Scope to stream</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Any item (most preferable to use with simple data)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Any type, including dynamic and anonymous</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Stream_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Stream*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Stream__1_Blackout_Core_EventSystem_EventBus_BusScope___0____0_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Stream``1(Blackout.Core.EventSystem.EventBus.BusScope{``0},``0)">Stream&lt;T&gt;(BusScope&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"><p>Will stream (invoke callbacks) {T} item to the provided scope.
+Any scope subscribers (listeners) will receive provided item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Stream&lt;T&gt;(this BusScope&lt;T&gt; scope, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope-1.html">BusScope</a>&lt;T&gt;</td>
+        <td><span class="parametername">scope</span></td>
+        <td><p>Scope to stream</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Any item (most preferable to use with simple data)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Any type, including dynamic and anonymous</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_Blackout_Core_EventSystem_EventBus_BusCondition_Action_System_Object__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe(Blackout.Core.EventSystem.EventBus.BusCondition,Action{System.Object})">Subscribe(BusCondition, Action&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Dynamic conditional subscribe.
+Will observe on message of type {Object} only when provided condition is true.
+Can be used only with Where(dynamic condition)...
+Usage: EventBus
+.Where(x =&gt; <em>any condition</em> )
+.Subscribe(MessageClass x=&gt;DoSomething());</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe(this BusCondition condition, Action&lt;object&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusCondition.html">BusCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_Blackout_Core_EventSystem_EventBus_BusCondition_Type_Action_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe(Blackout.Core.EventSystem.EventBus.BusCondition,Type,Action)">Subscribe(BusCondition, Type, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe(this BusCondition condition, Type type, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusCondition.html">BusCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_Blackout_Core_EventSystem_EventBus_BusCondition_Type_Action_System_Object__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe(Blackout.Core.EventSystem.EventBus.BusCondition,Type,Action{System.Object})">Subscribe(BusCondition, Type, Action&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe(this BusCondition condition, Type type, Action&lt;object&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusCondition.html">BusCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_Blackout_Core_EventSystem_EventBus_BusScope_Action_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe(Blackout.Core.EventSystem.EventBus.BusScope,Action)">Subscribe(BusScope, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusScope Subscribe(this BusScope busScope, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope.html">BusScope</a></td>
+        <td><span class="parametername">busScope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope.html">BusScope</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_Blackout_Core_EventSystem_EventBus_BusUnit_Type_Action_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe(Blackout.Core.EventSystem.EventBus.BusUnit,Type,Action)">Subscribe(BusUnit, Type, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe(this BusUnit busUnit, Type type, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td><span class="parametername">busUnit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_Blackout_Core_EventSystem_EventBus_BusUnit_Type_Action_System_Object__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe(Blackout.Core.EventSystem.EventBus.BusUnit,Type,Action{System.Object})">Subscribe(BusUnit, Type, Action&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe(this BusUnit busUnit, Type type, Action&lt;object&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td><span class="parametername">busUnit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_Type_Action_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe(Type,Action)">Subscribe(Type, Action)</h4>
+  <div class="markdown level1 summary"><p>Generic subscribe.
+Will observe on message of type {type} and rise an action.
+Usage: EventBus.Subscribe{T}(x=&gt;DoSomething());</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe(Type type, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_Type_Action_System_Object__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe(Type,Action{System.Object})">Subscribe(Type, Action&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe(Type type, Action&lt;object&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe__1_Action_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe``1(Action)">Subscribe&lt;T&gt;(Action)</h4>
+  <div class="markdown level1 summary"><p>Generic subscribe.
+Will observe on message of type {T} and rise a void action.
+Usage: EventBus.Subscribe{T}(void DoSomething());</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe&lt;T&gt;(Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe__1_Action___0__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe``1(Action{``0})">Subscribe&lt;T&gt;(Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Generic subscribe.
+Will observe on message of type {T} and rise an action{T}.
+Usage: EventBus.Subscribe{T}(x=&gt;DoSomething());</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe&lt;T&gt;(Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe__1_Blackout_Core_EventSystem_EventBus_BusCondition___0__Action_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe``1(Blackout.Core.EventSystem.EventBus.BusCondition{``0},Action)">Subscribe&lt;T&gt;(BusCondition&lt;T&gt;, Action)</h4>
+  <div class="markdown level1 summary"><p>Conditional subscribe.
+Will observe on message of type {T} only when provided condition is true.
+Must be paired with Where{T}
+Usage: EventBus
+.Where{MessageClass}(x =&gt; <em>any condition</em> )
+.Subscribe(DoSomething);</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe&lt;T&gt;(this BusCondition&lt;T&gt; condition, Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusCondition-1.html">BusCondition</a>&lt;T&gt;</td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe__1_Blackout_Core_EventSystem_EventBus_BusCondition___0__Action___0__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe``1(Blackout.Core.EventSystem.EventBus.BusCondition{``0},Action{``0})">Subscribe&lt;T&gt;(BusCondition&lt;T&gt;, Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Conditional subscribe.
+Will observe on message of type {T} only when provided condition is true.
+Must be paired with Where{T}
+Usage: EventBus
+.Where{MessageClass}(x =&gt; <em>any condition</em> )
+.Subscribe(MessageClass x=&gt;DoSomething());</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe&lt;T&gt;(this BusCondition&lt;T&gt; condition, Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusCondition-1.html">BusCondition</a>&lt;T&gt;</td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe__1_Blackout_Core_EventSystem_EventBus_BusScope_Action___0__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe``1(Blackout.Core.EventSystem.EventBus.BusScope,Action{``0})">Subscribe&lt;T&gt;(BusScope, Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusScope Subscribe&lt;T&gt;(this BusScope busScope, Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope.html">BusScope</a></td>
+        <td><span class="parametername">busScope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope.html">BusScope</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe__1_Blackout_Core_EventSystem_EventBus_BusScope___0__Action___0__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe``1(Blackout.Core.EventSystem.EventBus.BusScope{``0},Action{``0})">Subscribe&lt;T&gt;(BusScope&lt;T&gt;, Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusScope Subscribe&lt;T&gt;(this BusScope&lt;T&gt; busScope, Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope-1.html">BusScope</a>&lt;T&gt;</td>
+        <td><span class="parametername">busScope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope.html">BusScope</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe__1_Blackout_Core_EventSystem_EventBus_BusUnit_Action___0__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe``1(Blackout.Core.EventSystem.EventBus.BusUnit,Action{``0})">Subscribe&lt;T&gt;(BusUnit, Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe&lt;T&gt;(this BusUnit busUnit, Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td><span class="parametername">busUnit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe__1_Func___0_UniTask__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe``1(Func{``0,UniTask})">Subscribe&lt;T&gt;(Func&lt;T, UniTask&gt;)</h4>
+  <div class="markdown level1 summary"><p>Subscribe to an async method.
+Will observe on message of type {T} and rise an action{T}.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe&lt;T&gt;(Func&lt;T, UniTask&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <span class="xref">UniTask</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe__1_Func_UniTask__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe``1(Func{UniTask})">Subscribe&lt;T&gt;(Func&lt;UniTask&gt;)</h4>
+  <div class="markdown level1 summary"><p>Subscribe to an async method with no {T} param.
+Will observe on message of type {T} and rise an action{T}.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe&lt;T&gt;(Func&lt;UniTask&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">UniTask</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Subscribe__2_Blackout_Core_EventSystem_EventBus_BusUnit___0___1__Action___1__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Subscribe``2(Blackout.Core.EventSystem.EventBus.BusUnit{``0,``1},Action{``1})">Subscribe&lt;T, TK&gt;(BusUnit&lt;T, TK&gt;, Action&lt;TK&gt;)</h4>
+  <div class="markdown level1 summary"><p>Fluid subscribe.
+Will observe on message of type {T}</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Subscribe&lt;T, TK&gt;(this BusUnit&lt;T, TK&gt; busUnit, Action&lt;TK&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit-2.html">BusUnit</a>&lt;T, TK&gt;</td>
+        <td><span class="parametername">busUnit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;TK&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TK</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Unsubscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Unsubscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Unsubscribe_Blackout_Core_EventSystem_EventBus_BusScope_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Unsubscribe(Blackout.Core.EventSystem.EventBus.BusScope)">Unsubscribe(BusScope)</h4>
+  <div class="markdown level1 summary"><p>Removes Scope from ScopeMap preventing any stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unsubscribe(this BusScope busScope)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope.html">BusScope</a></td>
+        <td><span class="parametername">busScope</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Unsubscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Unsubscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Unsubscribe_System_String_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Unsubscribe(System.String)">Unsubscribe(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unsubscribe(string scope)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Unsubscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Unsubscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Unsubscribe__1_Action_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Unsubscribe``1(Action)">Unsubscribe&lt;T&gt;(Action)</h4>
+  <div class="markdown level1 summary"><p>Removes event listener for an action of type {T}.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unsubscribe&lt;T&gt;(Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Unsubscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Unsubscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Unsubscribe__1_Action___0__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Unsubscribe``1(Action{``0})">Unsubscribe&lt;T&gt;(Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes event listener for an action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unsubscribe&lt;T&gt;(Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Unsubscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Unsubscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Unsubscribe__1_Delegate_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Unsubscribe``1(Delegate)">Unsubscribe&lt;T&gt;(Delegate)</h4>
+  <div class="markdown level1 summary"><p>Removes event listener for a delegate. (implicit) (generic use)
+Call this only if you know what you are doing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unsubscribe&lt;T&gt;(Delegate del)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Delegate</span></td>
+        <td><span class="parametername">del</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Unsubscribe_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Unsubscribe*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Unsubscribe__2_Action___1__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Unsubscribe``2(Action{``1})">Unsubscribe&lt;T, TK&gt;(Action&lt;TK&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes event listener for an action of different type. (explicit)
+Useful when used to unsubscribe from .Take cast resulting delegate, etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unsubscribe&lt;T, TK&gt;(Action&lt;TK&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;TK&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TK</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_UnsubscribeAll_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.UnsubscribeAll*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_UnsubscribeAll" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.UnsubscribeAll">UnsubscribeAll()</h4>
+  <div class="markdown level1 summary"><p>Removes all events from EventBus.
+Use this only when whole app events needs to be wiped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnsubscribeAll()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_UnsubscribeAll_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.UnsubscribeAll*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_UnsubscribeAll__1" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.UnsubscribeAll``1">UnsubscribeAll&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Removes all listeners for specific type {T}.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnsubscribeAll&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Where_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Where_Blackout_Core_EventSystem_EventBus_BusScope_Func_System_Boolean__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where(Blackout.Core.EventSystem.EventBus.BusScope,Func{System.Boolean})">Where(BusScope, Func&lt;Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Allows to filter subscription by specific condition before its subscription invoked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusScope Where(this BusScope unit, Func&lt;bool&gt; condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope.html">BusScope</a></td>
+        <td><span class="parametername">unit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope.html">BusScope</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Where_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Where_Blackout_Core_EventSystem_EventBus_BusUnit_Func_System_Boolean__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where(Blackout.Core.EventSystem.EventBus.BusUnit,Func{System.Boolean})">Where(BusUnit, Func&lt;Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Allows to filter subscription by specific condition before its subscription invoked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusUnit Where(this BusUnit unit, Func&lt;bool&gt; condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td><span class="parametername">unit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusUnit.html">BusUnit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Where_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Where_Func_System_Boolean__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where(Func{System.Boolean})">Where(Func&lt;Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Generic void condition for subscription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusCondition Where(Func&lt;bool&gt; condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusCondition.html">BusCondition</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Where_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Where_Func_System_Object_System_Boolean__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where(Func{System.Object,System.Boolean})">Where(Func&lt;Object, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Shortcut to Where{object}(condition)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusCondition Where(Func&lt;object, bool&gt; condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.Object</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusCondition.html">BusCondition</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Where_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Where__1_Blackout_Core_EventSystem_EventBus_BusScope_Func___0_System_Boolean__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where``1(Blackout.Core.EventSystem.EventBus.BusScope,Func{``0,System.Boolean})">Where&lt;T&gt;(BusScope, Func&lt;T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Allows to filter subscription by specific condition before its subscription invoked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusScope Where&lt;T&gt;(this BusScope unit, Func&lt;T, bool&gt; condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope.html">BusScope</a></td>
+        <td><span class="parametername">unit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope.html">BusScope</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Where_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Where__1_Blackout_Core_EventSystem_EventBus_BusScope___0__Func___0_System_Boolean__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where``1(Blackout.Core.EventSystem.EventBus.BusScope{``0},Func{``0,System.Boolean})">Where&lt;T&gt;(BusScope&lt;T&gt;, Func&lt;T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Allows to filter subscription by specific condition before its subscription invoked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusScope&lt;T&gt; Where&lt;T&gt;(this BusScope&lt;T&gt; unit, Func&lt;T, bool&gt; condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope-1.html">BusScope</a>&lt;T&gt;</td>
+        <td><span class="parametername">unit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope-1.html">BusScope</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Where_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Where__1_Blackout_Core_EventSystem_EventBus_BusScope___0__Func_System_Boolean__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where``1(Blackout.Core.EventSystem.EventBus.BusScope{``0},Func{System.Boolean})">Where&lt;T&gt;(BusScope&lt;T&gt;, Func&lt;Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Allows to filter subscription by specific condition before its subscription invoked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusScope&lt;T&gt; Where&lt;T&gt;(this BusScope&lt;T&gt; unit, Func&lt;bool&gt; condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope-1.html">BusScope</a>&lt;T&gt;</td>
+        <td><span class="parametername">unit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusScope-1.html">BusScope</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_EventSystem_EventBus_EventBus_Where_" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where*"></a>
+  <h4 id="Blackout_Core_EventSystem_EventBus_EventBus_Where__1_Func___0_System_Boolean__" data-uid="Blackout.Core.EventSystem.EventBus.EventBus.Where``1(Func{``0,System.Boolean})">Where&lt;T&gt;(Func&lt;T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Allows to filter subscription by specific condition.
+Usage: EventBus
+.Where{MessageClass}(x =&gt; <em>any condition</em> )
+.Subscribe(MessageClass x=&gt;DoSomething());</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BusCondition&lt;T&gt; Where&lt;T&gt;(Func&lt;T, bool&gt; condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Core.EventSystem.EventBus.BusCondition-1.html">BusCondition</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

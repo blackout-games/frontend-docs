@@ -1,0 +1,709 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Packet
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Packet
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SocketIO.Packet">
+  
+  
+  <h1 id="BestHTTP_SocketIO_Packet" data-uid="BestHTTP.SocketIO.Packet" class="text-break">Class Packet
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Packet</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.SocketIO.html">BestHTTP.SocketIO</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SocketIO_Packet_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Packet</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet__ctor_" data-uid="BestHTTP.SocketIO.Packet.#ctor*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet__ctor_BestHTTP_SocketIO_TransportEventTypes_BestHTTP_SocketIO_SocketIOEventTypes_System_String_System_String_System_Int32_System_Int32_" data-uid="BestHTTP.SocketIO.Packet.#ctor(BestHTTP.SocketIO.TransportEventTypes,BestHTTP.SocketIO.SocketIOEventTypes,System.String,System.String,System.Int32,System.Int32)">Packet(TransportEventTypes, SocketIOEventTypes, String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Internal constructor. Don't use it directly!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Packet(TransportEventTypes transportEvent, SocketIOEventTypes packetType, string nsp, string payload, int attachment = 0, int id = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SocketIO.TransportEventTypes.html">TransportEventTypes</a></td>
+        <td><span class="parametername">transportEvent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SocketIO.SocketIOEventTypes.html">SocketIOEventTypes</a></td>
+        <td><span class="parametername">packetType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">nsp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">attachment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BestHTTP_SocketIO_Packet_Placeholder" data-uid="BestHTTP.SocketIO.Packet.Placeholder">Placeholder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Placeholder = &quot;_placeholder&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_AttachmentCount_" data-uid="BestHTTP.SocketIO.Packet.AttachmentCount*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_AttachmentCount" data-uid="BestHTTP.SocketIO.Packet.AttachmentCount">AttachmentCount</h4>
+  <div class="markdown level1 summary"><p>How many attachment should have this packet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AttachmentCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_Attachments_" data-uid="BestHTTP.SocketIO.Packet.Attachments*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_Attachments" data-uid="BestHTTP.SocketIO.Packet.Attachments">Attachments</h4>
+  <div class="markdown level1 summary"><p>All binary data attached to this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;byte[]&gt; Attachments { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_DecodedArgs_" data-uid="BestHTTP.SocketIO.Packet.DecodedArgs*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_DecodedArgs" data-uid="BestHTTP.SocketIO.Packet.DecodedArgs">DecodedArgs</h4>
+  <div class="markdown level1 summary"><p>The decoded arguments from the result of a Json string -&gt; c# object convert.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object[] DecodedArgs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_EventName_" data-uid="BestHTTP.SocketIO.Packet.EventName*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_EventName" data-uid="BestHTTP.SocketIO.Packet.EventName">EventName</h4>
+  <div class="markdown level1 summary"><p>The decoded event name from the payload string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EventName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_HasAllAttachment_" data-uid="BestHTTP.SocketIO.Packet.HasAllAttachment*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_HasAllAttachment" data-uid="BestHTTP.SocketIO.Packet.HasAllAttachment">HasAllAttachment</h4>
+  <div class="markdown level1 summary"><p>Property to check whether all attachments are received to this packet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAllAttachment { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_Id_" data-uid="BestHTTP.SocketIO.Packet.Id*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_Id" data-uid="BestHTTP.SocketIO.Packet.Id">Id</h4>
+  <div class="markdown level1 summary"><p>The internal ack-id of this packet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_IsDecoded_" data-uid="BestHTTP.SocketIO.Packet.IsDecoded*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_IsDecoded" data-uid="BestHTTP.SocketIO.Packet.IsDecoded">IsDecoded</h4>
+  <div class="markdown level1 summary"><p>True if it's already decoded. The DecodedArgs still can be null after the Decode call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDecoded { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_Namespace_" data-uid="BestHTTP.SocketIO.Packet.Namespace*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_Namespace" data-uid="BestHTTP.SocketIO.Packet.Namespace">Namespace</h4>
+  <div class="markdown level1 summary"><p>The sender namespace's name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Namespace { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_Payload_" data-uid="BestHTTP.SocketIO.Packet.Payload*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_Payload" data-uid="BestHTTP.SocketIO.Packet.Payload">Payload</h4>
+  <div class="markdown level1 summary"><p>The payload as a Json string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Payload { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_SocketIOEvent_" data-uid="BestHTTP.SocketIO.Packet.SocketIOEvent*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_SocketIOEvent" data-uid="BestHTTP.SocketIO.Packet.SocketIOEvent">SocketIOEvent</h4>
+  <div class="markdown level1 summary"><p>The packet's type in the Socket.IO protocol.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SocketIOEventTypes SocketIOEvent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SocketIO.SocketIOEventTypes.html">SocketIOEventTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_TransportEvent_" data-uid="BestHTTP.SocketIO.Packet.TransportEvent*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_TransportEvent" data-uid="BestHTTP.SocketIO.Packet.TransportEvent">TransportEvent</h4>
+  <div class="markdown level1 summary"><p>Event type of this packet on the transport layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransportEventTypes TransportEvent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SocketIO.TransportEventTypes.html">TransportEventTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_Decode_" data-uid="BestHTTP.SocketIO.Packet.Decode*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_Decode_BestHTTP_SocketIO_JsonEncoders_IJsonEncoder_" data-uid="BestHTTP.SocketIO.Packet.Decode(BestHTTP.SocketIO.JsonEncoders.IJsonEncoder)">Decode(IJsonEncoder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object[] Decode(IJsonEncoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SocketIO.JsonEncoders.IJsonEncoder.html">IJsonEncoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_DecodeEventName_" data-uid="BestHTTP.SocketIO.Packet.DecodeEventName*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_DecodeEventName" data-uid="BestHTTP.SocketIO.Packet.DecodeEventName">DecodeEventName()</h4>
+  <div class="markdown level1 summary"><p>Will set and return with the EventName from the packet's Payload string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DecodeEventName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_ReconstructAttachmentAsBase64_" data-uid="BestHTTP.SocketIO.Packet.ReconstructAttachmentAsBase64*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_ReconstructAttachmentAsBase64" data-uid="BestHTTP.SocketIO.Packet.ReconstructAttachmentAsBase64">ReconstructAttachmentAsBase64()</h4>
+  <div class="markdown level1 summary"><p>Will switch the &quot;{'_placeholder':true,'num':X}&quot; to a the data as a base64 encoded string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReconstructAttachmentAsBase64()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if successfully reconstructed, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_ReconstructAttachmentAsIndex_" data-uid="BestHTTP.SocketIO.Packet.ReconstructAttachmentAsIndex*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_ReconstructAttachmentAsIndex" data-uid="BestHTTP.SocketIO.Packet.ReconstructAttachmentAsIndex">ReconstructAttachmentAsIndex()</h4>
+  <div class="markdown level1 summary"><p>Will switch the &quot;{'_placeholder':true,'num':X}&quot; to a the index num X.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReconstructAttachmentAsIndex()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if successfully reconstructed, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_RemoveEventName_" data-uid="BestHTTP.SocketIO.Packet.RemoveEventName*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_RemoveEventName_System_Boolean_" data-uid="BestHTTP.SocketIO.Packet.RemoveEventName(System.Boolean)">RemoveEventName(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RemoveEventName(bool removeArrayMarks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">removeArrayMarks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SocketIO_Packet_ToString_" data-uid="BestHTTP.SocketIO.Packet.ToString*"></a>
+  <h4 id="BestHTTP_SocketIO_Packet_ToString" data-uid="BestHTTP.SocketIO.Packet.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns with the Payload of this packet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

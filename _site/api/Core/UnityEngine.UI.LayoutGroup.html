@@ -1,0 +1,1136 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LayoutGroup
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LayoutGroup
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.UI.LayoutGroup">
+  
+  
+  <h1 id="UnityEngine_UI_LayoutGroup" data-uid="UnityEngine.UI.LayoutGroup" class="text-break">Class LayoutGroup
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LayoutGroup</span></div>
+      <div class="level2"><a class="xref" href="UnityEngine.UI.GridLayoutGroup.html">GridLayoutGroup</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html">HorizontalOrVerticalLayoutGroup</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UnityEngine.UI.ILayoutElement.html">ILayoutElement</a></div>
+    <div><a class="xref" href="UnityEngine.UI.ILayoutGroup.html">ILayoutGroup</a></div>
+    <div><a class="xref" href="UnityEngine.UI.ILayoutController.html">ILayoutController</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.UI.html">UnityEngine.UI</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_UI_LayoutGroup_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class LayoutGroup : UIBehaviour, ILayoutElement, ILayoutGroup, ILayoutController</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup__ctor_" data-uid="UnityEngine.UI.LayoutGroup.#ctor*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup__ctor" data-uid="UnityEngine.UI.LayoutGroup.#ctor">LayoutGroup()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LayoutGroup()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UnityEngine_UI_LayoutGroup_m_ChildAlignment" data-uid="UnityEngine.UI.LayoutGroup.m_ChildAlignment">m_ChildAlignment</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextAnchor m_ChildAlignment</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TextAnchor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_UI_LayoutGroup_m_Padding" data-uid="UnityEngine.UI.LayoutGroup.m_Padding">m_Padding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RectOffset m_Padding</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_UI_LayoutGroup_m_Tracker" data-uid="UnityEngine.UI.LayoutGroup.m_Tracker">m_Tracker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DrivenRectTransformTracker m_Tracker</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DrivenRectTransformTracker</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_childAlignment_" data-uid="UnityEngine.UI.LayoutGroup.childAlignment*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_childAlignment" data-uid="UnityEngine.UI.LayoutGroup.childAlignment">childAlignment</h4>
+  <div class="markdown level1 summary"><p>The alignment to use for the child layout elements in the layout group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextAnchor childAlignment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TextAnchor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_UI_LayoutGroup_childAlignment_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If a layout element does not specify a flexible width or height, its child elements many not use the available space within the layout group. In this case, use the alignment settings to specify how to align child elements within their layout group.</p>
+</div>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_flexibleHeight_" data-uid="UnityEngine.UI.LayoutGroup.flexibleHeight*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_flexibleHeight" data-uid="UnityEngine.UI.LayoutGroup.flexibleHeight">flexibleHeight</h4>
+  <div class="markdown level1 summary"><p>See LayoutElement.flexibleHeight</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float flexibleHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_flexibleWidth_" data-uid="UnityEngine.UI.LayoutGroup.flexibleWidth*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_flexibleWidth" data-uid="UnityEngine.UI.LayoutGroup.flexibleWidth">flexibleWidth</h4>
+  <div class="markdown level1 summary"><p>See LayoutElement.flexibleWidth</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float flexibleWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_layoutPriority_" data-uid="UnityEngine.UI.LayoutGroup.layoutPriority*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_layoutPriority" data-uid="UnityEngine.UI.LayoutGroup.layoutPriority">layoutPriority</h4>
+  <div class="markdown level1 summary"><p>See LayoutElement.layoutPriority</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int layoutPriority { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_minHeight_" data-uid="UnityEngine.UI.LayoutGroup.minHeight*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_minHeight" data-uid="UnityEngine.UI.LayoutGroup.minHeight">minHeight</h4>
+  <div class="markdown level1 summary"><p>See LayoutElement.minHeight</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float minHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_minWidth_" data-uid="UnityEngine.UI.LayoutGroup.minWidth*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_minWidth" data-uid="UnityEngine.UI.LayoutGroup.minWidth">minWidth</h4>
+  <div class="markdown level1 summary"><p>See LayoutElement.minWidth</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float minWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_padding_" data-uid="UnityEngine.UI.LayoutGroup.padding*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_padding" data-uid="UnityEngine.UI.LayoutGroup.padding">padding</h4>
+  <div class="markdown level1 summary"><p>The padding to add around the child layout elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectOffset padding { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_preferredHeight_" data-uid="UnityEngine.UI.LayoutGroup.preferredHeight*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_preferredHeight" data-uid="UnityEngine.UI.LayoutGroup.preferredHeight">preferredHeight</h4>
+  <div class="markdown level1 summary"><p>See LayoutElement.preferredHeight</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float preferredHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_preferredWidth_" data-uid="UnityEngine.UI.LayoutGroup.preferredWidth*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_preferredWidth" data-uid="UnityEngine.UI.LayoutGroup.preferredWidth">preferredWidth</h4>
+  <div class="markdown level1 summary"><p>See LayoutElement.preferredWidth</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float preferredWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_rectChildren_" data-uid="UnityEngine.UI.LayoutGroup.rectChildren*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_rectChildren" data-uid="UnityEngine.UI.LayoutGroup.rectChildren">rectChildren</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;RectTransform&gt; rectChildren { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">RectTransform</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_rectTransform_" data-uid="UnityEngine.UI.LayoutGroup.rectTransform*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_rectTransform" data-uid="UnityEngine.UI.LayoutGroup.rectTransform">rectTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RectTransform rectTransform { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_CalculateLayoutInputHorizontal_" data-uid="UnityEngine.UI.LayoutGroup.CalculateLayoutInputHorizontal*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_CalculateLayoutInputHorizontal" data-uid="UnityEngine.UI.LayoutGroup.CalculateLayoutInputHorizontal">CalculateLayoutInputHorizontal()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CalculateLayoutInputHorizontal()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_CalculateLayoutInputVertical_" data-uid="UnityEngine.UI.LayoutGroup.CalculateLayoutInputVertical*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_CalculateLayoutInputVertical" data-uid="UnityEngine.UI.LayoutGroup.CalculateLayoutInputVertical">CalculateLayoutInputVertical()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void CalculateLayoutInputVertical()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_GetAlignmentOnAxis_" data-uid="UnityEngine.UI.LayoutGroup.GetAlignmentOnAxis*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_GetAlignmentOnAxis_System_Int32_" data-uid="UnityEngine.UI.LayoutGroup.GetAlignmentOnAxis(System.Int32)">GetAlignmentOnAxis(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the alignment on the specified axis as a fraction where 0 is left/top, 0.5 is middle, and 1 is right/bottom.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float GetAlignmentOnAxis(int axis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The axis to get alignment along. 0 is horizontal and 1 is vertical.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The alignment as a fraction where 0 is left/top, 0.5 is middle, and 1 is right/bottom.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_GetStartOffset_" data-uid="UnityEngine.UI.LayoutGroup.GetStartOffset*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_GetStartOffset_System_Int32_System_Single_" data-uid="UnityEngine.UI.LayoutGroup.GetStartOffset(System.Int32,System.Single)">GetStartOffset(Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Returns the calculated position of the first child layout element along the given axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float GetStartOffset(int axis, float requiredSpaceWithoutPadding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The axis index. 0 is horizontal and 1 is vertical.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">requiredSpaceWithoutPadding</span></td>
+        <td><p>The total space required on the given axis for all the layout elements including spacing and excluding padding.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The position of the first child along the given axis.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_GetTotalFlexibleSize_" data-uid="UnityEngine.UI.LayoutGroup.GetTotalFlexibleSize*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_GetTotalFlexibleSize_System_Int32_" data-uid="UnityEngine.UI.LayoutGroup.GetTotalFlexibleSize(System.Int32)">GetTotalFlexibleSize(Int32)</h4>
+  <div class="markdown level1 summary"><p>The flexible size for the layout group on the given axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float GetTotalFlexibleSize(int axis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The axis index. 0 is horizontal and 1 is vertical.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The flexible size</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_GetTotalMinSize_" data-uid="UnityEngine.UI.LayoutGroup.GetTotalMinSize*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_GetTotalMinSize_System_Int32_" data-uid="UnityEngine.UI.LayoutGroup.GetTotalMinSize(System.Int32)">GetTotalMinSize(Int32)</h4>
+  <div class="markdown level1 summary"><p>The min size for the layout group on the given axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float GetTotalMinSize(int axis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The axis index. 0 is horizontal and 1 is vertical.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The min size</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_GetTotalPreferredSize_" data-uid="UnityEngine.UI.LayoutGroup.GetTotalPreferredSize*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_GetTotalPreferredSize_System_Int32_" data-uid="UnityEngine.UI.LayoutGroup.GetTotalPreferredSize(System.Int32)">GetTotalPreferredSize(Int32)</h4>
+  <div class="markdown level1 summary"><p>The preferred size for the layout group on the given axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float GetTotalPreferredSize(int axis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The axis index. 0 is horizontal and 1 is vertical.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The preferred size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_OnDidApplyAnimationProperties_" data-uid="UnityEngine.UI.LayoutGroup.OnDidApplyAnimationProperties*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_OnDidApplyAnimationProperties" data-uid="UnityEngine.UI.LayoutGroup.OnDidApplyAnimationProperties">OnDidApplyAnimationProperties()</h4>
+  <div class="markdown level1 summary"><p>Callback for when properties have been changed by animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDidApplyAnimationProperties()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_OnDisable_" data-uid="UnityEngine.UI.LayoutGroup.OnDisable*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_OnDisable" data-uid="UnityEngine.UI.LayoutGroup.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_OnEnable_" data-uid="UnityEngine.UI.LayoutGroup.OnEnable*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_OnEnable" data-uid="UnityEngine.UI.LayoutGroup.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_OnRectTransformDimensionsChange_" data-uid="UnityEngine.UI.LayoutGroup.OnRectTransformDimensionsChange*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_OnRectTransformDimensionsChange" data-uid="UnityEngine.UI.LayoutGroup.OnRectTransformDimensionsChange">OnRectTransformDimensionsChange()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnRectTransformDimensionsChange()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_OnTransformChildrenChanged_" data-uid="UnityEngine.UI.LayoutGroup.OnTransformChildrenChanged*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_OnTransformChildrenChanged" data-uid="UnityEngine.UI.LayoutGroup.OnTransformChildrenChanged">OnTransformChildrenChanged()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnTransformChildrenChanged()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_SetChildAlongAxis_" data-uid="UnityEngine.UI.LayoutGroup.SetChildAlongAxis*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_SetChildAlongAxis_RectTransform_System_Int32_System_Single_" data-uid="UnityEngine.UI.LayoutGroup.SetChildAlongAxis(RectTransform,System.Int32,System.Single)">SetChildAlongAxis(RectTransform, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Set the position and size of a child layout element along the given axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetChildAlongAxis(RectTransform rect, int axis, float pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>The RectTransform of the child layout element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The axis to set the position and size along. 0 is horizontal and 1 is vertical.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>The position from the left side or top.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_SetChildAlongAxis_" data-uid="UnityEngine.UI.LayoutGroup.SetChildAlongAxis*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_SetChildAlongAxis_RectTransform_System_Int32_System_Single_System_Single_" data-uid="UnityEngine.UI.LayoutGroup.SetChildAlongAxis(RectTransform,System.Int32,System.Single,System.Single)">SetChildAlongAxis(RectTransform, Int32, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Set the position and size of a child layout element along the given axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetChildAlongAxis(RectTransform rect, int axis, float pos, float size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>The RectTransform of the child layout element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The axis to set the position and size along. 0 is horizontal and 1 is vertical.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>The position from the left side or top.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_SetChildAlongAxisWithScale_" data-uid="UnityEngine.UI.LayoutGroup.SetChildAlongAxisWithScale*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_SetChildAlongAxisWithScale_RectTransform_System_Int32_System_Single_System_Single_" data-uid="UnityEngine.UI.LayoutGroup.SetChildAlongAxisWithScale(RectTransform,System.Int32,System.Single,System.Single)">SetChildAlongAxisWithScale(RectTransform, Int32, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Set the position and size of a child layout element along the given axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetChildAlongAxisWithScale(RectTransform rect, int axis, float pos, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>The RectTransform of the child layout element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The axis to set the position and size along. 0 is horizontal and 1 is vertical.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>The position from the left side or top.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_SetChildAlongAxisWithScale_" data-uid="UnityEngine.UI.LayoutGroup.SetChildAlongAxisWithScale*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_SetChildAlongAxisWithScale_RectTransform_System_Int32_System_Single_System_Single_System_Single_" data-uid="UnityEngine.UI.LayoutGroup.SetChildAlongAxisWithScale(RectTransform,System.Int32,System.Single,System.Single,System.Single)">SetChildAlongAxisWithScale(RectTransform, Int32, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Set the position and size of a child layout element along the given axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetChildAlongAxisWithScale(RectTransform rect, int axis, float pos, float size, float scaleFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td><span class="parametername">rect</span></td>
+        <td><p>The RectTransform of the child layout element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The axis to set the position and size along. 0 is horizontal and 1 is vertical.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>The position from the left side or top.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_SetDirty_" data-uid="UnityEngine.UI.LayoutGroup.SetDirty*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_SetDirty" data-uid="UnityEngine.UI.LayoutGroup.SetDirty">SetDirty()</h4>
+  <div class="markdown level1 summary"><p>Mark the LayoutGroup as dirty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetDirty()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_SetLayoutHorizontal_" data-uid="UnityEngine.UI.LayoutGroup.SetLayoutHorizontal*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_SetLayoutHorizontal" data-uid="UnityEngine.UI.LayoutGroup.SetLayoutHorizontal">SetLayoutHorizontal()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SetLayoutHorizontal()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_SetLayoutInputForAxis_" data-uid="UnityEngine.UI.LayoutGroup.SetLayoutInputForAxis*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_SetLayoutInputForAxis_System_Single_System_Single_System_Single_System_Int32_" data-uid="UnityEngine.UI.LayoutGroup.SetLayoutInputForAxis(System.Single,System.Single,System.Single,System.Int32)">SetLayoutInputForAxis(Single, Single, Single, Int32)</h4>
+  <div class="markdown level1 summary"><p>Used to set the calculated layout properties for the given axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetLayoutInputForAxis(float totalMin, float totalPreferred, float totalFlexible, int axis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">totalMin</span></td>
+        <td><p>The min size for the layout group.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">totalPreferred</span></td>
+        <td><p>The preferred size for the layout group.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">totalFlexible</span></td>
+        <td><p>The flexible size for the layout group.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The axis to set sizes for. 0 is horizontal and 1 is vertical.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_SetLayoutVertical_" data-uid="UnityEngine.UI.LayoutGroup.SetLayoutVertical*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_SetLayoutVertical" data-uid="UnityEngine.UI.LayoutGroup.SetLayoutVertical">SetLayoutVertical()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SetLayoutVertical()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_LayoutGroup_SetProperty_" data-uid="UnityEngine.UI.LayoutGroup.SetProperty*"></a>
+  <h4 id="UnityEngine_UI_LayoutGroup_SetProperty__1___0____0_" data-uid="UnityEngine.UI.LayoutGroup.SetProperty``1(``0@,``0)">SetProperty&lt;T&gt;(ref T, T)</h4>
+  <div class="markdown level1 summary"><p>Helper method used to set a given property if it has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetProperty&lt;T&gt;(ref T currentValue, T newValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">currentValue</span></td>
+        <td><p>A reference to the member value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The new value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UnityEngine.UI.ILayoutElement.html">ILayoutElement</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UI.ILayoutGroup.html">ILayoutGroup</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UI.ILayoutController.html">ILayoutController</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

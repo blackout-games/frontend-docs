@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Modals </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Modals ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="modals">Modals</h1>
+
+<p>There are multiple types of modals which slightly differ in their core behaviour but all extend from the <code>ModalBase.cs</code> class.</p>
+<p><strong>Stacking</strong></p>
+<p>Modal stacking logic is handled automatically by the <code>ModalManger</code> singleton. Last modal that was opened will be the top modal in focus.</p>
+<h3 id="generic-modals">Generic Modals</h3>
+<p>In the scenes hierarchy generic modals are a child of the Modal Manager's scroll rect container. The scrolling logic is handled automatically. A developer can define a default width and pivot based on options provided in the inspector.</p>
+<p><strong>Prefabs</strong></p>
+<p>All generic modals need to be a variant of <code>Modal</code> prefab. You can remove the <code>Modal</code> component on it to extend the modals behaviour with a custom class. e.g <code>public class ConfirmationModal : Modal</code></p>
+<p><em>Note: As of writing this not all modals are prefab variants of the Modal prefab as are using the legacy <code>ModalContent</code> behaviour. This will eventually be phased out.</em></p>
+<p><strong>Pivot</strong></p>
+<p>Generic modal pivots will always be based on centre screen in the <code>x</code> axis. The <code>y</code> axis pivot can be either top (1), or centre (0.5).</p>
+<p><strong>Width</strong></p>
+<p>The width is predefined by platform type. However, this can be overridden in code or from the inspector.</p>
+<h4 id="generic-modal-types"><strong>Generic Modal Types</strong></h4>
+<ul>
+<li><strong>Prompt Modal</strong>
+<ul>
+<li>Its height can be predetermined and wont be changed after showing. i.e it doesn't have tabs which can alter its height.</li>
+<li>Will always be anchored centre screen with a centre pivot point.</li>
+</ul>
+</li>
+<li><strong>Rich modal</strong>
+<ul>
+<li>Height can be changed after showing. Maybe be because of tabs or dynamically added list items etc.</li>
+<li>Anchored towards top of screen with pivot centre top. This allows the content to dynamically change height without the top bar of the modal changing position on screen.</li>
+</ul>
+</li>
+</ul>
+<h4 id="overlay-modal-types"><strong>Overlay Modal Types</strong></h4>
+<p>Overlay modals are NOT a child of the ModalManager's scroll rect container. Therefore they are considered rogue and their behaviour require specific case by case logic than generic behviours. These modals NEED their own scroll rects internally if scrolling is expected.</p>
+<ul>
+<li><strong>Overlay Modal</strong>
+<ul>
+<li>can pivot to left/right side of screens</li>
+</ul>
+</li>
+<li><strong>Full Screen Modal</strong>
+<ul>
+<li>Exclusively a full screen modal</li>
+</ul>
+</li>
+</ul>
+<h2 id="modal-content-panel">Modal Content Panel</h2>
+<p>A key aspect of maintain a smooth tween with modals when resizing is the use of <code>ModalContentPanel.cs</code>. It implements <code>ILayoutSelfController</code> which is what <code>ContentSizeFitter</code> uses. So the script can be considered a <code>ContentSizeFitter</code> that only works vertically and should only be used for Modals. However, this script could be used in other areas as well though its behaviour may vary and is not supported.</p>
+<p>Each panel that is dynamically toggled needs to use a <code>ModalContentPanel</code> script attached. These panels communicate directly with <code>Modal.cs</code> which figures out what size it needs to tween to. Rich modals MUST content this script however prompt modals don't really need it since content is static.</p>
+<p><strong>Max Height</strong></p>
+<p>I found it useful for <code>User Report</code> panel in <code>SettingsModal</code> which was infinitely growing in height but it didn't have any layout groups as children so I couldn't really work out why it was infinitely growing in height. Probably due to the way Unity's UI updates in the hierarchy. This solved that issue anyway.</p>
+<p><strong>Rich modal hierarchy structure</strong></p>
+<p><img src="../../images/modals/modal-content.png" alt=""></p>
+<p>The key thing to note with Modal Content Panel is there are some rules to follow:</p>
+<ol>
+<li>Never use <code>ModalContentPanel.gameObject.SetActive()</code> in code or from inspector. Use <code>ModalContentPanel.SetVisibility()</code> explicitly.</li>
+<li><code>LayoutGroup</code>'s vertical and horizontal need to have <code>Child Force Expand Height</code> set to <code>false</code> (unchecked)</li>
+<li><code>LayoutElement</code>'s maybe need <code>Flexible Height</code> set to <code>0</code></li>
+</ol>
+<p>The above rules are because of some height issues/bugs that I've experienced:</p>
+<ul>
+<li>Panel height grows infinitely <em>(Child Force Expand false solves that)</em></li>
+<li>Children expand unwantedly <em>(Flexible Height 0 solves that)</em></li>
+</ul>
+<p>Child panels that will always be showing like <code>ToggleGroup</code> or <code>Modal Title Bar</code> seen in above image don't need anything done to them. However I found setting those layout rules to them does help with unwanted expanding</p>
+<h4 id="unwanted-expanding-example"><strong>Unwanted expanding example</strong></h4>
+<p>This is an example where the toggle group <code>Flexible Height</code> is NOT set to <code>0</code></p>
+<p><img src="../../images/modals/layoutgroup-unwanted-expand.png" alt=""></p>
+<p>Here is the same modal but <code>Flexible Height</code> is set to <code>0</code></p>
+<p><img src="../../images/modals/layoutgroup-height-0.png" alt=""></p>
+<h2 id="modal-manager">Modal Manager</h2>
+<p>// TODO</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/blackout-games/frontend-docs/blob/master/manual/UI/modals.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

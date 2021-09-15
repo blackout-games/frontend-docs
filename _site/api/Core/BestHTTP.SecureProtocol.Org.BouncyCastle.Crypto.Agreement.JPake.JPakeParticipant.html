@@ -1,0 +1,813 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class JPakeParticipant
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class JPakeParticipant
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant">
+  
+  
+  <h1 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant" class="text-break">Class JPakeParticipant
+  </h1>
+  <div class="markdown level0 summary"><p>A participant in a Password Authenticated Key Exchange by Juggling (J-PAKE) exchange.</p>
+<p>The J-PAKE exchange is defined by Feng Hao and Peter Ryan in the paper
+<a href="http://grouper.ieee.org/groups/1363/Research/contributions/hao-ryan-2008.pdf">
+&quot;Password Authenticated Key Exchange by Juggling, 2008.&quot;</a></p>
+<p>The J-PAKE protocol is symmetric.
+There is no notion of a <em>client</em> or <em>server</em>, but rather just two <em>participants</em>.
+An instance of JPakeParticipant represents one participant, and
+is the primary interface for executing the exchange.</p>
+<p>To execute an exchange, construct a JPakeParticipant on each end,
+and call the following 7 methods
+(once and only once, in the given order, for each participant, sending messages between them as described):</p>
+<p>CreateRound1PayloadToSend() - and send the payload to the other participant
+ValidateRound1PayloadReceived(JPakeRound1Payload) - use the payload received from the other participant
+CreateRound2PayloadToSend() - and send the payload to the other participant
+ValidateRound2PayloadReceived(JPakeRound2Payload) - use the payload received from the other participant
+CalculateKeyingMaterial()
+CreateRound3PayloadToSend(BigInteger) - and send the payload to the other participant
+ValidateRound3PayloadReceived(JPakeRound3Payload, BigInteger) - use the payload received from the other participant</p>
+<p>Each side should derive a session key from the keying material returned by CalculateKeyingMaterial().
+The caller is responsible for deriving the session key using a secure key derivation function (KDF).</p>
+<p>Round 3 is an optional key confirmation process.
+If you do not execute round 3, then there is no assurance that both participants are using the same key.
+(i.e. if the participants used different passwords, then their session keys will differ.)</p>
+<p>If the round 3 validation succeeds, then the keys are guaranteed to be the same on both sides.</p>
+<p>The symmetric design can easily support the asymmetric cases when one party initiates the communication.
+e.g. Sometimes the round1 payload and round2 payload may be sent in one pass.
+Also, in some cases, the key confirmation payload can be sent together with the round2 payload.
+These are the trivial techniques to optimize the communication.</p>
+<p>The key confirmation process is implemented as specified in
+<a href="http://csrc.nist.gov/publications/nistpubs/800-56A/SP800-56A_Revision1_Mar08-2007.pdf">NIST SP 800-56A Revision 1</a>,
+Section 8.2 Unilateral Key Confirmation for Key Agreement Schemes.</p>
+<p>This class is stateful and NOT threadsafe.
+Each instance should only be used for ONE complete J-PAKE exchange
+(i.e. a new JPakeParticipant should be constructed for each new J-PAKE exchange).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">JPakeParticipant</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.html">BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class JPakeParticipant</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant__ctor_System_String_System_Char___" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.#ctor(System.String,System.Char[])">JPakeParticipant(String, Char[])</h4>
+  <div class="markdown level1 summary"><p>Convenience constructor for a new JPakeParticipant that uses
+the JPakePrimeOrderGroups#NIST_3072 prime order group,
+a SHA-256 digest, and a default SecureRandom implementation.</p>
+<p>After construction, the State state will be STATE_INITIALIZED.</p>
+<p>Throws NullReferenceException if any argument is null. Throws
+ArgumentException if password is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JPakeParticipant(string participantId, char[] password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">participantId</span></td>
+        <td><p>Unique identifier of this participant.
+The two participants in the exchange must NOT share the same id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span>[]</td>
+        <td><span class="parametername">password</span></td>
+        <td><p>Shared secret.
+A defensive copy of this array is made (and cleared once CalculateKeyingMaterial() is called).
+Caller should clear the input password as soon as possible.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant__ctor_System_String_System_Char___BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakePrimeOrderGroup_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.#ctor(System.String,System.Char[],BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup)">JPakeParticipant(String, Char[], JPakePrimeOrderGroup)</h4>
+  <div class="markdown level1 summary"><p>Convenience constructor for a new JPakeParticipant that uses
+a SHA-256 digest, and a default SecureRandom implementation.</p>
+<p>After construction, the State state will be STATE_INITIALIZED.</p>
+<p>Throws NullReferenceException if any argument is null. Throws
+ArgumentException if password is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JPakeParticipant(string participantId, char[] password, JPakePrimeOrderGroup group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">participantId</span></td>
+        <td><p>Unique identifier of this participant.
+The two participants in the exchange must NOT share the same id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span>[]</td>
+        <td><span class="parametername">password</span></td>
+        <td><p>Shared secret.
+A defensive copy of this array is made (and cleared once CalculateKeyingMaterial() is called).
+Caller should clear the input password as soon as possible.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup.html">JPakePrimeOrderGroup</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Prime order group. See JPakePrimeOrderGroups for standard groups.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant__ctor_System_String_System_Char___BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakePrimeOrderGroup_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_IDigest_SecureRandom_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.#ctor(System.String,System.Char[],BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup,BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.IDigest,SecureRandom)">JPakeParticipant(String, Char[], JPakePrimeOrderGroup, IDigest, SecureRandom)</h4>
+  <div class="markdown level1 summary"><p>Constructor for a new JPakeParticipant.</p>
+<p>After construction, the State state will be STATE_INITIALIZED.</p>
+<p>Throws NullReferenceException if any argument is null. Throws
+ArgumentException if password is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JPakeParticipant(string participantId, char[] password, JPakePrimeOrderGroup group, IDigest digest, SecureRandom random)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">participantId</span></td>
+        <td><p>Unique identifier of this participant.
+The two participants in the exchange must NOT share the same id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span>[]</td>
+        <td><span class="parametername">password</span></td>
+        <td><p>Shared secret.
+A defensive copy of this array is made (and cleared once CalculateKeyingMaterial() is called).
+Caller should clear the input password as soon as possible.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakePrimeOrderGroup.html">JPakePrimeOrderGroup</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Prime order group. See JPakePrimeOrderGroups for standard groups.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.IDigest.html">IDigest</a></td>
+        <td><span class="parametername">digest</span></td>
+        <td><p>Digest to use during zero knowledge proofs and key confirmation
+(SHA-256 or stronger preferred).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">SecureRandom</span></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>Source of secure random data for x1 and x2, and for the zero knowledge proofs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_STATE_INITIALIZED" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.STATE_INITIALIZED">STATE_INITIALIZED</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int STATE_INITIALIZED</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_STATE_KEY_CALCULATED" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.STATE_KEY_CALCULATED">STATE_KEY_CALCULATED</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int STATE_KEY_CALCULATED</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_STATE_ROUND_1_CREATED" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.STATE_ROUND_1_CREATED">STATE_ROUND_1_CREATED</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int STATE_ROUND_1_CREATED</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_STATE_ROUND_1_VALIDATED" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.STATE_ROUND_1_VALIDATED">STATE_ROUND_1_VALIDATED</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int STATE_ROUND_1_VALIDATED</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_STATE_ROUND_2_CREATED" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.STATE_ROUND_2_CREATED">STATE_ROUND_2_CREATED</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int STATE_ROUND_2_CREATED</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_STATE_ROUND_2_VALIDATED" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.STATE_ROUND_2_VALIDATED">STATE_ROUND_2_VALIDATED</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int STATE_ROUND_2_VALIDATED</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_STATE_ROUND_3_CREATED" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.STATE_ROUND_3_CREATED">STATE_ROUND_3_CREATED</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int STATE_ROUND_3_CREATED</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_STATE_ROUND_3_VALIDATED" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.STATE_ROUND_3_VALIDATED">STATE_ROUND_3_VALIDATED</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int STATE_ROUND_3_VALIDATED</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_State_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.State*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_State" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.State">State</h4>
+  <div class="markdown level1 summary"><p>Gets the current state of this participant.
+See the <tt>STATE_*</tt> constants for possible values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int State { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_CalculateKeyingMaterial_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.CalculateKeyingMaterial*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_CalculateKeyingMaterial" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.CalculateKeyingMaterial">CalculateKeyingMaterial()</h4>
+  <div class="markdown level1 summary"><p>Calculates and returns the key material.
+A session key must be derived from this key material using a secure key derivation function (KDF).
+The KDF used to derive the key is handled externally (i.e. not by JPakeParticipant).</p>
+<p>The keying material will be identical for each participant if and only if
+each participant's password is the same.  i.e. If the participants do not
+share the same password, then each participant will derive a different key.
+Therefore, if you immediately start using a key derived from
+the keying material, then you must handle detection of incorrect keys.
+If you want to handle this detection explicitly, you can optionally perform
+rounds 3 and 4.  See JPakeParticipant for details on how to execute
+rounds 3 and 4.</p>
+<p>The keying material will be in the range <tt>[0, p-1]</tt>.</p>
+<p>ValidateRound2PayloadReceived(JPakeRound2Payload) must be called prior to this method.</p>
+<p>As a side effect, the internal password array is cleared, since it is no longer needed.</p>
+<p>After execution, the State state will be STATE_KEY_CALCULATED.</p>
+<p>Throws InvalidOperationException if called prior to ValidateRound2PayloadReceived(JPakeRound2Payload),
+or if called multiple times.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BigInteger CalculateKeyingMaterial()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BigInteger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_CreateRound1PayloadToSend_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.CreateRound1PayloadToSend*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_CreateRound1PayloadToSend" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.CreateRound1PayloadToSend">CreateRound1PayloadToSend()</h4>
+  <div class="markdown level1 summary"><p>Creates and returns the payload to send to the other participant during round 1.</p>
+<p>After execution, the State state} will be STATE_ROUND_1_CREATED}.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual JPakeRound1Payload CreateRound1PayloadToSend()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeRound1Payload.html">JPakeRound1Payload</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_CreateRound2PayloadToSend_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.CreateRound2PayloadToSend*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_CreateRound2PayloadToSend" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.CreateRound2PayloadToSend">CreateRound2PayloadToSend()</h4>
+  <div class="markdown level1 summary"><p>Creates and returns the payload to send to the other participant during round 2.</p>
+<p>ValidateRound1PayloadReceived(JPakeRound1Payload) must be called prior to this method.</p>
+<p>After execution, the State state will be  STATE_ROUND_2_CREATED.</p>
+<p>Throws InvalidOperationException if called prior to ValidateRound1PayloadReceived(JPakeRound1Payload), or multiple times</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual JPakeRound2Payload CreateRound2PayloadToSend()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeRound2Payload.html">JPakeRound2Payload</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_CreateRound3PayloadToSend_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.CreateRound3PayloadToSend*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_CreateRound3PayloadToSend_BigInteger_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.CreateRound3PayloadToSend(BigInteger)">CreateRound3PayloadToSend(BigInteger)</h4>
+  <div class="markdown level1 summary"><p>Creates and returns the payload to send to the other participant during round 3.</p>
+<p>See JPakeParticipant for more details on round 3.</p>
+<p>After execution, the State state} will be  STATE_ROUND_3_CREATED.
+Throws InvalidOperationException if called prior to CalculateKeyingMaterial, or multiple
+times.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual JPakeRound3Payload CreateRound3PayloadToSend(BigInteger keyingMaterial)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BigInteger</span></td>
+        <td><span class="parametername">keyingMaterial</span></td>
+        <td><p>The keying material as returned from CalculateKeyingMaterial().</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeRound3Payload.html">JPakeRound3Payload</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_ValidateRound1PayloadReceived_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.ValidateRound1PayloadReceived*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_ValidateRound1PayloadReceived_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeRound1Payload_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.ValidateRound1PayloadReceived(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeRound1Payload)">ValidateRound1PayloadReceived(JPakeRound1Payload)</h4>
+  <div class="markdown level1 summary"><p>Validates the payload received from the other participant during round 1.</p>
+<p>Must be called prior to CreateRound2PayloadToSend().</p>
+<p>After execution, the State state will be  STATE_ROUND_1_VALIDATED.</p>
+<p>Throws CryptoException if validation fails. Throws InvalidOperationException
+if called multiple times.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ValidateRound1PayloadReceived(JPakeRound1Payload round1PayloadReceived)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeRound1Payload.html">JPakeRound1Payload</a></td>
+        <td><span class="parametername">round1PayloadReceived</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_ValidateRound2PayloadReceived_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.ValidateRound2PayloadReceived*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_ValidateRound2PayloadReceived_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeRound2Payload_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.ValidateRound2PayloadReceived(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeRound2Payload)">ValidateRound2PayloadReceived(JPakeRound2Payload)</h4>
+  <div class="markdown level1 summary"><p>Validates the payload received from the other participant during round 2.
+Note that this DOES NOT detect a non-common password.
+The only indication of a non-common password is through derivation
+of different keys (which can be detected explicitly by executing round 3 and round 4)</p>
+<p>Must be called prior to CalculateKeyingMaterial().</p>
+<p>After execution, the State state will be STATE_ROUND_2_VALIDATED.</p>
+<p>Throws CryptoException if validation fails. Throws
+InvalidOperationException if called prior to ValidateRound1PayloadReceived(JPakeRound1Payload), or multiple times</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ValidateRound2PayloadReceived(JPakeRound2Payload round2PayloadReceived)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeRound2Payload.html">JPakeRound2Payload</a></td>
+        <td><span class="parametername">round2PayloadReceived</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_ValidateRound3PayloadReceived_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.ValidateRound3PayloadReceived*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeParticipant_ValidateRound3PayloadReceived_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Agreement_JPake_JPakeRound3Payload_BigInteger_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeParticipant.ValidateRound3PayloadReceived(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeRound3Payload,BigInteger)">ValidateRound3PayloadReceived(JPakeRound3Payload, BigInteger)</h4>
+  <div class="markdown level1 summary"><p>Validates the payload received from the other participant during round 3.</p>
+<p>See JPakeParticipant for more details on round 3.</p>
+<p>After execution, the State state will be STATE_ROUND_3_VALIDATED.</p>
+<p>Throws CryptoException if validation fails. Throws InvalidOperationException if called prior to
+CalculateKeyingMaterial or multiple times</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ValidateRound3PayloadReceived(JPakeRound3Payload round3PayloadReceived, BigInteger keyingMaterial)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Agreement.JPake.JPakeRound3Payload.html">JPakeRound3Payload</a></td>
+        <td><span class="parametername">round3PayloadReceived</span></td>
+        <td><p>The round 3 payload received from the other participant.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">BigInteger</span></td>
+        <td><span class="parametername">keyingMaterial</span></td>
+        <td><p>The keying material as returned from CalculateKeyingMaterial().</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

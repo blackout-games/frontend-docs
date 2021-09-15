@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RectMask2D
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RectMask2D
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.UI.RectMask2D">
+  
+  
+  <h1 id="UnityEngine_UI_RectMask2D" data-uid="UnityEngine.UI.RectMask2D" class="text-break">Class RectMask2D
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RectMask2D</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UnityEngine.UI.IClipper.html">IClipper</a></div>
+    <div><span class="xref">ICanvasRaycastFilter</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.UI.html">UnityEngine.UI</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_UI_RectMask2D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RectMask2D : UIBehaviour, IClipper, ICanvasRaycastFilter</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="UnityEngine_UI_RectMask2D__ctor_" data-uid="UnityEngine.UI.RectMask2D.#ctor*"></a>
+  <h4 id="UnityEngine_UI_RectMask2D__ctor" data-uid="UnityEngine.UI.RectMask2D.#ctor">RectMask2D()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RectMask2D()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEngine_UI_RectMask2D_canvasRect_" data-uid="UnityEngine.UI.RectMask2D.canvasRect*"></a>
+  <h4 id="UnityEngine_UI_RectMask2D_canvasRect" data-uid="UnityEngine.UI.RectMask2D.canvasRect">canvasRect</h4>
+  <div class="markdown level1 summary"><p>Get the Rect for the mask in canvas space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect canvasRect { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_RectMask2D_padding_" data-uid="UnityEngine.UI.RectMask2D.padding*"></a>
+  <h4 id="UnityEngine_UI_RectMask2D_padding" data-uid="UnityEngine.UI.RectMask2D.padding">padding</h4>
+  <div class="markdown level1 summary"><p>Padding to be applied to the masking
+X = Left
+Y = Bottom
+Z = Right
+W = Top</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 padding { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector4</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_RectMask2D_rectTransform_" data-uid="UnityEngine.UI.RectMask2D.rectTransform*"></a>
+  <h4 id="UnityEngine_UI_RectMask2D_rectTransform" data-uid="UnityEngine.UI.RectMask2D.rectTransform">rectTransform</h4>
+  <div class="markdown level1 summary"><p>Helper function to get the RectTransform for the mask.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform rectTransform { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_RectMask2D_softness_" data-uid="UnityEngine.UI.RectMask2D.softness*"></a>
+  <h4 id="UnityEngine_UI_RectMask2D_softness" data-uid="UnityEngine.UI.RectMask2D.softness">softness</h4>
+  <div class="markdown level1 summary"><p>The softness to apply to the horizontal and vertical axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int softness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2Int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_UI_RectMask2D_AddClippable_" data-uid="UnityEngine.UI.RectMask2D.AddClippable*"></a>
+  <h4 id="UnityEngine_UI_RectMask2D_AddClippable_UnityEngine_UI_IClippable_" data-uid="UnityEngine.UI.RectMask2D.AddClippable(UnityEngine.UI.IClippable)">AddClippable(IClippable)</h4>
+  <div class="markdown level1 summary"><p>Add a IClippable to be tracked by the mask.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddClippable(IClippable clippable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UI.IClippable.html">IClippable</a></td>
+        <td><span class="parametername">clippable</span></td>
+        <td><p>Add the clippable object for this mask</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_RectMask2D_IsRaycastLocationValid_" data-uid="UnityEngine.UI.RectMask2D.IsRaycastLocationValid*"></a>
+  <h4 id="UnityEngine_UI_RectMask2D_IsRaycastLocationValid_Vector2_Camera_" data-uid="UnityEngine.UI.RectMask2D.IsRaycastLocationValid(Vector2,Camera)">IsRaycastLocationValid(Vector2, Camera)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsRaycastLocationValid(Vector2 sp, Camera eventCamera)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">sp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Camera</span></td>
+        <td><span class="parametername">eventCamera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_RectMask2D_OnCanvasHierarchyChanged_" data-uid="UnityEngine.UI.RectMask2D.OnCanvasHierarchyChanged*"></a>
+  <h4 id="UnityEngine_UI_RectMask2D_OnCanvasHierarchyChanged" data-uid="UnityEngine.UI.RectMask2D.OnCanvasHierarchyChanged">OnCanvasHierarchyChanged()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnCanvasHierarchyChanged()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_RectMask2D_OnDisable_" data-uid="UnityEngine.UI.RectMask2D.OnDisable*"></a>
+  <h4 id="UnityEngine_UI_RectMask2D_OnDisable" data-uid="UnityEngine.UI.RectMask2D.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_RectMask2D_OnEnable_" data-uid="UnityEngine.UI.RectMask2D.OnEnable*"></a>
+  <h4 id="UnityEngine_UI_RectMask2D_OnEnable" data-uid="UnityEngine.UI.RectMask2D.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_RectMask2D_OnTransformParentChanged_" data-uid="UnityEngine.UI.RectMask2D.OnTransformParentChanged*"></a>
+  <h4 id="UnityEngine_UI_RectMask2D_OnTransformParentChanged" data-uid="UnityEngine.UI.RectMask2D.OnTransformParentChanged">OnTransformParentChanged()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnTransformParentChanged()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_RectMask2D_PerformClipping_" data-uid="UnityEngine.UI.RectMask2D.PerformClipping*"></a>
+  <h4 id="UnityEngine_UI_RectMask2D_PerformClipping" data-uid="UnityEngine.UI.RectMask2D.PerformClipping">PerformClipping()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PerformClipping()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_RectMask2D_RemoveClippable_" data-uid="UnityEngine.UI.RectMask2D.RemoveClippable*"></a>
+  <h4 id="UnityEngine_UI_RectMask2D_RemoveClippable_UnityEngine_UI_IClippable_" data-uid="UnityEngine.UI.RectMask2D.RemoveClippable(UnityEngine.UI.IClippable)">RemoveClippable(IClippable)</h4>
+  <div class="markdown level1 summary"><p>Remove an IClippable from being tracked by the mask.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveClippable(IClippable clippable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UI.IClippable.html">IClippable</a></td>
+        <td><span class="parametername">clippable</span></td>
+        <td><p>Remove the clippable object from this mask</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_RectMask2D_UpdateClipSoftness_" data-uid="UnityEngine.UI.RectMask2D.UpdateClipSoftness*"></a>
+  <h4 id="UnityEngine_UI_RectMask2D_UpdateClipSoftness" data-uid="UnityEngine.UI.RectMask2D.UpdateClipSoftness">UpdateClipSoftness()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateClipSoftness()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UnityEngine.UI.IClipper.html">IClipper</a>
+  </div>
+  <div>
+      <span class="xref">ICanvasRaycastFilter</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

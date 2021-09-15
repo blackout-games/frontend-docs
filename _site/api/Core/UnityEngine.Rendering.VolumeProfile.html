@@ -1,0 +1,869 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VolumeProfile
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VolumeProfile
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.Rendering.VolumeProfile">
+  
+  
+  <h1 id="UnityEngine_Rendering_VolumeProfile" data-uid="UnityEngine.Rendering.VolumeProfile" class="text-break">Class VolumeProfile
+  </h1>
+  <div class="markdown level0 summary"><p>An Asset which holds a set of settings to use with a <a class="xref" href="UnityEngine.Rendering.Volume.html">Volume</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">VolumeProfile</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.Rendering.html">UnityEngine.Rendering</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class VolumeProfile : ScriptableObject</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UnityEngine_Rendering_VolumeProfile_components" data-uid="UnityEngine.Rendering.VolumeProfile.components">components</h4>
+  <div class="markdown level1 summary"><p>A list of every setting that this Volume Profile stores.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;VolumeComponent&gt; components</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_Rendering_VolumeProfile_isDirty" data-uid="UnityEngine.Rendering.VolumeProfile.isDirty">isDirty</h4>
+  <div class="markdown level1 summary"><p>A dirty check used to redraw the profile inspector when something has changed. This is
+currently only used in the editor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isDirty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeProfile_Add_" data-uid="UnityEngine.Rendering.VolumeProfile.Add*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeProfile_Add_Type_System_Boolean_" data-uid="UnityEngine.Rendering.VolumeProfile.Add(Type,System.Boolean)">Add(Type, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> to this Volume Profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VolumeComponent Add(Type type, bool overrides = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>A type that inherits from <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overrides</span></td>
+        <td><p>Specifies whether Unity should automatically override all the settings when
+you add a <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> to the Volume Profile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a></td>
+        <td><p>The instance created for the given type that has been added to the profile</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_Add_Type_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can only have a single component of the same type per Volume Profile.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeProfile_Add_" data-uid="UnityEngine.Rendering.VolumeProfile.Add*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeProfile_Add__1_System_Boolean_" data-uid="UnityEngine.Rendering.VolumeProfile.Add``1(System.Boolean)">Add&lt;T&gt;(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> to this Volume Profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Add&lt;T&gt;(bool overrides = false)
+    where T : VolumeComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overrides</span></td>
+        <td><p>Specifies whether Unity should automatically override all the settings when
+you add a <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> to the Volume Profile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The instance for the given type that you added to the Volume Profile</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>A type of <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_Add__1_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can only have a single component of the same type per Volume Profile.</p>
+</div>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_Add__1_System_Boolean__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_Add_Type_System_Boolean_">Add(Type, Boolean)</a></div>
+  </div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeProfile_GetHashCode_" data-uid="UnityEngine.Rendering.VolumeProfile.GetHashCode*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeProfile_GetHashCode" data-uid="UnityEngine.Rendering.VolumeProfile.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>A custom hashing function that Unity uses to compare the state of parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>A computed hash code for the current instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeProfile_Has_" data-uid="UnityEngine.Rendering.VolumeProfile.Has*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeProfile_Has_Type_" data-uid="UnityEngine.Rendering.VolumeProfile.Has(Type)">Has(Type)</h4>
+  <div class="markdown level1 summary"><p>Checks if this Volume Profile contains the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> you pass in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Has(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>A type that inherits from <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> exists in the Volume Profile,
+<code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_Has_Type__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_Has__1">Has&lt;T&gt;()</a></div>
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_HasSubclassOf_Type_">HasSubclassOf(Type)</a></div>
+  </div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeProfile_Has_" data-uid="UnityEngine.Rendering.VolumeProfile.Has*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeProfile_Has__1" data-uid="UnityEngine.Rendering.VolumeProfile.Has``1">Has&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Checks if this Volume Profile contains the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> you pass in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Has&lt;T&gt;()
+    where T : VolumeComponent</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> exists in the Volume Profile,
+<code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>A type of <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_Has__1_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_Has_Type_">Has(Type)</a></div>
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_HasSubclassOf_Type_">HasSubclassOf(Type)</a></div>
+  </div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeProfile_HasSubclassOf_" data-uid="UnityEngine.Rendering.VolumeProfile.HasSubclassOf*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeProfile_HasSubclassOf_Type_" data-uid="UnityEngine.Rendering.VolumeProfile.HasSubclassOf(Type)">HasSubclassOf(Type)</h4>
+  <div class="markdown level1 summary"><p>Checks if this Volume Profile contains the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>, which is a subclass of <code data-dev-comment-type="paramref" class="paramref">type</code>,
+that you pass in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSubclassOf(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>A type that inherits from <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> exists in the Volume Profile,
+<code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_HasSubclassOf_Type__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_Has_Type_">Has(Type)</a></div>
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_Has__1">Has&lt;T&gt;()</a></div>
+  </div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeProfile_Remove_" data-uid="UnityEngine.Rendering.VolumeProfile.Remove*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeProfile_Remove_Type_" data-uid="UnityEngine.Rendering.VolumeProfile.Remove(Type)">Remove(Type)</h4>
+  <div class="markdown level1 summary"><p>Removes a <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> from this Volume Profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>A type that inherits from <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_Remove_Type__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method does nothing if the type does not exist in the Volume Profile.</p>
+</div>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_Remove_Type__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_Remove__1">Remove&lt;T&gt;()</a></div>
+  </div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeProfile_Remove_" data-uid="UnityEngine.Rendering.VolumeProfile.Remove*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeProfile_Remove__1" data-uid="UnityEngine.Rendering.VolumeProfile.Remove``1">Remove&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Removes a <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> from this Volume Profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove&lt;T&gt;()
+    where T : VolumeComponent</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>A type of <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_Remove__1_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method does nothing if the type does not exist in the Volume Profile.</p>
+</div>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_Remove__1_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_Remove_Type_">Remove(Type)</a></div>
+  </div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeProfile_Reset_" data-uid="UnityEngine.Rendering.VolumeProfile.Reset*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeProfile_Reset" data-uid="UnityEngine.Rendering.VolumeProfile.Reset">Reset()</h4>
+  <div class="markdown level1 summary"><p>Resets the dirty state of the Volume Profile. Unity uses this to force-refresh and redraw the
+Volume Profile editor when you modify the Asset via script instead of the Inspector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeProfile_TryGet_" data-uid="UnityEngine.Rendering.VolumeProfile.TryGet*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeProfile_TryGet__1___0__" data-uid="UnityEngine.Rendering.VolumeProfile.TryGet``1(``0@)">TryGet&lt;T&gt;(out T)</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> of the specified type, if it exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGet&lt;T&gt;(out T component)
+    where T : VolumeComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">component</span></td>
+        <td><p>The output argument that contains the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>
+or <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> is in the Volume Profile,
+<code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>A type of <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_TryGet__1___0___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_TryGet__1_Type___0__">TryGet&lt;T&gt;(Type, out T)</a></div>
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_TryGetSubclassOf__1_Type___0__">TryGetSubclassOf&lt;T&gt;(Type, out T)</a></div>
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_TryGetAllSubclassOf__1_Type_List___0__">TryGetAllSubclassOf&lt;T&gt;(Type, List&lt;T&gt;)</a></div>
+  </div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeProfile_TryGet_" data-uid="UnityEngine.Rendering.VolumeProfile.TryGet*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeProfile_TryGet__1_Type___0__" data-uid="UnityEngine.Rendering.VolumeProfile.TryGet``1(Type,``0@)">TryGet&lt;T&gt;(Type, out T)</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> of the specified type, if it exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGet&lt;T&gt;(Type type, out T component)
+    where T : VolumeComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>A type that inherits from <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">component</span></td>
+        <td><p>The output argument that contains the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>
+or <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> is in the Volume Profile,
+<code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>A type of <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_TryGet__1_Type___0___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_TryGet__1___0__">TryGet&lt;T&gt;(out T)</a></div>
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_TryGetSubclassOf__1_Type___0__">TryGetSubclassOf&lt;T&gt;(Type, out T)</a></div>
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_TryGetAllSubclassOf__1_Type_List___0__">TryGetAllSubclassOf&lt;T&gt;(Type, List&lt;T&gt;)</a></div>
+  </div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeProfile_TryGetAllSubclassOf_" data-uid="UnityEngine.Rendering.VolumeProfile.TryGetAllSubclassOf*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeProfile_TryGetAllSubclassOf__1_Type_List___0__" data-uid="UnityEngine.Rendering.VolumeProfile.TryGetAllSubclassOf``1(Type,List{``0})">TryGetAllSubclassOf&lt;T&gt;(Type, List&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets all the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> that are subclasses of the specified type,
+if there are any.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetAllSubclassOf&lt;T&gt;(Type type, List&lt;T&gt; result)
+    where T : VolumeComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>A type that inherits from <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The output list that contains all the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>
+if any. Note that Unity does not clear this list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if any <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> have been found in the profile,
+<code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>A type of <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_TryGetAllSubclassOf__1_Type_List___0___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_TryGet__1_Type___0__">TryGet&lt;T&gt;(Type, out T)</a></div>
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_TryGet__1___0__">TryGet&lt;T&gt;(out T)</a></div>
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_TryGetSubclassOf__1_Type___0__">TryGetSubclassOf&lt;T&gt;(Type, out T)</a></div>
+  </div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeProfile_TryGetSubclassOf_" data-uid="UnityEngine.Rendering.VolumeProfile.TryGetSubclassOf*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeProfile_TryGetSubclassOf__1_Type___0__" data-uid="UnityEngine.Rendering.VolumeProfile.TryGetSubclassOf``1(Type,``0@)">TryGetSubclassOf&lt;T&gt;(Type, out T)</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>, which is a subclass of <code data-dev-comment-type="paramref" class="paramref">type</code>, if
+it exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetSubclassOf&lt;T&gt;(Type type, out T component)
+    where T : VolumeComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>A type that inherits from <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">component</span></td>
+        <td><p>The output argument that contains the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>
+or <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> is in the Volume Profile,
+<code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>A type of <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Rendering_VolumeProfile_TryGetSubclassOf__1_Type___0___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_TryGet__1_Type___0__">TryGet&lt;T&gt;(Type, out T)</a></div>
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_TryGet__1___0__">TryGet&lt;T&gt;(out T)</a></div>
+      <div><a class="xref" href="UnityEngine.Rendering.VolumeProfile.html#UnityEngine_Rendering_VolumeProfile_TryGetAllSubclassOf__1_Type_List___0__">TryGetAllSubclassOf&lt;T&gt;(Type, List&lt;T&gt;)</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

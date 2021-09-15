@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CCDSolver2D
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CCDSolver2D
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.U2D.IK.CCDSolver2D">
+  
+  
+  <h1 id="UnityEngine_U2D_IK_CCDSolver2D" data-uid="UnityEngine.U2D.IK.CCDSolver2D" class="text-break">Class CCDSolver2D
+  </h1>
+  <div class="markdown level0 summary"><p>Component for 2D Cyclic Coordinate Descent (CCD) IK.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UnityEngine.U2D.IK.Solver2D.html">Solver2D</a></div>
+    <div class="level2"><span class="xref">CCDSolver2D</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_chainCount">Solver2D.chainCount</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_constrainRotation">Solver2D.constrainRotation</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_solveFromDefaultPose">Solver2D.solveFromDefaultPose</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_isValid">Solver2D.isValid</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_allChainsHaveTargets">Solver2D.allChainsHaveTargets</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_weight">Solver2D.weight</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_OnValidate">Solver2D.OnValidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_Initialize">Solver2D.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_UpdateIK_System_Single_">Solver2D.UpdateIK(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_UpdateIK_List_Vector3__System_Single_">Solver2D.UpdateIK(List&lt;Vector3&gt;, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_DoValidate">Solver2D.DoValidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_DoInitialize">Solver2D.DoInitialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_GetPlaneRootTransform">Solver2D.GetPlaneRootTransform()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_GetPointOnSolverPlane_Vector3_">Solver2D.GetPointOnSolverPlane(Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_GetWorldPositionFromSolverPlanePoint_Vector2_">Solver2D.GetWorldPositionFromSolverPlanePoint(Vector2)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.U2D.IK.html">UnityEngine.U2D.IK</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_U2D_IK_CCDSolver2D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CCDSolver2D : Solver2D</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEngine_U2D_IK_CCDSolver2D_iterations_" data-uid="UnityEngine.U2D.IK.CCDSolver2D.iterations*"></a>
+  <h4 id="UnityEngine_U2D_IK_CCDSolver2D_iterations" data-uid="UnityEngine.U2D.IK.CCDSolver2D.iterations">iterations</h4>
+  <div class="markdown level1 summary"><p>Get and Set the solver's itegration count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int iterations { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_U2D_IK_CCDSolver2D_tolerance_" data-uid="UnityEngine.U2D.IK.CCDSolver2D.tolerance*"></a>
+  <h4 id="UnityEngine_U2D_IK_CCDSolver2D_tolerance" data-uid="UnityEngine.U2D.IK.CCDSolver2D.tolerance">tolerance</h4>
+  <div class="markdown level1 summary"><p>Get and Set target distance tolerance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float tolerance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_U2D_IK_CCDSolver2D_velocity_" data-uid="UnityEngine.U2D.IK.CCDSolver2D.velocity*"></a>
+  <h4 id="UnityEngine_U2D_IK_CCDSolver2D_velocity" data-uid="UnityEngine.U2D.IK.CCDSolver2D.velocity">velocity</h4>
+  <div class="markdown level1 summary"><p>Get and Set the solver velocity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float velocity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_U2D_IK_CCDSolver2D_DoPrepare_" data-uid="UnityEngine.U2D.IK.CCDSolver2D.DoPrepare*"></a>
+  <h4 id="UnityEngine_U2D_IK_CCDSolver2D_DoPrepare" data-uid="UnityEngine.U2D.IK.CCDSolver2D.DoPrepare">DoPrepare()</h4>
+  <div class="markdown level1 summary"><p>DoPrepare override from base class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DoPrepare()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_DoPrepare">Solver2D.DoPrepare()</a></div>
+  
+  
+  <a id="UnityEngine_U2D_IK_CCDSolver2D_DoUpdateIK_" data-uid="UnityEngine.U2D.IK.CCDSolver2D.DoUpdateIK*"></a>
+  <h4 id="UnityEngine_U2D_IK_CCDSolver2D_DoUpdateIK_List_Vector3__" data-uid="UnityEngine.U2D.IK.CCDSolver2D.DoUpdateIK(List{Vector3})">DoUpdateIK(List&lt;Vector3&gt;)</h4>
+  <div class="markdown level1 summary"><p>DoUpdateIK override from base class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DoUpdateIK(List&lt;Vector3&gt; effectorPositions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">effectorPositions</span></td>
+        <td><p>Target position for the chain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_DoUpdateIK_List_Vector3__">Solver2D.DoUpdateIK(List&lt;Vector3&gt;)</a></div>
+  
+  
+  <a id="UnityEngine_U2D_IK_CCDSolver2D_GetChain_" data-uid="UnityEngine.U2D.IK.CCDSolver2D.GetChain*"></a>
+  <h4 id="UnityEngine_U2D_IK_CCDSolver2D_GetChain_System_Int32_" data-uid="UnityEngine.U2D.IK.CCDSolver2D.GetChain(System.Int32)">GetChain(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the chain in the solver by index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IKChain2D GetChain(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Chain index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.U2D.IK.IKChain2D.html">IKChain2D</a></td>
+        <td><p>Returns IKChain2D at the index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_GetChain_System_Int32_">Solver2D.GetChain(Int32)</a></div>
+  
+  
+  <a id="UnityEngine_U2D_IK_CCDSolver2D_GetChainCount_" data-uid="UnityEngine.U2D.IK.CCDSolver2D.GetChainCount*"></a>
+  <h4 id="UnityEngine_U2D_IK_CCDSolver2D_GetChainCount" data-uid="UnityEngine.U2D.IK.CCDSolver2D.GetChainCount">GetChainCount()</h4>
+  <div class="markdown level1 summary"><p>Returns the number of chain in the solver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int GetChainCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>This always returns 1</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.U2D.IK.Solver2D.html#UnityEngine_U2D_IK_Solver2D_GetChainCount">Solver2D.GetChainCount()</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

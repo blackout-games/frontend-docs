@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GridBrushEditorBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GridBrushEditorBase
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase">
+  
+  
+  <h1 id="UnityEditor_Tilemaps_GridBrushEditorBase" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase" class="text-break">Class GridBrushEditorBase
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for Grid Brush Editor.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">GridBrushEditorBase</span></div>
+      <div class="level2"><a class="xref" href="UnityEditor.Tilemaps.GridBrushEditor.html">GridBrushEditor</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEditor.Tilemaps.html">UnityEditor.Tilemaps</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEditor_Tilemaps_GridBrushEditorBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GridBrushEditorBase : Editor</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrushEditorBase_canChangeZPosition_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.canChangeZPosition*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrushEditorBase_canChangeZPosition" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.canChangeZPosition">canChangeZPosition</h4>
+  <div class="markdown level1 summary"><p>Checks if the Brush allows the changing of Z Position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool canChangeZPosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the Brush can change Z Position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrushEditorBase_validTargets_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.validTargets*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrushEditorBase_validTargets" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.validTargets">validTargets</h4>
+  <div class="markdown level1 summary"><p>Returns all valid targets that the brush can edit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual GameObject[] validTargets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrushEditorBase_OnMouseEnter_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnMouseEnter*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnMouseEnter" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnMouseEnter">OnMouseEnter()</h4>
+  <div class="markdown level1 summary"><p>Callback when the mouse cursor enters a paintable region.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnMouseEnter()</code></pre>
+  </div>
+  <h5 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnMouseEnter_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Implement this for any custom behaviour when the mouse cursor enters a paintable region.</p>
+</div>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrushEditorBase_OnMouseLeave_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnMouseLeave*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnMouseLeave" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnMouseLeave">OnMouseLeave()</h4>
+  <div class="markdown level1 summary"><p>Callback when the mouse cursor leaves a paintable region.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnMouseLeave()</code></pre>
+  </div>
+  <h5 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnMouseLeave_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Implement this for any custom behaviour when the mouse cursor leaves a paintable region.</p>
+</div>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrushEditorBase_OnPaintInspectorGUI_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnPaintInspectorGUI*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnPaintInspectorGUI" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnPaintInspectorGUI">OnPaintInspectorGUI()</h4>
+  <div class="markdown level1 summary"><p>Callback for painting the inspector GUI for the GridBrush in the tilemap palette.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPaintInspectorGUI()</code></pre>
+  </div>
+  <h5 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnPaintInspectorGUI_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Implement this to have a custom editor in the tilemap palette for the GridBrush.</p>
+</div>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrushEditorBase_OnPaintSceneGUI_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnPaintSceneGUI*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnPaintSceneGUI_GridLayout_GameObject_BoundsInt_GridBrushBase_Tool_System_Boolean_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnPaintSceneGUI(GridLayout,GameObject,BoundsInt,GridBrushBase.Tool,System.Boolean)">OnPaintSceneGUI(GridLayout, GameObject, BoundsInt, GridBrushBase.Tool, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Callback for painting the GUI for the GridBrush in the Scene view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPaintSceneGUI(GridLayout gridLayout, GameObject brushTarget, BoundsInt position, GridBrushBase.Tool tool, bool executing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GridLayout</span></td>
+        <td><span class="parametername">gridLayout</span></td>
+        <td><p>Grid that the brush is being used on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brushTarget</span></td>
+        <td><p>Target of the GridBrushBase::ref::Tool operation. By default the currently selected GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">BoundsInt</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Current selected location of the brush.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GridBrushBase.Tool</span></td>
+        <td><span class="parametername">tool</span></td>
+        <td><p>Current GridBrushBase::ref::Tool selected.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">executing</span></td>
+        <td><p>Whether is brush is being used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnPaintSceneGUI_GridLayout_GameObject_BoundsInt_GridBrushBase_Tool_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Implement this for any special behaviours when the GridBrush is used on the Scene View.</p>
+</div>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrushEditorBase_OnSceneGUI_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnSceneGUI*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnSceneGUI_GridLayout_GameObject_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnSceneGUI(GridLayout,GameObject)">OnSceneGUI(GridLayout, GameObject)</h4>
+  <div class="markdown level1 summary"><p>Callback for painting custom gizmos for the GridBrush for the brush target</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSceneGUI(GridLayout gridLayout, GameObject brushTarget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GridLayout</span></td>
+        <td><span class="parametername">gridLayout</span></td>
+        <td><p>Grid that the brush is being used on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brushTarget</span></td>
+        <td><p>Target of the GridBrushBase::ref::Tool operation. By default the currently selected GameObject.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnSceneGUI_GridLayout_GameObject__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Override this to show custom gizmos for the brush target.</p>
+</div>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrushEditorBase_OnSelectionInspectorGUI_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnSelectionInspectorGUI*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnSelectionInspectorGUI" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnSelectionInspectorGUI">OnSelectionInspectorGUI()</h4>
+  <div class="markdown level1 summary"><p>Callback for drawing the Inspector GUI when there is an active GridSelection made in a GridLayout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSelectionInspectorGUI()</code></pre>
+  </div>
+  <h5 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnSelectionInspectorGUI_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Override this to show custom Inspector GUI for the current selection.</p>
+</div>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrushEditorBase_OnSelectionSceneGUI_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnSelectionSceneGUI*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnSelectionSceneGUI_GridLayout_GameObject_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnSelectionSceneGUI(GridLayout,GameObject)">OnSelectionSceneGUI(GridLayout, GameObject)</h4>
+  <div class="markdown level1 summary"><p>Callback for painting custom gizmos when there is an active GridSelection made in a GridLayout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSelectionSceneGUI(GridLayout gridLayout, GameObject brushTarget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GridLayout</span></td>
+        <td><span class="parametername">gridLayout</span></td>
+        <td><p>Grid that the brush is being used on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brushTarget</span></td>
+        <td><p>Target of the GridBrushBase::ref::Tool operation. By default the currently selected GameObject.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnSelectionSceneGUI_GridLayout_GameObject__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Override this to show custom gizmos for the current selection.</p>
+</div>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrushEditorBase_OnToolActivated_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnToolActivated*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnToolActivated_GridBrushBase_Tool_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnToolActivated(GridBrushBase.Tool)">OnToolActivated(GridBrushBase.Tool)</h4>
+  <div class="markdown level1 summary"><p>Callback when a GridBrushBase.Tool is activated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnToolActivated(GridBrushBase.Tool tool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GridBrushBase.Tool</span></td>
+        <td><span class="parametername">tool</span></td>
+        <td><p>Tool that is activated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnToolActivated_GridBrushBase_Tool__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Implement this for any special behaviours when a Tool is activated.</p>
+</div>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrushEditorBase_OnToolDeactivated_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnToolDeactivated*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnToolDeactivated_GridBrushBase_Tool_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.OnToolDeactivated(GridBrushBase.Tool)">OnToolDeactivated(GridBrushBase.Tool)</h4>
+  <div class="markdown level1 summary"><p>Callback when a GridBrushBase.Tool is deactivated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnToolDeactivated(GridBrushBase.Tool tool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GridBrushBase.Tool</span></td>
+        <td><span class="parametername">tool</span></td>
+        <td><p>Tool that is deactivated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEditor_Tilemaps_GridBrushEditorBase_OnToolDeactivated_GridBrushBase_Tool__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Implement this for any special behaviours when a Tool is deactivated.</p>
+</div>
+  
+  
+  <a id="UnityEditor_Tilemaps_GridBrushEditorBase_RegisterUndo_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.RegisterUndo*"></a>
+  <h4 id="UnityEditor_Tilemaps_GridBrushEditorBase_RegisterUndo_GameObject_GridBrushBase_Tool_" data-uid="UnityEditor.Tilemaps.GridBrushEditorBase.RegisterUndo(GameObject,GridBrushBase.Tool)">RegisterUndo(GameObject, GridBrushBase.Tool)</h4>
+  <div class="markdown level1 summary"><p>Callback for registering an Undo action before the GridBrushBase does the current GridBrushBase::ref::Tool action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RegisterUndo(GameObject brushTarget, GridBrushBase.Tool tool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brushTarget</span></td>
+        <td><p>Target of the GridBrushBase::ref::Tool operation. By default the currently selected GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GridBrushBase.Tool</span></td>
+        <td><span class="parametername">tool</span></td>
+        <td><p>Current GridBrushBase::ref::Tool selected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEditor_Tilemaps_GridBrushEditorBase_RegisterUndo_GameObject_GridBrushBase_Tool__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Implement this for any special Undo behaviours when a brush is used.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

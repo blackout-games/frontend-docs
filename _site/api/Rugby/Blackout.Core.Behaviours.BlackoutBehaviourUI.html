@@ -1,0 +1,760 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BlackoutBehaviourUI
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BlackoutBehaviourUI
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI">
+  
+  
+  <h1 id="Blackout_Core_Behaviours_BlackoutBehaviourUI" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI" class="text-break">Class BlackoutBehaviourUI
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BlackoutBehaviourUI</span></div>
+      <div class="level2"><a class="xref" href="Blackout.BlackoutScreen.html">BlackoutScreen</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Cards.CardFlip.html">CardFlip</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Cards.CardPickupAnimation.html">CardPickupAnimation</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Cards.CardSlotPanel.html">CardSlotPanel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Cards.CardUI.html">CardUI</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Cards.CardUIGetMore.html">CardUIGetMore</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Cards.FilterToggle.html">FilterToggle</a></div>
+      <div class="level2"><a class="xref" href="Blackout.ClubOverviewPanel.html">ClubOverviewPanel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.IAP_Item.html">IAP_Item</a></div>
+      <div class="level2"><a class="xref" href="Blackout.IAP_ManageSubscription.html">IAP_ManageSubscription</a></div>
+      <div class="level2"><a class="xref" href="Blackout.IAP_SubscriptionOptions.html">IAP_SubscriptionOptions</a></div>
+      <div class="level2"><a class="xref" href="Blackout.InlineNotice.html">InlineNotice</a></div>
+      <div class="level2"><a class="xref" href="Blackout.MainMenu.html">MainMenu</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Match_View.Scrubber.MatchScrubber.html">MatchScrubber</a></div>
+      <div class="level2"><a class="xref" href="Blackout.PlayerComparisonInfoPanel.html">PlayerComparisonInfoPanel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.PlayerListItemDrag.html">PlayerListItemDrag</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Reports.BUserReportForm.html">BUserReportForm</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Club.AttributeSliderPanel.html">AttributeSliderPanel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Club.HistoryExtraInfoItem.html">HistoryExtraInfoItem</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Competition.ClubName.html">ClubName</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Competition.Fixtures.FixtureItem.html">FixtureItem</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Competition.Fixtures.StandingsPanel.html">StandingsPanel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Competition.Leagues.LeagueSignUpOverlay.html">LeagueSignUpOverlay</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Competition.Leagues.Round.html">Round</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Match_View.Match_Day.Commentary.html">Commentary</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Match_View.MatchGraphs.html">MatchGraphs</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Match_View.PlayerFloatingLabel.html">PlayerFloatingLabel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.PlayerSkillsAndAttributes.html">PlayerSkillsAndAttributes</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Game_Plan.ZonedField.html">ZonedField</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Game_Plan.ZonedGamePlan.html">ZonedGamePlan</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Shield.html">Shield</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Player_Info.CampaignPanel.html">CampaignPanel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Player_Info.CampaignView.html">CampaignView</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Player_Info.ClubHonoursPanel.html">ClubHonoursPanel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Player_Info.ContractPanel.html">ContractPanel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Player_Info.HistoryPanel.html">HistoryPanel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Player_Info.HonoursTop20Panel.html">HonoursTop20Panel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Player_Info.PlayerSnapshotPanel.html">PlayerSnapshotPanel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Player_Info.PlayerStatsPanel.html">PlayerStatsPanel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Player_Info.PositionGraphic.html">PositionGraphic</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Player_Info.Scroller.SquadScroller.html">SquadScroller</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.SellPlayerPanel.html">SellPlayerPanel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Training.PhysicalAttributeOptions.html">PhysicalAttributeOptions</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Training.PlayerCheckbox.html">PlayerCheckbox</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.html">RegimeEditingPanel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Training.RegimeList.html">RegimeList</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Training.SessionBreakdownItem.html">SessionBreakdownItem</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Training.SessionThumbnail.html">SessionThumbnail</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Training.TrainingAnimation.html">TrainingAnimation</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Training.TrainingInProgressAttribute.html">TrainingInProgressAttribute</a></div>
+      <div class="level2"><a class="xref" href="Blackout.Rugby.Squad_Scene.Training.TrainingInProgressItem.html">TrainingInProgressItem</a></div>
+      <div class="level2"><a class="xref" href="Blackout.SelectionMenuBase.html">SelectionMenuBase</a></div>
+      <div class="level2"><a class="xref" href="Blackout.SelectionMenuStrip.html">SelectionMenuStrip</a></div>
+      <div class="level2"><a class="xref" href="Blackout.StorefrontScroller.html">StorefrontScroller</a></div>
+      <div class="level2"><a class="xref" href="Blackout.TechTreeBranch.html">TechTreeBranch</a></div>
+      <div class="level2"><a class="xref" href="Blackout.TechTreeDescriptionContainer.html">TechTreeDescriptionContainer</a></div>
+      <div class="level2"><a class="xref" href="Blackout.TechTreeNode.html">TechTreeNode</a></div>
+      <div class="level2"><a class="xref" href="Blackout.TechTreeTierPanel.html">TechTreeTierPanel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.TopbarController.html">TopbarController</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.BlackoutSelectable.html">BlackoutSelectable</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.BlackoutText.html">BlackoutText</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.CustomListItem.html">CustomListItem</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.DiscreteSlider.html">DiscreteSlider</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.DragableObject.html">DragableObject</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.FloatingLabel.html">FloatingLabel</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.ImageLoader.html">ImageLoader</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.KeepOnScreen.html">KeepOnScreen</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.KeepToSize.html">KeepToSize</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.PlayerLevelGraphic.html">PlayerLevelGraphic</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.RectMask2DFill.html">RectMask2DFill</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.RectSizeTracker.html">RectSizeTracker</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.ScreenSwipe.html">ScreenSwipe</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.Slider.Donut.html">Donut</a></div>
+      <div class="level2"><a class="xref" href="Blackout.UI.TextAndInput.html">TextAndInput</a></div>
+      <div class="level2"><a class="xref" href="Blackout.WeatherInfoPanel.html">WeatherInfoPanel</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.UI.Extensions.ReorderableList.html">ReorderableList</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.UI.Extensions.ReorderableListElement.html">ReorderableListElement</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Core/Blackout.Core.Behaviours.html">Blackout.Core.Behaviours</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BlackoutBehaviourUI : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_anchoredPosition_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.anchoredPosition*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_anchoredPosition" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.anchoredPosition">anchoredPosition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 anchoredPosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_CanvasSize_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.CanvasSize*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_CanvasSize" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.CanvasSize">CanvasSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2 CanvasSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_Height_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.Height*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_Height" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.Height">Height</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Height { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_pivot_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.pivot*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_pivot" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.pivot">pivot</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 pivot { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_rectTransform_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.rectTransform*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_rectTransform" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.rectTransform">rectTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform rectTransform { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_RootCanvas_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.RootCanvas*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_RootCanvas" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.RootCanvas">RootCanvas</h4>
+  <div class="markdown level1 summary"><p>Canvas that this object will be rendered on. (Parent most canvas)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Canvas RootCanvas { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Canvas</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_RootCanvasScaler_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.RootCanvasScaler*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_RootCanvasScaler" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.RootCanvasScaler">RootCanvasScaler</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CanvasScaler RootCanvasScaler { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CanvasScaler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_ScreenSize_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.ScreenSize*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_ScreenSize" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.ScreenSize">ScreenSize</h4>
+  <div class="markdown level1 summary"><p>Shortcut for getting screen size</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2Int ScreenSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2Int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_size_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.size*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_size" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.size">size</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 size { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_sizeDelta_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.sizeDelta*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_sizeDelta" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.sizeDelta">sizeDelta</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 sizeDelta { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_Width_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.Width*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_Width" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.Width">Width</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Width { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_CalculateCentrePivot_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.CalculateCentrePivot*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_CalculateCentrePivot_Vector3_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.CalculateCentrePivot(Vector3)">CalculateCentrePivot(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Returns a pivot appropriate for expanding into the available screen space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 CalculateCentrePivot(Vector3 position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_Hide_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.Hide*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_Hide" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.Hide">Hide()</h4>
+  <div class="markdown level1 summary"><p>Fades out Gameobject then sets active to false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Hide()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_IsOverlapping_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.IsOverlapping*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_IsOverlapping_RectTransform_System_Boolean_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.IsOverlapping(RectTransform,System.Boolean)">IsOverlapping(RectTransform, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOverlapping(RectTransform other, bool allowInverse = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowInverse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_ScaleAround_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.ScaleAround*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_ScaleAround_GameObject_Vector3_Vector3_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.ScaleAround(GameObject,Vector3,Vector3)">ScaleAround(GameObject, Vector3, Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaleAround(GameObject target, Vector3 pivotInput, Vector3 newScale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">pivotInput</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">newScale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_SetAnchorsAndPivot_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.SetAnchorsAndPivot*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_SetAnchorsAndPivot_Vector2_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.SetAnchorsAndPivot(Vector2)">SetAnchorsAndPivot(Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAnchorsAndPivot(Vector2 vector2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_SetAnchorsAndPivot_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.SetAnchorsAndPivot*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_SetAnchorsAndPivot_Vector2_Vector2_Vector2_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.SetAnchorsAndPivot(Vector2,Vector2,Vector2)">SetAnchorsAndPivot(Vector2, Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAnchorsAndPivot(Vector2 anchorMin, Vector2 anchorMax, Vector2 pivot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">anchorMin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">anchorMax</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">pivot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_SetViewpointPosition_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.SetViewpointPosition*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_SetViewpointPosition_Vector2_Vector2_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.SetViewpointPosition(Vector2,Vector2)">SetViewpointPosition(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Sets object to position on screen no matter the anchor points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetViewpointPosition(Vector2 viewportPosition, Vector2 offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">viewportPosition</span></td>
+        <td><p>value between 0 and 1</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>offset based rect size</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_SetViewportPosition_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.SetViewportPosition*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_SetViewportPosition_Vector2_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.SetViewportPosition(Vector2)">SetViewportPosition(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Sets object to position on screen no matter the anchor points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetViewportPosition(Vector2 viewportPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">viewportPosition</span></td>
+        <td><p>value between 0 and 1</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Behaviours_BlackoutBehaviourUI_Show_" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.Show*"></a>
+  <h4 id="Blackout_Core_Behaviours_BlackoutBehaviourUI_Show" data-uid="Blackout.Core.Behaviours.BlackoutBehaviourUI.Show">Show()</h4>
+  <div class="markdown level1 summary"><p>Fades in gameObject while setting active to true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Show()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

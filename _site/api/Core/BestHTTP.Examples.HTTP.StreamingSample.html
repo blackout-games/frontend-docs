@@ -1,0 +1,835 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StreamingSample
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StreamingSample
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.Examples.HTTP.StreamingSample">
+  
+  
+  <h1 id="BestHTTP_Examples_HTTP_StreamingSample" data-uid="BestHTTP.Examples.HTTP.StreamingSample" class="text-break">Class StreamingSample
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="BestHTTP.Examples.Helpers.SampleBase.html">SampleBase</a></div>
+    <div class="level2"><span class="xref">StreamingSample</span></div>
+      <div class="level3"><a class="xref" href="BestHTTP.Examples.HTTP.ResumableStreamingSample.html">ResumableStreamingSample</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BestHTTP.Examples.Helpers.SampleBase.html#BestHTTP_Examples_Helpers_SampleBase_Category">SampleBase.Category</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Examples.Helpers.SampleBase.html#BestHTTP_Examples_Helpers_SampleBase_DisplayName">SampleBase.DisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Examples.Helpers.SampleBase.html#BestHTTP_Examples_Helpers_SampleBase_Description">SampleBase.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Examples.Helpers.SampleBase.html#BestHTTP_Examples_Helpers_SampleBase_BannedPlatforms">SampleBase.BannedPlatforms</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.Examples.Helpers.SampleBase.html#BestHTTP_Examples_Helpers_SampleBase_sampleSelector">SampleBase.sampleSelector</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.Examples.HTTP.html">BestHTTP.Examples.HTTP</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_Examples_HTTP_StreamingSample_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StreamingSample : SampleBase</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample__cancelDownload" data-uid="BestHTTP.Examples.HTTP.StreamingSample._cancelDownload">_cancelDownload</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button _cancelDownload</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample__disableCacheToggle" data-uid="BestHTTP.Examples.HTTP.StreamingSample._disableCacheToggle">_disableCacheToggle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Toggle _disableCacheToggle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Toggle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample__downloadPath" data-uid="BestHTTP.Examples.HTTP.StreamingSample._downloadPath">_downloadPath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string _downloadPath</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample__downloadProgressSlider" data-uid="BestHTTP.Examples.HTTP.StreamingSample._downloadProgressSlider">_downloadProgressSlider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Slider _downloadProgressSlider</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Slider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample__downloadProgressText" data-uid="BestHTTP.Examples.HTTP.StreamingSample._downloadProgressText">_downloadProgressText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Text _downloadProgressText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample__fragmentSizeSlider" data-uid="BestHTTP.Examples.HTTP.StreamingSample._fragmentSizeSlider">_fragmentSizeSlider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Slider _fragmentSizeSlider</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Slider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample__fragmentSizeText" data-uid="BestHTTP.Examples.HTTP.StreamingSample._fragmentSizeText">_fragmentSizeText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Text _fragmentSizeText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample__processedDataSlider" data-uid="BestHTTP.Examples.HTTP.StreamingSample._processedDataSlider">_processedDataSlider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Slider _processedDataSlider</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Slider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample__processedDataText" data-uid="BestHTTP.Examples.HTTP.StreamingSample._processedDataText">_processedDataText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Text _processedDataText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample__reportingRoot" data-uid="BestHTTP.Examples.HTTP.StreamingSample._reportingRoot">_reportingRoot</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RectTransform _reportingRoot</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample__startDownload" data-uid="BestHTTP.Examples.HTTP.StreamingSample._startDownload">_startDownload</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button _startDownload</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample__statusText" data-uid="BestHTTP.Examples.HTTP.StreamingSample._statusText">_statusText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Text _statusText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample__streamingSetupRoot" data-uid="BestHTTP.Examples.HTTP.StreamingSample._streamingSetupRoot">_streamingSetupRoot</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RectTransform _streamingSetupRoot</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_fragmentSize" data-uid="BestHTTP.Examples.HTTP.StreamingSample.fragmentSize">fragmentSize</h4>
+  <div class="markdown level1 summary"><p>The fragment size that we will set to the request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int fragmentSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_progress" data-uid="BestHTTP.Examples.HTTP.StreamingSample.progress">progress</h4>
+  <div class="markdown level1 summary"><p>Download(processing) progress. Its range is between [0..1]</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float progress</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_request" data-uid="BestHTTP.Examples.HTTP.StreamingSample.request">request</h4>
+  <div class="markdown level1 summary"><p>Cached request to be able to abort it</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HTTPRequest request</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BestHTTP_Examples_HTTP_StreamingSample_DownloadLength_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.DownloadLength*"></a>
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_DownloadLength" data-uid="BestHTTP.Examples.HTTP.StreamingSample.DownloadLength">DownloadLength</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual long DownloadLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_Examples_HTTP_StreamingSample_ProcessedBytes_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.ProcessedBytes*"></a>
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_ProcessedBytes" data-uid="BestHTTP.Examples.HTTP.StreamingSample.ProcessedBytes">ProcessedBytes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual long ProcessedBytes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BestHTTP_Examples_HTTP_StreamingSample_Cancel_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.Cancel*"></a>
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_Cancel" data-uid="BestHTTP.Examples.HTTP.StreamingSample.Cancel">Cancel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Cancel()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_Examples_HTTP_StreamingSample_OnDataDownloaded_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.OnDataDownloaded*"></a>
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_OnDataDownloaded_BestHTTP_HTTPRequest_BestHTTP_HTTPResponse_System_Byte___System_Int32_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.OnDataDownloaded(BestHTTP.HTTPRequest,BestHTTP.HTTPResponse,System.Byte[],System.Int32)">OnDataDownloaded(HTTPRequest, HTTPResponse, Byte[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool OnDataDownloaded(HTTPRequest request, HTTPResponse response, byte[] dataFragment, int dataFragmentLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPResponse.html">HTTPResponse</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">dataFragment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dataFragmentLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_Examples_HTTP_StreamingSample_OnDestroy_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.OnDestroy*"></a>
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_OnDestroy" data-uid="BestHTTP.Examples.HTTP.StreamingSample.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnDestroy()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_Examples_HTTP_StreamingSample_OnDownloadProgress_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.OnDownloadProgress*"></a>
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_OnDownloadProgress_BestHTTP_HTTPRequest_System_Int64_System_Int64_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.OnDownloadProgress(BestHTTP.HTTPRequest,System.Int64,System.Int64)">OnDownloadProgress(HTTPRequest, Int64, Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDownloadProgress(HTTPRequest originalRequest, long downloaded, long downloadLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td><span class="parametername">originalRequest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">downloaded</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">downloadLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_Examples_HTTP_StreamingSample_OnFragmentSizeSliderChanged_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.OnFragmentSizeSliderChanged*"></a>
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_OnFragmentSizeSliderChanged_System_Single_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.OnFragmentSizeSliderChanged(System.Single)">OnFragmentSizeSliderChanged(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFragmentSizeSliderChanged(float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_Examples_HTTP_StreamingSample_OnRequestFinished_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.OnRequestFinished*"></a>
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_OnRequestFinished_BestHTTP_HTTPRequest_BestHTTP_HTTPResponse_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.OnRequestFinished(BestHTTP.HTTPRequest,BestHTTP.HTTPResponse)">OnRequestFinished(HTTPRequest, HTTPResponse)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnRequestFinished(HTTPRequest req, HTTPResponse resp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPResponse.html">HTTPResponse</a></td>
+        <td><span class="parametername">resp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_Examples_HTTP_StreamingSample_ResetProcessedValues_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.ResetProcessedValues*"></a>
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_ResetProcessedValues" data-uid="BestHTTP.Examples.HTTP.StreamingSample.ResetProcessedValues">ResetProcessedValues()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ResetProcessedValues()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_Examples_HTTP_StreamingSample_SetDataProcessedUI_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.SetDataProcessedUI*"></a>
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_SetDataProcessedUI_System_Int64_System_Int64_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.SetDataProcessedUI(System.Int64,System.Int64)">SetDataProcessedUI(Int64, Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetDataProcessedUI(long processed, long length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">processed</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_Examples_HTTP_StreamingSample_SetupRequest_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.SetupRequest*"></a>
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_SetupRequest" data-uid="BestHTTP.Examples.HTTP.StreamingSample.SetupRequest">SetupRequest()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetupRequest()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_Examples_HTTP_StreamingSample_Start_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.Start*"></a>
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_Start" data-uid="BestHTTP.Examples.HTTP.StreamingSample.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.Examples.Helpers.SampleBase.html#BestHTTP_Examples_Helpers_SampleBase_Start">SampleBase.Start()</a></div>
+  
+  
+  <a id="BestHTTP_Examples_HTTP_StreamingSample_StartStreaming_" data-uid="BestHTTP.Examples.HTTP.StreamingSample.StartStreaming*"></a>
+  <h4 id="BestHTTP_Examples_HTTP_StreamingSample_StartStreaming" data-uid="BestHTTP.Examples.HTTP.StreamingSample.StartStreaming">StartStreaming()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void StartStreaming()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,633 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SquadDrawer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SquadDrawer
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer">
+  
+  
+  <h1 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer" class="text-break">Class SquadDrawer
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html">Drawer</a></div>
+    <div class="level2"><span class="xref">SquadDrawer</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IEnhancedScrollerDelegate</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_overrideCanvasLayer">Drawer.overrideCanvasLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_openButtons">Drawer.openButtons</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_closeButtons">Drawer.closeButtons</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_showBlocker">Drawer.showBlocker</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_DisableOnClose">Drawer.DisableOnClose</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_onOpen">Drawer.onOpen</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_onClose">Drawer.onClose</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_IsOpen">Drawer.IsOpen</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_rectTransform">Drawer.rectTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_DisposeBlocker">Drawer.DisposeBlocker()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_SetCloseButtonsActive_System_Boolean_">Drawer.SetCloseButtonsActive(Boolean)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.html">Blackout.Rugby.Squad_Scene.Lineup</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SquadDrawer : Drawer, IEnhancedScrollerDelegate</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_filterPanel" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.filterPanel">filterPanel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SquadDrawerFilter filterPanel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SquadDrawerFilter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_scroller" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.scroller">scroller</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnhancedScroller scroller</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EnhancedScroller</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_ShouldCloseOnScreenChange" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.ShouldCloseOnScreenChange">ShouldCloseOnScreenChange</h4>
+  <div class="markdown level1 summary"><p>(Optional)
+Event is called when <see cref="!:OnScreenChanged"></see> EventBus is published.
+This Func gives us a chance to tell drawer if we should close or not when screen is changed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;bool&gt; ShouldCloseOnScreenChange</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_CurrentDropdownItem_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.CurrentDropdownItem*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_CurrentDropdownItem" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.CurrentDropdownItem">CurrentDropdownItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DropdownItem CurrentDropdownItem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DropdownItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_SquadList_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.SquadList*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_SquadList" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.SquadList">SquadList</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SquadList SquadList { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.SquadList.html">SquadList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_Awake_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.Awake*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_Awake" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_Awake">Drawer.Awake()</a></div>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_Close_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.Close*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_Close" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.Close">Close()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Close()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_Close">Drawer.Close()</a></div>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_DisableFiltering_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.DisableFiltering*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_DisableFiltering" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.DisableFiltering">DisableFiltering()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableFiltering()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_ForceShowFilters_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.ForceShowFilters*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_ForceShowFilters_System_Boolean_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.ForceShowFilters(System.Boolean)">ForceShowFilters(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceShowFilters(bool force)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_GetPLI_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.GetPLI*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_GetPLI_PlayerModel_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.GetPLI(PlayerModel)">GetPLI(PlayerModel)</h4>
+  <div class="markdown level1 summary"><p>Returns a PlayerListItem from the squad list and jumps to scroll position in drawer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async UniTask&lt;PlayerListItem&gt; GetPLI(PlayerModel player)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayerModel</span></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Blackout.PlayerListItem.html">PlayerListItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_LoadDefaults_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.LoadDefaults*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_LoadDefaults" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.LoadDefaults">LoadDefaults()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadDefaults()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_OnCellClicked_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.OnCellClicked*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_OnCellClicked_PlayerModel_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.OnCellClicked(PlayerModel)">OnCellClicked(PlayerModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCellClicked(PlayerModel playerModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayerModel</span></td>
+        <td><span class="parametername">playerModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_Open_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.Open*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_Open" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.Open">Open()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Open()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_Open">Drawer.Open()</a></div>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_Refresh_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.Refresh*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_Refresh" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.Refresh">Refresh()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Refresh()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_ResetFilter_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.ResetFilter*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_ResetFilter" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.ResetFilter">ResetFilter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetFilter()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_SetPlayerListItemsDraggable_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.SetPlayerListItemsDraggable*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_SetPlayerListItemsDraggable_System_Boolean_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.SetPlayerListItemsDraggable(System.Boolean)">SetPlayerListItemsDraggable(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set if you want to be able to drag Player List Items off the drawer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlayerListItemsDraggable(bool isDraggable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isDraggable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_SortByDefault_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.SortByDefault*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_SortByDefault" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.SortByDefault">SortByDefault()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SortByDefault()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_SortList_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.SortList*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_SortList_System_String_System_Boolean_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.SortList(System.String,System.Boolean)">SortList(String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SortList(string i18nKey, bool descending)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">i18nKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">descending</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_Start_" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.Start*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_Start" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Blackout.Rugby.Squad_Scene.Lineup.Drawer.html#Blackout_Rugby_Squad_Scene_Lineup_Drawer_Start">Drawer.Start()</a></div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_OnPlayerClicked" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.OnPlayerClicked">OnPlayerClicked</h4>
+  <div class="markdown level1 summary"><p>Event invoked when a list item is clicked</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;PlayerModel&gt; OnPlayerClicked</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">PlayerModel</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_OnPlayerItemHover" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.OnPlayerItemHover">OnPlayerItemHover</h4>
+  <div class="markdown level1 summary"><p>Event invoked when a list item is hovered (desktop only)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;PlayerModel, bool&gt; OnPlayerItemHover</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">PlayerModel</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Squad_Scene_Lineup_SquadDrawer_onPreOpen" data-uid="Blackout.Rugby.Squad_Scene.Lineup.SquadDrawer.onPreOpen">onPreOpen</h4>
+  <div class="markdown level1 summary"><p>Event called before the drawer is opened, if you need to add any edge case logic</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action onPreOpen</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IEnhancedScrollerDelegate</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

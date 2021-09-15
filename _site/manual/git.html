@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Purpose of this proposal </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Purpose of this proposal ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="purpose-of-this-proposal">Purpose of this proposal</h2>
+
+<p>Having a clearly defined Git branch/commit model as well as a clean and sensical Steam releases will help with consistency for developers, the stability of our product, and mitigate the risk of critical bugs making it to the final product affecting the user’s experience as well as our ability to monetize.</p>
+<h2 id="notes-on-the-language-used">Notes on the language used</h2>
+<p>Due to limited resources, it is not a good idea to have any hard rules that could restrict development. For this reason, any time strong language such as ‘must’, ‘only’, etc. is seen it can be assumed that it excludes exceptional circumstances. When breaking one of these ‘must’ rules it is to be done with the understanding that there was no other option and ‘what’ and ‘why’ should be communicated well via Slack so that anyone who would need to know can access that information.</p>
+<p>‘Critical bug in release’ is one or more of:</p>
+<ul>
+<li>Causing the game to crash</li>
+<li>Prevent a user from progressing</li>
+<li>Offensive content</li>
+</ul>
+<p>‘Complex patch in release’ is one which requires more than one commit.</p>
+<ul>
+<li>‘Critical bug in nightly’ is one or more of:</li>
+<li>Unable to launch the game</li>
+<li>Offensive content</li>
+</ul>
+<h2 id="steam-releases">Steam Releases</h2>
+<p>Steam releases should be driven by necessity and not by what git branches exist.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Updates</th>
+<th>Access</th>
+<th>Password</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default</td>
+<td>The main release that all players will use to experience fully implemented and released features.</td>
+<td>Critical Patches. Changes that have been tested in a release candidate for a week.</td>
+<td>public</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Previous</td>
+<td>Same as Default but one major version behind</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Release-Candidate</td>
+<td>Contains new features and fixes that need to be tested for some time before being promoted to Default. This release allows users to preview upcoming stable features.</td>
+<td>Minor bugs. Completed features that need testing. All non-critical fixes</td>
+<td>public testers</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Nightly</td>
+<td>Contains new features that are being worked on and provide a preview for upcoming features and a testing ground for developers.</td>
+<td>Contains WIP features and fixes.</td>
+<td>Internal testers</td>
+<td>brTestBranch</td>
+</tr>
+<tr>
+<td>Dev-test</td>
+<td>A flexible release that contains anything a developer chooses. Should be for internal testing only or other special cases</td>
+<td>-</td>
+<td>developers</td>
+<td>brBattleRoyaleBattleRifle</td>
+</tr>
+</tbody>
+</table>
+<h2 id="git-branches">Git Branches</h2>
+<h3 id="main-branches">Main Branches</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Purpose</th>
+<th>Commit Strategy</th>
+<th>Maps to Steam Release</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Release</td>
+<td>The production-ready branch.</td>
+<td>Release-Patch can be merged into this. Staging can be merged into this. This does not get merged back to anywhere else. No direct commits should be made to release unless under exceptional circumstances with agreement of multiple team members.</td>
+<td>Default</td>
+</tr>
+<tr>
+<td>Release-Patch</td>
+<td>A mirror of Release for patches to be made and tested.</td>
+<td>Direct commits that fix critical issues. For bigger fixes, a branch can be made and merged back in. Fixes from other branches can be cherry-picked, but only to fix a critical bug. Is merged back into Master(which should propagate changes back to other branches).</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Staging</td>
+<td>Used for preparing what is in Master to be promoted to Release.</td>
+<td>Patches are made directly here and merged back to Master. Only fixes and hardening should happen here as it will soon be promoted to Release.</td>
+<td>Release-Candidate</td>
+</tr>
+<tr>
+<td>Master</td>
+<td>The main branch that should contain all features, bug fixes, and patches.</td>
+<td>All branches(except Release) are merged into this branch to keep it up to date.</td>
+<td>Nightly</td>
+</tr>
+</tbody>
+</table>
+<h3 id="working-branches">Working Branches</h3>
+<p>Working branches can be branched from Master for making new features, or from Release-Patch for more complex. Working branches should have descriptive names. Working branches should be frequently updated with any changes in Master to minimize time spent with merge conflicts later.</p>
+<h2 id="merging">Merging</h2>
+<h3 id="best-practices">Best Practices</h3>
+<ul>
+<li>Update working branch first: When merging branch A into branch B, branch B should first be merged into branch A and all conflicts resolved and functionality tested before continuing with the A into B merge. This is particularly important when prefabs are merged or overwritten as problems with prefabs are hard to fix after the fact.</li>
+<li>Test your local branch well: When merging into a branch that others are working from, ensure that there are no compile errors, everything is running fine in the editor, and if there are a lot of, or large, changes then think about running a build.</li>
+</ul>
+<h3 id="merge-requestsmr">Merge Requests(MR)</h3>
+<h4 id="in-general">In General</h4>
+<p>MR based deployment enables easy peer-review of the code/design. Instead of pushing directly through to a branch that others may be relying on, everyone can comment on the changes and ask questions before merging any piece of work.</p>
+<p>MRs must be made via the GitLab website.</p>
+<h4 id="for-release">For Release</h4>
+<p>The Release branch is a production-ready branch and the only commits on Release come from MRs. Instead of pushing directly to Release, changes are made in other branches and then MRs are made to Release.</p>
+<p>At least one other developer needs to approve an MR on the release branch.</p>
+<h4 id="voluntary-mrs">Voluntary MRs</h4>
+<p>Making MRs to Master is not required or forced but is an option if a developer feels as though they would like to have their work checked over by another developer.</p>
+<h2 id="file-locking">File Locking</h2>
+<p><em>(Nothing to see here)</em></p>
+<h3 id="git-branch-example-diagram-very-wip">Git Branch Example Diagram (Very WIP)</h3>
+<p><img src="../images/git-graph.png" alt=""></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/blackout-games/frontend-docs/blob/master/manual/git.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

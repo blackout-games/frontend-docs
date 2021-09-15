@@ -1,0 +1,838 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TutorialManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TutorialManager
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Blackout.UI.TutorialManager">
+  
+  
+  <h1 id="Blackout_UI_TutorialManager" data-uid="Blackout.UI.TutorialManager" class="text-break">Class TutorialManager
+  </h1>
+  <div class="markdown level0 summary"><p>Usage:
+<span class="xref">Blackout.UI.TutorialManager.AreStepConditionsMet(System.String)</span> checks if all conditions for current step are met. May trigger reaction in <a class="xref" href="Blackout.UI.TutorialStep.html">TutorialStep</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TutorialManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IOrientationChangeable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Blackout.UI.html">Blackout.UI</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Blackout_UI_TutorialManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class TutorialManager : Singleton&lt;TutorialManager&gt;, IOrientationChangeable</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Blackout_UI_TutorialManager_isActivatedFromStart" data-uid="Blackout.UI.TutorialManager.isActivatedFromStart">isActivatedFromStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isActivatedFromStart</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_UI_TutorialManager_SecretaryInstance" data-uid="Blackout.UI.TutorialManager.SecretaryInstance">SecretaryInstance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Secretary SecretaryInstance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.UI.Secretary.html">Secretary</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Blackout_UI_TutorialManager_AllowGroundsCameraControl_" data-uid="Blackout.UI.TutorialManager.AllowGroundsCameraControl*"></a>
+  <h4 id="Blackout_UI_TutorialManager_AllowGroundsCameraControl" data-uid="Blackout.UI.TutorialManager.AllowGroundsCameraControl">AllowGroundsCameraControl</h4>
+  <div class="markdown level1 summary"><p>Determines if the Grounds Camera can be controlled</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowGroundsCameraControl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_CurrentHandler_" data-uid="Blackout.UI.TutorialManager.CurrentHandler*"></a>
+  <h4 id="Blackout_UI_TutorialManager_CurrentHandler" data-uid="Blackout.UI.TutorialManager.CurrentHandler">CurrentHandler</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TutorialHandlerBase CurrentHandler { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.UI.TutorialHandlerBase.html">TutorialHandlerBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_CurrentStep_" data-uid="Blackout.UI.TutorialManager.CurrentStep*"></a>
+  <h4 id="Blackout_UI_TutorialManager_CurrentStep" data-uid="Blackout.UI.TutorialManager.CurrentStep">CurrentStep</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TutorialStep CurrentStep { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.UI.TutorialStep.html">TutorialStep</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_IsActiveRightNow_" data-uid="Blackout.UI.TutorialManager.IsActiveRightNow*"></a>
+  <h4 id="Blackout_UI_TutorialManager_IsActiveRightNow" data-uid="Blackout.UI.TutorialManager.IsActiveRightNow">IsActiveRightNow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsActiveRightNow { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_TutorialSteps_" data-uid="Blackout.UI.TutorialManager.TutorialSteps*"></a>
+  <h4 id="Blackout_UI_TutorialManager_TutorialSteps" data-uid="Blackout.UI.TutorialManager.TutorialSteps">TutorialSteps</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TutorialStep&gt; TutorialSteps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Blackout.UI.TutorialStep.html">TutorialStep</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Blackout_UI_TutorialManager_Awake_" data-uid="Blackout.UI.TutorialManager.Awake*"></a>
+  <h4 id="Blackout_UI_TutorialManager_Awake" data-uid="Blackout.UI.TutorialManager.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_UI_TutorialManager_FinishedTutorial_" data-uid="Blackout.UI.TutorialManager.FinishedTutorial*"></a>
+  <h4 id="Blackout_UI_TutorialManager_FinishedTutorial" data-uid="Blackout.UI.TutorialManager.FinishedTutorial">FinishedTutorial()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FinishedTutorial()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_UI_TutorialManager_Focus_" data-uid="Blackout.UI.TutorialManager.Focus*"></a>
+  <h4 id="Blackout_UI_TutorialManager_Focus_Transform_Transform_" data-uid="Blackout.UI.TutorialManager.Focus(Transform,Transform)">Focus(Transform, Transform)</h4>
+  <div class="markdown level1 summary"><p>Focuses on any UI object. Set-up deactivation callback on targets when focus lost.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Focus(Transform from, Transform to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_GetCurrentStepIndex_" data-uid="Blackout.UI.TutorialManager.GetCurrentStepIndex*"></a>
+  <h4 id="Blackout_UI_TutorialManager_GetCurrentStepIndex" data-uid="Blackout.UI.TutorialManager.GetCurrentStepIndex">GetCurrentStepIndex()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCurrentStepIndex()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_GetStepIndex_" data-uid="Blackout.UI.TutorialManager.GetStepIndex*"></a>
+  <h4 id="Blackout_UI_TutorialManager_GetStepIndex_System_String_" data-uid="Blackout.UI.TutorialManager.GetStepIndex(System.String)">GetStepIndex(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetStepIndex(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_HideItemGlow_" data-uid="Blackout.UI.TutorialManager.HideItemGlow*"></a>
+  <h4 id="Blackout_UI_TutorialManager_HideItemGlow" data-uid="Blackout.UI.TutorialManager.HideItemGlow">HideItemGlow()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideItemGlow()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_UI_TutorialManager_LoadState_" data-uid="Blackout.UI.TutorialManager.LoadState*"></a>
+  <h4 id="Blackout_UI_TutorialManager_LoadState_ManagerModel_" data-uid="Blackout.UI.TutorialManager.LoadState(ManagerModel)">LoadState(ManagerModel)</h4>
+  <div class="markdown level1 summary"><p>Loads the step of the tutorial based on how far the manager got</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadState(ManagerModel manager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ManagerModel</span></td>
+        <td><span class="parametername">manager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_OnOrientationChanged_" data-uid="Blackout.UI.TutorialManager.OnOrientationChanged*"></a>
+  <h4 id="Blackout_UI_TutorialManager_OnOrientationChanged_System_Boolean_" data-uid="Blackout.UI.TutorialManager.OnOrientationChanged(System.Boolean)">OnOrientationChanged(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnOrientationChanged(bool isPortrait)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isPortrait</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_PeekStep_" data-uid="Blackout.UI.TutorialManager.PeekStep*"></a>
+  <h4 id="Blackout_UI_TutorialManager_PeekStep_System_String_" data-uid="Blackout.UI.TutorialManager.PeekStep(System.String)">PeekStep(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TutorialStep PeekStep(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.UI.TutorialStep.html">TutorialStep</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_PerformCurrentStep_" data-uid="Blackout.UI.TutorialManager.PerformCurrentStep*"></a>
+  <h4 id="Blackout_UI_TutorialManager_PerformCurrentStep" data-uid="Blackout.UI.TutorialManager.PerformCurrentStep">PerformCurrentStep()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PerformCurrentStep()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_UI_TutorialManager_PerformTutorialStep_" data-uid="Blackout.UI.TutorialManager.PerformTutorialStep*"></a>
+  <h4 id="Blackout_UI_TutorialManager_PerformTutorialStep_System_String_" data-uid="Blackout.UI.TutorialManager.PerformTutorialStep(System.String)">PerformTutorialStep(String)</h4>
+  <div class="markdown level1 summary"><p>Allows to perform any of the provided actions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PerformTutorialStep(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Step ID to perform</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_ResetSaveState_" data-uid="Blackout.UI.TutorialManager.ResetSaveState*"></a>
+  <h4 id="Blackout_UI_TutorialManager_ResetSaveState" data-uid="Blackout.UI.TutorialManager.ResetSaveState">ResetSaveState()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetSaveState()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_UI_TutorialManager_SaveState_" data-uid="Blackout.UI.TutorialManager.SaveState*"></a>
+  <h4 id="Blackout_UI_TutorialManager_SaveState" data-uid="Blackout.UI.TutorialManager.SaveState">SaveState()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveState()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_UI_TutorialManager_SetActiveFromStart_" data-uid="Blackout.UI.TutorialManager.SetActiveFromStart*"></a>
+  <h4 id="Blackout_UI_TutorialManager_SetActiveFromStart_System_Boolean_" data-uid="Blackout.UI.TutorialManager.SetActiveFromStart(System.Boolean)">SetActiveFromStart(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetActiveFromStart(bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_SetCurrentTutorialHandler_" data-uid="Blackout.UI.TutorialManager.SetCurrentTutorialHandler*"></a>
+  <h4 id="Blackout_UI_TutorialManager_SetCurrentTutorialHandler_Blackout_UI_TutorialHandlerBase_" data-uid="Blackout.UI.TutorialManager.SetCurrentTutorialHandler(Blackout.UI.TutorialHandlerBase)">SetCurrentTutorialHandler(TutorialHandlerBase)</h4>
+  <div class="markdown level1 summary"><p>Turn off interactivity for all CanvasGroups except the object we want to focus on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCurrentTutorialHandler(TutorialHandlerBase currentHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.UI.TutorialHandlerBase.html">TutorialHandlerBase</a></td>
+        <td><span class="parametername">currentHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_SetStep_" data-uid="Blackout.UI.TutorialManager.SetStep*"></a>
+  <h4 id="Blackout_UI_TutorialManager_SetStep_System_Int32_" data-uid="Blackout.UI.TutorialManager.SetStep(System.Int32)">SetStep(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStep(int stepIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">stepIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_SetStep_" data-uid="Blackout.UI.TutorialManager.SetStep*"></a>
+  <h4 id="Blackout_UI_TutorialManager_SetStep_System_String_" data-uid="Blackout.UI.TutorialManager.SetStep(System.String)">SetStep(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStep(string stepId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">stepId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_ShowBlocker_" data-uid="Blackout.UI.TutorialManager.ShowBlocker*"></a>
+  <h4 id="Blackout_UI_TutorialManager_ShowBlocker_System_Boolean_System_Boolean_" data-uid="Blackout.UI.TutorialManager.ShowBlocker(System.Boolean,System.Boolean)">ShowBlocker(Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowBlocker(bool show = true, bool enableCameraMovement = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">show</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enableCameraMovement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_ShowItemGlow_" data-uid="Blackout.UI.TutorialManager.ShowItemGlow*"></a>
+  <h4 id="Blackout_UI_TutorialManager_ShowItemGlow_GameObject_" data-uid="Blackout.UI.TutorialManager.ShowItemGlow(GameObject)">ShowItemGlow(GameObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowItemGlow(GameObject targetObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">targetObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_Skip_" data-uid="Blackout.UI.TutorialManager.Skip*"></a>
+  <h4 id="Blackout_UI_TutorialManager_Skip_System_Int32_" data-uid="Blackout.UI.TutorialManager.Skip(System.Int32)">Skip(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Skip(int step)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">step</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_UI_TutorialManager_TryMoveToStep_" data-uid="Blackout.UI.TutorialManager.TryMoveToStep*"></a>
+  <h4 id="Blackout_UI_TutorialManager_TryMoveToStep_System_String_" data-uid="Blackout.UI.TutorialManager.TryMoveToStep(System.String)">TryMoveToStep(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryMoveToStep(string stepName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">stepName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IOrientationChangeable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

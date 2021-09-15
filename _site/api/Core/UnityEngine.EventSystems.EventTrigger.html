@@ -1,0 +1,719 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EventTrigger
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EventTrigger
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.EventSystems.EventTrigger">
+  
+  
+  <h1 id="UnityEngine_EventSystems_EventTrigger" data-uid="UnityEngine.EventSystems.EventTrigger" class="text-break">Class EventTrigger
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">EventTrigger</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UnityEngine.EventSystems.IPointerEnterHandler.html">IPointerEnterHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.IPointerExitHandler.html">IPointerExitHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.IPointerDownHandler.html">IPointerDownHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.IPointerUpHandler.html">IPointerUpHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.IPointerClickHandler.html">IPointerClickHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.IInitializePotentialDragHandler.html">IInitializePotentialDragHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.IBeginDragHandler.html">IBeginDragHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.IDragHandler.html">IDragHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.IEndDragHandler.html">IEndDragHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.IDropHandler.html">IDropHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.IScrollHandler.html">IScrollHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.IUpdateSelectedHandler.html">IUpdateSelectedHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.ISelectHandler.html">ISelectHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.IDeselectHandler.html">IDeselectHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.IMoveHandler.html">IMoveHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.ISubmitHandler.html">ISubmitHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.ICancelHandler.html">ICancelHandler</a></div>
+    <div><a class="xref" href="UnityEngine.EventSystems.IEventSystemHandler.html">IEventSystemHandler</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.EventSystems.html">UnityEngine.EventSystems</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_EventSystems_EventTrigger_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EventTrigger : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler, IInitializePotentialDragHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler, IScrollHandler, IUpdateSelectedHandler, ISelectHandler, IDeselectHandler, IMoveHandler, ISubmitHandler, ICancelHandler, IEventSystemHandler</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger__ctor_" data-uid="UnityEngine.EventSystems.EventTrigger.#ctor*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger__ctor" data-uid="UnityEngine.EventSystems.EventTrigger.#ctor">EventTrigger()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EventTrigger()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_triggers_" data-uid="UnityEngine.EventSystems.EventTrigger.triggers*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_triggers" data-uid="UnityEngine.EventSystems.EventTrigger.triggers">triggers</h4>
+  <div class="markdown level1 summary"><p>All the functions registered in this EventTrigger</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;EventTrigger.Entry&gt; triggers { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="UnityEngine.EventSystems.EventTrigger.Entry.html">EventTrigger.Entry</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnBeginDrag_" data-uid="UnityEngine.EventSystems.EventTrigger.OnBeginDrag*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnBeginDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)">OnBeginDrag(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>Called before a drag is started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnBeginDrag(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnCancel_" data-uid="UnityEngine.EventSystems.EventTrigger.OnCancel*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnCancel_UnityEngine_EventSystems_BaseEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnCancel(UnityEngine.EventSystems.BaseEventData)">OnCancel(BaseEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem when a Cancel event occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCancel(BaseEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.BaseEventData.html">BaseEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnDeselect_" data-uid="UnityEngine.EventSystems.EventTrigger.OnDeselect*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnDeselect_UnityEngine_EventSystems_BaseEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnDeselect(UnityEngine.EventSystems.BaseEventData)">OnDeselect(BaseEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem when a new object is being selected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDeselect(BaseEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.BaseEventData.html">BaseEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnDrag_" data-uid="UnityEngine.EventSystems.EventTrigger.OnDrag*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnDrag(UnityEngine.EventSystems.PointerEventData)">OnDrag(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem every time the pointer is moved during dragging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDrag(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnDrop_" data-uid="UnityEngine.EventSystems.EventTrigger.OnDrop*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnDrop_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnDrop(UnityEngine.EventSystems.PointerEventData)">OnDrop(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem when an object accepts a drop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDrop(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnEndDrag_" data-uid="UnityEngine.EventSystems.EventTrigger.OnEndDrag*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnEndDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnEndDrag(UnityEngine.EventSystems.PointerEventData)">OnEndDrag(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem once dragging ends.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnEndDrag(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnInitializePotentialDrag_" data-uid="UnityEngine.EventSystems.EventTrigger.OnInitializePotentialDrag*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnInitializePotentialDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnInitializePotentialDrag(UnityEngine.EventSystems.PointerEventData)">OnInitializePotentialDrag(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem when a drag has been found, but before it is valid to begin the drag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnInitializePotentialDrag(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnMove_" data-uid="UnityEngine.EventSystems.EventTrigger.OnMove*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnMove_UnityEngine_EventSystems_AxisEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnMove(UnityEngine.EventSystems.AxisEventData)">OnMove(AxisEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem when a Move event occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnMove(AxisEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.AxisEventData.html">AxisEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnPointerClick_" data-uid="UnityEngine.EventSystems.EventTrigger.OnPointerClick*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnPointerClick_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnPointerClick(UnityEngine.EventSystems.PointerEventData)">OnPointerClick(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem when a Click event occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPointerClick(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnPointerDown_" data-uid="UnityEngine.EventSystems.EventTrigger.OnPointerDown*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnPointerDown_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnPointerDown(UnityEngine.EventSystems.PointerEventData)">OnPointerDown(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem when a PointerDown event occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPointerDown(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnPointerEnter_" data-uid="UnityEngine.EventSystems.EventTrigger.OnPointerEnter*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)">OnPointerEnter(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem when the pointer enters the object associated with this EventTrigger.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPointerEnter(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnPointerExit_" data-uid="UnityEngine.EventSystems.EventTrigger.OnPointerExit*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnPointerExit_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnPointerExit(UnityEngine.EventSystems.PointerEventData)">OnPointerExit(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem when the pointer exits the object associated with this EventTrigger.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPointerExit(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnPointerUp_" data-uid="UnityEngine.EventSystems.EventTrigger.OnPointerUp*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnPointerUp_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnPointerUp(UnityEngine.EventSystems.PointerEventData)">OnPointerUp(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem when a PointerUp event occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPointerUp(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnScroll_" data-uid="UnityEngine.EventSystems.EventTrigger.OnScroll*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnScroll_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnScroll(UnityEngine.EventSystems.PointerEventData)">OnScroll(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem when a new Scroll event occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnScroll(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnSelect_" data-uid="UnityEngine.EventSystems.EventTrigger.OnSelect*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnSelect_UnityEngine_EventSystems_BaseEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnSelect(UnityEngine.EventSystems.BaseEventData)">OnSelect(BaseEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem when a Select event occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSelect(BaseEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.BaseEventData.html">BaseEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnSubmit_" data-uid="UnityEngine.EventSystems.EventTrigger.OnSubmit*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnSubmit_UnityEngine_EventSystems_BaseEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnSubmit(UnityEngine.EventSystems.BaseEventData)">OnSubmit(BaseEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem when a Submit event occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSubmit(BaseEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.BaseEventData.html">BaseEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_EventSystems_EventTrigger_OnUpdateSelected_" data-uid="UnityEngine.EventSystems.EventTrigger.OnUpdateSelected*"></a>
+  <h4 id="UnityEngine_EventSystems_EventTrigger_OnUpdateSelected_UnityEngine_EventSystems_BaseEventData_" data-uid="UnityEngine.EventSystems.EventTrigger.OnUpdateSelected(UnityEngine.EventSystems.BaseEventData)">OnUpdateSelected(BaseEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by the EventSystem when the object associated with this EventTrigger is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnUpdateSelected(BaseEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.EventSystems.BaseEventData.html">BaseEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IPointerEnterHandler.html">IPointerEnterHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IPointerExitHandler.html">IPointerExitHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IPointerDownHandler.html">IPointerDownHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IPointerUpHandler.html">IPointerUpHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IPointerClickHandler.html">IPointerClickHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IInitializePotentialDragHandler.html">IInitializePotentialDragHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IBeginDragHandler.html">IBeginDragHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IDragHandler.html">IDragHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IEndDragHandler.html">IEndDragHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IDropHandler.html">IDropHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IScrollHandler.html">IScrollHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IUpdateSelectedHandler.html">IUpdateSelectedHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.ISelectHandler.html">ISelectHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IDeselectHandler.html">IDeselectHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IMoveHandler.html">IMoveHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.ISubmitHandler.html">ISubmitHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.ICancelHandler.html">ICancelHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.EventSystems.IEventSystemHandler.html">IEventSystemHandler</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

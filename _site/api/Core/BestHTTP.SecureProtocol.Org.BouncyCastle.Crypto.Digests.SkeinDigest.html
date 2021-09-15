@@ -1,0 +1,599 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SkeinDigest
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SkeinDigest
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest">
+  
+  
+  <h1 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest" class="text-break">Class SkeinDigest
+  </h1>
+  <div class="markdown level0 summary"><p>Implementation of the Skein parameterised hash function in 256, 512 and 1024 bit block sizes,
+based on the <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Engines.ThreefishEngine.html">ThreefishEngine</a> tweakable block cipher.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SkeinDigest</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.IDigest.html">IDigest</a></div>
+    <div><span class="xref">IMemoable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.html">BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SkeinDigest : IDigest, IMemoable</code></pre>
+  </div>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This is the 1.3 version of Skein defined in the Skein hash function submission to the NIST SHA-3
+competition in October 2010.</p>
+<p>
+Skein was designed by Niels Ferguson - Stefan Lucks - Bruce Schneier - Doug Whiting - Mihir
+Bellare - Tadayoshi Kohno - Jon Callas - Jesse Walker.
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest__ctor_BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.#ctor(BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest)">SkeinDigest(SkeinDigest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkeinDigest(SkeinDigest digest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.html">SkeinDigest</a></td>
+        <td><span class="parametername">digest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest__ctor_System_Int32_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.#ctor(System.Int32,System.Int32)">SkeinDigest(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructs a Skein digest with an internal state size and output size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkeinDigest(int stateSizeBits, int digestSizeBits)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">stateSizeBits</span></td>
+        <td><p>the internal state size in bits - one of <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_SKEIN_256">SKEIN_256</a> <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_SKEIN_512">SKEIN_512</a> or
+<a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.html#BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_SKEIN_1024">SKEIN_1024</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">digestSizeBits</span></td>
+        <td><p>the output/digest size to produce in bits, which must be an integral number of
+bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_SKEIN_1024" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.SKEIN_1024">SKEIN_1024</h4>
+  <div class="markdown level1 summary"><p>1024 bit block size - Skein-1024</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SKEIN_1024 = default(int)</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_SKEIN_256" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.SKEIN_256">SKEIN_256</h4>
+  <div class="markdown level1 summary"><p>256 bit block size - Skein-256</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SKEIN_256 = default(int)</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_SKEIN_512" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.SKEIN_512">SKEIN_512</h4>
+  <div class="markdown level1 summary"><p>512 bit block size - Skein-512</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SKEIN_512 = default(int)</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_AlgorithmName_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.AlgorithmName*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_AlgorithmName" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.AlgorithmName">AlgorithmName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String AlgorithmName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_BlockUpdate_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.BlockUpdate*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_BlockUpdate_System_Byte___System_Int32_System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)">BlockUpdate(Byte[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BlockUpdate(byte[] inBytes, int inOff, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">inBytes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inOff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_Copy_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.Copy*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_Copy" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.Copy">Copy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMemoable Copy()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IMemoable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_DoFinal_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.DoFinal*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_DoFinal_System_Byte___System_Int32_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.DoFinal(System.Byte[],System.Int32)">DoFinal(Byte[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DoFinal(byte[] outBytes, int outOff)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">outBytes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">outOff</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_GetByteLength_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.GetByteLength*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_GetByteLength" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.GetByteLength">GetByteLength()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetByteLength()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_GetDigestSize_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.GetDigestSize*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_GetDigestSize" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.GetDigestSize">GetDigestSize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDigestSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_Init_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.Init*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_Init_SkeinParameters_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.Init(SkeinParameters)">Init(SkeinParameters)</h4>
+  <div class="markdown level1 summary"><p>Optionally initialises the Skein digest with the provided parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init(SkeinParameters parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SkeinParameters</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>the parameters to apply to this engine, or <pre><code>null</code></pre> to use no parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_Reset_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.Reset*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_Reset" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_Reset_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.Reset*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_Reset_IMemoable_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.Reset(IMemoable)">Reset(IMemoable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset(IMemoable other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IMemoable</span></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_Update_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.Update*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_Crypto_Digests_SkeinDigest_Update_System_Byte_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinDigest.Update(System.Byte)">Update(Byte)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update(byte inByte)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">inByte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.IDigest.html">IDigest</a>
+  </div>
+  <div>
+      <span class="xref">IMemoable</span>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Digests.SkeinEngine.html">SkeinEngine</a></div>
+      <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.Crypto.Parameters.SkeinParameters.html">SkeinParameters</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

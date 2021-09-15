@@ -1,0 +1,2126 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CoreEditorDrawer&lt;TData&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CoreEditorDrawer&lt;TData&gt;
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1">
+  
+  
+  <h1 id="UnityEditor_Rendering_CoreEditorDrawer_1" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1" class="text-break">Class CoreEditorDrawer&lt;TData&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Utility class to draw inspectors</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CoreEditorDrawer&lt;TData&gt;</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEditor.Rendering.html">UnityEditor.Rendering</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEditor_Rendering_CoreEditorDrawer_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CoreEditorDrawer&lt;TData&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TData</span></td>
+        <td><p>Type of class containing data needed to draw inspector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_noop" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.noop">noop</h4>
+  <div class="markdown level1 summary"><p>Use it when IDrawer required but no operation should be done</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly CoreEditorDrawer&lt;TData&gt;.IDrawer noop</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_space" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.space">space</h4>
+  <div class="markdown level1 summary"><p>Equivalent to EditorGUILayout.Space that can be put in a drawer group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly CoreEditorDrawer&lt;TData&gt;.IDrawer space</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_AdvancedFoldoutGroup_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.AdvancedFoldoutGroup*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_AdvancedFoldoutGroup__2_GUIContent___0_UnityEditor_Rendering_ExpandedState___0___1__UnityEditor_Rendering_CoreEditorDrawer__0__Enabler_UnityEditor_Rendering_CoreEditorDrawer__0__SwitchEnabler_UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer_UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer_UnityEditor_Rendering_FoldoutOption_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.AdvancedFoldoutGroup``2(GUIContent,``0,UnityEditor.Rendering.ExpandedState{``0,``1},UnityEditor.Rendering.CoreEditorDrawer{`0}.Enabler,UnityEditor.Rendering.CoreEditorDrawer{`0}.SwitchEnabler,UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer,UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer,UnityEditor.Rendering.FoldoutOption)">AdvancedFoldoutGroup&lt;TEnum, TState&gt;(GUIContent, TEnum, ExpandedState&lt;TEnum, TState&gt;, CoreEditorDrawer&lt;TData&gt;.Enabler, CoreEditorDrawer&lt;TData&gt;.SwitchEnabler, CoreEditorDrawer&lt;TData&gt;.ActionDrawer, CoreEditorDrawer&lt;TData&gt;.ActionDrawer, FoldoutOption)</h4>
+  <div class="markdown level1 summary"><p>Helper to draw a foldout with an advanced switch on it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer AdvancedFoldoutGroup&lt;TEnum, TState&gt;(GUIContent foldoutTitle, TEnum foldoutMask, ExpandedState&lt;TEnum, TState&gt; foldoutState, CoreEditorDrawer&lt;TData&gt;.Enabler isAdvanced, CoreEditorDrawer&lt;TData&gt;.SwitchEnabler switchAdvanced, CoreEditorDrawer&lt;TData&gt;.ActionDrawer normalContent, CoreEditorDrawer&lt;TData&gt;.ActionDrawer advancedContent, FoldoutOption options = FoldoutOption.Indent)
+    where TEnum : struct, IConvertible</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GUIContent</span></td>
+        <td><span class="parametername">foldoutTitle</span></td>
+        <td><p>Title wanted for this foldout header</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEnum</span></td>
+        <td><span class="parametername">foldoutMask</span></td>
+        <td><p>Bit mask (enum) used to define the boolean saving the state in ExpandedState</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.ExpandedState-2.html">ExpandedState</a>&lt;TEnum, TState&gt;</td>
+        <td><span class="parametername">foldoutState</span></td>
+        <td><p>The ExpandedState describing the component</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.Enabler.html">CoreEditorDrawer.Enabler</a>&lt;&gt;</td>
+        <td><span class="parametername">isAdvanced</span></td>
+        <td><p>Delegate allowing to check if advanced mode is active.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.SwitchEnabler.html">CoreEditorDrawer.SwitchEnabler</a>&lt;&gt;</td>
+        <td><span class="parametername">switchAdvanced</span></td>
+        <td><p>Delegate to know what to do when advance is switched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;</td>
+        <td><span class="parametername">normalContent</span></td>
+        <td><p>The content of the foldout header always visible if expended.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;</td>
+        <td><span class="parametername">advancedContent</span></td>
+        <td><p>The content of the foldout header only visible if advanced mode is active and if foldout is expended.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.FoldoutOption.html">FoldoutOption</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Drawing options</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEnum</span></td>
+        <td><p>Type of the mask used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>Type of the persistent state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_AdvancedFoldoutGroup_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.AdvancedFoldoutGroup*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_AdvancedFoldoutGroup__2_GUIContent___0_UnityEditor_Rendering_ExpandedState___0___1__UnityEditor_Rendering_CoreEditorDrawer__0__Enabler_UnityEditor_Rendering_CoreEditorDrawer__0__SwitchEnabler_UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer_UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer_UnityEditor_Rendering_FoldoutOption_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.AdvancedFoldoutGroup``2(GUIContent,``0,UnityEditor.Rendering.ExpandedState{``0,``1},UnityEditor.Rendering.CoreEditorDrawer{`0}.Enabler,UnityEditor.Rendering.CoreEditorDrawer{`0}.SwitchEnabler,UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer,UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer,UnityEditor.Rendering.FoldoutOption)">AdvancedFoldoutGroup&lt;TEnum, TState&gt;(GUIContent, TEnum, ExpandedState&lt;TEnum, TState&gt;, CoreEditorDrawer&lt;TData&gt;.Enabler, CoreEditorDrawer&lt;TData&gt;.SwitchEnabler, CoreEditorDrawer&lt;TData&gt;.ActionDrawer, CoreEditorDrawer&lt;TData&gt;.IDrawer, FoldoutOption)</h4>
+  <div class="markdown level1 summary"><p>Helper to draw a foldout with an advanced switch on it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer AdvancedFoldoutGroup&lt;TEnum, TState&gt;(GUIContent foldoutTitle, TEnum foldoutMask, ExpandedState&lt;TEnum, TState&gt; foldoutState, CoreEditorDrawer&lt;TData&gt;.Enabler isAdvanced, CoreEditorDrawer&lt;TData&gt;.SwitchEnabler switchAdvanced, CoreEditorDrawer&lt;TData&gt;.ActionDrawer normalContent, CoreEditorDrawer&lt;TData&gt;.IDrawer advancedContent, FoldoutOption options = FoldoutOption.Indent)
+    where TEnum : struct, IConvertible</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GUIContent</span></td>
+        <td><span class="parametername">foldoutTitle</span></td>
+        <td><p>Title wanted for this foldout header</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEnum</span></td>
+        <td><span class="parametername">foldoutMask</span></td>
+        <td><p>Bit mask (enum) used to define the boolean saving the state in ExpandedState</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.ExpandedState-2.html">ExpandedState</a>&lt;TEnum, TState&gt;</td>
+        <td><span class="parametername">foldoutState</span></td>
+        <td><p>The ExpandedState describing the component</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.Enabler.html">CoreEditorDrawer.Enabler</a>&lt;&gt;</td>
+        <td><span class="parametername">isAdvanced</span></td>
+        <td><p>Delegate allowing to check if advanced mode is active.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.SwitchEnabler.html">CoreEditorDrawer.SwitchEnabler</a>&lt;&gt;</td>
+        <td><span class="parametername">switchAdvanced</span></td>
+        <td><p>Delegate to know what to do when advance is switched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;</td>
+        <td><span class="parametername">normalContent</span></td>
+        <td><p>The content of the foldout header always visible if expended.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><span class="parametername">advancedContent</span></td>
+        <td><p>The content of the foldout header only visible if advanced mode is active and if foldout is expended.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.FoldoutOption.html">FoldoutOption</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Drawing options</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEnum</span></td>
+        <td><p>Type of the mask used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>Type of the persistent state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_AdvancedFoldoutGroup_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.AdvancedFoldoutGroup*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_AdvancedFoldoutGroup__2_GUIContent___0_UnityEditor_Rendering_ExpandedState___0___1__UnityEditor_Rendering_CoreEditorDrawer__0__Enabler_UnityEditor_Rendering_CoreEditorDrawer__0__SwitchEnabler_UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer_UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer_UnityEditor_Rendering_FoldoutOption_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.AdvancedFoldoutGroup``2(GUIContent,``0,UnityEditor.Rendering.ExpandedState{``0,``1},UnityEditor.Rendering.CoreEditorDrawer{`0}.Enabler,UnityEditor.Rendering.CoreEditorDrawer{`0}.SwitchEnabler,UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer,UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer,UnityEditor.Rendering.FoldoutOption)">AdvancedFoldoutGroup&lt;TEnum, TState&gt;(GUIContent, TEnum, ExpandedState&lt;TEnum, TState&gt;, CoreEditorDrawer&lt;TData&gt;.Enabler, CoreEditorDrawer&lt;TData&gt;.SwitchEnabler, CoreEditorDrawer&lt;TData&gt;.IDrawer, CoreEditorDrawer&lt;TData&gt;.ActionDrawer, FoldoutOption)</h4>
+  <div class="markdown level1 summary"><p>Helper to draw a foldout with an advanced switch on it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer AdvancedFoldoutGroup&lt;TEnum, TState&gt;(GUIContent foldoutTitle, TEnum foldoutMask, ExpandedState&lt;TEnum, TState&gt; foldoutState, CoreEditorDrawer&lt;TData&gt;.Enabler isAdvanced, CoreEditorDrawer&lt;TData&gt;.SwitchEnabler switchAdvanced, CoreEditorDrawer&lt;TData&gt;.IDrawer normalContent, CoreEditorDrawer&lt;TData&gt;.ActionDrawer advancedContent, FoldoutOption options = FoldoutOption.Indent)
+    where TEnum : struct, IConvertible</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GUIContent</span></td>
+        <td><span class="parametername">foldoutTitle</span></td>
+        <td><p>Title wanted for this foldout header</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEnum</span></td>
+        <td><span class="parametername">foldoutMask</span></td>
+        <td><p>Bit mask (enum) used to define the boolean saving the state in ExpandedState</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.ExpandedState-2.html">ExpandedState</a>&lt;TEnum, TState&gt;</td>
+        <td><span class="parametername">foldoutState</span></td>
+        <td><p>The ExpandedState describing the component</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.Enabler.html">CoreEditorDrawer.Enabler</a>&lt;&gt;</td>
+        <td><span class="parametername">isAdvanced</span></td>
+        <td><p>Delegate allowing to check if advanced mode is active.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.SwitchEnabler.html">CoreEditorDrawer.SwitchEnabler</a>&lt;&gt;</td>
+        <td><span class="parametername">switchAdvanced</span></td>
+        <td><p>Delegate to know what to do when advance is switched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><span class="parametername">normalContent</span></td>
+        <td><p>The content of the foldout header always visible if expended.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;</td>
+        <td><span class="parametername">advancedContent</span></td>
+        <td><p>The content of the foldout header only visible if advanced mode is active and if foldout is expended.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.FoldoutOption.html">FoldoutOption</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Drawing options</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEnum</span></td>
+        <td><p>Type of the mask used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>Type of the persistent state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_AdvancedFoldoutGroup_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.AdvancedFoldoutGroup*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_AdvancedFoldoutGroup__2_GUIContent___0_UnityEditor_Rendering_ExpandedState___0___1__UnityEditor_Rendering_CoreEditorDrawer__0__Enabler_UnityEditor_Rendering_CoreEditorDrawer__0__SwitchEnabler_UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer_UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer_UnityEditor_Rendering_FoldoutOption_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.AdvancedFoldoutGroup``2(GUIContent,``0,UnityEditor.Rendering.ExpandedState{``0,``1},UnityEditor.Rendering.CoreEditorDrawer{`0}.Enabler,UnityEditor.Rendering.CoreEditorDrawer{`0}.SwitchEnabler,UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer,UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer,UnityEditor.Rendering.FoldoutOption)">AdvancedFoldoutGroup&lt;TEnum, TState&gt;(GUIContent, TEnum, ExpandedState&lt;TEnum, TState&gt;, CoreEditorDrawer&lt;TData&gt;.Enabler, CoreEditorDrawer&lt;TData&gt;.SwitchEnabler, CoreEditorDrawer&lt;TData&gt;.IDrawer, CoreEditorDrawer&lt;TData&gt;.IDrawer, FoldoutOption)</h4>
+  <div class="markdown level1 summary"><p>Helper to draw a foldout with an advanced switch on it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer AdvancedFoldoutGroup&lt;TEnum, TState&gt;(GUIContent foldoutTitle, TEnum foldoutMask, ExpandedState&lt;TEnum, TState&gt; foldoutState, CoreEditorDrawer&lt;TData&gt;.Enabler isAdvanced, CoreEditorDrawer&lt;TData&gt;.SwitchEnabler switchAdvanced, CoreEditorDrawer&lt;TData&gt;.IDrawer normalContent, CoreEditorDrawer&lt;TData&gt;.IDrawer advancedContent, FoldoutOption options = FoldoutOption.Indent)
+    where TEnum : struct, IConvertible</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GUIContent</span></td>
+        <td><span class="parametername">foldoutTitle</span></td>
+        <td><p>Title wanted for this foldout header</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEnum</span></td>
+        <td><span class="parametername">foldoutMask</span></td>
+        <td><p>Bit mask (enum) used to define the boolean saving the state in ExpandedState</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.ExpandedState-2.html">ExpandedState</a>&lt;TEnum, TState&gt;</td>
+        <td><span class="parametername">foldoutState</span></td>
+        <td><p>The ExpandedState describing the component</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.Enabler.html">CoreEditorDrawer.Enabler</a>&lt;&gt;</td>
+        <td><span class="parametername">isAdvanced</span></td>
+        <td><p>Delegate allowing to check if advanced mode is active.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.SwitchEnabler.html">CoreEditorDrawer.SwitchEnabler</a>&lt;&gt;</td>
+        <td><span class="parametername">switchAdvanced</span></td>
+        <td><p>Delegate to know what to do when advance is switched.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><span class="parametername">normalContent</span></td>
+        <td><p>The content of the foldout header always visible if expended.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><span class="parametername">advancedContent</span></td>
+        <td><p>The content of the foldout header only visible if advanced mode is active and if foldout is expended.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.FoldoutOption.html">FoldoutOption</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Drawing options</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEnum</span></td>
+        <td><p>Type of the mask used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>Type of the persistent state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_Conditional_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Conditional*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_Conditional_UnityEditor_Rendering_CoreEditorDrawer__0__Enabler_UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Conditional(UnityEditor.Rendering.CoreEditorDrawer{`0}.Enabler,UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer[])">Conditional(CoreEditorDrawer&lt;TData&gt;.Enabler, CoreEditorDrawer&lt;TData&gt;.ActionDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Conditioned drawer that will only be drawn if its enabler function is null or return true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer Conditional(CoreEditorDrawer&lt;TData&gt;.Enabler enabler, params CoreEditorDrawer&lt;TData&gt;.ActionDrawer[] contentDrawers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.Enabler.html">CoreEditorDrawer.Enabler</a>&lt;&gt;</td>
+        <td><span class="parametername">enabler</span></td>
+        <td><p>Enable the drawing if null or return true</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_Conditional_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Conditional*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_Conditional_UnityEditor_Rendering_CoreEditorDrawer__0__Enabler_UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Conditional(UnityEditor.Rendering.CoreEditorDrawer{`0}.Enabler,UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer[])">Conditional(CoreEditorDrawer&lt;TData&gt;.Enabler, CoreEditorDrawer&lt;TData&gt;.IDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Conditioned drawer that will only be drawn if its enabler function is null or return true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer Conditional(CoreEditorDrawer&lt;TData&gt;.Enabler enabler, params CoreEditorDrawer&lt;TData&gt;.IDrawer[] contentDrawers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.Enabler.html">CoreEditorDrawer.Enabler</a>&lt;&gt;</td>
+        <td><span class="parametername">enabler</span></td>
+        <td><p>Enable the drawing if null or return true</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup__2_GUIContent___0_UnityEditor_Rendering_ExpandedState___0___1__UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup``2(GUIContent,``0,UnityEditor.Rendering.ExpandedState{``0,``1},UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer[])">FoldoutGroup&lt;TEnum, TState&gt;(GUIContent, TEnum, ExpandedState&lt;TEnum, TState&gt;, CoreEditorDrawer&lt;TData&gt;.ActionDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Create an IDrawer foldout header using an ExpandedState.
+The default option is Indent in this version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer FoldoutGroup&lt;TEnum, TState&gt;(GUIContent title, TEnum mask, ExpandedState&lt;TEnum, TState&gt; state, params CoreEditorDrawer&lt;TData&gt;.ActionDrawer[] contentDrawers)
+    where TEnum : struct, IConvertible</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GUIContent</span></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>Title wanted for this foldout header</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEnum</span></td>
+        <td><span class="parametername">mask</span></td>
+        <td><p>Bit mask (enum) used to define the boolean saving the state in ExpandedState</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.ExpandedState-2.html">ExpandedState</a>&lt;TEnum, TState&gt;</td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The ExpandedState describing the component</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the foldout header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEnum</span></td>
+        <td><p>Type of the mask used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>Type of the persistent state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup__2_GUIContent___0_UnityEditor_Rendering_ExpandedState___0___1__UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup``2(GUIContent,``0,UnityEditor.Rendering.ExpandedState{``0,``1},UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer[])">FoldoutGroup&lt;TEnum, TState&gt;(GUIContent, TEnum, ExpandedState&lt;TEnum, TState&gt;, CoreEditorDrawer&lt;TData&gt;.IDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Create an IDrawer foldout header using an ExpandedState.
+The default option is Indent in this version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer FoldoutGroup&lt;TEnum, TState&gt;(GUIContent title, TEnum mask, ExpandedState&lt;TEnum, TState&gt; state, params CoreEditorDrawer&lt;TData&gt;.IDrawer[] contentDrawers)
+    where TEnum : struct, IConvertible</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GUIContent</span></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>Title wanted for this foldout header</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEnum</span></td>
+        <td><span class="parametername">mask</span></td>
+        <td><p>Bit mask (enum) used to define the boolean saving the state in ExpandedState</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.ExpandedState-2.html">ExpandedState</a>&lt;TEnum, TState&gt;</td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The ExpandedState describing the component</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the foldout header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEnum</span></td>
+        <td><p>Type of the mask used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>Type of the persistent state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup__2_GUIContent___0_UnityEditor_Rendering_ExpandedState___0___1__UnityEditor_Rendering_FoldoutOption_UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup``2(GUIContent,``0,UnityEditor.Rendering.ExpandedState{``0,``1},UnityEditor.Rendering.FoldoutOption,UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer[])">FoldoutGroup&lt;TEnum, TState&gt;(GUIContent, TEnum, ExpandedState&lt;TEnum, TState&gt;, FoldoutOption, CoreEditorDrawer&lt;TData&gt;.ActionDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Create an IDrawer foldout header using an ExpandedState</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer FoldoutGroup&lt;TEnum, TState&gt;(GUIContent title, TEnum mask, ExpandedState&lt;TEnum, TState&gt; state, FoldoutOption options, params CoreEditorDrawer&lt;TData&gt;.ActionDrawer[] contentDrawers)
+    where TEnum : struct, IConvertible</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GUIContent</span></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>Title wanted for this foldout header</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEnum</span></td>
+        <td><span class="parametername">mask</span></td>
+        <td><p>Bit mask (enum) used to define the boolean saving the state in ExpandedState</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.ExpandedState-2.html">ExpandedState</a>&lt;TEnum, TState&gt;</td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The ExpandedState describing the component</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.FoldoutOption.html">FoldoutOption</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Drawing options</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the foldout header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEnum</span></td>
+        <td><p>Type of the mask used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>Type of the persistent state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup__2_GUIContent___0_UnityEditor_Rendering_ExpandedState___0___1__UnityEditor_Rendering_FoldoutOption_UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup``2(GUIContent,``0,UnityEditor.Rendering.ExpandedState{``0,``1},UnityEditor.Rendering.FoldoutOption,UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer[])">FoldoutGroup&lt;TEnum, TState&gt;(GUIContent, TEnum, ExpandedState&lt;TEnum, TState&gt;, FoldoutOption, CoreEditorDrawer&lt;TData&gt;.IDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Create an IDrawer foldout header using an ExpandedState</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer FoldoutGroup&lt;TEnum, TState&gt;(GUIContent title, TEnum mask, ExpandedState&lt;TEnum, TState&gt; state, FoldoutOption options, params CoreEditorDrawer&lt;TData&gt;.IDrawer[] contentDrawers)
+    where TEnum : struct, IConvertible</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GUIContent</span></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>Title wanted for this foldout header</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEnum</span></td>
+        <td><span class="parametername">mask</span></td>
+        <td><p>Bit mask (enum) used to define the boolean saving the state in ExpandedState</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.ExpandedState-2.html">ExpandedState</a>&lt;TEnum, TState&gt;</td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The ExpandedState describing the component</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.FoldoutOption.html">FoldoutOption</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Drawing options</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the foldout header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEnum</span></td>
+        <td><p>Type of the mask used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>Type of the persistent state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup__2_System_String___0_UnityEditor_Rendering_ExpandedState___0___1__UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup``2(System.String,``0,UnityEditor.Rendering.ExpandedState{``0,``1},UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer[])">FoldoutGroup&lt;TEnum, TState&gt;(String, TEnum, ExpandedState&lt;TEnum, TState&gt;, CoreEditorDrawer&lt;TData&gt;.ActionDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Create an IDrawer foldout header using an ExpandedState.
+The default option is Indent in this version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer FoldoutGroup&lt;TEnum, TState&gt;(string title, TEnum mask, ExpandedState&lt;TEnum, TState&gt; state, params CoreEditorDrawer&lt;TData&gt;.ActionDrawer[] contentDrawers)
+    where TEnum : struct, IConvertible</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>Title wanted for this foldout header</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEnum</span></td>
+        <td><span class="parametername">mask</span></td>
+        <td><p>Bit mask (enum) used to define the boolean saving the state in ExpandedState</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.ExpandedState-2.html">ExpandedState</a>&lt;TEnum, TState&gt;</td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The ExpandedState describing the component</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the foldout header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEnum</span></td>
+        <td><p>Type of the mask used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>Type of the persistent state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup__2_System_String___0_UnityEditor_Rendering_ExpandedState___0___1__UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup``2(System.String,``0,UnityEditor.Rendering.ExpandedState{``0,``1},UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer[])">FoldoutGroup&lt;TEnum, TState&gt;(String, TEnum, ExpandedState&lt;TEnum, TState&gt;, CoreEditorDrawer&lt;TData&gt;.IDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Create an IDrawer foldout header using an ExpandedState.
+The default option is Indent in this version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer FoldoutGroup&lt;TEnum, TState&gt;(string title, TEnum mask, ExpandedState&lt;TEnum, TState&gt; state, params CoreEditorDrawer&lt;TData&gt;.IDrawer[] contentDrawers)
+    where TEnum : struct, IConvertible</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>Title wanted for this foldout header</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEnum</span></td>
+        <td><span class="parametername">mask</span></td>
+        <td><p>Bit mask (enum) used to define the boolean saving the state in ExpandedState</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.ExpandedState-2.html">ExpandedState</a>&lt;TEnum, TState&gt;</td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The ExpandedState describing the component</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the foldout header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEnum</span></td>
+        <td><p>Type of the mask used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>Type of the persistent state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup__2_System_String___0_UnityEditor_Rendering_ExpandedState___0___1__UnityEditor_Rendering_FoldoutOption_UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup``2(System.String,``0,UnityEditor.Rendering.ExpandedState{``0,``1},UnityEditor.Rendering.FoldoutOption,UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer[])">FoldoutGroup&lt;TEnum, TState&gt;(String, TEnum, ExpandedState&lt;TEnum, TState&gt;, FoldoutOption, CoreEditorDrawer&lt;TData&gt;.ActionDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Create an IDrawer foldout header using an ExpandedState</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer FoldoutGroup&lt;TEnum, TState&gt;(string title, TEnum mask, ExpandedState&lt;TEnum, TState&gt; state, FoldoutOption options, params CoreEditorDrawer&lt;TData&gt;.ActionDrawer[] contentDrawers)
+    where TEnum : struct, IConvertible</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>Title wanted for this foldout header</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEnum</span></td>
+        <td><span class="parametername">mask</span></td>
+        <td><p>Bit mask (enum) used to define the boolean saving the state in ExpandedState</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.ExpandedState-2.html">ExpandedState</a>&lt;TEnum, TState&gt;</td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The ExpandedState describing the component</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.FoldoutOption.html">FoldoutOption</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Drawing options</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the foldout header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEnum</span></td>
+        <td><p>Type of the mask used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>Type of the persistent state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_FoldoutGroup__2_System_String___0_UnityEditor_Rendering_ExpandedState___0___1__UnityEditor_Rendering_FoldoutOption_UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.FoldoutGroup``2(System.String,``0,UnityEditor.Rendering.ExpandedState{``0,``1},UnityEditor.Rendering.FoldoutOption,UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer[])">FoldoutGroup&lt;TEnum, TState&gt;(String, TEnum, ExpandedState&lt;TEnum, TState&gt;, FoldoutOption, CoreEditorDrawer&lt;TData&gt;.IDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Create an IDrawer foldout header using an ExpandedState</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer FoldoutGroup&lt;TEnum, TState&gt;(string title, TEnum mask, ExpandedState&lt;TEnum, TState&gt; state, FoldoutOption options, params CoreEditorDrawer&lt;TData&gt;.IDrawer[] contentDrawers)
+    where TEnum : struct, IConvertible</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>Title wanted for this foldout header</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEnum</span></td>
+        <td><span class="parametername">mask</span></td>
+        <td><p>Bit mask (enum) used to define the boolean saving the state in ExpandedState</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.ExpandedState-2.html">ExpandedState</a>&lt;TEnum, TState&gt;</td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The ExpandedState describing the component</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.FoldoutOption.html">FoldoutOption</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Drawing options</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the foldout header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEnum</span></td>
+        <td><p>Type of the mask used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>Type of the persistent state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_System_Single_UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group(System.Single,UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer[])">Group(Single, CoreEditorDrawer&lt;TData&gt;.ActionDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Group of drawing function for inspector with a set width for labels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer Group(float labelWidth, params CoreEditorDrawer&lt;TData&gt;.ActionDrawer[] contentDrawers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">labelWidth</span></td>
+        <td><p>Width used for all labels in the group</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_System_Single_UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group(System.Single,UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer[])">Group(Single, CoreEditorDrawer&lt;TData&gt;.IDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Group of drawing function for inspector with a set width for labels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer Group(float labelWidth, params CoreEditorDrawer&lt;TData&gt;.IDrawer[] contentDrawers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">labelWidth</span></td>
+        <td><p>Width used for all labels in the group</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_System_Single_UnityEditor_Rendering_GroupOption_UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group(System.Single,UnityEditor.Rendering.GroupOption,UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer[])">Group(Single, GroupOption, CoreEditorDrawer&lt;TData&gt;.ActionDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Group of drawing function for inspector with a set width for labels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer Group(float labelWidth, GroupOption options, params CoreEditorDrawer&lt;TData&gt;.ActionDrawer[] contentDrawers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">labelWidth</span></td>
+        <td><p>Width used for all labels in the group</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.GroupOption.html">GroupOption</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Allow to add indentation on this group</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_System_Single_UnityEditor_Rendering_GroupOption_UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group(System.Single,UnityEditor.Rendering.GroupOption,UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer[])">Group(Single, GroupOption, CoreEditorDrawer&lt;TData&gt;.IDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Group of drawing function for inspector with a set width for labels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer Group(float labelWidth, GroupOption options, params CoreEditorDrawer&lt;TData&gt;.IDrawer[] contentDrawers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">labelWidth</span></td>
+        <td><p>Width used for all labels in the group</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.GroupOption.html">GroupOption</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Allow to add indentation on this group</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group(UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer[])">Group(CoreEditorDrawer&lt;TData&gt;.ActionDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Group of drawing function for inspector.
+They will be drawn one after the other.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer Group(params CoreEditorDrawer&lt;TData&gt;.ActionDrawer[] contentDrawers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group(UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer[])">Group(CoreEditorDrawer&lt;TData&gt;.IDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Group of drawing function for inspector.
+They will be drawn one after the other.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer Group(params CoreEditorDrawer&lt;TData&gt;.IDrawer[] contentDrawers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_UnityEditor_Rendering_GroupOption_UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group(UnityEditor.Rendering.GroupOption,UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer[])">Group(GroupOption, CoreEditorDrawer&lt;TData&gt;.ActionDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Group of drawing function for inspector.
+They will be drawn one after the other.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer Group(GroupOption options, params CoreEditorDrawer&lt;TData&gt;.ActionDrawer[] contentDrawers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.GroupOption.html">GroupOption</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Allow to add indentation on this group</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_Group_UnityEditor_Rendering_GroupOption_UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Group(UnityEditor.Rendering.GroupOption,UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer[])">Group(GroupOption, CoreEditorDrawer&lt;TData&gt;.IDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Group of drawing function for inspector.
+They will be drawn one after the other.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer Group(GroupOption options, params CoreEditorDrawer&lt;TData&gt;.IDrawer[] contentDrawers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.GroupOption.html">GroupOption</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Allow to add indentation on this group</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">contentDrawers</span></td>
+        <td><p>The content of the group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_Select_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Select*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_Select__1_UnityEditor_Rendering_CoreEditorDrawer__0__DataSelect___0__UnityEditor_Rendering_CoreEditorDrawer___0__ActionDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Select``1(UnityEditor.Rendering.CoreEditorDrawer{`0}.DataSelect{``0},UnityEditor.Rendering.CoreEditorDrawer{``0}.ActionDrawer[])">Select&lt;T2Data&gt;(CoreEditorDrawer&lt;TData&gt;.DataSelect&lt;T2Data&gt;, CoreEditorDrawer&lt;T2Data&gt;.ActionDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Create an IDrawer based on an other data container</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer Select&lt;T2Data&gt;(CoreEditorDrawer&lt;TData&gt;.DataSelect&lt;T2Data&gt; dataSelect, params CoreEditorDrawer&lt;T2Data&gt;.ActionDrawer[] otherDrawers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.DataSelect-1.html">CoreEditorDrawer.DataSelect</a>&lt;T2Data&gt;</td>
+        <td><span class="parametername">dataSelect</span></td>
+        <td><p>The data new source for the inner drawers</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">otherDrawers</span></td>
+        <td><p>Inner drawers drawed with given data sources</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T2Data</span></td>
+        <td><p>Type of selected object containing in the given data containing data needed to draw inspector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_Select_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Select*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_Select__1_UnityEditor_Rendering_CoreEditorDrawer__0__DataSelect___0__UnityEditor_Rendering_CoreEditorDrawer___0__IDrawer___" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.Select``1(UnityEditor.Rendering.CoreEditorDrawer{`0}.DataSelect{``0},UnityEditor.Rendering.CoreEditorDrawer{``0}.IDrawer[])">Select&lt;T2Data&gt;(CoreEditorDrawer&lt;TData&gt;.DataSelect&lt;T2Data&gt;, CoreEditorDrawer&lt;T2Data&gt;.IDrawer[])</h4>
+  <div class="markdown level1 summary"><p>Create an IDrawer based on an other data container</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer Select&lt;T2Data&gt;(CoreEditorDrawer&lt;TData&gt;.DataSelect&lt;T2Data&gt; dataSelect, params CoreEditorDrawer&lt;T2Data&gt;.IDrawer[] otherDrawers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.DataSelect-1.html">CoreEditorDrawer.DataSelect</a>&lt;T2Data&gt;</td>
+        <td><span class="parametername">dataSelect</span></td>
+        <td><p>The data new source for the inner drawers</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;[]</td>
+        <td><span class="parametername">otherDrawers</span></td>
+        <td><p>Inner drawers drawed with given data sources</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T2Data</span></td>
+        <td><p>Type of selected object containing in the given data containing data needed to draw inspector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_TernaryConditional_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.TernaryConditional*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_TernaryConditional_UnityEditor_Rendering_CoreEditorDrawer__0__Enabler_UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer_UnityEditor_Rendering_CoreEditorDrawer__0__ActionDrawer_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.TernaryConditional(UnityEditor.Rendering.CoreEditorDrawer{`0}.Enabler,UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer,UnityEditor.Rendering.CoreEditorDrawer{`0}.ActionDrawer)">TernaryConditional(CoreEditorDrawer&lt;TData&gt;.Enabler, CoreEditorDrawer&lt;TData&gt;.ActionDrawer, CoreEditorDrawer&lt;TData&gt;.ActionDrawer)</h4>
+  <div class="markdown level1 summary"><p>Conditioned drawer that will draw something depending of the return of the switch</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer TernaryConditional(CoreEditorDrawer&lt;TData&gt;.Enabler switch, CoreEditorDrawer&lt;TData&gt;.ActionDrawer drawIfTrue, CoreEditorDrawer&lt;TData&gt;.ActionDrawer drawIfFalse)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.Enabler.html">CoreEditorDrawer.Enabler</a>&lt;&gt;</td>
+        <td><span class="parametername">switch</span></td>
+        <td><p>Chose witch drawing to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;</td>
+        <td><span class="parametername">drawIfTrue</span></td>
+        <td><p>This will be draw if the <see cref="!:switch"></see> is true</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.ActionDrawer.html">CoreEditorDrawer.ActionDrawer</a>&lt;&gt;</td>
+        <td><span class="parametername">drawIfFalse</span></td>
+        <td><p>This will be draw if the <see cref="!:switch"></see> is false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_CoreEditorDrawer_1_TernaryConditional_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.TernaryConditional*"></a>
+  <h4 id="UnityEditor_Rendering_CoreEditorDrawer_1_TernaryConditional_UnityEditor_Rendering_CoreEditorDrawer__0__Enabler_UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer_UnityEditor_Rendering_CoreEditorDrawer__0__IDrawer_" data-uid="UnityEditor.Rendering.CoreEditorDrawer`1.TernaryConditional(UnityEditor.Rendering.CoreEditorDrawer{`0}.Enabler,UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer,UnityEditor.Rendering.CoreEditorDrawer{`0}.IDrawer)">TernaryConditional(CoreEditorDrawer&lt;TData&gt;.Enabler, CoreEditorDrawer&lt;TData&gt;.IDrawer, CoreEditorDrawer&lt;TData&gt;.IDrawer)</h4>
+  <div class="markdown level1 summary"><p>Conditioned drawer that will draw something depending of the return of the switch</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CoreEditorDrawer&lt;TData&gt;.IDrawer TernaryConditional(CoreEditorDrawer&lt;TData&gt;.Enabler switch, CoreEditorDrawer&lt;TData&gt;.IDrawer drawIfTrue, CoreEditorDrawer&lt;TData&gt;.IDrawer drawIfFalse)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.Enabler.html">CoreEditorDrawer.Enabler</a>&lt;&gt;</td>
+        <td><span class="parametername">switch</span></td>
+        <td><p>Chose witch drawing to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><span class="parametername">drawIfTrue</span></td>
+        <td><p>This will be draw if the <see cref="!:switch"></see> is true</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><span class="parametername">drawIfFalse</span></td>
+        <td><p>This will be draw if the <see cref="!:switch"></see> is false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.CoreEditorDrawer-1.IDrawer.html">CoreEditorDrawer.IDrawer</a>&lt;&gt;</td>
+        <td><p>A IDrawer object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

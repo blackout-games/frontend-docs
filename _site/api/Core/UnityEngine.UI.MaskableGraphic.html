@@ -1,0 +1,683 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MaskableGraphic
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MaskableGraphic
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.UI.MaskableGraphic">
+  
+  
+  <h1 id="UnityEngine_UI_MaskableGraphic" data-uid="UnityEngine.UI.MaskableGraphic" class="text-break">Class MaskableGraphic
+  </h1>
+  <div class="markdown level0 summary"><p>A Graphic that is capable of being masked out.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UnityEngine.UI.Graphic.html">Graphic</a></div>
+    <div class="level2"><span class="xref">MaskableGraphic</span></div>
+      <div class="level3"><a class="xref" href="UnityEngine.UI.Image.html">Image</a></div>
+      <div class="level3"><a class="xref" href="UnityEngine.UI.RawImage.html">RawImage</a></div>
+      <div class="level3"><a class="xref" href="UnityEngine.UI.Text.html">Text</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UnityEngine.UI.ICanvasElement.html">ICanvasElement</a></div>
+    <div><a class="xref" href="UnityEngine.UI.IClippable.html">IClippable</a></div>
+    <div><a class="xref" href="UnityEngine.UI.IMaskable.html">IMaskable</a></div>
+    <div><a class="xref" href="UnityEngine.UI.IMaterialModifier.html">IMaterialModifier</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_s_DefaultUI">Graphic.s_DefaultUI</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_s_WhiteTexture">Graphic.s_WhiteTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_defaultGraphicMaterial">Graphic.defaultGraphicMaterial</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_Material">Graphic.m_Material</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_SkipLayoutUpdate">Graphic.m_SkipLayoutUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_SkipMaterialUpdate">Graphic.m_SkipMaterialUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_color">Graphic.color</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_raycastTarget">Graphic.raycastTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_raycastPadding">Graphic.raycastPadding</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_OnDirtyLayoutCallback">Graphic.m_OnDirtyLayoutCallback</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_OnDirtyVertsCallback">Graphic.m_OnDirtyVertsCallback</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_OnDirtyMaterialCallback">Graphic.m_OnDirtyMaterialCallback</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_s_Mesh">Graphic.s_Mesh</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_CachedMesh">Graphic.m_CachedMesh</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_CachedUvs">Graphic.m_CachedUvs</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_useLegacyMeshGeneration">Graphic.useLegacyMeshGeneration</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetAllDirty">Graphic.SetAllDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetLayoutDirty">Graphic.SetLayoutDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetVerticesDirty">Graphic.SetVerticesDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetMaterialDirty">Graphic.SetMaterialDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnRectTransformDimensionsChange">Graphic.OnRectTransformDimensionsChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnBeforeTransformParentChanged">Graphic.OnBeforeTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_depth">Graphic.depth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_rectTransform">Graphic.rectTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_canvas">Graphic.canvas</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_canvasRenderer">Graphic.canvasRenderer</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_defaultMaterial">Graphic.defaultMaterial</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_material">Graphic.material</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_materialForRendering">Graphic.materialForRendering</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_mainTexture">Graphic.mainTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnDestroy">Graphic.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnCullingChanged">Graphic.OnCullingChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_Rebuild_UnityEngine_UI_CanvasUpdate_">Graphic.Rebuild(CanvasUpdate)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_LayoutComplete">Graphic.LayoutComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_GraphicUpdateComplete">Graphic.GraphicUpdateComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_UpdateMaterial">Graphic.UpdateMaterial()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_UpdateGeometry">Graphic.UpdateGeometry()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_workerMesh">Graphic.workerMesh</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnPopulateMesh_Mesh_">Graphic.OnPopulateMesh(Mesh)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnPopulateMesh_UnityEngine_UI_VertexHelper_">Graphic.OnPopulateMesh(VertexHelper)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnDidApplyAnimationProperties">Graphic.OnDidApplyAnimationProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetNativeSize">Graphic.SetNativeSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_Raycast_Vector2_Camera_">Graphic.Raycast(Vector2, Camera)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_PixelAdjustPoint_Vector2_">Graphic.PixelAdjustPoint(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_GetPixelAdjustedRect">Graphic.GetPixelAdjustedRect()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_CrossFadeColor_Color_System_Single_System_Boolean_System_Boolean_">Graphic.CrossFadeColor(Color, Single, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_CrossFadeColor_Color_System_Single_System_Boolean_System_Boolean_System_Boolean_">Graphic.CrossFadeColor(Color, Single, Boolean, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_CrossFadeAlpha_System_Single_System_Single_System_Boolean_">Graphic.CrossFadeAlpha(Single, Single, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_RegisterDirtyLayoutCallback_UnityAction_">Graphic.RegisterDirtyLayoutCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_UnregisterDirtyLayoutCallback_UnityAction_">Graphic.UnregisterDirtyLayoutCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_RegisterDirtyVerticesCallback_UnityAction_">Graphic.RegisterDirtyVerticesCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_UnregisterDirtyVerticesCallback_UnityAction_">Graphic.UnregisterDirtyVerticesCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_RegisterDirtyMaterialCallback_UnityAction_">Graphic.RegisterDirtyMaterialCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_UnregisterDirtyMaterialCallback_UnityAction_">Graphic.UnregisterDirtyMaterialCallback(UnityAction)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.UI.html">UnityEngine.UI</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_UI_MaskableGraphic_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class MaskableGraphic : Graphic, ICanvasElement, IClippable, IMaskable, IMaterialModifier</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UnityEngine_UI_MaskableGraphic_m_MaskMaterial" data-uid="UnityEngine.UI.MaskableGraphic.m_MaskMaterial">m_MaskMaterial</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Material m_MaskMaterial</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Material</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_UI_MaskableGraphic_m_ShouldRecalculateStencil" data-uid="UnityEngine.UI.MaskableGraphic.m_ShouldRecalculateStencil">m_ShouldRecalculateStencil</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_ShouldRecalculateStencil</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnityEngine_UI_MaskableGraphic_m_StencilValue" data-uid="UnityEngine.UI.MaskableGraphic.m_StencilValue">m_StencilValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int m_StencilValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEngine_UI_MaskableGraphic_isMaskingGraphic_" data-uid="UnityEngine.UI.MaskableGraphic.isMaskingGraphic*"></a>
+  <h4 id="UnityEngine_UI_MaskableGraphic_isMaskingGraphic" data-uid="UnityEngine.UI.MaskableGraphic.isMaskingGraphic">isMaskingGraphic</h4>
+  <div class="markdown level1 summary"><p>Is this graphic the graphic on the same object as a Mask that is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isMaskingGraphic { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_UI_MaskableGraphic_isMaskingGraphic_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If toggled ensure to call MaskUtilities.NotifyStencilStateChanged(this); manually as it changes how stenciles are calculated for this image.</p>
+</div>
+  
+  
+  <a id="UnityEngine_UI_MaskableGraphic_maskable_" data-uid="UnityEngine.UI.MaskableGraphic.maskable*"></a>
+  <h4 id="UnityEngine_UI_MaskableGraphic_maskable" data-uid="UnityEngine.UI.MaskableGraphic.maskable">maskable</h4>
+  <div class="markdown level1 summary"><p>Does this graphic allow masking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool maskable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_MaskableGraphic_onCullStateChanged_" data-uid="UnityEngine.UI.MaskableGraphic.onCullStateChanged*"></a>
+  <h4 id="UnityEngine_UI_MaskableGraphic_onCullStateChanged" data-uid="UnityEngine.UI.MaskableGraphic.onCullStateChanged">onCullStateChanged</h4>
+  <div class="markdown level1 summary"><p>Callback issued when culling changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MaskableGraphic.CullStateChangedEvent onCullStateChanged { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UI.MaskableGraphic.CullStateChangedEvent.html">MaskableGraphic.CullStateChangedEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_UI_MaskableGraphic_onCullStateChanged_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Called whene the culling state of this MaskableGraphic either becomes culled or visible. You can use this to control other elements of your UI as culling happens.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_UI_MaskableGraphic_Cull_" data-uid="UnityEngine.UI.MaskableGraphic.Cull*"></a>
+  <h4 id="UnityEngine_UI_MaskableGraphic_Cull_Rect_System_Boolean_" data-uid="UnityEngine.UI.MaskableGraphic.Cull(Rect,System.Boolean)">Cull(Rect, Boolean)</h4>
+  <div class="markdown level1 summary"><p>See IClippable.Cull</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Cull(Rect clipRect, bool validRect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Rect</span></td>
+        <td><span class="parametername">clipRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">validRect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_MaskableGraphic_GetModifiedMaterial_" data-uid="UnityEngine.UI.MaskableGraphic.GetModifiedMaterial*"></a>
+  <h4 id="UnityEngine_UI_MaskableGraphic_GetModifiedMaterial_Material_" data-uid="UnityEngine.UI.MaskableGraphic.GetModifiedMaterial(Material)">GetModifiedMaterial(Material)</h4>
+  <div class="markdown level1 summary"><p>See IMaterialModifier.GetModifiedMaterial</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Material GetModifiedMaterial(Material baseMaterial)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Material</span></td>
+        <td><span class="parametername">baseMaterial</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Material</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_MaskableGraphic_OnCanvasHierarchyChanged_" data-uid="UnityEngine.UI.MaskableGraphic.OnCanvasHierarchyChanged*"></a>
+  <h4 id="UnityEngine_UI_MaskableGraphic_OnCanvasHierarchyChanged" data-uid="UnityEngine.UI.MaskableGraphic.OnCanvasHierarchyChanged">OnCanvasHierarchyChanged()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnCanvasHierarchyChanged()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnCanvasHierarchyChanged">Graphic.OnCanvasHierarchyChanged()</a></div>
+  
+  
+  <a id="UnityEngine_UI_MaskableGraphic_OnDisable_" data-uid="UnityEngine.UI.MaskableGraphic.OnDisable*"></a>
+  <h4 id="UnityEngine_UI_MaskableGraphic_OnDisable" data-uid="UnityEngine.UI.MaskableGraphic.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnDisable">Graphic.OnDisable()</a></div>
+  
+  
+  <a id="UnityEngine_UI_MaskableGraphic_OnEnable_" data-uid="UnityEngine.UI.MaskableGraphic.OnEnable*"></a>
+  <h4 id="UnityEngine_UI_MaskableGraphic_OnEnable" data-uid="UnityEngine.UI.MaskableGraphic.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnEnable">Graphic.OnEnable()</a></div>
+  
+  
+  <a id="UnityEngine_UI_MaskableGraphic_OnTransformParentChanged_" data-uid="UnityEngine.UI.MaskableGraphic.OnTransformParentChanged*"></a>
+  <h4 id="UnityEngine_UI_MaskableGraphic_OnTransformParentChanged" data-uid="UnityEngine.UI.MaskableGraphic.OnTransformParentChanged">OnTransformParentChanged()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnTransformParentChanged()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnTransformParentChanged">Graphic.OnTransformParentChanged()</a></div>
+  
+  
+  <a id="UnityEngine_UI_MaskableGraphic_RecalculateClipping_" data-uid="UnityEngine.UI.MaskableGraphic.RecalculateClipping*"></a>
+  <h4 id="UnityEngine_UI_MaskableGraphic_RecalculateClipping" data-uid="UnityEngine.UI.MaskableGraphic.RecalculateClipping">RecalculateClipping()</h4>
+  <div class="markdown level1 summary"><p>See IClippable.RecalculateClipping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RecalculateClipping()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_MaskableGraphic_RecalculateMasking_" data-uid="UnityEngine.UI.MaskableGraphic.RecalculateMasking*"></a>
+  <h4 id="UnityEngine_UI_MaskableGraphic_RecalculateMasking" data-uid="UnityEngine.UI.MaskableGraphic.RecalculateMasking">RecalculateMasking()</h4>
+  <div class="markdown level1 summary"><p>See IMaskable.RecalculateMasking</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RecalculateMasking()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_UI_MaskableGraphic_SetClipRect_" data-uid="UnityEngine.UI.MaskableGraphic.SetClipRect*"></a>
+  <h4 id="UnityEngine_UI_MaskableGraphic_SetClipRect_Rect_System_Boolean_" data-uid="UnityEngine.UI.MaskableGraphic.SetClipRect(Rect,System.Boolean)">SetClipRect(Rect, Boolean)</h4>
+  <div class="markdown level1 summary"><p>See IClippable.SetClipRect</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetClipRect(Rect clipRect, bool validRect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Rect</span></td>
+        <td><span class="parametername">clipRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">validRect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_UI_MaskableGraphic_SetClipSoftness_" data-uid="UnityEngine.UI.MaskableGraphic.SetClipSoftness*"></a>
+  <h4 id="UnityEngine_UI_MaskableGraphic_SetClipSoftness_Vector2_" data-uid="UnityEngine.UI.MaskableGraphic.SetClipSoftness(Vector2)">SetClipSoftness(Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetClipSoftness(Vector2 clipSoftness)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">clipSoftness</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UnityEngine.UI.ICanvasElement.html">ICanvasElement</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UI.IClippable.html">IClippable</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UI.IMaskable.html">IMaskable</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UI.IMaterialModifier.html">IMaterialModifier</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

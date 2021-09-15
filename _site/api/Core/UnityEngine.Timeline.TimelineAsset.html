@@ -1,0 +1,977 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TimelineAsset
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TimelineAsset
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.Timeline.TimelineAsset">
+  
+  
+  <h1 id="UnityEngine_Timeline_TimelineAsset" data-uid="UnityEngine.Timeline.TimelineAsset" class="text-break">Class TimelineAsset
+  </h1>
+  <div class="markdown level0 summary"><p>A PlayableAsset that represents a timeline.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TimelineAsset</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">ISerializationCallbackReceiver</span></div>
+    <div><a class="xref" href="UnityEngine.Timeline.ITimelineClipAsset.html">ITimelineClipAsset</a></div>
+    <div><a class="xref" href="UnityEngine.Timeline.IPropertyPreview.html">IPropertyPreview</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.Timeline.html">UnityEngine.Timeline</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_Timeline_TimelineAsset_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TimelineAsset : PlayableAsset, ISerializationCallbackReceiver, ITimelineClipAsset, IPropertyPreview</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_clipCaps_" data-uid="UnityEngine.Timeline.TimelineAsset.clipCaps*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_clipCaps" data-uid="UnityEngine.Timeline.TimelineAsset.clipCaps">clipCaps</h4>
+  <div class="markdown level1 summary"><p>The capabilities supported by all clips in the timeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClipCaps clipCaps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.ClipCaps.html">ClipCaps</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_duration_" data-uid="UnityEngine.Timeline.TimelineAsset.duration*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_duration" data-uid="UnityEngine.Timeline.TimelineAsset.duration">duration</h4>
+  <div class="markdown level1 summary"><p>The length, in seconds, of the timeline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override double duration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_durationMode_" data-uid="UnityEngine.Timeline.TimelineAsset.durationMode*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_durationMode" data-uid="UnityEngine.Timeline.TimelineAsset.durationMode">durationMode</h4>
+  <div class="markdown level1 summary"><p>The mode used to determine the duration of the Timeline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimelineAsset.DurationMode durationMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineAsset.DurationMode.html">TimelineAsset.DurationMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_editorSettings_" data-uid="UnityEngine.Timeline.TimelineAsset.editorSettings*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_editorSettings" data-uid="UnityEngine.Timeline.TimelineAsset.editorSettings">editorSettings</h4>
+  <div class="markdown level1 summary"><p>Settings used by timeline for editing purposes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimelineAsset.EditorSettings editorSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineAsset.EditorSettings.html">TimelineAsset.EditorSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_fixedDuration_" data-uid="UnityEngine.Timeline.TimelineAsset.fixedDuration*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_fixedDuration" data-uid="UnityEngine.Timeline.TimelineAsset.fixedDuration">fixedDuration</h4>
+  <div class="markdown level1 summary"><p>The length of the timeline when durationMode is set to fixed length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double fixedDuration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_markerTrack_" data-uid="UnityEngine.Timeline.TimelineAsset.markerTrack*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_markerTrack" data-uid="UnityEngine.Timeline.TimelineAsset.markerTrack">markerTrack</h4>
+  <div class="markdown level1 summary"><p>Gets the marker track for this TimelineAsset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MarkerTrack markerTrack { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.MarkerTrack.html">MarkerTrack</a></td>
+        <td><p>Returns the marker track.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TimelineAsset_markerTrack_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use <a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_GetMarkers">GetMarkers()</a> to get a list of the markers on the returned track.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_outputs_" data-uid="UnityEngine.Timeline.TimelineAsset.outputs*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_outputs" data-uid="UnityEngine.Timeline.TimelineAsset.outputs">outputs</h4>
+  <div class="markdown level1 summary"><p>A description of the PlayableOutputs that will be created by the timeline when instantiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;PlayableBinding&gt; outputs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">PlayableBinding</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TimelineAsset_outputs_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Each track will create an PlayableOutput</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_outputTrackCount_" data-uid="UnityEngine.Timeline.TimelineAsset.outputTrackCount*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_outputTrackCount" data-uid="UnityEngine.Timeline.TimelineAsset.outputTrackCount">outputTrackCount</h4>
+  <div class="markdown level1 summary"><p>Returns the the number of output tracks in the Timeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int outputTrackCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TimelineAsset_outputTrackCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>An output track is a track the generates a PlayableOutput. In general, an output track is any track that is not a GroupTrack, a subtrack, or override track.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_rootTrackCount_" data-uid="UnityEngine.Timeline.TimelineAsset.rootTrackCount*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_rootTrackCount" data-uid="UnityEngine.Timeline.TimelineAsset.rootTrackCount">rootTrackCount</h4>
+  <div class="markdown level1 summary"><p>Returns the number of tracks at the root level of the timeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int rootTrackCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TimelineAsset_rootTrackCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A root track refers to all tracks that occur at the root of the timeline. These are the outmost level GroupTracks, and output tracks that do not belong to any group</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_CreateMarkerTrack_" data-uid="UnityEngine.Timeline.TimelineAsset.CreateMarkerTrack*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_CreateMarkerTrack" data-uid="UnityEngine.Timeline.TimelineAsset.CreateMarkerTrack">CreateMarkerTrack()</h4>
+  <div class="markdown level1 summary"><p>Creates a marker track for the TimelineAsset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateMarkerTrack()</code></pre>
+  </div>
+  <h5 id="UnityEngine_Timeline_TimelineAsset_CreateMarkerTrack_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This track is always bound to the GameObject that contains the PlayableDirector component for the current timeline.
+The marker track is created the first time this method is called. If the marker track is already created, this method does nothing.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_CreatePlayable_" data-uid="UnityEngine.Timeline.TimelineAsset.CreatePlayable*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_CreatePlayable_PlayableGraph_GameObject_" data-uid="UnityEngine.Timeline.TimelineAsset.CreatePlayable(PlayableGraph,GameObject)">CreatePlayable(PlayableGraph, GameObject)</h4>
+  <div class="markdown level1 summary"><p>Creates an instance of the timeline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Playable CreatePlayable(PlayableGraph graph, GameObject go)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayableGraph</span></td>
+        <td><span class="parametername">graph</span></td>
+        <td><p>PlayableGraph that will own the playable</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">go</span></td>
+        <td><p>The gameobject that triggered the graph build</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Playable</span></td>
+        <td><p>The Root Playable of the Timeline</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_CreateTrack_" data-uid="UnityEngine.Timeline.TimelineAsset.CreateTrack*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_CreateTrack_Type_UnityEngine_Timeline_TrackAsset_System_String_" data-uid="UnityEngine.Timeline.TimelineAsset.CreateTrack(Type,UnityEngine.Timeline.TrackAsset,System.String)">CreateTrack(Type, TrackAsset, String)</h4>
+  <div class="markdown level1 summary"><p>Allows you to create a track and add it to the Timeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackAsset CreateTrack(Type type, TrackAsset parent, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of track to create. Must derive from TrackAsset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TrackAsset.html">TrackAsset</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>Track to parent to. This can be null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name to give the track.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TrackAsset.html">TrackAsset</a></td>
+        <td><p>The created track.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TimelineAsset_CreateTrack_Type_UnityEngine_Timeline_TrackAsset_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will throw an InvalidOperationException if the parent is not valid. The parent can be any GroupTrack, or a supported parent type of track. For example, this can be used to create override tracks in AnimationTracks.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_CreateTrack_" data-uid="UnityEngine.Timeline.TimelineAsset.CreateTrack*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_CreateTrack__1" data-uid="UnityEngine.Timeline.TimelineAsset.CreateTrack``1">CreateTrack&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Creates a track and adds it to the Timeline Asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T CreateTrack&lt;T&gt;()
+    where T : TrackAsset, new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Returns the created track.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of track being created. The track type must be derived from TrackAsset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_CreateTrack_" data-uid="UnityEngine.Timeline.TimelineAsset.CreateTrack*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_CreateTrack__1_System_String_" data-uid="UnityEngine.Timeline.TimelineAsset.CreateTrack``1(System.String)">CreateTrack&lt;T&gt;(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a track and adds it to the Timeline Asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T CreateTrack&lt;T&gt;(string trackName)
+    where T : TrackAsset, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">trackName</span></td>
+        <td><p>The name of the track being created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Returns the created track.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of track being created. The track type must be derived from TrackAsset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_CreateTrack_" data-uid="UnityEngine.Timeline.TimelineAsset.CreateTrack*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_CreateTrack__1_UnityEngine_Timeline_TrackAsset_System_String_" data-uid="UnityEngine.Timeline.TimelineAsset.CreateTrack``1(UnityEngine.Timeline.TrackAsset,System.String)">CreateTrack&lt;T&gt;(TrackAsset, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a track and adds it to the Timeline Asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T CreateTrack&lt;T&gt;(TrackAsset parent, string trackName)
+    where T : TrackAsset, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TrackAsset.html">TrackAsset</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>Track to parent to. This can be null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">trackName</span></td>
+        <td><p>The name of the track being created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Returns the created track.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of track being created. The track type must be derived from TrackAsset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TimelineAsset_CreateTrack__1_UnityEngine_Timeline_TrackAsset_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will throw an InvalidOperationException if the parent is not valid. The parent can be any GroupTrack, or a supported parent type of track. For example, this can be used to create override tracks in AnimationTracks.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_DeleteClip_" data-uid="UnityEngine.Timeline.TimelineAsset.DeleteClip*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_DeleteClip_UnityEngine_Timeline_TimelineClip_" data-uid="UnityEngine.Timeline.TimelineAsset.DeleteClip(UnityEngine.Timeline.TimelineClip)">DeleteClip(TimelineClip)</h4>
+  <div class="markdown level1 summary"><p>Delete a clip from this timeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeleteClip(TimelineClip clip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineClip.html">TimelineClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>The clip to delete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Returns true if the removal was successful</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TimelineAsset_DeleteClip_UnityEngine_Timeline_TimelineClip__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will delete a clip and any assets owned by the clip.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_DeleteTrack_" data-uid="UnityEngine.Timeline.TimelineAsset.DeleteTrack*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_DeleteTrack_UnityEngine_Timeline_TrackAsset_" data-uid="UnityEngine.Timeline.TimelineAsset.DeleteTrack(UnityEngine.Timeline.TrackAsset)">DeleteTrack(TrackAsset)</h4>
+  <div class="markdown level1 summary"><p>Deletes a track from a timeline, including all clips and subtracks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeleteTrack(TrackAsset track)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TrackAsset.html">TrackAsset</a></td>
+        <td><span class="parametername">track</span></td>
+        <td><p>The track to delete. It must be owned by this Timeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the track was deleted successfully.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_GatherProperties_" data-uid="UnityEngine.Timeline.TimelineAsset.GatherProperties*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_GatherProperties_PlayableDirector_UnityEngine_Timeline_IPropertyCollector_" data-uid="UnityEngine.Timeline.TimelineAsset.GatherProperties(PlayableDirector,UnityEngine.Timeline.IPropertyCollector)">GatherProperties(PlayableDirector, IPropertyCollector)</h4>
+  <div class="markdown level1 summary"><p>Called by the Timeline Editor to gather properties requiring preview.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GatherProperties(PlayableDirector director, IPropertyCollector driver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayableDirector</span></td>
+        <td><span class="parametername">director</span></td>
+        <td><p>The PlayableDirector invoking the preview</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.IPropertyCollector.html">IPropertyCollector</a></td>
+        <td><span class="parametername">driver</span></td>
+        <td><p>PropertyCollector used to gather previewable properties</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_GetOutputTrack_" data-uid="UnityEngine.Timeline.TimelineAsset.GetOutputTrack*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_GetOutputTrack_System_Int32_" data-uid="UnityEngine.Timeline.TimelineAsset.GetOutputTrack(System.Int32)">GetOutputTrack(Int32)</h4>
+  <div class="markdown level1 summary"><p>Retrives the output track from the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackAsset GetOutputTrack(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Index of the output track to retrieve. Must be between 0 and outputTrackCount</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TrackAsset.html">TrackAsset</a></td>
+        <td><p>The output track from the given index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_GetOutputTracks_" data-uid="UnityEngine.Timeline.TimelineAsset.GetOutputTracks*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_GetOutputTracks" data-uid="UnityEngine.Timeline.TimelineAsset.GetOutputTracks">GetOutputTracks()</h4>
+  <div class="markdown level1 summary"><p>Gets a list of all output tracks in the Timeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TrackAsset&gt; GetOutputTracks()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="UnityEngine.Timeline.TrackAsset.html">TrackAsset</a>&gt;</td>
+        <td><p>An IEnumerable of all output tracks</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TimelineAsset_GetOutputTracks_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>An output track is a track the generates a PlayableOutput. In general, an output track is any track that is not a GroupTrack or subtrack.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_GetRootTrack_" data-uid="UnityEngine.Timeline.TimelineAsset.GetRootTrack*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_GetRootTrack_System_Int32_" data-uid="UnityEngine.Timeline.TimelineAsset.GetRootTrack(System.Int32)">GetRootTrack(Int32)</h4>
+  <div class="markdown level1 summary"><p>Retrieves at root track at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackAsset GetRootTrack(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Index of the root track to get. Must be between 0 and rootTrackCount</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TrackAsset.html">TrackAsset</a></td>
+        <td><p>Root track at the specified index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TimelineAsset_GetRootTrack_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A root track refers to all tracks that occur at the root of the timeline. These are the outmost level GroupTracks, and output tracks that do not belong to any group.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TimelineAsset_GetRootTracks_" data-uid="UnityEngine.Timeline.TimelineAsset.GetRootTracks*"></a>
+  <h4 id="UnityEngine_Timeline_TimelineAsset_GetRootTracks" data-uid="UnityEngine.Timeline.TimelineAsset.GetRootTracks">GetRootTracks()</h4>
+  <div class="markdown level1 summary"><p>Get an enumerable list of all root tracks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TrackAsset&gt; GetRootTracks()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="UnityEngine.Timeline.TrackAsset.html">TrackAsset</a>&gt;</td>
+        <td><p>An IEnumerable of all root tracks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TimelineAsset_GetRootTracks_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A root track refers to all tracks that occur at the root of the timeline. These are the outmost level GroupTracks, and output tracks that do not belong to any group.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">ISerializationCallbackReceiver</span>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Timeline.ITimelineClipAsset.html">ITimelineClipAsset</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Timeline.IPropertyPreview.html">IPropertyPreview</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

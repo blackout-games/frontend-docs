@@ -1,0 +1,789 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class X509Crl
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class X509Crl
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl">
+  
+  
+  <h1 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl" class="text-break">Class X509Crl
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509ExtensionBase.html">X509ExtensionBase</a></div>
+    <div class="level2"><span class="xref">X509Crl</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.IX509Extension.html">IX509Extension</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509ExtensionBase.html#BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509ExtensionBase_GetExtensionOids_System_Boolean_">X509ExtensionBase.GetExtensionOids(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509ExtensionBase.html#BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509ExtensionBase_GetNonCriticalExtensionOids">X509ExtensionBase.GetNonCriticalExtensionOids()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509ExtensionBase.html#BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509ExtensionBase_GetCriticalExtensionOids">X509ExtensionBase.GetCriticalExtensionOids()</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509ExtensionBase.html#BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509ExtensionBase_GetExtensionValue_System_String_">X509ExtensionBase.GetExtensionValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509ExtensionBase.html#BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509ExtensionBase_GetExtensionValue_DerObjectIdentifier_">X509ExtensionBase.GetExtensionValue(DerObjectIdentifier)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.html">BestHTTP.SecureProtocol.Org.BouncyCastle.X509</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class X509Crl : X509ExtensionBase, IX509Extension</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl__ctor_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.#ctor*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl__ctor_CertificateList_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.#ctor(CertificateList)">X509Crl(CertificateList)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public X509Crl(CertificateList c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CertificateList</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_IsIndirectCrl_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.IsIndirectCrl*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_IsIndirectCrl" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.IsIndirectCrl">IsIndirectCrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsIndirectCrl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_IssuerDN_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.IssuerDN*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_IssuerDN" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.IssuerDN">IssuerDN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual X509Name IssuerDN { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">X509Name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_NextUpdate_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.NextUpdate*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_NextUpdate" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.NextUpdate">NextUpdate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DateTimeObject NextUpdate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTimeObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_SigAlgName_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.SigAlgName*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_SigAlgName" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.SigAlgName">SigAlgName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string SigAlgName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_SigAlgOid_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.SigAlgOid*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_SigAlgOid" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.SigAlgOid">SigAlgOid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string SigAlgOid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_ThisUpdate_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.ThisUpdate*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_ThisUpdate" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.ThisUpdate">ThisUpdate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DateTime ThisUpdate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_Version_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.Version*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_Version" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.Version">Version</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Version { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_CheckSignature_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.CheckSignature*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_CheckSignature_IVerifierFactory_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.CheckSignature(IVerifierFactory)">CheckSignature(IVerifierFactory)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CheckSignature(IVerifierFactory verifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IVerifierFactory</span></td>
+        <td><span class="parametername">verifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_Equals_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.Equals*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_Equals_System_Object_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetEncoded_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetEncoded*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetEncoded" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetEncoded">GetEncoded()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] GetEncoded()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetHashCode_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetHashCode*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetHashCode" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetRevokedCertificate_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetRevokedCertificate*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetRevokedCertificate_BigInteger_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetRevokedCertificate(BigInteger)">GetRevokedCertificate(BigInteger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual X509CrlEntry GetRevokedCertificate(BigInteger serialNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BigInteger</span></td>
+        <td><span class="parametername">serialNumber</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509CrlEntry.html">X509CrlEntry</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetRevokedCertificates_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetRevokedCertificates*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetRevokedCertificates" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetRevokedCertificates">GetRevokedCertificates()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ISet GetRevokedCertificates()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ISet</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetSigAlgParams_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetSigAlgParams*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetSigAlgParams" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetSigAlgParams">GetSigAlgParams()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] GetSigAlgParams()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetSignature_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetSignature*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetSignature" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetSignature">GetSignature()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] GetSignature()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetTbsCertList_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetTbsCertList*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetTbsCertList" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetTbsCertList">GetTbsCertList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] GetTbsCertList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetX509Extensions_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetX509Extensions*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_GetX509Extensions" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.GetX509Extensions">GetX509Extensions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override X509Extensions GetX509Extensions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">X509Extensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509ExtensionBase.html#BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509ExtensionBase_GetX509Extensions">X509ExtensionBase.GetX509Extensions()</a></div>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_IsRevoked_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.IsRevoked*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_IsRevoked_BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Certificate_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.IsRevoked(BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Certificate)">IsRevoked(X509Certificate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsRevoked(X509Certificate cert)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Certificate.html">X509Certificate</a></td>
+        <td><span class="parametername">cert</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_ToString_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.ToString*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_ToString" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_Verify_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.Verify*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_Verify_AsymmetricKeyParameter_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.Verify(AsymmetricKeyParameter)">Verify(AsymmetricKeyParameter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Verify(AsymmetricKeyParameter publicKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AsymmetricKeyParameter</span></td>
+        <td><span class="parametername">publicKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_Verify_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.Verify*"></a>
+  <h4 id="BestHTTP_SecureProtocol_Org_BouncyCastle_X509_X509Crl_Verify_IVerifierFactoryProvider_" data-uid="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.X509Crl.Verify(IVerifierFactoryProvider)">Verify(IVerifierFactoryProvider)</h4>
+  <div class="markdown level1 summary"><p>Verify the CRL's signature using a verifier created using the passed in verifier provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Verify(IVerifierFactoryProvider verifierProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IVerifierFactoryProvider</span></td>
+        <td><span class="parametername">verifierProvider</span></td>
+        <td><p>An appropriate provider for verifying the CRL's signature.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="BestHTTP.SecureProtocol.Org.BouncyCastle.X509.IX509Extension.html">IX509Extension</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

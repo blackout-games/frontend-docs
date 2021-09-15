@@ -1,0 +1,892 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WebSocket
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WebSocket
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BestHTTP.WebSocket.WebSocket">
+  
+  
+  <h1 id="BestHTTP_WebSocket_WebSocket" data-uid="BestHTTP.WebSocket.WebSocket" class="text-break">Class WebSocket
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">WebSocket</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BestHTTP.WebSocket.html">BestHTTP.WebSocket</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="BestHTTP_WebSocket_WebSocket_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class WebSocket</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket__ctor_" data-uid="BestHTTP.WebSocket.WebSocket.#ctor*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket__ctor_Uri_" data-uid="BestHTTP.WebSocket.WebSocket.#ctor(Uri)">WebSocket(Uri)</h4>
+  <div class="markdown level1 summary"><p>Creates a WebSocket instance from the given uri.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebSocket(Uri uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Uri</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>The uri of the WebSocket server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket__ctor_" data-uid="BestHTTP.WebSocket.WebSocket.#ctor*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket__ctor_Uri_System_String_System_String_IExtension___" data-uid="BestHTTP.WebSocket.WebSocket.#ctor(Uri,System.String,System.String,IExtension[])">WebSocket(Uri, String, String, IExtension[])</h4>
+  <div class="markdown level1 summary"><p>Creates a WebSocket instance from the given uri, protocol and origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebSocket(Uri uri, string origin, string protocol, params IExtension[] extensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Uri</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>The uri of the WebSocket server</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">origin</span></td>
+        <td><p>Servers that are not intended to process input from any web page but only for certain sites SHOULD verify the |Origin| field is an origin they expect.
+If the origin indicated is unacceptable to the server, then it SHOULD respond to the WebSocket handshake with a reply containing HTTP 403 Forbidden status code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">protocol</span></td>
+        <td><p>The application-level protocol that the client want to use(eg. &quot;chat&quot;, &quot;leaderboard&quot;, etc.). Can be null or empty string if not used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IExtension</span>[]</td>
+        <td><span class="parametername">extensions</span></td>
+        <td><p>Optional IExtensions implementations</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BestHTTP_WebSocket_WebSocket_OnBinary" data-uid="BestHTTP.WebSocket.WebSocket.OnBinary">OnBinary</h4>
+  <div class="markdown level1 summary"><p>Called when a new binary message is received from the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OnWebSocketBinaryDelegate OnBinary</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.WebSocket.OnWebSocketBinaryDelegate.html">OnWebSocketBinaryDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_WebSocket_WebSocket_OnClosed" data-uid="BestHTTP.WebSocket.WebSocket.OnClosed">OnClosed</h4>
+  <div class="markdown level1 summary"><p>Called when the WebSocket connection is closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OnWebSocketClosedDelegate OnClosed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.WebSocket.OnWebSocketClosedDelegate.html">OnWebSocketClosedDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_WebSocket_WebSocket_OnError" data-uid="BestHTTP.WebSocket.WebSocket.OnError">OnError</h4>
+  <div class="markdown level1 summary"><p>Called when an error is encountered. The parameter will be the description of the error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OnWebSocketErrorDelegate OnError</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.WebSocket.OnWebSocketErrorDelegate.html">OnWebSocketErrorDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_WebSocket_WebSocket_OnIncompleteFrame" data-uid="BestHTTP.WebSocket.WebSocket.OnIncompleteFrame">OnIncompleteFrame</h4>
+  <div class="markdown level1 summary"><p>Called when an incomplete frame received. No attempt will be made to reassemble these fragments internally, and no reference are stored after this event to this frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OnWebSocketIncompleteFrameDelegate OnIncompleteFrame</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.WebSocket.OnWebSocketIncompleteFrameDelegate.html">OnWebSocketIncompleteFrameDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_WebSocket_WebSocket_OnMessage" data-uid="BestHTTP.WebSocket.WebSocket.OnMessage">OnMessage</h4>
+  <div class="markdown level1 summary"><p>Called when a new textual message is received from the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OnWebSocketMessageDelegate OnMessage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.WebSocket.OnWebSocketMessageDelegate.html">OnWebSocketMessageDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BestHTTP_WebSocket_WebSocket_OnOpen" data-uid="BestHTTP.WebSocket.WebSocket.OnOpen">OnOpen</h4>
+  <div class="markdown level1 summary"><p>Called when the connection to the WebSocket server is established.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OnWebSocketOpenDelegate OnOpen</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.WebSocket.OnWebSocketOpenDelegate.html">OnWebSocketOpenDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_BufferedAmount_" data-uid="BestHTTP.WebSocket.WebSocket.BufferedAmount*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_BufferedAmount" data-uid="BestHTTP.WebSocket.WebSocket.BufferedAmount">BufferedAmount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BufferedAmount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_CloseAfterNoMesssage_" data-uid="BestHTTP.WebSocket.WebSocket.CloseAfterNoMesssage*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_CloseAfterNoMesssage" data-uid="BestHTTP.WebSocket.WebSocket.CloseAfterNoMesssage">CloseAfterNoMesssage</h4>
+  <div class="markdown level1 summary"><p>If StartPingThread set to true, the plugin will close the connection and emit an OnError event if no
+message is received from the server in the given time. Its default value is 2 sec.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan CloseAfterNoMesssage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_Context_" data-uid="BestHTTP.WebSocket.WebSocket.Context*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_Context" data-uid="BestHTTP.WebSocket.WebSocket.Context">Context</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LoggingContext Context { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LoggingContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_Extensions_" data-uid="BestHTTP.WebSocket.WebSocket.Extensions*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_Extensions" data-uid="BestHTTP.WebSocket.WebSocket.Extensions">Extensions</h4>
+  <div class="markdown level1 summary"><p>IExtension implementations the plugin will negotiate with the server to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IExtension[] Extensions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IExtension</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_InternalRequest_" data-uid="BestHTTP.WebSocket.WebSocket.InternalRequest*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_InternalRequest" data-uid="BestHTTP.WebSocket.WebSocket.InternalRequest">InternalRequest</h4>
+  <div class="markdown level1 summary"><p>The internal HTTPRequest object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HTTPRequest InternalRequest { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.HTTPRequest.html">HTTPRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_IsOpen_" data-uid="BestHTTP.WebSocket.WebSocket.IsOpen*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_IsOpen" data-uid="BestHTTP.WebSocket.WebSocket.IsOpen">IsOpen</h4>
+  <div class="markdown level1 summary"><p>The connection to the WebSocket server is open.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOpen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_LastMessageReceived_" data-uid="BestHTTP.WebSocket.WebSocket.LastMessageReceived*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_LastMessageReceived" data-uid="BestHTTP.WebSocket.WebSocket.LastMessageReceived">LastMessageReceived</h4>
+  <div class="markdown level1 summary"><p>When we received the last message from the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime LastMessageReceived { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_Latency_" data-uid="BestHTTP.WebSocket.WebSocket.Latency*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_Latency" data-uid="BestHTTP.WebSocket.WebSocket.Latency">Latency</h4>
+  <div class="markdown level1 summary"><p>Latency calculated from the ping-pong message round-trip times.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Latency { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_PingFrequency_" data-uid="BestHTTP.WebSocket.WebSocket.PingFrequency*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_PingFrequency" data-uid="BestHTTP.WebSocket.WebSocket.PingFrequency">PingFrequency</h4>
+  <div class="markdown level1 summary"><p>The delay between two Pings in milliseconds. Minimum value is 100, default is 1000.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PingFrequency { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_StartPingThread_" data-uid="BestHTTP.WebSocket.WebSocket.StartPingThread*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_StartPingThread" data-uid="BestHTTP.WebSocket.WebSocket.StartPingThread">StartPingThread</h4>
+  <div class="markdown level1 summary"><p>Set to true to start a new thread to send Pings to the WebSocket server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartPingThread { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_State_" data-uid="BestHTTP.WebSocket.WebSocket.State*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_State" data-uid="BestHTTP.WebSocket.WebSocket.State">State</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebSocketStates State { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BestHTTP.WebSocket.WebSocketStates.html">WebSocketStates</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_Close_" data-uid="BestHTTP.WebSocket.WebSocket.Close*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_Close" data-uid="BestHTTP.WebSocket.WebSocket.Close">Close()</h4>
+  <div class="markdown level1 summary"><p>It will initiate the closing of the connection to the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_Close_" data-uid="BestHTTP.WebSocket.WebSocket.Close*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_Close_UInt16_System_String_" data-uid="BestHTTP.WebSocket.WebSocket.Close(UInt16,System.String)">Close(UInt16, String)</h4>
+  <div class="markdown level1 summary"><p>It will initiate the closing of the connection to the server sending the given code and message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close(UInt16 code, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UInt16</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_EncodeCloseData_" data-uid="BestHTTP.WebSocket.WebSocket.EncodeCloseData*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_EncodeCloseData_UInt16_System_String_" data-uid="BestHTTP.WebSocket.WebSocket.EncodeCloseData(UInt16,System.String)">EncodeCloseData(UInt16, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] EncodeCloseData(UInt16 code, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UInt16</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_Open_" data-uid="BestHTTP.WebSocket.WebSocket.Open*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_Open" data-uid="BestHTTP.WebSocket.WebSocket.Open">Open()</h4>
+  <div class="markdown level1 summary"><p>Start the opening process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Open()</code></pre>
+  </div>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_Send_" data-uid="BestHTTP.WebSocket.WebSocket.Send*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_Send_System_Byte___" data-uid="BestHTTP.WebSocket.WebSocket.Send(System.Byte[])">Send(Byte[])</h4>
+  <div class="markdown level1 summary"><p>It will send the given data to the server in one frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(byte[] buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_Send_" data-uid="BestHTTP.WebSocket.WebSocket.Send*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_Send_System_Byte___System_UInt64_System_UInt64_" data-uid="BestHTTP.WebSocket.WebSocket.Send(System.Byte[],System.UInt64,System.UInt64)">Send(Byte[], UInt64, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Will send count bytes from a byte array, starting from offset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(byte[] buffer, ulong offset, ulong count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_Send_" data-uid="BestHTTP.WebSocket.WebSocket.Send*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_Send_System_String_" data-uid="BestHTTP.WebSocket.WebSocket.Send(System.String)">Send(String)</h4>
+  <div class="markdown level1 summary"><p>It will send the given message to the server in one frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BestHTTP_WebSocket_WebSocket_Send_" data-uid="BestHTTP.WebSocket.WebSocket.Send*"></a>
+  <h4 id="BestHTTP_WebSocket_WebSocket_Send_WebSocketFrame_" data-uid="BestHTTP.WebSocket.WebSocket.Send(WebSocketFrame)">Send(WebSocketFrame)</h4>
+  <div class="markdown level1 summary"><p>It will send the given frame to the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(WebSocketFrame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WebSocketFrame</span></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

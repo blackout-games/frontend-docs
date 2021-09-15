@@ -1,0 +1,1453 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct RigidTransform
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct RigidTransform
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Unity.Mathematics.RigidTransform">
+  
+  
+  <h1 id="Unity_Mathematics_RigidTransform" data-uid="Unity.Mathematics.RigidTransform" class="text-break">Struct RigidTransform
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Unity.Mathematics.html">Unity.Mathematics</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Unity_Mathematics_RigidTransform_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct RigidTransform</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform__ctor_" data-uid="Unity.Mathematics.RigidTransform.#ctor*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform__ctor_Unity_Mathematics_float3x3_Unity_Mathematics_float3_" data-uid="Unity.Mathematics.RigidTransform.#ctor(Unity.Mathematics.float3x3,Unity.Mathematics.float3)">RigidTransform(float3x3, float3)</h4>
+  <div class="markdown level1 summary"><p>Constructs a RigidTransform from a rotation represented by a float3x3 matrix and a translation represented by a float3 vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RigidTransform(float3x3 rotation, float3 translation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.float3x3.html">float3x3</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.float3.html">float3</a></td>
+        <td><span class="parametername">translation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform__ctor_" data-uid="Unity.Mathematics.RigidTransform.#ctor*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform__ctor_Unity_Mathematics_float4x4_" data-uid="Unity.Mathematics.RigidTransform.#ctor(Unity.Mathematics.float4x4)">RigidTransform(float4x4)</h4>
+  <div class="markdown level1 summary"><p>Constructs a RigidTransform from a float4x4. Assumes the matrix is orthonormal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RigidTransform(float4x4 transform)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform__ctor_" data-uid="Unity.Mathematics.RigidTransform.#ctor*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform__ctor_Unity_Mathematics_quaternion_Unity_Mathematics_float3_" data-uid="Unity.Mathematics.RigidTransform.#ctor(Unity.Mathematics.quaternion,Unity.Mathematics.float3)">RigidTransform(quaternion, float3)</h4>
+  <div class="markdown level1 summary"><p>Constructs a RigidTransform from a rotation represented by a unit quaternion and a translation represented by a float3 vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RigidTransform(quaternion rotation, float3 translation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.quaternion.html">quaternion</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.float3.html">float3</a></td>
+        <td><span class="parametername">translation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Unity_Mathematics_RigidTransform_identity" data-uid="Unity.Mathematics.RigidTransform.identity">identity</h4>
+  <div class="markdown level1 summary"><p>A RigidTransform representing the identity transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly RigidTransform identity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Unity_Mathematics_RigidTransform_pos" data-uid="Unity.Mathematics.RigidTransform.pos">pos</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 pos</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.float3.html">float3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Unity_Mathematics_RigidTransform_rot" data-uid="Unity.Mathematics.RigidTransform.rot">rot</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public quaternion rot</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.quaternion.html">quaternion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_AxisAngle_" data-uid="Unity.Mathematics.RigidTransform.AxisAngle*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_AxisAngle_Unity_Mathematics_float3_System_Single_" data-uid="Unity.Mathematics.RigidTransform.AxisAngle(Unity.Mathematics.float3,System.Single)">AxisAngle(float3, Single)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform representing a rotation around a unit axis by an angle in radians.
+The rotation direction is clockwise when looking along the rotation axis towards the origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform AxisAngle(float3 axis, float angle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.float3.html">float3</a></td>
+        <td><span class="parametername">axis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">angle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_Equals_" data-uid="Unity.Mathematics.RigidTransform.Equals*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_Equals_System_Object_" data-uid="Unity.Mathematics.RigidTransform.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns true if the RigidTransform is equal to a given RigidTransform, false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_Equals_" data-uid="Unity.Mathematics.RigidTransform.Equals*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_Equals_Unity_Mathematics_RigidTransform_" data-uid="Unity.Mathematics.RigidTransform.Equals(Unity.Mathematics.RigidTransform)">Equals(RigidTransform)</h4>
+  <div class="markdown level1 summary"><p>Returns true if the RigidTransform is equal to a given RigidTransform, false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(RigidTransform x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_Euler_" data-uid="Unity.Mathematics.RigidTransform.Euler*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_Euler_System_Single_System_Single_System_Single_RotationOrder_" data-uid="Unity.Mathematics.RigidTransform.Euler(System.Single,System.Single,System.Single,RotationOrder)">Euler(Single, Single, Single, RotationOrder)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform constructed by first performing 3 rotations around the principal axes in a given order.
+All rotation angles are in radians and clockwise when looking along the rotation axis towards the origin.
+When the rotation order is known at compile time, it is recommended for performance reasons to use specific
+Euler rotation constructors such as EulerZXY(...).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform Euler(float x, float y, float z, RotationOrder order = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The rotation angle around the x-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The rotation angle around the y-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The rotation angle around the z-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">RotationOrder</span></td>
+        <td><span class="parametername">order</span></td>
+        <td><p>The order in which the rotations are applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_Euler_" data-uid="Unity.Mathematics.RigidTransform.Euler*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_Euler_Unity_Mathematics_float3_RotationOrder_" data-uid="Unity.Mathematics.RigidTransform.Euler(Unity.Mathematics.float3,RotationOrder)">Euler(float3, RotationOrder)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform constructed by first performing 3 rotations around the principal axes in a given order.
+All rotation angles are in radians and clockwise when looking along the rotation axis towards the origin.
+When the rotation order is known at compile time, it is recommended for performance reasons to use specific
+Euler rotation constructors such as EulerZXY(...).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform Euler(float3 xyz, RotationOrder order = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.float3.html">float3</a></td>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>A float3 vector containing the rotation angles around the x-, y- and z-axis measures in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">RotationOrder</span></td>
+        <td><span class="parametername">order</span></td>
+        <td><p>The order in which the rotations are applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_EulerXYZ_" data-uid="Unity.Mathematics.RigidTransform.EulerXYZ*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_EulerXYZ_System_Single_System_Single_System_Single_" data-uid="Unity.Mathematics.RigidTransform.EulerXYZ(System.Single,System.Single,System.Single)">EulerXYZ(Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform constructed by first performing a rotation around the x-axis, then the y-axis and finally the z-axis.
+All rotation angles are in radians and clockwise when looking along the rotation axis towards the origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform EulerXYZ(float x, float y, float z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The rotation angle around the x-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The rotation angle around the y-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The rotation angle around the z-axis in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_EulerXYZ_" data-uid="Unity.Mathematics.RigidTransform.EulerXYZ*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_EulerXYZ_Unity_Mathematics_float3_" data-uid="Unity.Mathematics.RigidTransform.EulerXYZ(Unity.Mathematics.float3)">EulerXYZ(float3)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform constructed by first performing a rotation around the x-axis, then the y-axis and finally the z-axis.
+All rotation angles are in radians and clockwise when looking along the rotation axis towards the origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform EulerXYZ(float3 xyz)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.float3.html">float3</a></td>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>A float3 vector containing the rotation angles around the x-, y- and z-axis measures in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_EulerXZY_" data-uid="Unity.Mathematics.RigidTransform.EulerXZY*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_EulerXZY_System_Single_System_Single_System_Single_" data-uid="Unity.Mathematics.RigidTransform.EulerXZY(System.Single,System.Single,System.Single)">EulerXZY(Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform constructed by first performing a rotation around the x-axis, then the z-axis and finally the y-axis.
+All rotation angles are in radians and clockwise when looking along the rotation axis towards the origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform EulerXZY(float x, float y, float z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The rotation angle around the x-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The rotation angle around the y-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The rotation angle around the z-axis in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_EulerXZY_" data-uid="Unity.Mathematics.RigidTransform.EulerXZY*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_EulerXZY_Unity_Mathematics_float3_" data-uid="Unity.Mathematics.RigidTransform.EulerXZY(Unity.Mathematics.float3)">EulerXZY(float3)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform constructed by first performing a rotation around the x-axis, then the z-axis and finally the y-axis.
+All rotation angles are in radians and clockwise when looking along the rotation axis towards the origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform EulerXZY(float3 xyz)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.float3.html">float3</a></td>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>A float3 vector containing the rotation angles around the x-, y- and z-axis measures in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_EulerYXZ_" data-uid="Unity.Mathematics.RigidTransform.EulerYXZ*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_EulerYXZ_System_Single_System_Single_System_Single_" data-uid="Unity.Mathematics.RigidTransform.EulerYXZ(System.Single,System.Single,System.Single)">EulerYXZ(Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform constructed by first performing a rotation around the y-axis, then the x-axis and finally the z-axis.
+All rotation angles are in radians and clockwise when looking along the rotation axis towards the origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform EulerYXZ(float x, float y, float z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The rotation angle around the x-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The rotation angle around the y-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The rotation angle around the z-axis in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_EulerYXZ_" data-uid="Unity.Mathematics.RigidTransform.EulerYXZ*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_EulerYXZ_Unity_Mathematics_float3_" data-uid="Unity.Mathematics.RigidTransform.EulerYXZ(Unity.Mathematics.float3)">EulerYXZ(float3)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform constructed by first performing a rotation around the y-axis, then the x-axis and finally the z-axis.
+All rotation angles are in radians and clockwise when looking along the rotation axis towards the origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform EulerYXZ(float3 xyz)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.float3.html">float3</a></td>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>A float3 vector containing the rotation angles around the x-, y- and z-axis measures in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_EulerYZX_" data-uid="Unity.Mathematics.RigidTransform.EulerYZX*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_EulerYZX_System_Single_System_Single_System_Single_" data-uid="Unity.Mathematics.RigidTransform.EulerYZX(System.Single,System.Single,System.Single)">EulerYZX(Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform constructed by first performing a rotation around the y-axis, then the z-axis and finally the x-axis.
+All rotation angles are in radians and clockwise when looking along the rotation axis towards the origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform EulerYZX(float x, float y, float z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The rotation angle around the x-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The rotation angle around the y-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The rotation angle around the z-axis in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_EulerYZX_" data-uid="Unity.Mathematics.RigidTransform.EulerYZX*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_EulerYZX_Unity_Mathematics_float3_" data-uid="Unity.Mathematics.RigidTransform.EulerYZX(Unity.Mathematics.float3)">EulerYZX(float3)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform constructed by first performing a rotation around the y-axis, then the z-axis and finally the x-axis.
+All rotation angles are in radians and clockwise when looking along the rotation axis towards the origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform EulerYZX(float3 xyz)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.float3.html">float3</a></td>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>A float3 vector containing the rotation angles around the x-, y- and z-axis measures in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_EulerZXY_" data-uid="Unity.Mathematics.RigidTransform.EulerZXY*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_EulerZXY_System_Single_System_Single_System_Single_" data-uid="Unity.Mathematics.RigidTransform.EulerZXY(System.Single,System.Single,System.Single)">EulerZXY(Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform constructed by first performing a rotation around the z-axis, then the x-axis and finally the y-axis.
+All rotation angles are in radians and clockwise when looking along the rotation axis towards the origin.
+This is the default order rotation order in Unity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform EulerZXY(float x, float y, float z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The rotation angle around the x-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The rotation angle around the y-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The rotation angle around the z-axis in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_EulerZXY_" data-uid="Unity.Mathematics.RigidTransform.EulerZXY*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_EulerZXY_Unity_Mathematics_float3_" data-uid="Unity.Mathematics.RigidTransform.EulerZXY(Unity.Mathematics.float3)">EulerZXY(float3)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform constructed by first performing a rotation around the z-axis, then the x-axis and finally the y-axis.
+All rotation angles are in radians and clockwise when looking along the rotation axis towards the origin.
+This is the default order rotation order in Unity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform EulerZXY(float3 xyz)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.float3.html">float3</a></td>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>A float3 vector containing the rotation angles around the x-, y- and z-axis measures in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_EulerZYX_" data-uid="Unity.Mathematics.RigidTransform.EulerZYX*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_EulerZYX_System_Single_System_Single_System_Single_" data-uid="Unity.Mathematics.RigidTransform.EulerZYX(System.Single,System.Single,System.Single)">EulerZYX(Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform constructed by first performing a rotation around the z-axis, then the y-axis and finally the x-axis.
+All rotation angles are in radians and clockwise when looking along the rotation axis towards the origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform EulerZYX(float x, float y, float z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The rotation angle around the x-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The rotation angle around the y-axis in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The rotation angle around the z-axis in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_EulerZYX_" data-uid="Unity.Mathematics.RigidTransform.EulerZYX*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_EulerZYX_Unity_Mathematics_float3_" data-uid="Unity.Mathematics.RigidTransform.EulerZYX(Unity.Mathematics.float3)">EulerZYX(float3)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform constructed by first performing a rotation around the z-axis, then the y-axis and finally the x-axis.
+All rotation angles are in radians and clockwise when looking along the rotation axis towards the origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform EulerZYX(float3 xyz)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.float3.html">float3</a></td>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>A float3 vector containing the rotation angles around the x-, y- and z-axis measures in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_GetHashCode_" data-uid="Unity.Mathematics.RigidTransform.GetHashCode*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_GetHashCode" data-uid="Unity.Mathematics.RigidTransform.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns a hash code for the RigidTransform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_RotateX_" data-uid="Unity.Mathematics.RigidTransform.RotateX*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_RotateX_System_Single_" data-uid="Unity.Mathematics.RigidTransform.RotateX(System.Single)">RotateX(Single)</h4>
+  <div class="markdown level1 summary"><p>Returns a float4x4 matrix that rotates around the x-axis by a given number of radians.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform RotateX(float angle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">angle</span></td>
+        <td><p>The clockwise rotation angle when looking along the x-axis towards the origin in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_RotateY_" data-uid="Unity.Mathematics.RigidTransform.RotateY*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_RotateY_System_Single_" data-uid="Unity.Mathematics.RigidTransform.RotateY(System.Single)">RotateY(Single)</h4>
+  <div class="markdown level1 summary"><p>Returns a float4x4 matrix that rotates around the y-axis by a given number of radians.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform RotateY(float angle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">angle</span></td>
+        <td><p>The clockwise rotation angle when looking along the y-axis towards the origin in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_RotateZ_" data-uid="Unity.Mathematics.RigidTransform.RotateZ*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_RotateZ_System_Single_" data-uid="Unity.Mathematics.RigidTransform.RotateZ(System.Single)">RotateZ(Single)</h4>
+  <div class="markdown level1 summary"><p>Returns a float4x4 matrix that rotates around the z-axis by a given number of radians.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform RotateZ(float angle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">angle</span></td>
+        <td><p>The clockwise rotation angle when looking along the z-axis towards the origin in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_ToString_" data-uid="Unity.Mathematics.RigidTransform.ToString*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_ToString" data-uid="Unity.Mathematics.RigidTransform.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string representation of the RigidTransform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.ToString()</span></div>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_ToString_" data-uid="Unity.Mathematics.RigidTransform.ToString*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_ToString_System_String_IFormatProvider_" data-uid="Unity.Mathematics.RigidTransform.ToString(System.String,IFormatProvider)">ToString(String, IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>Returns a string representation of the quaternion using a specified format and culture-specific format information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(string format, IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Unity_Mathematics_RigidTransform_Translate_" data-uid="Unity.Mathematics.RigidTransform.Translate*"></a>
+  <h4 id="Unity_Mathematics_RigidTransform_Translate_Unity_Mathematics_float3_" data-uid="Unity.Mathematics.RigidTransform.Translate(Unity.Mathematics.float3)">Translate(float3)</h4>
+  <div class="markdown level1 summary"><p>Returns a RigidTransform that translates by an amount specified by a float3 vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RigidTransform Translate(float3 vector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.float3.html">float3</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Mathematics.RigidTransform.html">RigidTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

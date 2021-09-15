@@ -1,0 +1,731 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SharingManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SharingManager
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Blackout.Sharing.SharingManager">
+  
+  
+  <h1 id="Blackout_Sharing_SharingManager" data-uid="Blackout.Sharing.SharingManager" class="text-break">Class SharingManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SharingManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Blackout.Sharing.html">Blackout.Sharing</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Blackout_Sharing_SharingManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SharingManager : Singleton&lt;SharingManager&gt;</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Blackout_Sharing_SharingManager_MaxGifLength" data-uid="Blackout.Sharing.SharingManager.MaxGifLength">MaxGifLength</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MaxGifLength = 15000F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Sharing_SharingManager_MinGifLength" data-uid="Blackout.Sharing.SharingManager.MinGifLength">MinGifLength</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MinGifLength = 1000F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Sharing_SharingManager_OnGifUploadStarted" data-uid="Blackout.Sharing.SharingManager.OnGifUploadStarted">OnGifUploadStarted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action OnGifUploadStarted</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Sharing_SharingManager_OnUploadProcessComplete" data-uid="Blackout.Sharing.SharingManager.OnUploadProcessComplete">OnUploadProcessComplete</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action OnUploadProcessComplete</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Sharing_SharingManager_OnUploadProgress" data-uid="Blackout.Sharing.SharingManager.OnUploadProgress">OnUploadProgress</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;float&gt; OnUploadProgress</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Blackout_Sharing_SharingManager_CheckForBestMoment_" data-uid="Blackout.Sharing.SharingManager.CheckForBestMoment*"></a>
+  <h4 id="Blackout_Sharing_SharingManager_CheckForBestMoment_System_Boolean_System_String_Recorder_MatchModel_CancellationToken_" data-uid="Blackout.Sharing.SharingManager.CheckForBestMoment(System.Boolean,System.String,Recorder,MatchModel,CancellationToken)">CheckForBestMoment(Boolean, String, Recorder, MatchModel, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Assigns best moment from within Live match block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckForBestMoment(bool isHomeTeam, string fixtureId, Recorder recorder, MatchModel match, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isHomeTeam</span></td>
+        <td><p>Is the current team the home team</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fixtureId</span></td>
+        <td><p>Fixture id of fixture recording for</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Recorder</span></td>
+        <td><span class="parametername">recorder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">MatchModel</span></td>
+        <td><span class="parametername">match</span></td>
+        <td><p>Live match data block</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Sharing_SharingManager_ConfigureRecorder_" data-uid="Blackout.Sharing.SharingManager.ConfigureRecorder*"></a>
+  <h4 id="Blackout_Sharing_SharingManager_ConfigureRecorder_Recorder_System_Single_" data-uid="Blackout.Sharing.SharingManager.ConfigureRecorder(Recorder,System.Single)">ConfigureRecorder(Recorder, Single)</h4>
+  <div class="markdown level1 summary"><p>Adjust Recorder values to correct values for device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfigureRecorder(Recorder recorder, float recordingLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Recorder</span></td>
+        <td><span class="parametername">recorder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">recordingLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Sharing_SharingManager_CopyGifUrlToClipBoard_" data-uid="Blackout.Sharing.SharingManager.CopyGifUrlToClipBoard*"></a>
+  <h4 id="Blackout_Sharing_SharingManager_CopyGifUrlToClipBoard_AnimatedClip_System_String_" data-uid="Blackout.Sharing.SharingManager.CopyGifUrlToClipBoard(AnimatedClip,System.String)">CopyGifUrlToClipBoard(AnimatedClip, String)</h4>
+  <div class="markdown level1 summary"><p>Exports Gif, Uploads to /images, then copies URL to clipboard</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async UniTask CopyGifUrlToClipBoard(AnimatedClip clip, string optionalText = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AnimatedClip</span></td>
+        <td><span class="parametername">clip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">optionalText</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Sharing_SharingManager_GetLastRecordedGif_" data-uid="Blackout.Sharing.SharingManager.GetLastRecordedGif*"></a>
+  <h4 id="Blackout_Sharing_SharingManager_GetLastRecordedGif_System_String_" data-uid="Blackout.Sharing.SharingManager.GetLastRecordedGif(System.String)">GetLastRecordedGif(String)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the last recorded clip</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimatedClip GetLastRecordedGif(string fixtureId = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fixtureId</span></td>
+        <td><p>If provided will only return a clip that matches the fixtureId</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AnimatedClip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Sharing_SharingManager_PlayLastClip_" data-uid="Blackout.Sharing.SharingManager.PlayLastClip*"></a>
+  <h4 id="Blackout_Sharing_SharingManager_PlayLastClip_ClipPlayerUI_" data-uid="Blackout.Sharing.SharingManager.PlayLastClip(ClipPlayerUI)">PlayLastClip(ClipPlayerUI)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayLastClip(ClipPlayerUI clipPlayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ClipPlayerUI</span></td>
+        <td><span class="parametername">clipPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Sharing_SharingManager_SetCurrentLiveMatchFrame_" data-uid="Blackout.Sharing.SharingManager.SetCurrentLiveMatchFrame*"></a>
+  <h4 id="Blackout_Sharing_SharingManager_SetCurrentLiveMatchFrame_System_Int32_Recorder_CancellationToken_" data-uid="Blackout.Sharing.SharingManager.SetCurrentLiveMatchFrame(System.Int32,Recorder,CancellationToken)">SetCurrentLiveMatchFrame(Int32, Recorder, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sets the current frame of the Live match and start Gif recording if a best moment has been found</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCurrentLiveMatchFrame(int frame, Recorder recorder, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">frame</span></td>
+        <td><p>Current frame of Live match</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Recorder</span></td>
+        <td><span class="parametername">recorder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Sharing_SharingManager_ShareGifMobile_" data-uid="Blackout.Sharing.SharingManager.ShareGifMobile*"></a>
+  <h4 id="Blackout_Sharing_SharingManager_ShareGifMobile_AnimatedClip_System_String_" data-uid="Blackout.Sharing.SharingManager.ShareGifMobile(AnimatedClip,System.String)">ShareGifMobile(AnimatedClip, String)</h4>
+  <div class="markdown level1 summary"><p>Mobile: Exports Gif, Uploads to /images, then shares the URL</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async void ShareGifMobile(AnimatedClip clip, string shareText)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AnimatedClip</span></td>
+        <td><span class="parametername">clip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">shareText</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Sharing_SharingManager_ShareGifStandalone_" data-uid="Blackout.Sharing.SharingManager.ShareGifStandalone*"></a>
+  <h4 id="Blackout_Sharing_SharingManager_ShareGifStandalone_AnimatedClip_Blackout_Sharing_SharingManager_SocialSite_System_String_" data-uid="Blackout.Sharing.SharingManager.ShareGifStandalone(AnimatedClip,Blackout.Sharing.SharingManager.SocialSite,System.String)">ShareGifStandalone(AnimatedClip, SharingManager.SocialSite, String)</h4>
+  <div class="markdown level1 summary"><p>Exports Gif, Uploads to /images, then shares the URL to the desired platform</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async void ShareGifStandalone(AnimatedClip clip, SharingManager.SocialSite social, string shareText)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AnimatedClip</span></td>
+        <td><span class="parametername">clip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Blackout.Sharing.SharingManager.SocialSite.html">SharingManager.SocialSite</a></td>
+        <td><span class="parametername">social</span></td>
+        <td><p>Desired site to share to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">shareText</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Sharing_SharingManager_ShareScreenshotMobile_" data-uid="Blackout.Sharing.SharingManager.ShareScreenshotMobile*"></a>
+  <h4 id="Blackout_Sharing_SharingManager_ShareScreenshotMobile_System_String_" data-uid="Blackout.Sharing.SharingManager.ShareScreenshotMobile(System.String)">ShareScreenshotMobile(String)</h4>
+  <div class="markdown level1 summary"><p>Mobile: Shares saved screenshot and shareText</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShareScreenshotMobile(string shareText)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">shareText</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Sharing_SharingManager_ShareScreenshotStandalone_" data-uid="Blackout.Sharing.SharingManager.ShareScreenshotStandalone*"></a>
+  <h4 id="Blackout_Sharing_SharingManager_ShareScreenshotStandalone_Blackout_Sharing_SharingManager_SocialSite_System_String_" data-uid="Blackout.Sharing.SharingManager.ShareScreenshotStandalone(Blackout.Sharing.SharingManager.SocialSite,System.String)">ShareScreenshotStandalone(SharingManager.SocialSite, String)</h4>
+  <div class="markdown level1 summary"><p>Uploads screenshot to /images and then shares the URL to the desired platform</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async void ShareScreenshotStandalone(SharingManager.SocialSite social, string shareText)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Sharing.SharingManager.SocialSite.html">SharingManager.SocialSite</a></td>
+        <td><span class="parametername">social</span></td>
+        <td><p>Desired site to share to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">shareText</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Sharing_SharingManager_ShowSharingModal_" data-uid="Blackout.Sharing.SharingManager.ShowSharingModal*"></a>
+  <h4 id="Blackout_Sharing_SharingManager_ShowSharingModal_System_Boolean_RectTransform_" data-uid="Blackout.Sharing.SharingManager.ShowSharingModal(System.Boolean,RectTransform)">ShowSharingModal(Boolean, RectTransform)</h4>
+  <div class="markdown level1 summary"><p>Opens Sharing Modal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async void ShowSharingModal(bool isGif, RectTransform rectToCapture = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isGif</span></td>
+        <td><p>true = set Gif as lastAnimatedClip
+false = set screenshot as currentScreenshot</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td><span class="parametername">rectToCapture</span></td>
+        <td><p>Will screenshot the provided RectTransform</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Sharing_SharingManager_StartRecordingGif_" data-uid="Blackout.Sharing.SharingManager.StartRecordingGif*"></a>
+  <h4 id="Blackout_Sharing_SharingManager_StartRecordingGif_Recorder_System_String_" data-uid="Blackout.Sharing.SharingManager.StartRecordingGif(Recorder,System.String)">StartRecordingGif(Recorder, String)</h4>
+  <div class="markdown level1 summary"><p>Starts Recording, must call StopRecordingGif() to stop and access Gif through GetLastRecordedGif()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartRecordingGif(Recorder recorder, string fixtureRecording = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Recorder</span></td>
+        <td><span class="parametername">recorder</span></td>
+        <td><p>Recorder to record from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fixtureRecording</span></td>
+        <td><p>Which if any fixture we are recording for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Sharing_SharingManager_StopRecordingGif_" data-uid="Blackout.Sharing.SharingManager.StopRecordingGif*"></a>
+  <h4 id="Blackout_Sharing_SharingManager_StopRecordingGif_Recorder_System_Boolean_" data-uid="Blackout.Sharing.SharingManager.StopRecordingGif(Recorder,System.Boolean)">StopRecordingGif(Recorder, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Stops Recording and saves Gif to be accessed from GetLastRecordedGif(), or just opens the sharing Modal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopRecordingGif(Recorder recorder, bool forceStop = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Recorder</span></td>
+        <td><span class="parametername">recorder</span></td>
+        <td><p>Recorder to stop from, should be the same as started recording from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">forceStop</span></td>
+        <td><p>Doesn't save Clip just stops recording</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,404 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VolumeComponent
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VolumeComponent
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.Rendering.VolumeComponent">
+  
+  
+  <h1 id="UnityEngine_Rendering_VolumeComponent" data-uid="UnityEngine.Rendering.VolumeComponent" class="text-break">Class VolumeComponent
+  </h1>
+  <div class="markdown level0 summary"><p>The base class for all the components that can be part of a <a class="xref" href="UnityEngine.Rendering.VolumeProfile.html">VolumeProfile</a>.
+The Volume framework automatically handles and interpolates any <a class="xref" href="UnityEngine.Rendering.VolumeParameter.html">VolumeParameter</a> members found in this class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">VolumeComponent</span></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.Bloom.html">Bloom</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.ChannelMixer.html">ChannelMixer</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.ChromaticAberration.html">ChromaticAberration</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.ColorAdjustments.html">ColorAdjustments</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.ColorCurves.html">ColorCurves</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.ColorLookup.html">ColorLookup</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.DepthOfField.html">DepthOfField</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.FilmGrain.html">FilmGrain</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.LensDistortion.html">LensDistortion</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.LiftGammaGain.html">LiftGammaGain</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.MotionBlur.html">MotionBlur</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.PaniniProjection.html">PaniniProjection</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.ShadowsMidtonesHighlights.html">ShadowsMidtonesHighlights</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.SplitToning.html">SplitToning</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.Tonemapping.html">Tonemapping</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.Vignette.html">Vignette</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Rendering.Universal.WhiteBalance.html">WhiteBalance</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.Rendering.html">UnityEngine.Rendering</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_Rendering_VolumeComponent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VolumeComponent : ScriptableObject</code></pre>
+  </div>
+  <h5 id="UnityEngine_Rendering_VolumeComponent_examples"><strong>Examples</strong></h5>
+  <pre><code>using UnityEngine.Rendering;
+
+[Serializable, VolumeComponentMenu(&quot;Custom/Example Component&quot;)]
+public class ExampleComponent : VolumeComponent
+{
+    public ClampedFloatParameter intensity = new ClampedFloatParameter(0f, 0f, 1f);
+}</code></pre>
+
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UnityEngine_Rendering_VolumeComponent_active" data-uid="UnityEngine.Rendering.VolumeComponent.active">active</h4>
+  <div class="markdown level1 summary"><p>The active state of the set of parameters defined in this class. You can use this to
+quickly turn on or off all the overrides at once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool active</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeComponent_displayName_" data-uid="UnityEngine.Rendering.VolumeComponent.displayName*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeComponent_displayName" data-uid="UnityEngine.Rendering.VolumeComponent.displayName">displayName</h4>
+  <div class="markdown level1 summary"><p>The name displayed in the component header. If you do not set a name, Unity generates one from
+the class name automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string displayName { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeComponent_parameters_" data-uid="UnityEngine.Rendering.VolumeComponent.parameters*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeComponent_parameters" data-uid="UnityEngine.Rendering.VolumeComponent.parameters">parameters</h4>
+  <div class="markdown level1 summary"><p>A read-only collection of all the <a class="xref" href="UnityEngine.Rendering.VolumeParameter.html">VolumeParameter</a>s defined in this class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection&lt;VolumeParameter&gt; parameters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ReadOnlyCollection</span>&lt;<a class="xref" href="UnityEngine.Rendering.VolumeParameter.html">VolumeParameter</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeComponent_GetHashCode_" data-uid="UnityEngine.Rendering.VolumeComponent.GetHashCode*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeComponent_GetHashCode" data-uid="UnityEngine.Rendering.VolumeComponent.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>A custom hashing function that Unity uses to compare the state of parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>A computed hash code for the current instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeComponent_OnDestroy_" data-uid="UnityEngine.Rendering.VolumeComponent.OnDestroy*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeComponent_OnDestroy" data-uid="UnityEngine.Rendering.VolumeComponent.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"><p>Unity calls this method before the object is destroyed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDestroy()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeComponent_OnDisable_" data-uid="UnityEngine.Rendering.VolumeComponent.OnDisable*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeComponent_OnDisable" data-uid="UnityEngine.Rendering.VolumeComponent.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"><p>Unity calls this method when the object goes out of scope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDisable()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeComponent_OnEnable_" data-uid="UnityEngine.Rendering.VolumeComponent.OnEnable*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeComponent_OnEnable" data-uid="UnityEngine.Rendering.VolumeComponent.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"><p>Unity calls this method when it loads the class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnEnable()</code></pre>
+  </div>
+  <h5 id="UnityEngine_Rendering_VolumeComponent_OnEnable_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If you want to override this method, you must call <code>base.OnEnable()</code>.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeComponent_Override_" data-uid="UnityEngine.Rendering.VolumeComponent.Override*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeComponent_Override_UnityEngine_Rendering_VolumeComponent_System_Single_" data-uid="UnityEngine.Rendering.VolumeComponent.Override(UnityEngine.Rendering.VolumeComponent,System.Single)">Override(VolumeComponent, Single)</h4>
+  <div class="markdown level1 summary"><p>Interpolates a <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a> with this component by an interpolation
+factor and puts the result back into the given <a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Override(VolumeComponent state, float interpFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.VolumeComponent.html">VolumeComponent</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The internal component to interpolate from. You must store
+the result of the interpolation in this same component.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">interpFactor</span></td>
+        <td><p>The interpolation factor in range [0,1].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Rendering_VolumeComponent_Override_UnityEngine_Rendering_VolumeComponent_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can override this method to do your own blending. Either loop through the
+<a class="xref" href="UnityEngine.Rendering.VolumeComponent.html#UnityEngine_Rendering_VolumeComponent_parameters">parameters</a> list or reference direct fields. You should only use
+<a class="xref" href="UnityEngine.Rendering.VolumeParameter.html#UnityEngine_Rendering_VolumeParameter_SetValue_UnityEngine_Rendering_VolumeParameter_">SetValue(VolumeParameter)</a> to set parameter values and not assign
+directly to the state object. you should also manually check
+<a class="xref" href="UnityEngine.Rendering.VolumeParameter.html#UnityEngine_Rendering_VolumeParameter_overrideState">overrideState</a> before you set any values.</p>
+</div>
+  <h5 id="UnityEngine_Rendering_VolumeComponent_Override_UnityEngine_Rendering_VolumeComponent_System_Single__examples">Examples</h5>
+  <p>Below is the default implementation for blending:</p>
+<pre><code>public virtual void Override(VolumeComponent state, float interpFactor)
+{
+    int count = parameters.Count;
+
+    for (int i = 0; i &lt; count; i++)
+    {
+        var stateParam = state.parameters[i];
+        var toParam = parameters[i];
+
+        // Keep track of the override state for debugging purpose
+        stateParam.overrideState = toParam.overrideState;
+
+        if (toParam.overrideState)
+            stateParam.Interp(stateParam, toParam, interpFactor);
+    }
+}</code></pre>
+
+  
+  
+  <a id="UnityEngine_Rendering_VolumeComponent_Release_" data-uid="UnityEngine.Rendering.VolumeComponent.Release*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeComponent_Release" data-uid="UnityEngine.Rendering.VolumeComponent.Release">Release()</h4>
+  <div class="markdown level1 summary"><p>Releases all the allocated resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Release()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_Rendering_VolumeComponent_SetAllOverridesTo_" data-uid="UnityEngine.Rendering.VolumeComponent.SetAllOverridesTo*"></a>
+  <h4 id="UnityEngine_Rendering_VolumeComponent_SetAllOverridesTo_System_Boolean_" data-uid="UnityEngine.Rendering.VolumeComponent.SetAllOverridesTo(System.Boolean)">SetAllOverridesTo(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the state of all the overrides on this component to a given value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAllOverridesTo(bool state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The value to set the state of the overrides to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

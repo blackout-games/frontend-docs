@@ -1,0 +1,1455 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TrackAsset
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TrackAsset
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.Timeline.TrackAsset">
+  
+  
+  <h1 id="UnityEngine_Timeline_TrackAsset" data-uid="UnityEngine.Timeline.TrackAsset" class="text-break">Class TrackAsset
+  </h1>
+  <div class="markdown level0 summary"><p>A PlayableAsset representing a track inside a timeline.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TrackAsset</span></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Timeline.ActivationTrack.html">ActivationTrack</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Timeline.AnimationTrack.html">AnimationTrack</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Timeline.AudioTrack.html">AudioTrack</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Timeline.ControlTrack.html">ControlTrack</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Timeline.GroupTrack.html">GroupTrack</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Timeline.MarkerTrack.html">MarkerTrack</a></div>
+      <div class="level2"><a class="xref" href="UnityEngine.Timeline.PlayableTrack.html">PlayableTrack</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UnityEngine.Timeline.IPropertyPreview.html">IPropertyPreview</a></div>
+    <div><span class="xref">PlayableAsset</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.Timeline.html">UnityEngine.Timeline</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEngine_Timeline_TrackAsset_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class TrackAsset : ISerializationCallbackReceiver, IPropertyPreview, ICurvesOwner, PlayableAsset</code></pre>
+  </div>
+  <h5 id="UnityEngine_Timeline_TrackAsset_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Derive from TrackAsset to implement custom timeline tracks. TrackAsset derived classes support the following attributes:
+<a class="xref" href="UnityEngine.Timeline.HideInMenuAttribute.html">HideInMenuAttribute</a>
+<a class="xref" href="UnityEngine.Timeline.TrackColorAttribute.html">TrackColorAttribute</a>
+<a class="xref" href="UnityEngine.Timeline.TrackClipTypeAttribute.html">TrackClipTypeAttribute</a>
+<a class="xref" href="UnityEngine.Timeline.TrackBindingTypeAttribute.html">TrackBindingTypeAttribute</a>
+<span class="xref">System.ComponentModel.DisplayNameAttribute</span></p>
+</div>
+  <h5 id="UnityEngine_Timeline_TrackAsset_examples"><strong>Examples</strong></h5>
+  <pre><code source="../../DocCodeExamples/TrackAssetExamples.cs" region="declare-trackAssetExample"></code></pre>
+
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UnityEngine_Timeline_TrackAsset_m_Clips" data-uid="UnityEngine.Timeline.TrackAsset.m_Clips">m_Clips</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;TimelineClip&gt; m_Clips</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="UnityEngine.Timeline.TimelineClip.html">TimelineClip</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_curves_" data-uid="UnityEngine.Timeline.TrackAsset.curves*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_curves" data-uid="UnityEngine.Timeline.TrackAsset.curves">curves</h4>
+  <div class="markdown level1 summary"><p>An animation clip storing animated properties of the attached PlayableAsset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationClip curves { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AnimationClip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_duration_" data-uid="UnityEngine.Timeline.TrackAsset.duration*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_duration" data-uid="UnityEngine.Timeline.TrackAsset.duration">duration</h4>
+  <div class="markdown level1 summary"><p>The length, in seconds, of this track</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed override double duration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_end_" data-uid="UnityEngine.Timeline.TrackAsset.end*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_end" data-uid="UnityEngine.Timeline.TrackAsset.end">end</h4>
+  <div class="markdown level1 summary"><p>The end time, in seconds, of this track</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double end { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_hasClips_" data-uid="UnityEngine.Timeline.TrackAsset.hasClips*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_hasClips" data-uid="UnityEngine.Timeline.TrackAsset.hasClips">hasClips</h4>
+  <div class="markdown level1 summary"><p>Whether this track contains any TimelineClip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool hasClips { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_hasCurves_" data-uid="UnityEngine.Timeline.TrackAsset.hasCurves*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_hasCurves" data-uid="UnityEngine.Timeline.TrackAsset.hasCurves">hasCurves</h4>
+  <div class="markdown level1 summary"><p>Whether this track contains animated properties for the attached PlayableAsset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool hasCurves { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_hasCurves_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is false if the curves property is null or if it contains no information.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_isEmpty_" data-uid="UnityEngine.Timeline.TrackAsset.isEmpty*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_isEmpty" data-uid="UnityEngine.Timeline.TrackAsset.isEmpty">isEmpty</h4>
+  <div class="markdown level1 summary"><p>Whether this track is considered empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool isEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_isEmpty_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A track is considered empty when it does not contain a TimelineClip, Marker, or Curve.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_isSubTrack_" data-uid="UnityEngine.Timeline.TrackAsset.isSubTrack*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_isSubTrack" data-uid="UnityEngine.Timeline.TrackAsset.isSubTrack">isSubTrack</h4>
+  <div class="markdown level1 summary"><p>Returns whether this track is a subtrack</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isSubTrack { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_locked_" data-uid="UnityEngine.Timeline.TrackAsset.locked*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_locked" data-uid="UnityEngine.Timeline.TrackAsset.locked">locked</h4>
+  <div class="markdown level1 summary"><p>The local locked state of the track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool locked { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_locked_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that locking a track only affects operations in the Timeline Editor. It does not prevent other API calls from changing a track or it's clips.</p>
+<p>This returns or sets the local locked state of the track. A track may still be locked for editing because one or more of it's parent tracks in the hierarchy is locked. Use lockedInHierarchy to test if a track is locked because of it's own locked state or because of a parent tracks locked state.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_lockedInHierarchy_" data-uid="UnityEngine.Timeline.TrackAsset.lockedInHierarchy*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_lockedInHierarchy" data-uid="UnityEngine.Timeline.TrackAsset.lockedInHierarchy">lockedInHierarchy</h4>
+  <div class="markdown level1 summary"><p>The locked state of a track. (RO)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool lockedInHierarchy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_lockedInHierarchy_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that locking a track only affects operations in the Timeline Editor. It does not prevent other API calls from changing a track or it's clips.</p>
+<p>This indicates whether a track is locked in the Timeline Editor because either it's locked property is enabled or a parent track is locked.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_muted_" data-uid="UnityEngine.Timeline.TrackAsset.muted*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_muted" data-uid="UnityEngine.Timeline.TrackAsset.muted">muted</h4>
+  <div class="markdown level1 summary"><p>Whether the track is muted or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool muted { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_muted_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A muted track is excluded from the generated PlayableGraph</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_mutedInHierarchy_" data-uid="UnityEngine.Timeline.TrackAsset.mutedInHierarchy*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_mutedInHierarchy" data-uid="UnityEngine.Timeline.TrackAsset.mutedInHierarchy">mutedInHierarchy</h4>
+  <div class="markdown level1 summary"><p>The muted state of a track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mutedInHierarchy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_mutedInHierarchy_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A track is also muted when one of its parent tracks are muted.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_outputs_" data-uid="UnityEngine.Timeline.TrackAsset.outputs*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_outputs" data-uid="UnityEngine.Timeline.TrackAsset.outputs">outputs</h4>
+  <div class="markdown level1 summary"><p>Returns a description of the PlayableOutputs that will be created by this track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;PlayableBinding&gt; outputs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">PlayableBinding</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_parent_" data-uid="UnityEngine.Timeline.TrackAsset.parent*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_parent" data-uid="UnityEngine.Timeline.TrackAsset.parent">parent</h4>
+  <div class="markdown level1 summary"><p>The owner of this track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayableAsset parent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayableAsset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_parent_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this track is a subtrack, the parent is a TrackAsset. Otherwise the parent is a TimelineAsset.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_start_" data-uid="UnityEngine.Timeline.TrackAsset.start*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_start" data-uid="UnityEngine.Timeline.TrackAsset.start">start</h4>
+  <div class="markdown level1 summary"><p>The start time, in seconds, of this track</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double start { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_supportsNotifications_" data-uid="UnityEngine.Timeline.TrackAsset.supportsNotifications*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_supportsNotifications" data-uid="UnityEngine.Timeline.TrackAsset.supportsNotifications">supportsNotifications</h4>
+  <div class="markdown level1 summary"><p>Indicates if a track accepts markers that implement <see cref="!:UnityEngine.Playables.INotification"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool supportsNotifications { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_supportsNotifications_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Only tracks with a bound object of type <see cref="!:UnityEngine.GameObject"></see> or <see cref="!:UnityEngine.Component"></see> can accept notifications.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_timelineAsset_" data-uid="UnityEngine.Timeline.TrackAsset.timelineAsset*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_timelineAsset" data-uid="UnityEngine.Timeline.TrackAsset.timelineAsset">timelineAsset</h4>
+  <div class="markdown level1 summary"><p>The TimelineAsset that this track belongs to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimelineAsset timelineAsset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineAsset.html">TimelineAsset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_CalculateItemsHash_" data-uid="UnityEngine.Timeline.TrackAsset.CalculateItemsHash*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_CalculateItemsHash" data-uid="UnityEngine.Timeline.TrackAsset.CalculateItemsHash">CalculateItemsHash()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int CalculateItemsHash()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_CreateClip_" data-uid="UnityEngine.Timeline.TrackAsset.CreateClip*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_CreateClip__1" data-uid="UnityEngine.Timeline.TrackAsset.CreateClip``1">CreateClip&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Creates a clip on the track with a playable asset attached, whose derived type is specified by T</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimelineClip CreateClip&lt;T&gt;()
+    where T : ScriptableObject, IPlayableAsset</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineClip.html">TimelineClip</a></td>
+        <td><p>Returns a TimelineClip whose asset is of type T</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>A PlayableAsset derived type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_CreateClip__1_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Throws <span class="xref">System.InvalidOperationException</span> if <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> is not supported by the track.
+Supported types are determined by TrackClip attributes that decorate the TrackAsset derived class</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_CreateCurves_" data-uid="UnityEngine.Timeline.TrackAsset.CreateCurves*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_CreateCurves_System_String_" data-uid="UnityEngine.Timeline.TrackAsset.CreateCurves(System.String)">CreateCurves(String)</h4>
+  <div class="markdown level1 summary"><p>Creates an AnimationClip to store animated properties for the attached PlayableAsset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateCurves(string curvesClipName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">curvesClipName</span></td>
+        <td><p>The name of the AnimationClip to create.
+This method does not ensure unique names. If you want a unique clip name, you must provide one.
+See ObjectNames.GetUniqueName for information on a method that creates unique names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_CreateCurves_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If curves already exists for this track, this method produces no result regardless of
+the value specified for curvesClipName.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_CreateDefaultClip_" data-uid="UnityEngine.Timeline.TrackAsset.CreateDefaultClip*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_CreateDefaultClip" data-uid="UnityEngine.Timeline.TrackAsset.CreateDefaultClip">CreateDefaultClip()</h4>
+  <div class="markdown level1 summary"><p>Creates a TimelineClip on this track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimelineClip CreateDefaultClip()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineClip.html">TimelineClip</a></td>
+        <td><p>Returns a new TimelineClip that is attached to the track.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_CreateDefaultClip_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The type of the playable asset attached to the clip is determined by TrackClip attributes that decorate the TrackAsset derived class</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_CreateMarker_" data-uid="UnityEngine.Timeline.TrackAsset.CreateMarker*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_CreateMarker_Type_System_Double_" data-uid="UnityEngine.Timeline.TrackAsset.CreateMarker(Type,System.Double)">CreateMarker(Type, Double)</h4>
+  <div class="markdown level1 summary"><p>Creates a marker of the requested type, at a specific time, and adds the marker to the current asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMarker CreateMarker(Type type, double time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of marker.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">time</span></td>
+        <td><p>The time where the marker is created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.IMarker.html">IMarker</a></td>
+        <td><p>Returns the instance of the created marker.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_CreateMarker_Type_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>All markers that implement IMarker and inherit from <see cref="!:UnityEngine.ScriptableObject"></see> are supported.
+Markers that implement the INotification interface cannot be added to tracks that do not support notifications.
+CreateMarker will throw <span class="xref">System.InvalidOperationException</span> with tracks that do not support notifications if <code data-dev-comment-type="paramref" class="paramref">type</code> implements the INotification interface.</p>
+</div>
+  <h5 id="UnityEngine_Timeline_TrackAsset_CreateMarker_Type_System_Double__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="UnityEngine.Timeline.Marker.html">Marker</a></div>
+      <div><a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_supportsNotifications">supportsNotifications</a></div>
+  </div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_CreateMarker_" data-uid="UnityEngine.Timeline.TrackAsset.CreateMarker*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_CreateMarker__1_System_Double_" data-uid="UnityEngine.Timeline.TrackAsset.CreateMarker``1(System.Double)">CreateMarker&lt;T&gt;(Double)</h4>
+  <div class="markdown level1 summary"><p>Creates a marker of the requested type, at a specific time, and adds the marker to the current asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T CreateMarker&lt;T&gt;(double time)
+    where T : ScriptableObject, IMarker</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">time</span></td>
+        <td><p>The time where the marker is created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Returns the instance of the created marker.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of marker to create.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_CreateMarker__1_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>All markers that implement IMarker and inherit from <see cref="!:UnityEngine.ScriptableObject"></see> are supported.
+CreateMarker will throw <span class="xref">System.InvalidOperationException</span> with tracks that do not support notifications if <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> implements the INotification interface.</p>
+</div>
+  <h5 id="UnityEngine_Timeline_TrackAsset_CreateMarker__1_System_Double__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="UnityEngine.Timeline.Marker.html">Marker</a></div>
+      <div><a class="xref" href="UnityEngine.Timeline.TrackAsset.html#UnityEngine_Timeline_TrackAsset_supportsNotifications">supportsNotifications</a></div>
+  </div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_CreatePlayable_" data-uid="UnityEngine.Timeline.TrackAsset.CreatePlayable*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_CreatePlayable_PlayableGraph_GameObject_" data-uid="UnityEngine.Timeline.TrackAsset.CreatePlayable(PlayableGraph,GameObject)">CreatePlayable(PlayableGraph, GameObject)</h4>
+  <div class="markdown level1 summary"><p>Overrides PlayableAsset.CreatePlayable(). Not used in Timeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed override Playable CreatePlayable(PlayableGraph graph, GameObject go)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayableGraph</span></td>
+        <td><span class="parametername">graph</span></td>
+        <td><p><inheritdoc></inheritdoc></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">go</span></td>
+        <td><p><inheritdoc></inheritdoc></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Playable</span></td>
+        <td><p><inheritdoc></inheritdoc></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_CreatePlayable_" data-uid="UnityEngine.Timeline.TrackAsset.CreatePlayable*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_CreatePlayable_PlayableGraph_GameObject_UnityEngine_Timeline_TimelineClip_" data-uid="UnityEngine.Timeline.TrackAsset.CreatePlayable(PlayableGraph,GameObject,UnityEngine.Timeline.TimelineClip)">CreatePlayable(PlayableGraph, GameObject, TimelineClip)</h4>
+  <div class="markdown level1 summary"><p>Constructs a Playable from a TimelineClip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Playable CreatePlayable(PlayableGraph graph, GameObject gameObject, TimelineClip clip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayableGraph</span></td>
+        <td><span class="parametername">graph</span></td>
+        <td><p>PlayableGraph that will own the playable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">gameObject</span></td>
+        <td><p>The GameObject that builds the PlayableGraph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineClip.html">TimelineClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>The TimelineClip to construct a playable for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Playable</span></td>
+        <td><p>A playable that will be set as an input to the Track Mixer playable, or Playable.Null if the clip does not have a valid PlayableAsset</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_CreatePlayable_PlayableGraph_GameObject_UnityEngine_Timeline_TimelineClip__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>By default, this method invokes Playable.CreatePlayable, sets animated properties, and sets the speed of the created playable. Override this method to change this default implementation.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_CreateTrackMixer_" data-uid="UnityEngine.Timeline.TrackAsset.CreateTrackMixer*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_CreateTrackMixer_PlayableGraph_GameObject_System_Int32_" data-uid="UnityEngine.Timeline.TrackAsset.CreateTrackMixer(PlayableGraph,GameObject,System.Int32)">CreateTrackMixer(PlayableGraph, GameObject, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a mixer used to blend playables generated by clips on the track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Playable CreateTrackMixer(PlayableGraph graph, GameObject go, int inputCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayableGraph</span></td>
+        <td><span class="parametername">graph</span></td>
+        <td><p>The graph to inject playables into</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">go</span></td>
+        <td><p>The GameObject that requested the graph.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inputCount</span></td>
+        <td><p>The number of playables from clips that will be inputs to the returned mixer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Playable</span></td>
+        <td><p>A handle to the [[Playable]] representing the mixer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_CreateTrackMixer_PlayableGraph_GameObject_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Override this method to provide a custom playable for mixing clips on a graph.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_DeleteClip_" data-uid="UnityEngine.Timeline.TrackAsset.DeleteClip*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_DeleteClip_UnityEngine_Timeline_TimelineClip_" data-uid="UnityEngine.Timeline.TrackAsset.DeleteClip(UnityEngine.Timeline.TimelineClip)">DeleteClip(TimelineClip)</h4>
+  <div class="markdown level1 summary"><p>Delete a clip from this track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeleteClip(TimelineClip clip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineClip.html">TimelineClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>The clip to delete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Returns true if the removal was successful</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_DeleteClip_UnityEngine_Timeline_TimelineClip__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will delete a clip and any assets owned by the clip.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_DeleteMarker_" data-uid="UnityEngine.Timeline.TrackAsset.DeleteMarker*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_DeleteMarker_UnityEngine_Timeline_IMarker_" data-uid="UnityEngine.Timeline.TrackAsset.DeleteMarker(UnityEngine.Timeline.IMarker)">DeleteMarker(IMarker)</h4>
+  <div class="markdown level1 summary"><p>Removes a marker from the current asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeleteMarker(IMarker marker)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.IMarker.html">IMarker</a></td>
+        <td><span class="parametername">marker</span></td>
+        <td><p>The marker instance to be removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Returns true if the marker instance was successfully removed. Returns false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_GatherProperties_" data-uid="UnityEngine.Timeline.TrackAsset.GatherProperties*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_GatherProperties_PlayableDirector_UnityEngine_Timeline_IPropertyCollector_" data-uid="UnityEngine.Timeline.TrackAsset.GatherProperties(PlayableDirector,UnityEngine.Timeline.IPropertyCollector)">GatherProperties(PlayableDirector, IPropertyCollector)</h4>
+  <div class="markdown level1 summary"><p>Called by the Timeline Editor to gather properties requiring preview.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GatherProperties(PlayableDirector director, IPropertyCollector driver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayableDirector</span></td>
+        <td><span class="parametername">director</span></td>
+        <td><p>The PlayableDirector invoking the preview</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.IPropertyCollector.html">IPropertyCollector</a></td>
+        <td><span class="parametername">driver</span></td>
+        <td><p>PropertyCollector used to gather previewable properties</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_GetAnimationClipHash_" data-uid="UnityEngine.Timeline.TrackAsset.GetAnimationClipHash*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_GetAnimationClipHash_AnimationClip_" data-uid="UnityEngine.Timeline.TrackAsset.GetAnimationClipHash(AnimationClip)">GetAnimationClipHash(AnimationClip)</h4>
+  <div class="markdown level1 summary"><p>Gets the hash code for an AnimationClip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static int GetAnimationClipHash(AnimationClip clip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AnimationClip</span></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>The animation clip.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>A 32-bit signed integer that is the hash code for <code data-dev-comment-type="paramref" class="paramref">clip</code>. Returns 0 if <code data-dev-comment-type="paramref" class="paramref">clip</code> is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_GetChildTracks_" data-uid="UnityEngine.Timeline.TrackAsset.GetChildTracks*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_GetChildTracks" data-uid="UnityEngine.Timeline.TrackAsset.GetChildTracks">GetChildTracks()</h4>
+  <div class="markdown level1 summary"><p>The list of subtracks or child tracks attached to this track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TrackAsset&gt; GetChildTracks()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="UnityEngine.Timeline.TrackAsset.html">TrackAsset</a>&gt;</td>
+        <td><p>Returns an enumerable list of child tracks owned directly by this track.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_GetChildTracks_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In the case of GroupTracks, this returns all tracks contained in the group. This will return the all subtracks or override tracks, if supported by the track.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_GetClips_" data-uid="UnityEngine.Timeline.TrackAsset.GetClips*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_GetClips" data-uid="UnityEngine.Timeline.TrackAsset.GetClips">GetClips()</h4>
+  <div class="markdown level1 summary"><p>A list of clips owned by this track</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TimelineClip&gt; GetClips()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="UnityEngine.Timeline.TimelineClip.html">TimelineClip</a>&gt;</td>
+        <td><p>Returns an enumerable list of clips owned by the track.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_GetMarker_" data-uid="UnityEngine.Timeline.TrackAsset.GetMarker*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_GetMarker_System_Int32_" data-uid="UnityEngine.Timeline.TrackAsset.GetMarker(System.Int32)">GetMarker(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the marker at a given position, on the current asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMarker GetMarker(int idx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>The index of the marker to be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.IMarker.html">IMarker</a></td>
+        <td><p>The marker.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_GetMarker_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The ordering of the markers is not guaranteed.</p>
+</div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_GetMarkerCount_" data-uid="UnityEngine.Timeline.TrackAsset.GetMarkerCount*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_GetMarkerCount" data-uid="UnityEngine.Timeline.TrackAsset.GetMarkerCount">GetMarkerCount()</h4>
+  <div class="markdown level1 summary"><p>Returns the number of markers on the current asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMarkerCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of markers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_GetMarkers_" data-uid="UnityEngine.Timeline.TrackAsset.GetMarkers*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_GetMarkers" data-uid="UnityEngine.Timeline.TrackAsset.GetMarkers">GetMarkers()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerable list of markers on the current asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IMarker&gt; GetMarkers()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="UnityEngine.Timeline.IMarker.html">IMarker</a>&gt;</td>
+        <td><p>The list of markers on the asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_OnAfterTrackDeserialize_" data-uid="UnityEngine.Timeline.TrackAsset.OnAfterTrackDeserialize*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_OnAfterTrackDeserialize" data-uid="UnityEngine.Timeline.TrackAsset.OnAfterTrackDeserialize">OnAfterTrackDeserialize()</h4>
+  <div class="markdown level1 summary"><p>Called after a track has been deserialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnAfterTrackDeserialize()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_OnBeforeTrackSerialize_" data-uid="UnityEngine.Timeline.TrackAsset.OnBeforeTrackSerialize*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_OnBeforeTrackSerialize" data-uid="UnityEngine.Timeline.TrackAsset.OnBeforeTrackSerialize">OnBeforeTrackSerialize()</h4>
+  <div class="markdown level1 summary"><p>Called before a track is serialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnBeforeTrackSerialize()</code></pre>
+  </div>
+  
+  
+  <a id="UnityEngine_Timeline_TrackAsset_OnCreateClip_" data-uid="UnityEngine.Timeline.TrackAsset.OnCreateClip*"></a>
+  <h4 id="UnityEngine_Timeline_TrackAsset_OnCreateClip_UnityEngine_Timeline_TimelineClip_" data-uid="UnityEngine.Timeline.TrackAsset.OnCreateClip(UnityEngine.Timeline.TimelineClip)">OnCreateClip(TimelineClip)</h4>
+  <div class="markdown level1 summary"><p>Called when a clip is created on a track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnCreateClip(TimelineClip clip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Timeline.TimelineClip.html">TimelineClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>The timeline clip added to this track</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnityEngine_Timeline_TrackAsset_OnCreateClip_UnityEngine_Timeline_TimelineClip__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use this method to set default values on a timeline clip, or it's PlayableAsset.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Timeline.IPropertyPreview.html">IPropertyPreview</a>
+  </div>
+  <div>
+      <span class="xref">PlayableAsset</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

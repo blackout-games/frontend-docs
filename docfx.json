@@ -5,27 +5,27 @@
         {
           "files": [
             "**.cs"
-		  ],
-		  "exclude":[
-			  "**/Runtime/Best HTTP (Pro)/**",
-			  "**/Runtime/Plugins/**"
-		  ],
-		  "src": "../core-unity/"
-		}
+          ],
+          "exclude": [
+            "**/Runtime/Best HTTP (Pro)/**",
+            "**/Runtime/Plugins/**"
+          ],
+          "src": "../../Unity/core-unity/"
+        }
       ],
       "dest": "api/Core"
-	},
-	{
-		"src": [
-		  {
-			"files": [
-			  "**.cs"
-			],
-			"src": "../rugby-unity/Assets/_Scripts"
-		  }
-		],
-		"dest": "api/Rugby"
-	  }
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "**.cs"
+          ],
+          "src": "../../Unity/rugby-unity/Assets/_Scripts"
+        }
+      ],
+      "dest": "api/Rugby"
+    }
   ],
   "build": {
     "content": [

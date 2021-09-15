@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PlayerController
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PlayerController
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController">
+  
+  
+  <h1 id="Blackout_Rugby_Match_View_Match_Day_PlayerController" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController" class="text-break">Class PlayerController
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Blackout.Rugby.Match_View.Pawn.html">Pawn</a></div>
+    <div class="level2"><span class="xref">PlayerController</span></div>
+      <div class="level3"><a class="xref" href="Blackout.Rugby.Match_View.Match_Day.PlayerControllerExperimental.html">PlayerControllerExperimental</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Match_View.Pawn.html#Blackout_Rugby_Match_View_Pawn_Team">Pawn.Team</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Match_View.Pawn.html#Blackout_Rugby_Match_View_Pawn_Position">Pawn.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Match_View.Pawn.html#Blackout_Rugby_Match_View_Pawn_CurrentInfo">Pawn.CurrentInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Match_View.Pawn.html#Blackout_Rugby_Match_View_Pawn_showLogs">Pawn.showLogs</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Match_View.Pawn.html#Blackout_Rugby_Match_View_Pawn_infoList">Pawn.infoList</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Match_View.Pawn.html#Blackout_Rugby_Match_View_Pawn_MoveSpeed">Pawn.MoveSpeed</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Match_View.Pawn.html#Blackout_Rugby_Match_View_Pawn_MoveDirection">Pawn.MoveDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Match_View.Pawn.html#Blackout_Rugby_Match_View_Pawn_SetExperimentalModelShowing_System_Boolean_">Pawn.SetExperimentalModelShowing(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Match_View.Pawn.html#Blackout_Rugby_Match_View_Pawn_SetTeamAndPosition_System_String_System_String_">Pawn.SetTeamAndPosition(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Match_View.Pawn.html#Blackout_Rugby_Match_View_Pawn_Sort">Pawn.Sort()</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Match_View.Pawn.html#Blackout_Rugby_Match_View_Pawn_AddData_System_String_JArray_">Pawn.AddData(String, JArray)</a>
+    </div>
+    <div>
+      <a class="xref" href="Blackout.Rugby.Match_View.Pawn.html#Blackout_Rugby_Match_View_Pawn_SetFrame_System_Int32_System_Boolean_">Pawn.SetFrame(Int32, Boolean)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Blackout.Rugby.Match_View.Match_Day.html">Blackout.Rugby.Match_View.Match_Day</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Blackout_Rugby_Match_View_Match_Day_PlayerController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlayerController : Pawn</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Blackout_Rugby_Match_View_Match_Day_PlayerController_assetsMapper" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.assetsMapper">assetsMapper</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Model3DAssetsMapper assetsMapper</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Blackout.Model3DAssetsMapper.html">Model3DAssetsMapper</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Match_View_Match_Day_PlayerController_labelTarget" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.labelTarget">labelTarget</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform labelTarget</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Match_View_Match_Day_PlayerController_modelRenderer" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.modelRenderer">modelRenderer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Renderer modelRenderer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Renderer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Blackout_Rugby_Match_View_Match_Day_PlayerController_numberMesh" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.numberMesh">numberMesh</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Renderer numberMesh</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Renderer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Blackout_Rugby_Match_View_Match_Day_PlayerController_IsInjured_" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.IsInjured*"></a>
+  <h4 id="Blackout_Rugby_Match_View_Match_Day_PlayerController_IsInjured" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.IsInjured">IsInjured</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInjured { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Match_View_Match_Day_PlayerController_Jersey_" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.Jersey*"></a>
+  <h4 id="Blackout_Rugby_Match_View_Match_Day_PlayerController_Jersey" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.Jersey">Jersey</h4>
+  <div class="markdown level1 summary"><p>The number of the jersey</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Jersey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Match_View_Match_Day_PlayerController_PlayerModel_" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.PlayerModel*"></a>
+  <h4 id="Blackout_Rugby_Match_View_Match_Day_PlayerController_PlayerModel" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.PlayerModel">PlayerModel</h4>
+  <div class="markdown level1 summary"><p>The PlayerModel data from API</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerModel PlayerModel { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayerModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Blackout_Rugby_Match_View_Match_Day_PlayerController_Init_" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.Init*"></a>
+  <h4 id="Blackout_Rugby_Match_View_Match_Day_PlayerController_Init_System_Int32_PlayerModel_Helpers_ColourPalette_" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.Init(System.Int32,PlayerModel,Helpers.ColourPalette)">Init(Int32, PlayerModel, Helpers.ColourPalette)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Init(int jersey, PlayerModel playerModel, Helpers.ColourPalette jerseyColours)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">jersey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">PlayerModel</span></td>
+        <td><span class="parametername">playerModel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Helpers.ColourPalette</span></td>
+        <td><span class="parametername">jerseyColours</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Match_View_Match_Day_PlayerController_SetJerseyColour_" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.SetJerseyColour*"></a>
+  <h4 id="Blackout_Rugby_Match_View_Match_Day_PlayerController_SetJerseyColour_Helpers_ColourPalette_" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.SetJerseyColour(Helpers.ColourPalette)">SetJerseyColour(Helpers.ColourPalette)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetJerseyColour(Helpers.ColourPalette jerseyColours)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Helpers.ColourPalette</span></td>
+        <td><span class="parametername">jerseyColours</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Match_View_Match_Day_PlayerController_SetLocalPositionAndRotation_" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.SetLocalPositionAndRotation*"></a>
+  <h4 id="Blackout_Rugby_Match_View_Match_Day_PlayerController_SetLocalPositionAndRotation" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.SetLocalPositionAndRotation">SetLocalPositionAndRotation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SetLocalPositionAndRotation()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Blackout.Rugby.Match_View.Pawn.html#Blackout_Rugby_Match_View_Pawn_SetLocalPositionAndRotation">Pawn.SetLocalPositionAndRotation()</a></div>
+  
+  
+  <a id="Blackout_Rugby_Match_View_Match_Day_PlayerController_SetSelectionGlow_" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.SetSelectionGlow*"></a>
+  <h4 id="Blackout_Rugby_Match_View_Match_Day_PlayerController_SetSelectionGlow_System_Boolean_" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.SetSelectionGlow(System.Boolean)">SetSelectionGlow(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSelectionGlow(bool active)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">active</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Rugby_Match_View_Match_Day_PlayerController_Sub_" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.Sub*"></a>
+  <h4 id="Blackout_Rugby_Match_View_Match_Day_PlayerController_Sub_System_Int32_PlayerModel_" data-uid="Blackout.Rugby.Match_View.Match_Day.PlayerController.Sub(System.Int32,PlayerModel)">Sub(Int32, PlayerModel)</h4>
+  <div class="markdown level1 summary"><p>Function to use when subbing player</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sub(int jersey, PlayerModel playerModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">jersey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">PlayerModel</span></td>
+        <td><span class="parametername">playerModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

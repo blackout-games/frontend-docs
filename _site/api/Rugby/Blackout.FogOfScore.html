@@ -1,0 +1,628 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FogOfScore
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FogOfScore
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Blackout.FogOfScore">
+  
+  
+  <h1 id="Blackout_FogOfScore" data-uid="Blackout.FogOfScore" class="text-break">Class FogOfScore
+  </h1>
+  <div class="markdown level0 summary"><p>Fog of score logic.</p>
+<p>
+Dependencies:
+- ManagerModel.cs
+- BlackoutFile.cs
+- Run.cs
+- FixtureModel.cs
+- BlackoutText.cs
+- BlackoutButton.cs
+</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FogOfScore</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Blackout.html">Blackout</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Blackout_FogOfScore_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class FogOfScore</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Blackout_FogOfScore_AnyFixturesFogged_" data-uid="Blackout.FogOfScore.AnyFixturesFogged*"></a>
+  <h4 id="Blackout_FogOfScore_AnyFixturesFogged_System_Boolean_" data-uid="Blackout.FogOfScore.AnyFixturesFogged(System.Boolean)">AnyFixturesFogged(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns true if any fixtures from a club is fogged</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AnyFixturesFogged(bool includePlayOffs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includePlayOffs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_FogOfScore_FogScore_" data-uid="Blackout.FogOfScore.FogScore*"></a>
+  <h4 id="Blackout_FogOfScore_FogScore_FixtureModel_" data-uid="Blackout.FogOfScore.FogScore(FixtureModel)">FogScore(FixtureModel)</h4>
+  <div class="markdown level1 summary"><p>Returns saved value of fixture whether or not the fixture has been seen</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FogScore(this FixtureModel fixtureModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FixtureModel</span></td>
+        <td><span class="parametername">fixtureModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_FogOfScore_FogScore_" data-uid="Blackout.FogOfScore.FogScore*"></a>
+  <h4 id="Blackout_FogOfScore_FogScore_System_String_" data-uid="Blackout.FogOfScore.FogScore(System.String)">FogScore(String)</h4>
+  <div class="markdown level1 summary"><p>Returns saved value of fixture whether or not the fixture has been seen</p>
+<p>
+Same as the extension method but for when you only have an Id handy
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FogScore(string fixtureId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fixtureId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_FogOfScore_GetMockFinal_" data-uid="Blackout.FogOfScore.GetMockFinal*"></a>
+  <h4 id="Blackout_FogOfScore_GetMockFinal" data-uid="Blackout.FogOfScore.GetMockFinal">GetMockFinal()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FixtureModel GetMockFinal()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FixtureModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_FogOfScore_GetMockSemi1_" data-uid="Blackout.FogOfScore.GetMockSemi1*"></a>
+  <h4 id="Blackout_FogOfScore_GetMockSemi1" data-uid="Blackout.FogOfScore.GetMockSemi1">GetMockSemi1()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FixtureModel GetMockSemi1()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FixtureModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_FogOfScore_GetMockSemi2_" data-uid="Blackout.FogOfScore.GetMockSemi2*"></a>
+  <h4 id="Blackout_FogOfScore_GetMockSemi2" data-uid="Blackout.FogOfScore.GetMockSemi2">GetMockSemi2()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FixtureModel GetMockSemi2()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FixtureModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_FogOfScore_LiftFogAllFixtures_" data-uid="Blackout.FogOfScore.LiftFogAllFixtures*"></a>
+  <h4 id="Blackout_FogOfScore_LiftFogAllFixtures" data-uid="Blackout.FogOfScore.LiftFogAllFixtures">LiftFogAllFixtures()</h4>
+  <div class="markdown level1 summary"><p>Sets ALL fixtures to false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LiftFogAllFixtures()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_FogOfScore_LiftFogAllFixturesOfClub_" data-uid="Blackout.FogOfScore.LiftFogAllFixturesOfClub*"></a>
+  <h4 id="Blackout_FogOfScore_LiftFogAllFixturesOfClub_System_Boolean_" data-uid="Blackout.FogOfScore.LiftFogAllFixturesOfClub(System.Boolean)">LiftFogAllFixturesOfClub(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets all fixtures from club to false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LiftFogAllFixturesOfClub(bool includePlayOffs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includePlayOffs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_FogOfScore_LiftFogForFixture_" data-uid="Blackout.FogOfScore.LiftFogForFixture*"></a>
+  <h4 id="Blackout_FogOfScore_LiftFogForFixture_System_String_" data-uid="Blackout.FogOfScore.LiftFogForFixture(System.String)">LiftFogForFixture(String)</h4>
+  <div class="markdown level1 summary"><p>Sets fixture as seen</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LiftFogForFixture(string fixtureId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fixtureId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_FogOfScore_LoadData_" data-uid="Blackout.FogOfScore.LoadData*"></a>
+  <h4 id="Blackout_FogOfScore_LoadData" data-uid="Blackout.FogOfScore.LoadData">LoadData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LoadData()</code></pre>
+  </div>
+  
+  
+  <a id="Blackout_FogOfScore_ReceiveCommands_" data-uid="Blackout.FogOfScore.ReceiveCommands*"></a>
+  <h4 id="Blackout_FogOfScore_ReceiveCommands_System_String___" data-uid="Blackout.FogOfScore.ReceiveCommands(System.String[])">ReceiveCommands(String[])</h4>
+  <div class="markdown level1 summary"><p>Callback function from BConsole.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReceiveCommands(string[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_FogOfScore_SetClubLevels_" data-uid="Blackout.FogOfScore.SetClubLevels*"></a>
+  <h4 id="Blackout_FogOfScore_SetClubLevels_FixtureModel_BlackoutText_BlackoutText_" data-uid="Blackout.FogOfScore.SetClubLevels(FixtureModel,BlackoutText,BlackoutText)">SetClubLevels(FixtureModel, BlackoutText, BlackoutText)</h4>
+  <div class="markdown level1 summary"><p>Handles club level text</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetClubLevels(FixtureModel fixtureModel, BlackoutText homeLevel, BlackoutText guestLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FixtureModel</span></td>
+        <td><span class="parametername">fixtureModel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">BlackoutText</span></td>
+        <td><span class="parametername">homeLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">BlackoutText</span></td>
+        <td><span class="parametername">guestLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_FogOfScore_SetRevealButton_" data-uid="Blackout.FogOfScore.SetRevealButton*"></a>
+  <h4 id="Blackout_FogOfScore_SetRevealButton_FixtureModel_BlackoutButton_" data-uid="Blackout.FogOfScore.SetRevealButton(FixtureModel,BlackoutButton)">SetRevealButton(FixtureModel, BlackoutButton)</h4>
+  <div class="markdown level1 summary"><p>Specific activate function for the reveal button</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRevealButton(FixtureModel fixtureModel, BlackoutButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FixtureModel</span></td>
+        <td><span class="parametername">fixtureModel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">BlackoutButton</span></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_FogOfScore_SetScores_" data-uid="Blackout.FogOfScore.SetScores*"></a>
+  <h4 id="Blackout_FogOfScore_SetScores_FixtureModel_BlackoutText_BlackoutText_Image___" data-uid="Blackout.FogOfScore.SetScores(FixtureModel,BlackoutText,BlackoutText,Image[])">SetScores(FixtureModel, BlackoutText, BlackoutText, Image[])</h4>
+  <div class="markdown level1 summary"><p>Handle score text components</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetScores(FixtureModel fixtureModel, BlackoutText homeScore, BlackoutText guestText, params Image[] fogIcons)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FixtureModel</span></td>
+        <td><span class="parametername">fixtureModel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">BlackoutText</span></td>
+        <td><span class="parametername">homeScore</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">BlackoutText</span></td>
+        <td><span class="parametername">guestText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Image</span>[]</td>
+        <td><span class="parametername">fogIcons</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="Blackout_FogOfScore_OnFogLifted" data-uid="Blackout.FogOfScore.OnFogLifted">OnFogLifted</h4>
+  <div class="markdown level1 summary"><p>Event that is invoked after any value as been changed to false (fog lifted)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event Action OnFogLifted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

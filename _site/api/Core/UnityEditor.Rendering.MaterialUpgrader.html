@@ -1,0 +1,812 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MaterialUpgrader
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MaterialUpgrader
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEditor.Rendering.MaterialUpgrader">
+  
+  
+  <h1 id="UnityEditor_Rendering_MaterialUpgrader" data-uid="UnityEditor.Rendering.MaterialUpgrader" class="text-break">Class MaterialUpgrader
+  </h1>
+  <div class="markdown level0 summary"><p>Material Upgrader class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MaterialUpgrader</span></div>
+      <div class="level2"><a class="xref" href="UnityEditor.Rendering.SpeedTree8MaterialUpgrader.html">SpeedTree8MaterialUpgrader</a></div>
+      <div class="level2"><a class="xref" href="UnityEditor.Rendering.Universal.AutodeskInteractiveUpgrader.html">AutodeskInteractiveUpgrader</a></div>
+      <div class="level2"><a class="xref" href="UnityEditor.Rendering.Universal.ParticleUpgrader.html">ParticleUpgrader</a></div>
+      <div class="level2"><a class="xref" href="UnityEditor.Rendering.Universal.StandardUpgrader.html">StandardUpgrader</a></div>
+      <div class="level2"><a class="xref" href="UnityEditor.Rendering.Universal.TerrainUpgrader.html">TerrainUpgrader</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEditor.Rendering.html">UnityEditor.Rendering</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UnityEditor_Rendering_MaterialUpgrader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MaterialUpgrader</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_Convert_" data-uid="UnityEditor.Rendering.MaterialUpgrader.Convert*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_Convert_Material_Material_" data-uid="UnityEditor.Rendering.MaterialUpgrader.Convert(Material,Material)">Convert(Material, Material)</h4>
+  <div class="markdown level1 summary"><p>Custom material conversion method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Convert(Material srcMaterial, Material dstMaterial)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Material</span></td>
+        <td><span class="parametername">srcMaterial</span></td>
+        <td><p>Source material.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Material</span></td>
+        <td><span class="parametername">dstMaterial</span></td>
+        <td><p>Destination material.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_RemoveTexture_" data-uid="UnityEditor.Rendering.MaterialUpgrader.RemoveTexture*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_RemoveTexture_System_String_" data-uid="UnityEditor.Rendering.MaterialUpgrader.RemoveTexture(System.String)">RemoveTexture(String)</h4>
+  <div class="markdown level1 summary"><p>Remove Texture Parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTexture(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Parameter name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_RenameColor_" data-uid="UnityEditor.Rendering.MaterialUpgrader.RenameColor*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_RenameColor_System_String_System_String_" data-uid="UnityEditor.Rendering.MaterialUpgrader.RenameColor(System.String,System.String)">RenameColor(String, String)</h4>
+  <div class="markdown level1 summary"><p>Rename Color Parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenameColor(string oldName, string newName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldName</span></td>
+        <td><p>Old name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newName</span></td>
+        <td><p>New name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_RenameFloat_" data-uid="UnityEditor.Rendering.MaterialUpgrader.RenameFloat*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_RenameFloat_System_String_System_String_" data-uid="UnityEditor.Rendering.MaterialUpgrader.RenameFloat(System.String,System.String)">RenameFloat(String, String)</h4>
+  <div class="markdown level1 summary"><p>Rename Float Parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenameFloat(string oldName, string newName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldName</span></td>
+        <td><p>Old name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newName</span></td>
+        <td><p>New name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_RenameKeywordToFloat_" data-uid="UnityEditor.Rendering.MaterialUpgrader.RenameKeywordToFloat*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_RenameKeywordToFloat_System_String_System_String_System_Single_System_Single_" data-uid="UnityEditor.Rendering.MaterialUpgrader.RenameKeywordToFloat(System.String,System.String,System.Single,System.Single)">RenameKeywordToFloat(String, String, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Rename a keyword to float.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenameKeywordToFloat(string oldName, string newName, float setVal, float unsetVal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldName</span></td>
+        <td><p>Old name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newName</span></td>
+        <td><p>New name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">setVal</span></td>
+        <td><p>Value when set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">unsetVal</span></td>
+        <td><p>Value when unset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_RenameShader_" data-uid="UnityEditor.Rendering.MaterialUpgrader.RenameShader*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_RenameShader_System_String_System_String_UnityEditor_Rendering_MaterialUpgrader_MaterialFinalizer_" data-uid="UnityEditor.Rendering.MaterialUpgrader.RenameShader(System.String,System.String,UnityEditor.Rendering.MaterialUpgrader.MaterialFinalizer)">RenameShader(String, String, MaterialUpgrader.MaterialFinalizer)</h4>
+  <div class="markdown level1 summary"><p>Rename shader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenameShader(string oldName, string newName, MaterialUpgrader.MaterialFinalizer finalizer = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldName</span></td>
+        <td><p>Old name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newName</span></td>
+        <td><p>New name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.MaterialUpgrader.MaterialFinalizer.html">MaterialUpgrader.MaterialFinalizer</a></td>
+        <td><span class="parametername">finalizer</span></td>
+        <td><p>Finalizer delegate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_RenameTexture_" data-uid="UnityEditor.Rendering.MaterialUpgrader.RenameTexture*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_RenameTexture_System_String_System_String_" data-uid="UnityEditor.Rendering.MaterialUpgrader.RenameTexture(System.String,System.String)">RenameTexture(String, String)</h4>
+  <div class="markdown level1 summary"><p>Rename Texture Parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenameTexture(string oldName, string newName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldName</span></td>
+        <td><p>Old name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newName</span></td>
+        <td><p>New name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_SetColor_" data-uid="UnityEditor.Rendering.MaterialUpgrader.SetColor*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_SetColor_System_String_Color_" data-uid="UnityEditor.Rendering.MaterialUpgrader.SetColor(System.String,Color)">SetColor(String, Color)</h4>
+  <div class="markdown level1 summary"><p>Set color property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(string propertyName, Color value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_SetFloat_" data-uid="UnityEditor.Rendering.MaterialUpgrader.SetFloat*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_SetFloat_System_String_System_Single_" data-uid="UnityEditor.Rendering.MaterialUpgrader.SetFloat(System.String,System.Single)">SetFloat(String, Single)</h4>
+  <div class="markdown level1 summary"><p>Set float property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFloat(string propertyName, float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_SetTexture_" data-uid="UnityEditor.Rendering.MaterialUpgrader.SetTexture*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_SetTexture_System_String_Texture_" data-uid="UnityEditor.Rendering.MaterialUpgrader.SetTexture(System.String,Texture)">SetTexture(String, Texture)</h4>
+  <div class="markdown level1 summary"><p>Set texture property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTexture(string propertyName, Texture value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td><p>Property name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Texture</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_Upgrade_" data-uid="UnityEditor.Rendering.MaterialUpgrader.Upgrade*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_Upgrade_Material_List_UnityEditor_Rendering_MaterialUpgrader__UnityEditor_Rendering_MaterialUpgrader_UpgradeFlags_" data-uid="UnityEditor.Rendering.MaterialUpgrader.Upgrade(Material,List{UnityEditor.Rendering.MaterialUpgrader},UnityEditor.Rendering.MaterialUpgrader.UpgradeFlags)">Upgrade(Material, List&lt;MaterialUpgrader&gt;, MaterialUpgrader.UpgradeFlags)</h4>
+  <div class="markdown level1 summary"><p>Upgrade a material.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Upgrade(Material material, List&lt;MaterialUpgrader&gt; upgraders, MaterialUpgrader.UpgradeFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Material</span></td>
+        <td><span class="parametername">material</span></td>
+        <td><p>Material to upgrade.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="UnityEditor.Rendering.MaterialUpgrader.html">MaterialUpgrader</a>&gt;</td>
+        <td><span class="parametername">upgraders</span></td>
+        <td><p>List of Material upgraders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.MaterialUpgrader.UpgradeFlags.html">MaterialUpgrader.UpgradeFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Material Upgrader flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_Upgrade_" data-uid="UnityEditor.Rendering.MaterialUpgrader.Upgrade*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_Upgrade_Material_UnityEditor_Rendering_MaterialUpgrader_UnityEditor_Rendering_MaterialUpgrader_UpgradeFlags_" data-uid="UnityEditor.Rendering.MaterialUpgrader.Upgrade(Material,UnityEditor.Rendering.MaterialUpgrader,UnityEditor.Rendering.MaterialUpgrader.UpgradeFlags)">Upgrade(Material, MaterialUpgrader, MaterialUpgrader.UpgradeFlags)</h4>
+  <div class="markdown level1 summary"><p>Upgrade a material.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Upgrade(Material material, MaterialUpgrader upgrader, MaterialUpgrader.UpgradeFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Material</span></td>
+        <td><span class="parametername">material</span></td>
+        <td><p>Material to upgrade.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.MaterialUpgrader.html">MaterialUpgrader</a></td>
+        <td><span class="parametername">upgrader</span></td>
+        <td><p>Material upgrader.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.MaterialUpgrader.UpgradeFlags.html">MaterialUpgrader.UpgradeFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Material Upgrader flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_Upgrade_" data-uid="UnityEditor.Rendering.MaterialUpgrader.Upgrade*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_Upgrade_Material_UnityEditor_Rendering_MaterialUpgrader_UpgradeFlags_" data-uid="UnityEditor.Rendering.MaterialUpgrader.Upgrade(Material,UnityEditor.Rendering.MaterialUpgrader.UpgradeFlags)">Upgrade(Material, MaterialUpgrader.UpgradeFlags)</h4>
+  <div class="markdown level1 summary"><p>Upgrade method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Upgrade(Material material, MaterialUpgrader.UpgradeFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Material</span></td>
+        <td><span class="parametername">material</span></td>
+        <td><p>Material to upgrade.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.MaterialUpgrader.UpgradeFlags.html">MaterialUpgrader.UpgradeFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Upgrade flag</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_UpgradeProjectFolder_" data-uid="UnityEditor.Rendering.MaterialUpgrader.UpgradeProjectFolder*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_UpgradeProjectFolder_List_UnityEditor_Rendering_MaterialUpgrader__HashSet_System_String__System_String_UnityEditor_Rendering_MaterialUpgrader_UpgradeFlags_" data-uid="UnityEditor.Rendering.MaterialUpgrader.UpgradeProjectFolder(List{UnityEditor.Rendering.MaterialUpgrader},HashSet{System.String},System.String,UnityEditor.Rendering.MaterialUpgrader.UpgradeFlags)">UpgradeProjectFolder(List&lt;MaterialUpgrader&gt;, HashSet&lt;String&gt;, String, MaterialUpgrader.UpgradeFlags)</h4>
+  <div class="markdown level1 summary"><p>Upgrade the project folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UpgradeProjectFolder(List&lt;MaterialUpgrader&gt; upgraders, HashSet&lt;string&gt; shaderNamesToIgnore, string progressBarName, MaterialUpgrader.UpgradeFlags flags = MaterialUpgrader.UpgradeFlags.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="UnityEditor.Rendering.MaterialUpgrader.html">MaterialUpgrader</a>&gt;</td>
+        <td><span class="parametername">upgraders</span></td>
+        <td><p>List of upgraders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HashSet</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">shaderNamesToIgnore</span></td>
+        <td><p>Set of shader names to ignore.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">progressBarName</span></td>
+        <td><p>Name of the progress bar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.MaterialUpgrader.UpgradeFlags.html">MaterialUpgrader.UpgradeFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Material Upgrader flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_UpgradeProjectFolder_" data-uid="UnityEditor.Rendering.MaterialUpgrader.UpgradeProjectFolder*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_UpgradeProjectFolder_List_UnityEditor_Rendering_MaterialUpgrader__System_String_UnityEditor_Rendering_MaterialUpgrader_UpgradeFlags_" data-uid="UnityEditor.Rendering.MaterialUpgrader.UpgradeProjectFolder(List{UnityEditor.Rendering.MaterialUpgrader},System.String,UnityEditor.Rendering.MaterialUpgrader.UpgradeFlags)">UpgradeProjectFolder(List&lt;MaterialUpgrader&gt;, String, MaterialUpgrader.UpgradeFlags)</h4>
+  <div class="markdown level1 summary"><p>Upgrade the project folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UpgradeProjectFolder(List&lt;MaterialUpgrader&gt; upgraders, string progressBarName, MaterialUpgrader.UpgradeFlags flags = MaterialUpgrader.UpgradeFlags.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="UnityEditor.Rendering.MaterialUpgrader.html">MaterialUpgrader</a>&gt;</td>
+        <td><span class="parametername">upgraders</span></td>
+        <td><p>List of upgraders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">progressBarName</span></td>
+        <td><p>Name of the progress bar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.MaterialUpgrader.UpgradeFlags.html">MaterialUpgrader.UpgradeFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Material Upgrader flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_UpgradeSelection_" data-uid="UnityEditor.Rendering.MaterialUpgrader.UpgradeSelection*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_UpgradeSelection_List_UnityEditor_Rendering_MaterialUpgrader__HashSet_System_String__System_String_UnityEditor_Rendering_MaterialUpgrader_UpgradeFlags_" data-uid="UnityEditor.Rendering.MaterialUpgrader.UpgradeSelection(List{UnityEditor.Rendering.MaterialUpgrader},HashSet{System.String},System.String,UnityEditor.Rendering.MaterialUpgrader.UpgradeFlags)">UpgradeSelection(List&lt;MaterialUpgrader&gt;, HashSet&lt;String&gt;, String, MaterialUpgrader.UpgradeFlags)</h4>
+  <div class="markdown level1 summary"><p>Upgrade the selection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UpgradeSelection(List&lt;MaterialUpgrader&gt; upgraders, HashSet&lt;string&gt; shaderNamesToIgnore, string progressBarName, MaterialUpgrader.UpgradeFlags flags = MaterialUpgrader.UpgradeFlags.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="UnityEditor.Rendering.MaterialUpgrader.html">MaterialUpgrader</a>&gt;</td>
+        <td><span class="parametername">upgraders</span></td>
+        <td><p>List of upgraders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HashSet</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">shaderNamesToIgnore</span></td>
+        <td><p>Set of shader names to ignore.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">progressBarName</span></td>
+        <td><p>Name of the progress bar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.MaterialUpgrader.UpgradeFlags.html">MaterialUpgrader.UpgradeFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Material Upgrader flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Rendering_MaterialUpgrader_UpgradeSelection_" data-uid="UnityEditor.Rendering.MaterialUpgrader.UpgradeSelection*"></a>
+  <h4 id="UnityEditor_Rendering_MaterialUpgrader_UpgradeSelection_List_UnityEditor_Rendering_MaterialUpgrader__System_String_UnityEditor_Rendering_MaterialUpgrader_UpgradeFlags_" data-uid="UnityEditor.Rendering.MaterialUpgrader.UpgradeSelection(List{UnityEditor.Rendering.MaterialUpgrader},System.String,UnityEditor.Rendering.MaterialUpgrader.UpgradeFlags)">UpgradeSelection(List&lt;MaterialUpgrader&gt;, String, MaterialUpgrader.UpgradeFlags)</h4>
+  <div class="markdown level1 summary"><p>Upgrade the selection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UpgradeSelection(List&lt;MaterialUpgrader&gt; upgraders, string progressBarName, MaterialUpgrader.UpgradeFlags flags = MaterialUpgrader.UpgradeFlags.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="UnityEditor.Rendering.MaterialUpgrader.html">MaterialUpgrader</a>&gt;</td>
+        <td><span class="parametername">upgraders</span></td>
+        <td><p>List of upgraders.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">progressBarName</span></td>
+        <td><p>Name of the progress bar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEditor.Rendering.MaterialUpgrader.UpgradeFlags.html">MaterialUpgrader.UpgradeFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Material Upgrader flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
