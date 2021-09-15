@@ -8,7 +8,7 @@
     <title>Build Process </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Build Process ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -174,6 +174,37 @@ Some of the automated processes know about these groups and must be built togeth
 If you're running a local build and assets aren't loading in then you may experience behavior that you're not going to see in the production version: low fps, game failing to load, lots of errors being thrown in the console about addressables.</p>
 <h2 id="mobile-builds">Mobile builds</h2>
 <p>There is currently no formal build process in place for mobile so this will need to be fully documented later</p>
+<h3 id="android-environment-set-up-for-unity">Android Environment set up for Unity</h3>
+<p>Steps to take to get android builds working locally on your computer.</p>
+<h4 id="unity">Unity</h4>
+<ul>
+<li>Install Android modules from Unity Hub</li>
+<li>Copy path from <code>Preferences &gt; External Tools &gt; Android &gt; Android SDK Tools</code>, uncheck the box, paste in the path. <img src="../images/android-sdk.png" alt=""></li>
+</ul>
+<h4 id="android-studio">Android Studio</h4>
+<ul>
+<li>Install android studio - <a href="https://developer.android.com/studio">https://developer.android.com/studio</a></li>
+<li>Create an empty project, and build it. This will create a debug keystore in <code>%APPDATA%.android/</code> or <code>~/.android/</code> which is needed by Facebook SDK</li>
+<li>If there is a build error due to build-tools lisence, remove it from the SDK manager and reinstall it and ensure to accept the lisence.</li>
+</ul>
+<h4 id="openssl-windows-only">OpenSSL (windows only)</h4>
+<ul>
+<li>Install OpenSSL - <a href="https://www.dropbox.com/s/jgrcd1tcl4a8f0x/Win64OpenSSL-1_1_1i.exe?dl=0">https://www.dropbox.com/s/jgrcd1tcl4a8f0x/Win64OpenSSL-1_1_1i.exe?dl=0</a></li>
+<li>Add OpenSSL to PATH - <code>C:\Program Files\OpenSSL-Win64\bin</code></li>
+</ul>
+<h4 id="java">JAVA</h4>
+<ul>
+<li>Install JDK - <a href="https://www.oracle.com/java/technologies/javase-downloads.html">https://www.oracle.com/java/technologies/javase-downloads.html</a></li>
+<li>[windows only] Add JDK to PATH - <code>C:\Program Files\Java\jdk-15.0.2\bin</code></li>
+<li>[linux] <code>sudo apt install openjdk-16-jdk</code> or whatever latest jdk is at the time</li>
+<li>Log out of windows or restart PC (this is so the PATH variables get added properly)</li>
+</ul>
+<h4 id="back-to-unity">Back To Unity</h4>
+<ul>
+<li>Type in password for our Release Keystore (password is in repo <code>/Release Keys</code>) <img src="../images/android-publish-settings.png" alt=""></li>
+<li>Build APK in Unity using <code>Blackout &gt; Build &gt; Local Developer or Local Release</code></li>
+</ul>
+<hr>
 <h3 id="local-ios-build-on-a-mac">Local iOS build on a Mac</h3>
 <p>This process is designed around building on the office iMac so some paths may be different if you are using a different device</p>
 <p>All build scripts are located in the repo <code>./ios_scripts/</code>. Each script does a specific task.</p>

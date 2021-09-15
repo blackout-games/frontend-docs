@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TextureDownloader
    ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -227,7 +227,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static async UniTask&lt;bool&gt; IsImageUrlAsync(string url, string language)</code></pre>
+    <pre><code class="lang-csharp hljs">public static UniTask&lt;bool&gt; IsImageUrlAsync(string url, string language)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -312,7 +312,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static async UniTask PreloadAsync(IEnumerable&lt;string&gt; urls, bool useCloudFrontUrl = false, bool forceToSquare = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static UniTask PreloadAsync(IEnumerable&lt;string&gt; urls, bool useCloudFrontUrl = false, bool forceToSquare = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -366,7 +366,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static async void PreloadFromModel&lt;T&gt;(IEnumerable&lt;T&gt; models, Func&lt;IEnumerable&lt;T&gt;, IEnumerable&lt;string&gt;&gt; getter)
+    <pre><code class="lang-csharp hljs">public static void PreloadFromModel&lt;T&gt;(IEnumerable&lt;T&gt; models, Func&lt;IEnumerable&lt;T&gt;, IEnumerable&lt;string&gt;&gt; getter)
     where T : IDataModel</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
