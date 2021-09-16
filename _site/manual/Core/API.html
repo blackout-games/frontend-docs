@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>API </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="API ">
     <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -67,8 +67,110 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="api">API</h1>
 
-<p>// TODO</p>
+<p>See <a href="https://rugbyapi.docs.apiary.io/">https://rugbyapi.docs.apiary.io/</a> for more in depth API documentation</p>
+<p>This guide will only show you how to do a simple API request on the front end.</p>
+<p>For all of these requests its important to use async/await over promises as its more performant as well as being easier to read. Promises should be phased out over time.</p>
+<h2 id="get">GET</h2>
+<p>This example shows you can get all players within a club</p>
+<pre><code class="lang-csharp">
+// get data from server
+var res = await API.GetAsync(&quot;players&quot;, $&quot;?filter[club]={clubId}&quot;);
+
+// log any errors
+if (res.IsError())
+{
+    B.LogError(res.Exception);
+    return;
+}
+
+// deserialise data
+var players = res.Data.ToModelArray&lt;PlayerModel&gt;();
+
+// adds players to cache
+players.AppendManyToCache();
+
+// you can now do what you will
+foreach(var player in players)
+{
+    B.Log($&quot;Player Name: {player.Name}&quot;);
+}
+
+</code></pre>
+<h2 id="post">POST</h2>
+<p>This example shows how to create a new club</p>
+<pre><code class="lang-csharp">
+var body = WebDataModel.CreateRequestBody(&quot;clubs&quot;,
+                (&quot;country&quot;, &quot;nz&quot;),
+                (&quot;name&quot;, &quot;A silly club name&quot;),
+                (&quot;sourceClub&quot;, currentClubId));
+
+// send data to server
+var res = await API.PostAsync(&quot;clubs&quot;, body);
+
+// log any errors
+if (res.IsError())
+{
+    B.LogError(res.Exception);
+    return;
+}
+
+// deserialise data
+var club = res.Data.ToModel&lt;ClubModel&gt;();
+
+// adds players to cache
+club.AppendToCache();
+
+// you can now do what you will
+B.Log($&quot;New club created! {club.Name}&quot;);
+
+</code></pre>
+<h2 id="patch">PATCH</h2>
+<p>This example shows how to change the username for the manager</p>
+<pre><code class="lang-csharp">
+var body = WebDataModel.CreateRequestBody(&quot;managers&quot;, managerId, (&quot;username&quot;, &quot;A silly name&quot;));
+
+// update data on server
+var res = await API.PatchAsync(&quot;managers&quot;, body);
+
+// log any errors
+if (res.IsError())
+{
+    B.LogError(res.Exception);
+    return;
+}
+
+// deserialise data
+var manager = res.Data.ToModel&lt;ManagerModel&gt;();
+
+// adds players to cache
+manager.AppendToCache();
+
+// you can now do what you will
+B.Log($&quot;New manager name: {manager.Name}&quot;);
+
+</code></pre>
+<h2 id="delete">DELETE</h2>
+<p>This example shows how to delete notifications</p>
+<pre><code class="lang-csharp">
+// delete all notifications
+var res = await API.DeleteAsync(&quot;notifications/all&quot;);
+
+// log any errors
+if (res.IsError())
+{
+    B.LogError(res.Exception);
+    return;
+}
+
+// remove from cache
+Cache.Clear(&quot;notifications&quot;);
+
+// done
+B.Log(&quot;Notifications has been deleted&quot;);
+
+</code></pre>
 </article>
           </div>
           
