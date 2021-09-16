@@ -4,6 +4,8 @@ The EventBus system is a elegant way to decouple some parts of code.
 
 Do not use this every frame or in high usage situations as there is a bit of overhead due to dynamic invoke of delegates and class instantiation and garbage collection. In cases you need to use the message a lot it is suggested that you use normal C# System.Action or event delegates. 
 
+[API Docs](https://blackout-games.github.io/frontend-docs/api/Core/Blackout.Core.EventSystem.EventBus.EventBus.html)
+
 ## Creating a new event message
 
 All events must extend the `EventMessage` class.

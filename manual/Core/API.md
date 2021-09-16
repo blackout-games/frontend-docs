@@ -6,6 +6,8 @@ This guide will only show you how to do a simple API request on the front end.
 
 For all of these requests its important to use async/await over promises as its more performant as well as being easier to read. Promises should be phased out over time.
 
+[API Docs](https://blackout-games.github.io/frontend-docs/api/Core/Blackout.Core.Web.API.html)
+
 ## GET
 
 This example shows you can get all players within a club
