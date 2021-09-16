@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>EventBus </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="EventBus ">
     <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -67,8 +67,58 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="eventbus">EventBus</h1>
 
-<p>// TODO</p>
+<p>The EventBus system is a elegant way to decouple some parts of code.</p>
+<p>Do not use this every frame or in high usage situations as there is a bit of overhead due to dynamic invoke of delegates and class instantiation and garbage collection. In cases you need to use the message a lot it is suggested that you use normal C# System.Action or event delegates.</p>
+<h2 id="creating-a-new-event-message">Creating a new event message</h2>
+<p>All events must extend the <code>EventMessage</code> class.</p>
+<pre><code class="lang-csharp">
+public class MyMessage : EventMessage
+{
+    public float MyValue {get;}
+
+    public MyMessage(float value)
+    {
+        MyValue = value;
+    }
+}
+
+</code></pre>
+<h2 id="publishing">Publishing</h2>
+<pre><code class="lang-csharp">
+EventBus.Publish(new MyMessage(0.69f)); // nice
+EventBus.Publish(new MyMessage { MyValue = 0.69f }); // also nice
+
+</code></pre>
+<h2 id="subscribing">Subscribing</h2>
+<pre><code class="lang-csharp">
+private void Start()
+{
+    EventBus
+        .Subscribe&lt;MyMessage&gt;(MyEventCallback)
+        .BindTo(this); // removes need to unsubscribe from OnDestroyed()
+
+    // you can also use LINQ to filer messages with .Where()
+    EventBus
+        .Where&lt;MyMessage&gt;(x =&gt; x.MyValue &gt; 0.69f) // will only invoke callback if this is true
+        .Subscribe&lt;MyMessage&gt;(MyEventCallback)
+        .BindTo(this); // removes need to unsubscribe from OnDestroyed()
+}
+
+private void MyEventCallback(MyMessage message)
+{
+    // handle the data
+    B.Log(message.MyValue);
+}
+
+</code></pre>
+<h2 id="unsubscribing">Unsubscribing</h2>
+<p>Its generally best to use the <code>.Bind()</code> extension but if you need to you can unsubscribe from the event as well</p>
+<pre><code class="lang-csharp">
+EventBus.Unsubscribe&lt;MyMessage&gt;(MyEventCallback);
+
+</code></pre>
 </article>
           </div>
           
