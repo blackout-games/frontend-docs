@@ -81,11 +81,6 @@
     <div class="level1"><a class="xref" href="Blackout.Core.Behaviours.BlackoutBehaviourUI.html">BlackoutBehaviourUI</a></div>
     <div class="level2"><span class="xref">RegimeEditingPanel</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">IEnhancedScrollerDelegate</span></div>
-    <div><span class="xref">IOrientationChangeable</span></div>
-  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -153,7 +148,7 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RegimeEditingPanel : BlackoutBehaviourUI, IEnhancedScrollerDelegate, IOrientationChangeable</code></pre>
+    <pre><code class="lang-csharp hljs">public class RegimeEditingPanel : BlackoutBehaviourUI</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -257,16 +252,6 @@
   </h3>
   
   
-  <a id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_AutoScrollToTodaySession_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.AutoScrollToTodaySession*"></a>
-  <h4 id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_AutoScrollToTodaySession" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.AutoScrollToTodaySession">AutoScrollToTodaySession()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AutoScrollToTodaySession()</code></pre>
-  </div>
-  
-  
   <a id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_ClearPlayerCheckboxes_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.ClearPlayerCheckboxes*"></a>
   <h4 id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_ClearPlayerCheckboxes" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.ClearPlayerCheckboxes">ClearPlayerCheckboxes()</h4>
   <div class="markdown level1 summary"></div>
@@ -287,199 +272,14 @@
   </div>
   
   
-  <a id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_FillCardSlotsWithCards_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.FillCardSlotsWithCards*"></a>
-  <h4 id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_FillCardSlotsWithCards_TrainingRegimeModel_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.FillCardSlotsWithCards(TrainingRegimeModel)">FillCardSlotsWithCards(TrainingRegimeModel)</h4>
+  <a id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_RemoveSessionItems_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.RemoveSessionItems*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_RemoveSessionItems" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.RemoveSessionItems">RemoveSessionItems()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void FillCardSlotsWithCards(TrainingRegimeModel regimeModel)</code></pre>
+    <pre><code class="lang-csharp hljs">public void RemoveSessionItems()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TrainingRegimeModel</span></td>
-        <td><span class="parametername">regimeModel</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_GetCellView_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.GetCellView*"></a>
-  <h4 id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_GetCellView_EnhancedScroller_System_Int32_System_Int32_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.GetCellView(EnhancedScroller,System.Int32,System.Int32)">GetCellView(EnhancedScroller, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EnhancedScrollerCellView GetCellView(EnhancedScroller scroller, int dataIndex, int cellIndex)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EnhancedScroller</span></td>
-        <td><span class="parametername">scroller</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">dataIndex</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">cellIndex</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EnhancedScrollerCellView</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_GetCellViewSize_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.GetCellViewSize*"></a>
-  <h4 id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_GetCellViewSize_EnhancedScroller_System_Int32_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.GetCellViewSize(EnhancedScroller,System.Int32)">GetCellViewSize(EnhancedScroller, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float GetCellViewSize(EnhancedScroller scroller, int dataIndex)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EnhancedScroller</span></td>
-        <td><span class="parametername">scroller</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">dataIndex</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_GetNumberOfCells_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.GetNumberOfCells*"></a>
-  <h4 id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_GetNumberOfCells_EnhancedScroller_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.GetNumberOfCells(EnhancedScroller)">GetNumberOfCells(EnhancedScroller)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetNumberOfCells(EnhancedScroller scroller)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EnhancedScroller</span></td>
-        <td><span class="parametername">scroller</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_OnOrientationChanged_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.OnOrientationChanged*"></a>
-  <h4 id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_OnOrientationChanged_System_Boolean_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.OnOrientationChanged(System.Boolean)">OnOrientationChanged(Boolean)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnOrientationChanged(bool isPortrait)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">isPortrait</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_ResetSessionInfo_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.ResetSessionInfo*"></a>
@@ -517,12 +317,15 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">IEnhancedScrollerDelegate</span>
-  </div>
-  <div>
-      <span class="xref">IOrientationChangeable</span>
+  
+  
+  <a id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_ShowAppliedTrainingCardsInSessionItems_" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.ShowAppliedTrainingCardsInSessionItems*"></a>
+  <h4 id="Blackout_Rugby_Squad_Scene_Training_RegimeEditingPanel_ShowAppliedTrainingCardsInSessionItems" data-uid="Blackout.Rugby.Squad_Scene.Training.RegimeEditingPanel.ShowAppliedTrainingCardsInSessionItems">ShowAppliedTrainingCardsInSessionItems()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowAppliedTrainingCardsInSessionItems()</code></pre>
   </div>
 </article>
           </div>
