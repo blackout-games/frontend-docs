@@ -7,7 +7,7 @@ Helpful tips and tricks to perform complicated git problems.
 
 If you have accidentally merged your working branch into master and pushed it to origin then follow these steps. If you are uncomfortable with doing this then please ask someone who knows how to do it for you.
 
-1. Make an announcement to the team that you've fucked up and need to performance this task. They must stash or back up their changes to limit any work lost. No one is to push to origin until the fix is made.
+1. Make an announcement to the team that you've fucked up and need to perform this task. They must stash or back up their changes to limit any work lost. No one is to push to origin until the fix is made.
 
 2. Hard reset to the commit you would like to revert back to. Ideally this will be the commit directly before the merge commit.
 
