@@ -72,6 +72,66 @@
 <p>The cache is basically a dictionary jacked up on steroids and horse tranquilizers.
 Its where all the WebDataModels are stored, however it is generic and flexible enough to store any type of data its just that we generally only use for web models.</p>
 <p><a href="https://blackout-games.github.io/frontend-docs/api/Core/Blackout.Core.Web.CacheSystem.Cache.html">API docs</a></p>
+<hr>
+<p>For all these methods use the namespace <code>Blackout.Core.Web.CacheSystem</code></p>
+<pre><code class="lang-csharp">using Blackout.Core.Web.CacheSystem;
+</code></pre>
+<p>Sometimes there is ambiguity with other classes in the solution called <code>Cache</code> in these cases use a direct using statement e.g.</p>
+<pre><code class="lang-csharp">using Cache = Blackout.Core.Web.CacheSystem.Cache;
+</code></pre>
+<p>Rider will do both of these automatically for you so you don't need to worry about it but just in case you are crazy enough not to use Rider or just wanted the knowledge.</p>
+<hr>
+<h1 id="adding">Adding</h1>
+<h2 id="add-single-item">Add Single Item</h2>
+<pre><code class="lang-csharp">var customClass = new MyClass();
+Cache.Add(&quot;item-key&quot;, customClass);
+</code></pre>
+<h2 id="add-multiple-items">Add Multiple Items</h2>
+<pre><code class="lang-csharp">var customClasses = new List&lt;MyClass&gt;();
+Cache.AddMany(&quot;item-key&quot;, customClasses);
+</code></pre>
+<h2 id="add-while-fetching">Add While Fetching</h2>
+<p>You can automatically store the fetched data from backend to the cache. Currently this is primarily done via the RSG Promise library, however, this should be phased out and UniTask's should be used in stead.</p>
+<p><em>Note: This will always override the currently stored value.</em></p>
+<h3 id="promise">Promise</h3>
+<pre><code class="lang-csharp">Cache.Add(&quot;managers&quot;, () =&gt; {
+    API.Get(&quot;managers/me&quot;)
+        .Then(res =&gt; res[&quot;data&quot;].ToModel&lt;ManagerModel&gt;())
+});
+</code></pre>
+<h3 id="unitask">UniTask</h3>
+<pre><code class="lang-csharp">var task = API.AddAsync(&quot;countries/nz&quot;);
+var nz = await Cache.GetAsync&lt;CountryModel&gt;(&quot;countries&quot;, task);
+</code></pre>
+<h1 id="getting">Getting</h1>
+<pre><code class="lang-csharp">var customClass = Cache.Get&lt;MyClass&gt;(&quot;item-key&quot;);
+</code></pre>
+<h2 id="get-while-fetching">Get While Fetching</h2>
+<p><em>Note: The fetch will only happen if the key doesn't exist. If the key does exist the cached value will be used. If you want to override the current value you need to use <code>Cache.Add()</code></em></p>
+<h3 id="promise-1">Promise</h3>
+<pre><code class="lang-csharp">Cache.Get(&quot;managers&quot;, () =&gt; {
+    API.Get(&quot;managers/me&quot;)
+        .Then(res =&gt; res[&quot;data&quot;].ToModel&lt;ManagerModel&gt;())
+});
+</code></pre>
+<h3 id="unitask-1">UniTask</h3>
+<pre><code class="lang-csharp">var task = API.AddAsync(&quot;countries/nz&quot;);
+var nz = await Cache.GetAsync&lt;CountryModel&gt;(&quot;countries&quot;, task);
+</code></pre>
+<h1 id="appending">Appending</h1>
+<p>Appending is used for a stored collection of items. Unlike <code>Cache.Add()</code> which will override the stored value each time <code>Cache.Append()</code> will add the new item to the collection.</p>
+<pre><code class="lang-csharp">// appends the item to the collected. This wont override the item, i.e. there can be duplicate models stored
+Cache.Append(&quot;countries&quot;, nz);
+
+// appends item as unique instance. i.e. replaces model within collection (most likely used) 
+Cache.AppendUniq(&quot;countries&quot;, nz, c =&gt; c.Id == nz.Id);
+// or the extension method since its used so often
+nz.AppendToCacheUniq();
+
+// can append many models at once too
+new List&lt;CountryModel&gt;().AppendManyToCacheUniq();
+
+</code></pre>
 </article>
           </div>
           

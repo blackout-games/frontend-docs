@@ -273,6 +273,72 @@ IMPORTANT: Will replace existing entity.</p>
   </table>
   
   
+  <a id="Blackout_Core_Web_CacheSystem_Cache_AddAsync_" data-uid="Blackout.Core.Web.CacheSystem.Cache.AddAsync*"></a>
+  <h4 id="Blackout_Core_Web_CacheSystem_Cache_AddAsync__1_System_String_UniTask_Blackout_Core_Web_API_Response__" data-uid="Blackout.Core.Web.CacheSystem.Cache.AddAsync``1(System.String,UniTask{Blackout.Core.Web.API.Response})">AddAsync&lt;T&gt;(String, UniTask&lt;API.Response&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds promise to cache.
+Use Add().Fetch() pattern to grab the actual model and store it in cache.
+IMPORTANT: Will replace existing entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UniTask&lt;T&gt; AddAsync&lt;T&gt;(string id, UniTask&lt;API.Response&gt; fetchTask)
+    where T : IDataModel</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Blackout.Core.Web.API.Response.html">API.Response</a>&gt;</td>
+        <td><span class="parametername">fetchTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Blackout_Core_Web_CacheSystem_Cache_AddMany_" data-uid="Blackout.Core.Web.CacheSystem.Cache.AddMany*"></a>
   <h4 id="Blackout_Core_Web_CacheSystem_Cache_AddMany__1_System_String_Func_RSG_IPromise_IEnumerable___0____" data-uid="Blackout.Core.Web.CacheSystem.Cache.AddMany``1(System.String,Func{RSG.IPromise{IEnumerable{``0}}})">AddMany&lt;T&gt;(String, Func&lt;RSG.IPromise&lt;IEnumerable&lt;T&gt;&gt;&gt;)</h4>
   <div class="markdown level1 summary"><p>Adds collection of T fetching promises to cache.
@@ -1260,6 +1326,73 @@ Will await fetch if cached object is null.</p>
       <tr>
         <td><span class="xref">Func</span>&lt;<span class="xref">RSG.IPromise</span>&lt;T&gt;&gt;</td>
         <td><span class="parametername">fetchPromise</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;T&gt;</td>
+        <td><p>T - object from cache</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Blackout_Core_Web_CacheSystem_Cache_GetAsync_" data-uid="Blackout.Core.Web.CacheSystem.Cache.GetAsync*"></a>
+  <h4 id="Blackout_Core_Web_CacheSystem_Cache_GetAsync__1_System_String_UniTask_Blackout_Core_Web_API_Response__" data-uid="Blackout.Core.Web.CacheSystem.Cache.GetAsync``1(System.String,UniTask{Blackout.Core.Web.API.Response})">GetAsync&lt;T&gt;(String, UniTask&lt;API.Response&gt;)</h4>
+  <div class="markdown level1 summary"><p>Will return object from cache.
+Will perform fetch on another thread.
+Will await fetch if cached object is null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UniTask&lt;T&gt; GetAsync&lt;T&gt;(string cacheId, UniTask&lt;API.Response&gt; fetchTask)
+    where T : class, IDataModel</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">cacheId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Blackout.Core.Web.API.Response.html">API.Response</a>&gt;</td>
+        <td><span class="parametername">fetchTask</span></td>
         <td></td>
       </tr>
     </tbody>
