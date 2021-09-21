@@ -130,7 +130,28 @@ nz.AppendToCacheUniq();
 
 // can append many models at once too
 new List&lt;CountryModel&gt;().AppendManyToCacheUniq();
+</code></pre>
+<h1 id="helpers">Helpers</h1>
+<h2 id="waiting">Waiting</h2>
+<p>I've added some helper methods for some situations where you know else where the cache is going to be populated with the data you need so there is no need for a fetch action to be made. Instead you can just use a waiting coroutine for that data to be populated.</p>
+<pre><code class="lang-csharp">// wait for an entire collection
+var wait = new Cache.WaitForCollection&lt;CountryModel&gt;(&quot;counties&quot;);
+yield return wait;
+var result = wait.Result; // returns IEnumerable&lt;T&gt;
 
+// wait for a single item
+var wait = new Cache.WaitForItem&lt;CountryModel&gt;(&quot;counties&quot;);
+yield return wait;
+var result = wait.Result; // returns T
+
+// wait for an item within a collection
+var wait = new  Cache.WaitForItemInCollection&lt;CountryModel&gt;(&quot;counties&quot;, x =&gt; x.Id == &quot;nz&quot;);
+yield return wait;
+var result = wait.Result; // returns T
+</code></pre>
+<h2 id="refreshing">Refreshing</h2>
+<p>You can also refresh a single item with in a collection which is basically a short cut for a fetch call to backend and overriding the item's instance within the collection.</p>
+<pre><code class="lang-csharp">var clubModel = await Cache.RefreshModelInCollectionAsync&lt;ClubModel&gt;(WebConfig.Clubs.Type, LocalSettings.currentClubId);
 </code></pre>
 </article>
           </div>
