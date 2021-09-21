@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Git Surgery </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Git Surgery ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="git-surgery">Git Surgery</h1>
+
+<p>Helpful tips and tricks to perform complicated git problems.</p>
+<h1 id="how-to-revert-a-merged-branch">How to revert a merged branch.</h1>
+<p>If you have accidentally merged your working branch into master and pushed it to origin then follow these steps. If you are uncomfortable with doing this then please ask someone who knows how to do it for you.</p>
+<ol>
+<li><p>Make an announcement to the team that you've fucked up and need to perform this task. They must stash or back up their changes to limit any work lost. No one is to push to origin until the fix is made.</p>
+</li>
+<li><p>Hard reset to the commit you would like to revert back to. Ideally this will be the commit directly before the merge commit.</p>
+</li>
+</ol>
+<pre><code>git reset ––hard &lt;hash&gt;
+</code></pre>
+<ol start="3">
+<li>Create a new temporary branch and checkout</li>
+</ol>
+<pre><code>git checkout -b &lt;branch-name&gt;
+</code></pre>
+<ol start="4">
+<li>Cherry-pick any commits into the temp branch that were made on top of the problem merge commit.</li>
+</ol>
+<pre><code>git cherry-pick &lt;hash&gt;
+</code></pre>
+<ol start="5">
+<li>Checkout <code>master</code> branch again and force push from the hard reset point.</li>
+</ol>
+<p><em>Note: you may need to unlock this feature on the origin. gitlab doesn't support this by default</em></p>
+<pre><code>git push --force origin master
+</code></pre>
+<ol start="6">
+<li><p>Merge in the temp branch and push the new commits.</p>
+</li>
+<li><p>Tell your team they can now update their local history by doing a hard reset to the same one you did in step 2. Then pull the changes. Make sure they <strong>DO NOT PUSH</strong> even though the git client may be asking you to.</p>
+</li>
+<li><p>Everything should be good now. Happy days!</p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/blackout-games/frontend-docs/blob/master/manual/Troubleshooting/GitSurgery.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

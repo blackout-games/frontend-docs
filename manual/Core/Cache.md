@@ -131,7 +131,7 @@ var result = wait.Result; // returns T
 
 ## Refreshing
 
-You can also refresh a single item with in a collection
+You can also refresh a single item with in a collection which is basically a short cut for a fetch call to backend and overriding the item's instance within the collection.
 
 ```csharp
 var clubModel = await Cache.RefreshModelInCollectionAsync<ClubModel>(WebConfig.Clubs.Type, LocalSettings.currentClubId);

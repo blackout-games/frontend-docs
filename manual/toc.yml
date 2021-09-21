@@ -1,21 +1,11 @@
 - name: Introduction
   href: intro.md
-- name: Issues and Workarounds
-  items:
-    - name: Maximum Path Length Limitation
-      href: Workarounds/MaxPathLimit.md
-    - name: Git Surgery
-      href: Workarounds/GitSurgery.md
 - name: Git and Steam Release Strategy
   href: git.md
 - name: Build Process
   href: BuildProcess.md
 - name: Tutorial
   href: tutorial.md
-- name: UI
-  items:
-    - name: Modals
-      href: UI/modals.md
 - name: Core
   items:
     - name: API
@@ -34,4 +24,15 @@
   items: 
       - name: Welcome
         href: Football/welcome.md
-
+- name: UI
+  items:
+    - name: Modals
+      href: UI/modals.md
+- name: Troubleshooting
+  items:
+    - name: Troubleshooting in Unity
+      href: Troubleshooting/Troubleshooting.md
+    - name: Git Surgery
+      href: Troubleshooting/GitSurgery.md
+    - name: Maximum Path Length Limitation
+      href: Troubleshooting/MaxPathLimit.md
