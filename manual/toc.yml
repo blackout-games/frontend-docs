@@ -16,6 +16,8 @@
       href: Core/EventSystem.md
     - name: Orientation
       href: Core/Orientation.md
+    - name: DataUpdates
+      href: Core/DataUpdates.md
 - name: Rugby
   items:
     - name: Visiting Mode

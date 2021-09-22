@@ -155,6 +155,8 @@ Nothing needs to be changed here it only references the environment variables.
 
 *Note: this script can only be run on a mac, it uses xcode.*
 
+Once the IAP file has uploaded to TestFlight you can then assign it to the "Discord Testers" group within the iTunes Connect console. 
+
 #### Apple App-Specific Password
 
 An "App-Specific Password" is needed for the upload. Which can be created at https://appleid.apple.com/account/manage. This may be reset if the account password is reset.
