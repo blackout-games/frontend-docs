@@ -70,14 +70,26 @@
 <h1 id="tutorial">Tutorial</h1>
 
 <h2 id="tutorial-manager">Tutorial Manager</h2>
-<p><code>TutorialManager.cs</code> is the brains of the whole thing.</p>
+<p><code>TutorialManager.cs</code> is the brains of the whole thing. It also controls when the arrow pointer, button glow, and secretary are displaying. Once displaying the arrow pointer and secretary have their own internal logic.</p>
 <h2 id="steps">Steps</h2>
 <p>Desktop and Mobile each have their own set of steps as mobile generally requires extra tabs to be opened and has slightly different text to display. Other than that the steps work the same way for all situations.</p>
 <p><code>TutorialStep.cs</code> is a <code>ScriptableObject</code> and contains the instantiation of <code>TutorialCallbacks</code> and <code>TutorialConditions</code>.</p>
 <h2 id="handlers">Handlers</h2>
+<p>Tutorial handlers are what progress the tutorial steps. Each handler needs a condition to be met.</p>
+<p>All you need to do is supply a step for the handler to listen out for so it can register itself as the current handler.</p>
+<p>The handler then called <code>TutorialManager.Instance.SetCurrentTutorialHandler(this);</code> internally which the Tutorial manager will then active that handler as the current one. No other action needs to be taken.</p>
+<h3 id="click-handler">Click Handler</h3>
+<p>Progresses the tutorial once an item is clicked. There is also and option for clicking (or pressing) anyway on screen <code>clickAnywhere</code>.</p>
 <h2 id="callbacks">Callbacks</h2>
+<p><code>TutorialCallback</code> is used for handling any Tutorial actions from <code>TutorialStep</code> or anywhere else. It's derived from <code>MonoBehaviour</code> because you can set callbacks dynamically from scene as well from editor (just create empty GO - set script - drag it inside TutorialStep or TutorialHandler to set up callback.</p>
+<p>You can extend this class to perform very specific tasks and before performing the current step.</p>
 <h2 id="conditions">Conditions</h2>
-<h2 id="tutorial-edge-case-handling">Tutorial Edge Case Handling</h2>
+<p>TutorialCondition is a <code>ScriptableObject</code> that can be used for making conditions before a step is performed. Its basically like a <code>Func&lt;bool&gt;</code> really at the end of the day.</p>
+<p>YOu can extend this class to have more specific conditions.</p>
+<p>Its not used very option within Rugby and is probably something that could be phased out in favour of putting it within the callbacks or handler classes. However when I was refactoring the tutorial system I just left it as it wasn't doing any harm.</p>
+<h2 id="edge-cases">Edge Cases</h2>
+<p><code>TutorialCanvasGroupEdgeCase</code> is a script I created to handle random edge case situations where the <code>TutorialManager</code> would turn off all <code>CanvasGroup</code> interactivity but you still need to be able to do things like use the <code>ScrollRect</code> or something similar.</p>
+<p>The way you can get around that is apply this script to a gameObject. In the inspector assign the Step you need this functionality for and apply the CanvasGroups you need to be overridden.</p>
 </article>
           </div>
           
