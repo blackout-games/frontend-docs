@@ -8,7 +8,7 @@
     <title>Troubleshooting </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Troubleshooting ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -112,6 +112,28 @@
 <h2 id="debugbreak">Debug.Break()</h2>
 <p><a href="https://docs.unity3d.com/ScriptReference/Debug.Break.html">API Docs</a></p>
 <p>Similar to breakpoints within the IDE Unity also provide a way to pause execution. Unlike breakpoints this will allow you to use the Unity editor and step through frame by frame within the game. Breakpoints only allow you to look at the code.</p>
+<h1 id="performance">Performance</h1>
+<h2 id="enabledisable-ui-visibility">Enable/Disable UI visibility</h2>
+<p>Due to the nature of Unity's UI being quite heavy when there are lots of Layout components attached to a GameObject and its children it can be quite costly to performance to use <code>gameObject.SetActive()</code> because there are a lot of Layout components each with their own <code>OnEnabled()</code> callback from <code>MonoBehaviour</code> so when you use <code>gameObject.SetActive()</code> it recursively calls all<code> OnEnabled()</code> methods causing spikes in CPU usage. Using <code>Canvas.enabled</code> doesn't do that, however, but there is also extra things needing to be considered. For example the parent <code>LayoutGroup</code> still thinks they should be calculating those objects, but you can easily add <code>LayoutElement.ignoreLayout = true</code>  which removes that. Secondly the UI can still be clicked, this can be solved by using <code>GraphicRaycaster.enabled = false</code>.</p>
+<p>Since thats a lot of things to set at once, this helper method should do the trick.
+It would actually be a good idea in future to create this as a component in the Core lib.</p>
+<pre><code class="lang-csharp">/// &lt;summary&gt;
+/// For better performance toggling UI visibility use this script rather than `gameObject.SetActive(true)`
+/// &lt;/summary&gt;
+public class BUIComponent : MonoBehaviour
+{
+    [SerializeField] private Canvas canvas;
+    [SerializeField] private GraphicRaycaster graphicRaycaster;
+    [SerializeField] private LayoutElement layoutElement;
+
+    public void SetEnabled(bool enabled)
+    {
+        canvas.enabled = enabled;
+        graphicRaycaster.enabled = enabled;
+        layoutElement.ignoreLayout = !enabled;
+    }
+}
+</code></pre>
 </article>
           </div>
           

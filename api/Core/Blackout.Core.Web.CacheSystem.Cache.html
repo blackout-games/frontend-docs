@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Cache
    ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -282,7 +282,7 @@ IMPORTANT: Will replace existing entity.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask&lt;T&gt; AddAsync&lt;T&gt;(string id, UniTask&lt;API.Response&gt; fetchTask)
+    <pre><code class="lang-csharp hljs">public static async UniTask&lt;T&gt; AddAsync&lt;T&gt;(string id, UniTask&lt;API.Response&gt; fetchTask)
     where T : IDataModel</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -830,7 +830,7 @@ If path is null will default to {cacheId}/{modelId}
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask&lt;T&gt; FetchFromCollectionAsync&lt;T&gt;(string cacheId, string modelId, string path = null)
+    <pre><code class="lang-csharp hljs">public static async UniTask&lt;T&gt; FetchFromCollectionAsync&lt;T&gt;(string cacheId, string modelId, string path = null)
     where T : WebDataModel</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -974,7 +974,7 @@ If path is null will default to {cacheId}/{modelId}
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask&lt;List&lt;T&gt;&gt; FetchManyFromCollectionAsync&lt;T&gt;(string cacheId, IEnumerable&lt;string&gt; modelIds, string endpoint = null)
+    <pre><code class="lang-csharp hljs">public static async UniTask&lt;List&lt;T&gt;&gt; FetchManyFromCollectionAsync&lt;T&gt;(string cacheId, IEnumerable&lt;string&gt; modelIds, string endpoint = null)
     where T : WebDataModel</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1305,7 +1305,7 @@ Will await fetch if cached object is null.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask&lt;T&gt; GetAsync&lt;T&gt;(string cacheId, Func&lt;RSG.IPromise&lt;T&gt;&gt; fetchPromise = null)
+    <pre><code class="lang-csharp hljs">public static async UniTask&lt;T&gt; GetAsync&lt;T&gt;(string cacheId, Func&lt;RSG.IPromise&lt;T&gt;&gt; fetchPromise = null)
     where T : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1372,7 +1372,7 @@ Will await fetch if cached object is null.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask&lt;T&gt; GetAsync&lt;T&gt;(string cacheId, UniTask&lt;API.Response&gt; fetchTask)
+    <pre><code class="lang-csharp hljs">public static async UniTask&lt;T&gt; GetAsync&lt;T&gt;(string cacheId, UniTask&lt;API.Response&gt; fetchTask)
     where T : class, IDataModel</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1502,7 +1502,7 @@ IMPORTANT - If there is no entry in cache - new entry will be created and fetch 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask&lt;IEnumerable&lt;T&gt;&gt; GetManyAsync&lt;T&gt;(string cacheId, Func&lt;RSG.IPromise&lt;IEnumerable&lt;T&gt;&gt;&gt; fetchPromise = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async UniTask&lt;IEnumerable&lt;T&gt;&gt; GetManyAsync&lt;T&gt;(string cacheId, Func&lt;RSG.IPromise&lt;IEnumerable&lt;T&gt;&gt;&gt; fetchPromise = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1566,7 +1566,7 @@ IEnumerable{T} - objects from cache</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask&lt;IEnumerable&lt;T&gt;&gt; GetManyAsync&lt;T&gt;(string cacheId, Func&lt;UniTask&lt;IEnumerable&lt;T&gt;&gt;&gt; fetchTask = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async UniTask&lt;IEnumerable&lt;T&gt;&gt; GetManyAsync&lt;T&gt;(string cacheId, Func&lt;UniTask&lt;IEnumerable&lt;T&gt;&gt;&gt; fetchTask = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1629,7 +1629,7 @@ IEnumerable{T} - objects from cache</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask&lt;IEnumerable&lt;T&gt;&gt; GetManyAsync&lt;T&gt;(string cacheId, UniTask&lt;API.Response&gt; fetchTask)
+    <pre><code class="lang-csharp hljs">public static async UniTask&lt;IEnumerable&lt;T&gt;&gt; GetManyAsync&lt;T&gt;(string cacheId, UniTask&lt;API.Response&gt; fetchTask)
     where T : IDataModel</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2237,7 +2237,7 @@ Awaiting this will wait for model to be refreshed.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask RefreshAsync(string cacheId)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async UniTask RefreshAsync(string cacheId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2410,7 +2410,7 @@ If there is no entry stored by cacheId, error will be logged.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask&lt;T&gt; RefreshModelInCollectionAsync&lt;T&gt;(string cacheId, string modelId)
+    <pre><code class="lang-csharp hljs">public static async UniTask&lt;T&gt; RefreshModelInCollectionAsync&lt;T&gt;(string cacheId, string modelId)
     where T : IDataModel</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
