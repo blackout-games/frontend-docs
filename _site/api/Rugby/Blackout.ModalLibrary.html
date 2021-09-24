@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ModalLibrary
    ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.58.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -122,7 +122,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ShowClubInfoModal(ClubModel clubModel, ClubName.ChallengeType? challengeType = default(ClubName.ChallengeType? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ShowClubInfoModal(ClubModel clubModel, ClubName.ChallengeType? challengeType = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -292,7 +292,7 @@ the modal, as well as invoking any given callback.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask&lt;bool&gt; ShowConfirmationModalAsync(string bodyI18n, params i18nArg[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async UniTask&lt;bool&gt; ShowConfirmationModalAsync(string bodyI18n, params i18nArg[] args)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -706,7 +706,7 @@ the modal, as well as invoking any given callback.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTaskVoid ShowSelectFirstStarPlayerModal()</code></pre>
+    <pre><code class="lang-csharp hljs">public static async UniTaskVoid ShowSelectFirstStarPlayerModal()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
