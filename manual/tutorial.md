@@ -1,5 +1,11 @@
 # Tutorial
 
+### How it works in a nutshell
+
+Each `TutorialStep` there will be an action that the user must take. Nine times out of ten this is a click action on some UI. The highlighted UI component is controlled using `Canvas.sortingOrder` and `CanvasGroup.interactable`. 
+
+For example, if a button is needing to be pressed the tutorial manager will access that button via the `TutorialHandler` script and move its `Canvas.sortingOrder` up above the tutorial blocker. It will then loop through all root canvases in the scene and recursively disable all children object's `CanvasGroup.interactable` property. This will ensure that only the highlighted object is able to be interacted with. Once the action has been taken or the condition is met within the step the tutorial will progress to the next step.
+
 ## Tutorial Manager
 
 `TutorialManager.cs` is the brains of the whole thing. It also controls when the arrow pointer, button glow, and secretary are displaying. Once displaying the arrow pointer and secretary have their own internal logic. 
