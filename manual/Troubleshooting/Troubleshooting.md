@@ -57,3 +57,32 @@ Doing this way you can see how long each logic block takes which narrows your se
 [API Docs](https://docs.unity3d.com/ScriptReference/Debug.Break.html)
 
 Similar to breakpoints within the IDE Unity also provide a way to pause execution. Unlike breakpoints this will allow you to use the Unity editor and step through frame by frame within the game. Breakpoints only allow you to look at the code.
+
+# Performance
+
+## Enable/Disable UI visibility
+
+Due to the nature of Unity's UI being quite heavy when there are lots of Layout components attached to a GameObject and its children it can be quite costly to performance to use `gameObject.SetActive()` because there are a lot of Layout components each with their own `OnEnabled()` callback from `MonoBehaviour` so when you use `gameObject.SetActive()` it recursively calls all` OnEnabled()` methods causing spikes in CPU usage. Using `Canvas.enabled` doesn't do that, however, but there is also extra things needing to be considered. For example the parent `LayoutGroup` still thinks they should be calculating those objects, but you can easily add `LayoutElement.ignoreLayout = true`  which removes that. Secondly the UI can still be clicked, this can be solved by using `GraphicRaycaster.enabled = false`. 
+
+Since thats a lot of things to set at once, this helper method should do the trick. 
+It would actually be a good idea in future to create this as a component in the Core lib.
+
+
+```csharp
+/// <summary>
+/// For better performance toggling UI visibility use this script rather than `gameObject.SetActive(true)`
+/// </summary>
+public class BUIComponent : MonoBehaviour
+{
+    [SerializeField] private Canvas canvas;
+    [SerializeField] private GraphicRaycaster graphicRaycaster;
+    [SerializeField] private LayoutElement layoutElement;
+
+    public void SetEnabled(bool enabled)
+    {
+        canvas.enabled = enabled;
+        graphicRaycaster.enabled = enabled;
+        layoutElement.ignoreLayout = !enabled;
+    }
+}
+```
