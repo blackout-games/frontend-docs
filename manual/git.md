@@ -29,8 +29,7 @@ Steam releases should be driven by necessity and not by what git branches exist.
 ### Main Branches
 | Name | Purpose | Commit Strategy | Maps to Steam Release |
 |--|--|--|--|
-| Release | The production-ready branch. | Release-Patch can be merged into this. Staging can be merged into this. This does not get merged back to anywhere else. No direct commits should be made to release unless under exceptional circumstances with agreement of multiple team members.| Default |
-| Release-Patch | A mirror of Release for patches to be made and tested. | Direct commits that fix critical issues. For bigger fixes, a branch can be made and merged back in. Fixes from other branches can be cherry-picked, but only to fix a critical bug. Is merged back into Master(which should propagate changes back to other branches). | - |
+| Release | The production-ready branch. | Staging can be merged into this. | Default | Direct commits that fix critical issues. For bigger fixes, a branch can be made and merged back in. Fixes from other branches can be cherry-picked, but only to fix a critical bug. Is merged back into Master(which should propagate changes back to other branches). | - |
 | Staging | Used for preparing what is in Master to be promoted to Release. | Patches are made directly here and merged back to Master. Only fixes and hardening should happen here as it will soon be promoted to Release.| Release-Candidate | 
 |Master | The main branch that should contain all features, bug fixes, and patches. | All branches(except Release) are merged into this branch to keep it up to date. | Nightly |
 
